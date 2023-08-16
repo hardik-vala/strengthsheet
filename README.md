@@ -3,9 +3,12 @@
 ## Install
 
 ```
-brew upgrade
+brew update
+brew install node
 brew install watchman
 ```
+
+Click [here](https://reactnative.dev/docs/environment-setup) for more info.
 
 ## Run
 
