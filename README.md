@@ -17,3 +17,8 @@ Click [here](https://reactnative.dev/docs/environment-setup) for more info.
 ```
 npx expo start
 ```
+
+### iOS Simulator
+
+1. Open Xcode, and find the simulator option: Xcode > Open Developer Tool > Simulator.
+2. Run `npm run ios`.
