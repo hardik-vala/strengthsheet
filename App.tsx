@@ -13,7 +13,8 @@ export default function App() {
           borderColor: 'gray',
           borderWidth: 1,
         }}
-        defaultValue="You can type in me"
+        defaultValue=""
+        placeholder="Type here"
       />
     </View>
   );
