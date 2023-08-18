@@ -6,6 +6,7 @@ node_modules/
 # Expo
 .expo/
 dist/
+ios/
 web-build/
 
 # Native
@@ -33,4 +34,3 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
-
