@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
 import { signIn, signOut } from "./authService";
 import { User } from "./models/User";
+import { appendToGoogleSheet } from "./sheetService";
 
 export default function App() {
   const [user, setUser] = useState<User>(null);
@@ -52,7 +53,7 @@ export default function App() {
           value={userInput}
           onChangeText={(text) => setUserInput(text)}
         />
-        <Button title="Submit" onPress={submitToSheet} />
+        <Button title="Submit" onPress={_appendToSheet} />
         <Button title="Log out" onPress={_signOut} />
       </>
     );
@@ -70,30 +71,12 @@ export default function App() {
     );
   }
 
-  async function submitToSheet() {
-    const authTokens = await GoogleSignin.getTokens();
+  async function _appendToSheet() {
     const spreadsheetId = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
-
-    const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1!A1:A1:append?valueInputOption=RAW`;
-
-    const headers = {
-      Authorization: `Bearer ${authTokens.accessToken}`,
-    };
-
-    const body = {
-      range: "Sheet1!A1:A1",
-      majorDimension: "ROWS",
-      values: [[userInput]],
-    };
-
-    const response = await fetch(url, {
-      method: "POST",
-      headers,
-      body: JSON.stringify(body),
-    });
-
-    if (!response.ok) {
-      console.error(`Submit to sheet failed: ${JSON.stringify(response)}`);
+    try {
+      appendToGoogleSheet(spreadsheetId, userInput);
+    } catch (error) {
+      Alert.alert(error);
     }
   }
 
