@@ -1,21 +1,21 @@
-import type { User } from '@react-native-google-signin/google-signin';
+import type { User } from "@react-native-google-signin/google-signin";
 import {
   GoogleSignin,
   GoogleSigninButton,
   NativeModuleError,
   statusCodes,
-} from '@react-native-google-signin/google-signin';
-import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
-import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native';
+} from "@react-native-google-signin/google-signin";
+import { StatusBar } from "expo-status-bar";
+import { useState } from "react";
+import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
 
 GoogleSignin.configure({
-  scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+  scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
 
 export default function App() {
   const [userInfo, setUserInfo] = useState<User>(null);
-  const [userInput, setUserInput] = useState('');
+  const [userInput, setUserInput] = useState("");
 
   const _signIn = async () => {
     try {
@@ -27,17 +27,17 @@ export default function App() {
 
       switch (typedError.code) {
         case statusCodes.SIGN_IN_CANCELLED:
-          Alert.alert('Sign-in cancelled.');
+          Alert.alert("Sign-in cancelled.");
           break;
         case statusCodes.IN_PROGRESS:
-          Alert.alert('Sign-in in progress.');
+          Alert.alert("Sign-in in progress.");
           break;
         case statusCodes.PLAY_SERVICES_NOT_AVAILABLE:
           // Android only.
-          Alert.alert('Play services are not available or outdated.');
+          Alert.alert("Play services are not available or outdated.");
           break;
         default:
-          Alert.alert('Something went wrong', typedError.toString());
+          Alert.alert("Something went wrong", typedError.toString());
       }
     }
   };
@@ -50,36 +50,34 @@ export default function App() {
       setUserInfo(null);
     } catch (error) {
       const typedError = error as NativeModuleError;
-      Alert.alert('Something went wrong', typedError.toString());
+      Alert.alert("Something went wrong", typedError.toString());
     }
   };
 
   function render() {
     const body = userInfo ? renderMain(userInfo) : renderSignInButton();
-    return body; 
+    return body;
   }
 
   function renderMain(userInfo: User) {
     return (
       <>
         <Text>Enter a workout value:</Text>
-        <StatusBar style='auto' />
+        <StatusBar style="auto" />
         <TextInput
           style={{
             height: 40,
-            width: '80%',
-            borderColor: 'gray',
+            width: "80%",
+            borderColor: "gray",
             borderWidth: 1,
           }}
-          defaultValue=''
-          placeholder='Type here'
+          defaultValue=""
+          placeholder="Type here"
           value={userInput}
-          onChangeText={text => setUserInput(text)}
+          onChangeText={(text) => setUserInput(text)}
         />
-        <Button 
-          title='Submit' 
-          onPress={submitToSheet} 
-        />
+        <Button title="Submit" onPress={submitToSheet} />
+        <Button title="Log out" onPress={_signOut} />
       </>
     );
   }
@@ -98,24 +96,24 @@ export default function App() {
 
   async function submitToSheet() {
     const authTokens = await GoogleSignin.getTokens();
-    const spreadsheetId = '1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o'; 
+    const spreadsheetId = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
 
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1!A1:A1:append?valueInputOption=RAW`;
 
     const headers = {
-      Authorization: `Bearer ${authTokens.accessToken}`
+      Authorization: `Bearer ${authTokens.accessToken}`,
     };
 
     const body = {
-      range: 'Sheet1!A1:A1',
-      majorDimension: 'ROWS',
-      values: [[userInput]]
+      range: "Sheet1!A1:A1",
+      majorDimension: "ROWS",
+      values: [[userInput]],
     };
 
     const response = await fetch(url, {
-      method: 'POST',
+      method: "POST",
       headers,
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     });
 
     if (!response.ok) {
@@ -123,14 +121,14 @@ export default function App() {
     }
   }
 
-  return (<View style={styles.container}>{render()}</View>);
-};
+  return <View style={styles.container}>{render()}</View>;
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
