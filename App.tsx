@@ -7,12 +7,15 @@ import {
 } from '@react-native-google-signin/google-signin';
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { Alert, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
-GoogleSignin.configure();
+GoogleSignin.configure({
+  scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+});
 
 export default function App() {
   const [userInfo, setUserInfo] = useState<User>(null);
+  const [userInput, setUserInput] = useState('');
 
   const _signIn = async () => {
     try {
@@ -60,7 +63,7 @@ export default function App() {
     return (
       <>
         <Text>Enter a workout value:</Text>
-        <StatusBar style="auto" />
+        <StatusBar style='auto' />
         <TextInput
           style={{
             height: 40,
@@ -68,8 +71,14 @@ export default function App() {
             borderColor: 'gray',
             borderWidth: 1,
           }}
-          defaultValue=""
-          placeholder="Type here"
+          defaultValue=''
+          placeholder='Type here'
+          value={userInput}
+          onChangeText={text => setUserInput(text)}
+        />
+        <Button 
+          title='Submit' 
+          onPress={submitToSheet} 
         />
       </>
     );
@@ -85,6 +94,33 @@ export default function App() {
         />
       </>
     );
+  }
+
+  async function submitToSheet() {
+    const authTokens = await GoogleSignin.getTokens();
+    const spreadsheetId = '1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o'; 
+
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1!A1:A1:append?valueInputOption=RAW`;
+
+    const headers = {
+      Authorization: `Bearer ${authTokens.accessToken}`
+    };
+
+    const body = {
+      range: 'Sheet1!A1:A1',
+      majorDimension: 'ROWS',
+      values: [[userInput]]
+    };
+
+    const response = await fetch(url, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(body)
+    });
+
+    if (!response.ok) {
+      console.error(`Submit to sheet failed: ${JSON.stringify(response)}`);
+    }
   }
 
   return (<View style={styles.container}>{render()}</View>);
