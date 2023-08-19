@@ -5,9 +5,9 @@ import {
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
-import { signIn, signOut } from "./authService";
 import { User } from "./models/User";
-import { appendToGoogleSheet } from "./sheetService";
+import { signIn, signOut } from "./services/authService";
+import { appendToGoogleSheet } from "./services/sheetService";
 
 export default function App() {
   const [user, setUser] = useState<User>(null);

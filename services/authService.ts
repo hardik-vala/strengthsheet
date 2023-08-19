@@ -4,8 +4,8 @@ import {
   NativeModuleError,
   statusCodes,
 } from "@react-native-google-signin/google-signin";
+import { User } from "../models/User";
 import { AuthError } from "./authError";
-import { User } from "./models/User";
 
 GoogleSignin.configure({
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
