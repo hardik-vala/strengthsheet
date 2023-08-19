@@ -1,15 +1,12 @@
-import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { Alert, StyleSheet, View } from "react-native";
+import { Main } from "./components/Main/Main";
 import { SignIn } from "./components/SignIn/SignIn";
-import { SignOut } from "./components/SignOut/SignOut";
 import { User } from "./models/User";
 import { signIn, signOut } from "./services/authService";
-import { appendToGoogleSheet } from "./services/sheetService";
 
 export default function App() {
   const [user, setUser] = useState<User>(null);
-  const [userInput, setUserInput] = useState("");
 
   const _signIn = async () => {
     try {
@@ -29,44 +26,11 @@ export default function App() {
     }
   };
 
-  function render() {
-    const body = user ? renderMain() : (<SignIn onSignIn={_signIn} />);
-    return body;
-  }
-
-  function renderMain() {
-    return (
-      <>
-        <Text>Enter a workout value:</Text>
-        <StatusBar style="auto" />
-        <TextInput
-          style={{
-            height: 40,
-            width: "80%",
-            borderColor: "gray",
-            borderWidth: 1,
-          }}
-          defaultValue=""
-          placeholder="Type here"
-          value={userInput}
-          onChangeText={(text) => setUserInput(text)}
-        />
-        <Button title="Submit" onPress={_appendToSheet} />
-        <SignOut onSignOut={_signOut} />
-      </>
-    );
-  }
-
-  async function _appendToSheet() {
-    const spreadsheetId = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
-    try {
-      appendToGoogleSheet(spreadsheetId, userInput);
-    } catch (error) {
-      Alert.alert(error);
-    }
-  }
-
-  return <View style={styles.container}>{render()}</View>;
+  return (
+    <View style={styles.container}>
+      {user ? <Main onSignOut={_signOut} /> : <SignIn onSignIn={_signIn} />}
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
