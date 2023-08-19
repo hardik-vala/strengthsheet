@@ -1,4 +1,3 @@
-import type { User } from "@react-native-google-signin/google-signin";
 import {
   GoogleSignin,
   GoogleSigninButton,
@@ -7,15 +6,16 @@ import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
 import { signIn, signOut } from "./authService";
+import { User } from "./models/User";
 
 export default function App() {
-  const [userInfo, setUserInfo] = useState<User>(null);
+  const [user, setUser] = useState<User>(null);
   const [userInput, setUserInput] = useState("");
 
   const _signIn = async () => {
     try {
       const userInfo = await signIn();
-      setUserInfo(userInfo);
+      setUser(userInfo);
     } catch (error) {
         Alert.alert(error);
     }
@@ -24,18 +24,18 @@ export default function App() {
   const _signOut = async () => {
     try {
       signOut();
-      setUserInfo(null);
+      setUser(null);
     } catch (error) {
       Alert.alert(error);
     }
   };
 
   function render() {
-    const body = userInfo ? renderMain(userInfo) : renderSignInButton();
+    const body = user ? renderMain() : renderSignInButton();
     return body;
   }
 
-  function renderMain(userInfo: User) {
+  function renderMain() {
     return (
       <>
         <Text>Enter a workout value:</Text>

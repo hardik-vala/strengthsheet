@@ -1,10 +1,11 @@
-import type { User } from "@react-native-google-signin/google-signin";
+import type { User as GoogleUser } from "@react-native-google-signin/google-signin";
 import {
   GoogleSignin,
   NativeModuleError,
   statusCodes,
 } from "@react-native-google-signin/google-signin";
 import { AuthError } from "./authError";
+import { User } from "./models/User";
 
 GoogleSignin.configure({
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
@@ -13,7 +14,13 @@ GoogleSignin.configure({
 export async function signIn(): Promise<User> {
   try {
     await GoogleSignin.hasPlayServices();
-    return await GoogleSignin.signIn();
+    const googleUser: GoogleUser = await GoogleSignin.signIn();
+    return {
+      email: googleUser.user.email,
+      googleId: googleUser.user.id,
+      googleIdToken: googleUser.idToken,
+      name: googleUser.user.name
+    };
   } catch (error) {
     const typedError = error as NativeModuleError;
 
