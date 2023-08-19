@@ -1,10 +1,8 @@
-import {
-  GoogleSignin,
-  GoogleSigninButton,
-} from "@react-native-google-signin/google-signin";
+import { GoogleSigninButton } from "@react-native-google-signin/google-signin";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { SignIn } from "./components/SignIn/SignIn";
 import { User } from "./models/User";
 import { signIn, signOut } from "./services/authService";
 import { appendToGoogleSheet } from "./services/sheetService";
@@ -15,10 +13,10 @@ export default function App() {
 
   const _signIn = async () => {
     try {
-      const userInfo = await signIn();
-      setUser(userInfo);
+      const user = await signIn();
+      setUser(user);
     } catch (error) {
-        Alert.alert(error);
+      Alert.alert(error);
     }
   };
 
@@ -32,7 +30,7 @@ export default function App() {
   };
 
   function render() {
-    const body = user ? renderMain() : renderSignInButton();
+    const body = user ? renderMain() : (<SignIn onSignIn={_signIn} />);
     return body;
   }
 
@@ -55,18 +53,6 @@ export default function App() {
         />
         <Button title="Submit" onPress={_appendToSheet} />
         <Button title="Log out" onPress={_signOut} />
-      </>
-    );
-  }
-
-  function renderSignInButton() {
-    return (
-      <>
-        <GoogleSigninButton
-          size={GoogleSigninButton.Size.Standard}
-          color={GoogleSigninButton.Color.Dark}
-          onPress={_signIn}
-        />
       </>
     );
   }
