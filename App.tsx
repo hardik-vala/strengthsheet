@@ -1,8 +1,8 @@
-import { GoogleSigninButton } from "@react-native-google-signin/google-signin";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
 import { SignIn } from "./components/SignIn/SignIn";
+import { SignOut } from "./components/SignOut/SignOut";
 import { User } from "./models/User";
 import { signIn, signOut } from "./services/authService";
 import { appendToGoogleSheet } from "./services/sheetService";
@@ -52,7 +52,7 @@ export default function App() {
           onChangeText={(text) => setUserInput(text)}
         />
         <Button title="Submit" onPress={_appendToSheet} />
-        <Button title="Log out" onPress={_signOut} />
+        <SignOut onSignOut={_signOut} />
       </>
     );
   }
