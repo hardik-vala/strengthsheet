@@ -1,4 +1,4 @@
-import { render, screen, userEvent } from "@testing-library/react-native";
+import { render } from "@testing-library/react-native";
 import React from "react";
 
 import { Content } from "./App";

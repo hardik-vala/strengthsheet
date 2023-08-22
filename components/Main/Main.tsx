@@ -14,7 +14,7 @@ export function Main({ onSignOut }: MainProps) {
   async function _appendToSheet() {
     const spreadsheetId = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
     try {
-      appendToGoogleSheet(spreadsheetId, userInput);
+      await appendToGoogleSheet(spreadsheetId, userInput);
     } catch (error) {
       Alert.alert(error);
     }
