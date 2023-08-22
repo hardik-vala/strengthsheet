@@ -1,7 +1,7 @@
-import { render, screen } from "@testing-library/react-native";
+import { render, screen, userEvent } from "@testing-library/react-native";
 import React from "react";
 
-import App from "./App";
+import { Content } from "./App";
 
 jest.mock("./components/Main/Main", () => {
   return {
@@ -17,16 +17,26 @@ jest.mock("./components/SignIn/SignIn", () => {
 
 jest.mock("./services/authService", () => {
   return {
-    signIn: jest.fn(() => {}),
-    signOut: jest.fn(() => {}),
+    signIn: jest.fn(),
+    signOut: jest.fn(),
   };
 });
 
-describe("App", () => {
+const mockOnSignIn = jest.fn();
+const mockOnSignOut = jest.fn();
+
+describe("Content", () => {
   it("renders sign in if the user hasn't signed in", () => {
-    const tree = render(<App />).toJSON();
+    const tree = render(<Content user={null} onSignIn={mockOnSignIn} onSignOut={mockOnSignOut}/>).toJSON();
 
     expect(tree.children.length).toBe(1);
-    expect(tree.children[0].children[0]).toEqual("Mock SignIn");
+    expect(tree.children[0]).toEqual("Mock SignIn");
+  });
+
+  it("renders main page if the user has signed in", () => {
+    const tree = render(<Content user={{}} onSignIn={mockOnSignIn} onSignOut={mockOnSignOut}/>).toJSON();
+
+    expect(tree.children.length).toBe(1);
+    expect(tree.children[0]).toEqual("Mock Main");
   });
 });

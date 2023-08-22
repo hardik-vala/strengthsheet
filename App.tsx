@@ -28,9 +28,17 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {user ? <Main onSignOut={_signOut} /> : <SignIn onSignIn={_signIn} />}
+      <Content user={user} onSignIn={_signIn} onSignOut={_signOut}></Content>
     </View>
   );
+}
+
+export function Content({ user, onSignIn, onSignOut }) {
+  if (user) {
+    return <Main onSignOut={onSignOut} />;
+  }
+
+  return <SignIn onSignIn={onSignIn} />;
 }
 
 const styles = StyleSheet.create({
