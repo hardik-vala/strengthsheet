@@ -17,7 +17,7 @@ describe("Main", () => {
   it("appends the text input to a spreadsheet upon submission", () => {
     render(<Main onSignOut={mockOnSignOut} />);
 
-    fireEvent.changeText(screen.getByPlaceholderText("Type here"), "foobar");
+    fireEvent.changeText(screen.getByPlaceholderText("30:00"), "foobar");
     fireEvent.press(screen.getByText("Submit"));
 
     expect(appendToGoogleSheet).toHaveBeenCalledWith(

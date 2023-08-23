@@ -22,8 +22,8 @@ export function Main({ onSignOut }: MainProps) {
 
   return (
     <>
-      <Text>Enter a workout value:</Text>
       <StatusBar style="auto" />
+      <Text>Enter rower workout time:</Text>
       <TextInput
         style={{
           height: 40,
@@ -32,9 +32,20 @@ export function Main({ onSignOut }: MainProps) {
           borderWidth: 1,
         }}
         defaultValue=""
-        placeholder="Type here"
+        placeholder="30:00"
         value={userInput}
         onChangeText={(text) => setUserInput(text)}
+      />
+      <Text>Enter distance:</Text>
+      <TextInput
+        style={{
+          height: 40,
+          width: "80%",
+          borderColor: "gray",
+          borderWidth: 1,
+        }}
+        defaultValue=""
+        placeholder="5000m"
       />
       <Button title="Submit" onPress={_appendToSheet} />
       <SignOut onSignOut={onSignOut} />
