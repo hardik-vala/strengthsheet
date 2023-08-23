@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Alert, StyleSheet, View } from "react-native";
-import { Main } from "./components/Main/Main";
-import { SignIn } from "./components/SignIn/SignIn";
-import { User } from "./models/User";
-import { signIn, signOut } from "./services/authService";
+import { Main } from "./src/components/Main/Main";
+import { SignIn } from "./src/components/SignIn/SignIn";
+import { User } from "./src/models/User";
+import { signIn, signOut } from "./src/services/authService";
 
 export default function App() {
   const [user, setUser] = useState<User>(null);
