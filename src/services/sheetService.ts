@@ -1,7 +1,27 @@
 import { GoogleSignin } from "@react-native-google-signin/google-signin";
 import { SheetError } from "./sheetError";
 
-export async function appendToGoogleSheet(spreadsheetId: string, inputValue: string) {
+export async function readSheetValues(spreadsheetId: string) {
+  const authTokens = await GoogleSignin.getTokens();
+
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}`;
+
+  const headers = {
+    Authorization: `Bearer ${authTokens.accessToken}`,
+  };
+
+  const response = await fetch(url, { headers });
+
+  if (!response.ok) {
+    throw new SheetError(`Failed to read spreadsheet: ${JSON.stringify(response)}`); 
+  }
+  
+  const data = await response.json();
+
+  return data;
+}
+
+export async function appendToGoogleSheet(spreadsheetId: string, inputValues: string[]) {
   const authTokens = await GoogleSignin.getTokens();
 
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1!A1:A1:append?valueInputOption=RAW`;
@@ -13,7 +33,7 @@ export async function appendToGoogleSheet(spreadsheetId: string, inputValue: str
   const body = {
     range: "Sheet1!A1:A1",
     majorDimension: "ROWS",
-    values: [[inputValue]],
+    values: [inputValues],
   };
 
   const response = await fetch(url, {

@@ -9,14 +9,18 @@ interface MainProps {
 }
 
 export function Main({ onSignOut }: MainProps) {
-  const [userInput, setUserInput] = useState("");
+  const [rowerWorkoutTimeInput, setRowerWorkoutTimeInput] = useState("");
+  const [rowerWorkoutDistanceInput, setRowerWorkoutDistanceInput] = useState("");
 
   async function _appendToSheet() {
     const spreadsheetId = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
+
     try {
-      await appendToGoogleSheet(spreadsheetId, userInput);
+      await appendToGoogleSheet(spreadsheetId, [rowerWorkoutTimeInput, rowerWorkoutDistanceInput]);
     } catch (error) {
-      Alert.alert(error);
+      Alert.alert("Error writing to Google Sheets");
+      console.error(error);
+      return;
     }
   }
 
@@ -32,9 +36,9 @@ export function Main({ onSignOut }: MainProps) {
           borderWidth: 1,
         }}
         defaultValue=""
-        placeholder="30:00"
-        value={userInput}
-        onChangeText={(text) => setUserInput(text)}
+        placeholder="e.g. 30:00"
+        value={rowerWorkoutTimeInput}
+        onChangeText={(text) => setRowerWorkoutTimeInput(text)}
       />
       <Text>Enter distance:</Text>
       <TextInput
@@ -45,7 +49,9 @@ export function Main({ onSignOut }: MainProps) {
           borderWidth: 1,
         }}
         defaultValue=""
-        placeholder="5000m"
+        placeholder="e.g. 5000m"
+        value={rowerWorkoutDistanceInput}
+        onChangeText={(text) => setRowerWorkoutDistanceInput(text)}
       />
       <Button title="Submit" onPress={_appendToSheet} />
       <SignOut onSignOut={onSignOut} />
