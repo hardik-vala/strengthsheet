@@ -3,19 +3,19 @@ import React from "react";
 
 import { Content } from "./App";
 
-jest.mock("./components/Main/Main", () => {
+jest.mock("./src/components/Main/Main", () => {
   return {
     Main: jest.fn(() => <div>Mock Main</div>),
   };
 });
 
-jest.mock("./components/SignIn/SignIn", () => {
+jest.mock("./src/components/SignIn/SignIn", () => {
   return {
     SignIn: jest.fn(() => <div>Mock SignIn</div>),
   };
 });
 
-jest.mock("./services/authService", () => {
+jest.mock("./src/services/authService", () => {
   return {
     signIn: jest.fn(),
     signOut: jest.fn(),
