@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react-native";
+import { format } from "date-fns";
 import React from "react";
 
 import { Main } from "./Main";
@@ -24,7 +25,7 @@ describe("Main", () => {
 
     expect(appendToGoogleSheet).toHaveBeenCalledWith(
       "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o",
-      ["foo", "bar"]
+      [format(new Date(), 'MM/dd/yyyy'), "foo", "bar"]
     );
   });
 });

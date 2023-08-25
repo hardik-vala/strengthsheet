@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Alert, Button, Text, TextInput } from "react-native";
@@ -9,6 +10,7 @@ interface MainProps {
 }
 
 export function Main({ onSignOut }: MainProps) {
+  const [dateInput, setDateInput] = useState(format(new Date(), 'MM/dd/yyyy')); 
   const [rowerWorkoutTimeInput, setRowerWorkoutTimeInput] = useState("");
   const [rowerWorkoutDistanceInput, setRowerWorkoutDistanceInput] = useState("");
 
@@ -16,7 +18,7 @@ export function Main({ onSignOut }: MainProps) {
     const spreadsheetId = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
 
     try {
-      await appendToGoogleSheet(spreadsheetId, [rowerWorkoutTimeInput, rowerWorkoutDistanceInput]);
+      await appendToGoogleSheet(spreadsheetId, [dateInput, rowerWorkoutTimeInput, rowerWorkoutDistanceInput]);
     } catch (error) {
       Alert.alert("Error writing to Google Sheets");
       console.error(error);
@@ -27,6 +29,18 @@ export function Main({ onSignOut }: MainProps) {
   return (
     <>
       <StatusBar style="auto" />
+      <Text>Date:</Text>
+      <TextInput 
+        style={{
+          height: 40,
+          width: "80%",
+          borderColor: "gray",
+          borderWidth: 1,
+        }}
+        placeholder={dateInput}
+        value={dateInput}
+        onChangeText={text => setDateInput(text)}
+      />
       <Text>Enter rower workout time:</Text>
       <TextInput
         style={{
