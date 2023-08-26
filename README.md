@@ -22,3 +22,7 @@ npx expo start
 
 1. Open Xcode, and find the simulator option: Xcode > Open Developer Tool > Simulator.
 2. Run `npm expo run:ios`.
+
+### iOS Device
+
+[Link](https://reactnative.dev/docs/running-on-device)
