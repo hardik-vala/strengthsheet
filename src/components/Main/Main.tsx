@@ -1,4 +1,5 @@
-import { format } from "date-fns";
+import DateTimePicker from "@react-native-community/datetimepicker";
+import { format, setDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Alert, Button, Text, TextInput } from "react-native";
@@ -10,15 +11,20 @@ interface MainProps {
 }
 
 export function Main({ onSignOut }: MainProps) {
-  const [dateInput, setDateInput] = useState(format(new Date(), 'MM/dd/yyyy')); 
+  const [dateInput, setDateInput] = useState(new Date());
   const [rowerWorkoutTimeInput, setRowerWorkoutTimeInput] = useState("");
-  const [rowerWorkoutDistanceInput, setRowerWorkoutDistanceInput] = useState("");
+  const [rowerWorkoutDistanceInput, setRowerWorkoutDistanceInput] =
+    useState("");
 
   async function _appendToSheet() {
     const spreadsheetId = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
 
     try {
-      await appendToGoogleSheet(spreadsheetId, [dateInput, rowerWorkoutTimeInput, rowerWorkoutDistanceInput]);
+      await appendToGoogleSheet(spreadsheetId, [
+        format(dateInput, "MM/dd/yyyy"),
+        rowerWorkoutTimeInput,
+        rowerWorkoutDistanceInput,
+      ]);
     } catch (error) {
       Alert.alert("Error writing to Google Sheets");
       console.error(error);
@@ -30,16 +36,12 @@ export function Main({ onSignOut }: MainProps) {
     <>
       <StatusBar style="auto" />
       <Text>Date:</Text>
-      <TextInput 
-        style={{
-          height: 40,
-          width: "80%",
-          borderColor: "gray",
-          borderWidth: 1,
-        }}
-        placeholder={dateInput}
+      <DateTimePicker
+        testID="dateTimePicker"
         value={dateInput}
-        onChangeText={text => setDateInput(text)}
+        mode="date"
+        is24Hour={true}
+        onChange={(_, d) => setDateInput(d)}
       />
       <Text>Enter rower workout time:</Text>
       <TextInput
