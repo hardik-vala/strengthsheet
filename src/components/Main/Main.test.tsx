@@ -11,7 +11,10 @@ jest.mock("../../services/sheetService", () => {
   };
 });
 
-import { appendToGoogleSheet, readSheetValues } from "../../services/sheetService";
+import {
+  appendToGoogleSheet,
+  readSheetValues,
+} from "../../services/sheetService";
 
 const mockOnSignOut = jest.fn();
 
@@ -25,7 +28,12 @@ describe("Main", () => {
 
     expect(appendToGoogleSheet).toHaveBeenCalledWith(
       "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o",
-      [format(new Date(), 'MM/dd/yyyy'), "foo", "bar"]
+      [
+        format(new Date(), "MM/dd/yyyy"),
+        format(new Date(), "HH:mm"),
+        "foo",
+        "bar",
+      ]
     );
   });
 });

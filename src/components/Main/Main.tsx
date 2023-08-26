@@ -12,6 +12,7 @@ interface MainProps {
 
 export function Main({ onSignOut }: MainProps) {
   const [dateInput, setDateInput] = useState(new Date());
+  const [startTimeInput, setStartTimeInput] = useState(new Date());
   const [rowerWorkoutTimeInput, setRowerWorkoutTimeInput] = useState("");
   const [rowerWorkoutDistanceInput, setRowerWorkoutDistanceInput] =
     useState("");
@@ -22,6 +23,7 @@ export function Main({ onSignOut }: MainProps) {
     try {
       await appendToGoogleSheet(spreadsheetId, [
         format(dateInput, "MM/dd/yyyy"),
+        format(startTimeInput, "HH:mm"),
         rowerWorkoutTimeInput,
         rowerWorkoutDistanceInput,
       ]);
@@ -37,11 +39,19 @@ export function Main({ onSignOut }: MainProps) {
       <StatusBar style="auto" />
       <Text>Date:</Text>
       <DateTimePicker
-        testID="dateTimePicker"
+        testID="datePicker"
         value={dateInput}
         mode="date"
         is24Hour={true}
         onChange={(_, d) => setDateInput(d)}
+      />
+      <Text>Start time:</Text>
+      <DateTimePicker
+        testID="timePicker"
+        value={startTimeInput}
+        mode="time"
+        is24Hour={true}
+        onChange={(_, t) => setStartTimeInput(t)}
       />
       <Text>Enter rower workout time:</Text>
       <TextInput
