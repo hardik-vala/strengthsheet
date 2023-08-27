@@ -1,3 +1,4 @@
+
 import { render } from "@testing-library/react-native";
 import React from "react";
 
@@ -29,6 +30,7 @@ describe("Content", () => {
   it("renders sign in if the user hasn't signed in", () => {
     const tree = render(<Content user={null} onSignIn={mockOnSignIn} onSignOut={mockOnSignOut}/>).toJSON();
 
+    expect(tree).toMatchSnapshot();
     expect(tree.children.length).toBe(1);
     expect(tree.children[0]).toEqual("Mock SignIn");
   });
@@ -36,6 +38,7 @@ describe("Content", () => {
   it("renders main page if the user has signed in", () => {
     const tree = render(<Content user={{}} onSignIn={mockOnSignIn} onSignOut={mockOnSignOut}/>).toJSON();
 
+    expect(tree).toMatchSnapshot();
     expect(tree.children.length).toBe(1);
     expect(tree.children[0]).toEqual("Mock Main");
   });

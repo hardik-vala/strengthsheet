@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content renders main page if the user has signed in 1`] = `
+<div>
+  Mock Main
+</div>
+`;
+
+exports[`Content renders sign in if the user hasn't signed in 1`] = `
+<div>
+  Mock SignIn
+</div>
+`;

@@ -19,6 +19,12 @@ import {
 const mockOnSignOut = jest.fn();
 
 describe("Main", () => {
+  it("renders correctly", () => {
+    const tree = render(<Main onSignOut={mockOnSignOut} />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+  
   it("appends the text input to a spreadsheet upon submission", () => {
     render(<Main onSignOut={mockOnSignOut} />);
 
