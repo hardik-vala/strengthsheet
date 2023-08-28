@@ -1,9 +1,19 @@
 import { useState } from "react";
 import { Alert, StyleSheet, View } from "react-native";
+import { MD3LightTheme, PaperProvider } from "react-native-paper";
 import { Main } from "./src/components/Main/Main";
 import { SignIn } from "./src/components/SignIn/SignIn";
 import { User } from "./src/models/User";
 import { signIn, signOut } from "./src/services/authService";
+
+const theme = {
+  ...MD3LightTheme,
+  colors: {
+    ...MD3LightTheme.colors,
+    primary: 'black',
+    secondary: 'gray',
+  },
+};
 
 export default function App() {
   const [user, setUser] = useState<User>(null);
@@ -27,9 +37,11 @@ export default function App() {
   };
 
   return (
-    <View style={styles.container}>
-      <Content user={user} onSignIn={_signIn} onSignOut={_signOut}></Content>
-    </View>
+    <PaperProvider theme={theme}>
+      <View style={styles.container}>
+        <Content user={user} onSignIn={_signIn} onSignOut={_signOut}></Content>
+      </View>
+    </PaperProvider>
   );
 }
 
