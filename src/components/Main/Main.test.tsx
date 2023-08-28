@@ -4,6 +4,8 @@ import React from "react";
 
 import { Main } from "./Main";
 
+jest.useFakeTimers().setSystemTime(new Date("2023-08-27"));
+
 jest.mock("../../services/sheetService", () => {
   return {
     appendToGoogleSheet: jest.fn(),
@@ -24,12 +26,12 @@ describe("Main", () => {
 
     expect(tree).toMatchSnapshot();
   });
-  
+
   it("appends the text input to a spreadsheet upon submission", () => {
     render(<Main onSignOut={mockOnSignOut} />);
 
-    fireEvent.changeText(screen.getByPlaceholderText("e.g. 30:00"), "foo");
-    fireEvent.changeText(screen.getByPlaceholderText("e.g. 5000m"), "bar");
+    fireEvent.changeText(screen.getByPlaceholderText("30:00"), "foo");
+    fireEvent.changeText(screen.getByPlaceholderText("5000m"), "bar");
     fireEvent.press(screen.getByText("Submit"));
 
     expect(appendToGoogleSheet).toHaveBeenCalledWith(

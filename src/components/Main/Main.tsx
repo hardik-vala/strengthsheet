@@ -2,8 +2,10 @@ import DateTimePicker from "@react-native-community/datetimepicker";
 import { format, setDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { Alert, Button, Text, TextInput } from "react-native";
+import { Alert, Button, View } from "react-native";
+import { Text, TextInput } from "react-native-paper";
 import { appendToGoogleSheet } from "../../services/sheetService";
+import { FormInputField } from "../FormInputField/FormInputField";
 import { SignOut } from "../SignOut/SignOut";
 
 interface MainProps {
@@ -53,29 +55,15 @@ export function Main({ onSignOut }: MainProps) {
         is24Hour={true}
         onChange={(_, t) => setStartTimeInput(t)}
       />
-      <Text>Enter rower workout time:</Text>
-      <TextInput
-        style={{
-          height: 40,
-          width: "80%",
-          borderColor: "gray",
-          borderWidth: 1,
-        }}
-        defaultValue=""
-        placeholder="e.g. 30:00"
+      <FormInputField
+        label="Total Time"
+        placeholder="30:00"
         value={rowerWorkoutTimeInput}
         onChangeText={(text) => setRowerWorkoutTimeInput(text)}
       />
-      <Text>Enter distance:</Text>
-      <TextInput
-        style={{
-          height: 40,
-          width: "80%",
-          borderColor: "gray",
-          borderWidth: 1,
-        }}
-        defaultValue=""
-        placeholder="e.g. 5000m"
+      <FormInputField
+        label="Total Distance"
+        placeholder="5000m"
         value={rowerWorkoutDistanceInput}
         onChangeText={(text) => setRowerWorkoutDistanceInput(text)}
       />
