@@ -4,6 +4,20 @@ exports[`Main renders correctly 1`] = `
 [
   <View
     style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />,
+  <View
+    style={
       {
         "flexDirection": "row",
         "justifyContent": "space-evenly",
@@ -15,7 +29,7 @@ exports[`Main renders correctly 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "column",
-          "padding": 5,
+          "padding": 10,
         }
       }
     >
@@ -56,7 +70,7 @@ exports[`Main renders correctly 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           {
-            "marginTop": 3,
+            "marginTop": 5,
           }
         }
         testID="datePicker"
@@ -67,7 +81,7 @@ exports[`Main renders correctly 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "column",
-          "padding": 5,
+          "padding": 10,
         }
       }
     >
@@ -108,13 +122,27 @@ exports[`Main renders correctly 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           {
-            "marginTop": 3,
+            "marginTop": 5,
           }
         }
         testID="timePicker"
       />
     </View>
   </View>,
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />,
   <View
     style={
       {
@@ -259,6 +287,20 @@ exports[`Main renders correctly 1`] = `
   </View>,
   <View
     style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />,
+  <View
+    style={
       {
         "flexDirection": "row",
         "justifyContent": "space-between",
@@ -399,6 +441,20 @@ exports[`Main renders correctly 1`] = `
       </View>
     </View>
   </View>,
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />,
   <View
     accessibilityRole="button"
     accessibilityState={

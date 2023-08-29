@@ -6,7 +6,7 @@ exports[`DateTimePicker renders correctly 1`] = `
     {
       "alignItems": "center",
       "flexDirection": "column",
-      "padding": 5,
+      "padding": 10,
     }
   }
 >
@@ -47,7 +47,7 @@ exports[`DateTimePicker renders correctly 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "marginTop": 3,
+        "marginTop": 5,
       }
     }
     testID="pickerTestId"

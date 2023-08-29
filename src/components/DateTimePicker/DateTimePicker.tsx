@@ -22,7 +22,7 @@ export function DateTimePicker({
       style={{
         alignItems: "center",
         flexDirection: "column",
-        padding: 5
+        padding: 10
       }}
     >
       <Text variant="bodyLarge">{label}</Text>
@@ -32,7 +32,7 @@ export function DateTimePicker({
         mode={isDate ? "date" : "time"}
         is24Hour={true}
         onChange={onChange}
-        style={{marginTop: 3}}
+        style={{marginTop: 5}}
       />
     </View>
   );

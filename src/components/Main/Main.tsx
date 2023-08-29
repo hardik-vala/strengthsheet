@@ -2,7 +2,7 @@ import { format, setDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Alert, Button, View } from "react-native";
-import { Text, TextInput } from "react-native-paper";
+import { Divider, Text, TextInput } from "react-native-paper";
 import { appendToGoogleSheet } from "../../services/sheetService";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { FormInputField } from "../FormInputField/FormInputField";
@@ -39,6 +39,7 @@ export function Main({ onSignOut }: MainProps) {
   return (
     <>
       <StatusBar style="auto" />
+      <Divider />
       <View
         style={{
           flexDirection: "row",
@@ -60,18 +61,21 @@ export function Main({ onSignOut }: MainProps) {
           onChange={(_, t) => setStartTimeInput(t)}
         />
       </View>
+      <Divider />
       <FormInputField
         label="Total Time"
         placeholder="30:00"
         value={rowerWorkoutTimeInput}
         onChangeText={(text) => setRowerWorkoutTimeInput(text)}
       />
+      <Divider />
       <FormInputField
         label="Total Distance"
         placeholder="5000m"
         value={rowerWorkoutDistanceInput}
         onChangeText={(text) => setRowerWorkoutDistanceInput(text)}
       />
+      <Divider />
       <Button title="Submit" onPress={_appendToSheet} />
       <SignOut onSignOut={onSignOut} />
     </>
