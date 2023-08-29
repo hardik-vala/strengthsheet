@@ -1,10 +1,10 @@
-import DateTimePicker from "@react-native-community/datetimepicker";
 import { format, setDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Alert, Button, View } from "react-native";
 import { Text, TextInput } from "react-native-paper";
 import { appendToGoogleSheet } from "../../services/sheetService";
+import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { FormInputField } from "../FormInputField/FormInputField";
 import { SignOut } from "../SignOut/SignOut";
 
@@ -39,22 +39,27 @@ export function Main({ onSignOut }: MainProps) {
   return (
     <>
       <StatusBar style="auto" />
-      <Text>Date:</Text>
-      <DateTimePicker
-        testID="datePicker"
-        value={dateInput}
-        mode="date"
-        is24Hour={true}
-        onChange={(_, d) => setDateInput(d)}
-      />
-      <Text>Start time:</Text>
-      <DateTimePicker
-        testID="timePicker"
-        value={startTimeInput}
-        mode="time"
-        is24Hour={true}
-        onChange={(_, t) => setStartTimeInput(t)}
-      />
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <DateTimePicker
+          label="Date"
+          testID="datePicker"
+          value={dateInput}
+          isDate={true}
+          onChange={(_, d) => setDateInput(d)}
+        />
+        <DateTimePicker
+          label="Start time"
+          testID="timePicker"
+          value={startTimeInput}
+          isDate={false}
+          onChange={(_, t) => setStartTimeInput(t)}
+        />
+      </View>
       <FormInputField
         label="Total Time"
         placeholder="30:00"
