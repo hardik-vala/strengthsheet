@@ -87,6 +87,9 @@ export function Main({ onSignOut }: MainProps) {
             await _appendToSheet();
             setIsAppendingToSheet(false);
           }}
+          contentStyle={{
+            flexDirection: "row",
+          }}
           style={{
             marginTop: 25,
             height: 40,
@@ -95,7 +98,7 @@ export function Main({ onSignOut }: MainProps) {
             justifyContent: "center",
           }}
         >
-          {isAppendingToSheet ? "" : "Save"}
+          {isAppendingToSheet ? "Saving" : "Save"}
         </Button>
       </View>
       <SignOut onSignOut={onSignOut} />
