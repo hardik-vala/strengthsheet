@@ -1,8 +1,8 @@
-import { format, setDate } from "date-fns";
+import { format } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { Alert, Button, View } from "react-native";
-import { Divider, Text, TextInput } from "react-native-paper";
+import { Alert, View } from "react-native";
+import { Button, Divider } from "react-native-paper";
 import { appendToGoogleSheet } from "../../services/sheetService";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { FormInputField } from "../FormInputField/FormInputField";
@@ -18,6 +18,7 @@ export function Main({ onSignOut }: MainProps) {
   const [rowerWorkoutTimeInput, setRowerWorkoutTimeInput] = useState("");
   const [rowerWorkoutDistanceInput, setRowerWorkoutDistanceInput] =
     useState("");
+  const [isAppendingToSheet, setIsAppendingToSheet] = useState(false);
 
   async function _appendToSheet() {
     const spreadsheetId = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
@@ -37,9 +38,8 @@ export function Main({ onSignOut }: MainProps) {
   }
 
   return (
-    <>
+    <View>
       <StatusBar style="auto" />
-      <Divider />
       <View
         style={{
           flexDirection: "row",
@@ -76,8 +76,29 @@ export function Main({ onSignOut }: MainProps) {
         onChangeText={(text) => setRowerWorkoutDistanceInput(text)}
       />
       <Divider />
-      <Button title="Submit" onPress={_appendToSheet} />
+      <View style={{ flexDirection: "row", justifyContent: "center" }}>
+        <Button
+          buttonColor="blue"
+          compact={true}
+          loading={isAppendingToSheet}
+          mode="contained"
+          onPress={async () => {
+            setIsAppendingToSheet(true);
+            await _appendToSheet();
+            setIsAppendingToSheet(false);
+          }}
+          style={{
+            marginTop: 25,
+            height: 40,
+            width: "25%",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {isAppendingToSheet ? "" : "Save"}
+        </Button>
+      </View>
       <SignOut onSignOut={onSignOut} />
-    </>
+    </View>
   );
 }
