@@ -21,29 +21,32 @@ import {
 const mockOnSignOut = jest.fn();
 
 describe("Main", () => {
-  // it("renders correctly", () => {
-  //   const tree = render(<Main onSignOut={mockOnSignOut} />).toJSON();
+  it("renders correctly", () => {
+    const tree = render(<Main onSignOut={mockOnSignOut} />).toJSON();
 
-  //   expect(tree).toMatchSnapshot();
-  // });
+    expect(tree).toMatchSnapshot();
+  });
 
-  it("appends the text input to a spreadsheet upon submission", () => {
+  it("appends the text input to a spreadsheet upon submission", async () => {
     render(<Main onSignOut={mockOnSignOut} />);
-    
-    act(() => {
+
+    await act(() => {
       fireEvent.changeText(screen.getByPlaceholderText("30:00"), "foo");
       fireEvent.changeText(screen.getByPlaceholderText("5000m"), "bar");
-      console.log(JSON.stringify(screen.toJSON()));
-      // fireEvent.press(screen.getByText("Save"));
-      // expect(appendToGoogleSheet).toHaveBeenCalledWith(
-      //   "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o",
-      //   [
-      //     format(new Date(), "MM/dd/yyyy"),
-      //     format(new Date(), "HH:mm"),
-      //     "foo",
-      //     "bar",
-      //   ]
-      // );
     });
+
+    await act(() => {
+      fireEvent.press(screen.getByText("Save"));
+    });
+
+    expect(appendToGoogleSheet).toHaveBeenCalledWith(
+      "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o",
+      [
+        format(new Date(), "MM/dd/yyyy"),
+        format(new Date(), "HH:mm"),
+        "foo",
+        "bar",
+      ]
+    );
   });
 });
