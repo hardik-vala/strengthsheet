@@ -8,6 +8,10 @@ import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { FormInputField } from "../FormInputField/FormInputField";
 import { SignOut } from "../SignOut/SignOut";
 
+const DISTANCE_REGEX = /^\d+(\.\d+)?\s*(mi|km|m|ft|yd|cm|mm|in)$/;
+const TIMER_MINUTES_SECONDS_REGEX = /^[0-5][0-9]:[0-5][0-9]$/;
+const TIMER_HOURS_MINUTES_SECONDS_REGEX = /^[0-9][0-9]:[0-5][0-9]:[0-5][0-9]$/;
+
 interface MainProps {
   onSignOut: () => void;
 }
@@ -67,6 +71,7 @@ export function Main({ onSignOut }: MainProps) {
         placeholder="30:00"
         value={rowerWorkoutTimeInput}
         onChangeText={(text) => setRowerWorkoutTimeInput(text)}
+        error={!isValidTimerInput(rowerWorkoutTimeInput)}
       />
       <Divider />
       <FormInputField
@@ -74,6 +79,7 @@ export function Main({ onSignOut }: MainProps) {
         placeholder="5000m"
         value={rowerWorkoutDistanceInput}
         onChangeText={(text) => setRowerWorkoutDistanceInput(text)}
+        error={!isValidDistanceInput(rowerWorkoutDistanceInput)}
       />
       <Divider />
       <View style={{ flexDirection: "row", justifyContent: "center" }}>
@@ -104,4 +110,23 @@ export function Main({ onSignOut }: MainProps) {
       <SignOut onSignOut={onSignOut} />
     </View>
   );
+}
+
+function isValidTimerInput(timer: string): boolean {
+  if (timer === "" ) {
+    return true;
+  }
+
+  return (
+    TIMER_MINUTES_SECONDS_REGEX.test(timer) ||
+    TIMER_HOURS_MINUTES_SECONDS_REGEX.test(timer)
+  );
+}
+
+function isValidDistanceInput(distance: string): boolean {
+  if (distance === "" ) {
+    return true;
+  }
+
+  return DISTANCE_REGEX.test(distance);
 }

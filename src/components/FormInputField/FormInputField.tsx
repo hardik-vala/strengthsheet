@@ -7,6 +7,7 @@ interface FormInputFieldProps {
   placeholder: string;
   value: string;
   onChangeText: (text: string) => void;
+  error: boolean;
 }
 
 export function FormInputField({
@@ -14,6 +15,7 @@ export function FormInputField({
   placeholder,
   value,
   onChangeText,
+  error = false,
 }: FormInputFieldProps) {
   return (
     <View
@@ -45,6 +47,7 @@ export function FormInputField({
         placeholder={placeholder}
         value={value}
         onChangeText={onChangeText}
+        error={error}
       />
     </View>
   );

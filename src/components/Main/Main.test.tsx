@@ -27,12 +27,32 @@ describe("Main", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders error style when time input is invalid", async () => {
+    render(<Main onSignOut={mockOnSignOut} />).toJSON();
+
+    await act(() => {
+      fireEvent.changeText(screen.getByPlaceholderText("30:00"), "foo");
+    });
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("renders error style when distance input is invalid", async () => {
+    render(<Main onSignOut={mockOnSignOut} />).toJSON();
+
+    await act(() => {
+      fireEvent.changeText(screen.getByPlaceholderText("5000m"), "-1");
+    });
+
+    expect(screen).toMatchSnapshot();
+  });
+
   it("appends the text input to a spreadsheet upon submission", async () => {
     render(<Main onSignOut={mockOnSignOut} />);
 
     await act(() => {
-      fireEvent.changeText(screen.getByPlaceholderText("30:00"), "foo");
-      fireEvent.changeText(screen.getByPlaceholderText("5000m"), "bar");
+      fireEvent.changeText(screen.getByPlaceholderText("30:00"), "45:00");
+      fireEvent.changeText(screen.getByPlaceholderText("5000m"), "10000m");
     });
 
     await act(() => {
@@ -44,8 +64,8 @@ describe("Main", () => {
       [
         format(new Date(), "MM/dd/yyyy"),
         format(new Date(), "HH:mm"),
-        "foo",
-        "bar",
+        "45:00",
+        "10000m",
       ]
     );
   });
