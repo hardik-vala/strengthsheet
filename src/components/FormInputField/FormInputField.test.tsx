@@ -11,6 +11,7 @@ describe("FormInputField", () => {
         placeholder="foobar"
         value=""
         onChangeText={() => {}}
+        error={false}
       />
     ).toJSON();
 

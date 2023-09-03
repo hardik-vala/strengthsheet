@@ -1,0 +1,1855 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkoutForm renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "padding": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Date
+      </Text>
+      <RNDateTimePicker
+        date={1693094400000}
+        displayIOS="default"
+        enabled={true}
+        is24Hour={true}
+        mode="date"
+        onChange={[Function]}
+        onPickerDismiss={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "marginTop": 5,
+          }
+        }
+        testID="datePicker"
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "padding": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Start time
+      </Text>
+      <RNDateTimePicker
+        date={1693094400000}
+        displayIOS="default"
+        enabled={true}
+        is24Hour={true}
+        mode="time"
+        onChange={[Function]}
+        onPickerDismiss={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "marginTop": 5,
+          }
+        }
+        testID="timePicker"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Total Time
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "rgba(231, 224, 236, 1)",
+            "borderTopLeftRadius": 4,
+            "borderTopRightRadius": 4,
+          },
+          {
+            "width": 100,
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "backgroundColor": "rgba(28, 27, 31, 1)",
+            "bottom": 0,
+            "height": 1,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "transform": [
+              {
+                "scaleY": 0.5,
+              },
+            ],
+            "zIndex": 1,
+          }
+        }
+        testID="text-input-underline"
+      />
+      <View
+        style={
+          [
+            {
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            },
+            {
+              "minHeight": 30,
+            },
+          ]
+        }
+      >
+        <TextInput
+          cursorColor="rgba(103, 80, 164, 1)"
+          defaultValue=""
+          editable={true}
+          id="form-input-field"
+          maxFontSizeMultiplier={1.5}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="30:00"
+          placeholderTextColor="rgba(73, 69, 79, 1)"
+          selectionColor="rgba(103, 80, 164, 1)"
+          style={
+            [
+              {
+                "margin": 0,
+              },
+              {
+                "height": 30,
+              },
+              {
+                "paddingBottom": 0,
+                "paddingTop": 0,
+              },
+              {
+                "color": "rgba(73, 69, 79, 1)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": undefined,
+                "letterSpacing": 0.15,
+                "lineHeight": undefined,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "textAlign": "right",
+                "textAlignVertical": "center",
+              },
+              false,
+              [
+                {},
+              ],
+              undefined,
+            ]
+          }
+          testID="text-input-flat"
+          underlineColorAndroid="transparent"
+          value=""
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Total Distance
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "rgba(231, 224, 236, 1)",
+            "borderTopLeftRadius": 4,
+            "borderTopRightRadius": 4,
+          },
+          {
+            "width": 100,
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "backgroundColor": "rgba(28, 27, 31, 1)",
+            "bottom": 0,
+            "height": 1,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "transform": [
+              {
+                "scaleY": 0.5,
+              },
+            ],
+            "zIndex": 1,
+          }
+        }
+        testID="text-input-underline"
+      />
+      <View
+        style={
+          [
+            {
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            },
+            {
+              "minHeight": 30,
+            },
+          ]
+        }
+      >
+        <TextInput
+          cursorColor="rgba(103, 80, 164, 1)"
+          defaultValue=""
+          editable={true}
+          id="form-input-field"
+          maxFontSizeMultiplier={1.5}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="5000m"
+          placeholderTextColor="rgba(73, 69, 79, 1)"
+          selectionColor="rgba(103, 80, 164, 1)"
+          style={
+            [
+              {
+                "margin": 0,
+              },
+              {
+                "height": 30,
+              },
+              {
+                "paddingBottom": 0,
+                "paddingTop": 0,
+              },
+              {
+                "color": "rgba(73, 69, 79, 1)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": undefined,
+                "letterSpacing": 0.15,
+                "lineHeight": undefined,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "textAlign": "right",
+                "textAlignVertical": "center",
+              },
+              false,
+              [
+                {},
+              ],
+              undefined,
+            ]
+          }
+          testID="text-input-flat"
+          underlineColorAndroid="transparent"
+          value=""
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "blue",
+          "borderRadius": 20,
+          "height": 40,
+          "marginTop": 25,
+          "shadowColor": "#000",
+          "shadowOffset": {
+            "height": 0,
+            "width": 0,
+          },
+          "shadowOpacity": 0,
+          "shadowRadius": 0,
+          "width": "25%",
+        }
+      }
+      testID="button-container-outer-layer"
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "blue",
+            "borderColor": "transparent",
+            "borderRadius": 20,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flex": 1,
+            "justifyContent": "center",
+            "minWidth": "auto",
+            "shadowColor": "#000",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0,
+            "shadowRadius": 0,
+          }
+        }
+        testID="button-container"
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "overflow": "hidden",
+              },
+              {
+                "borderRadius": 20,
+              },
+            ]
+          }
+          testID="button"
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+                {
+                  "flexDirection": "row",
+                },
+              ]
+            }
+          >
+            <Text
+              numberOfLines={1}
+              selectable={false}
+              style={
+                [
+                  {
+                    "textAlign": "left",
+                  },
+                  {
+                    "color": "rgba(28, 27, 31, 1)",
+                    "writingDirection": "ltr",
+                  },
+                  [
+                    {
+                      "fontFamily": "System",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.1,
+                      "lineHeight": 20,
+                    },
+                    [
+                      {
+                        "marginHorizontal": 16,
+                        "marginVertical": 9,
+                        "textAlign": "center",
+                      },
+                      false,
+                      {
+                        "marginHorizontal": 24,
+                        "marginVertical": 10,
+                      },
+                      {
+                        "marginHorizontal": 8,
+                      },
+                      false,
+                      {
+                        "color": "rgba(255, 255, 255, 1)",
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "500",
+                        "letterSpacing": 0.1,
+                        "lineHeight": 20,
+                      },
+                      undefined,
+                    ],
+                  ],
+                ]
+              }
+              testID="button-text"
+            >
+              Save
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`WorkoutForm renders error style when distance input is invalid 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "padding": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Date
+      </Text>
+      <RNDateTimePicker
+        date={1693094400000}
+        displayIOS="default"
+        enabled={true}
+        is24Hour={true}
+        mode="date"
+        onChange={[Function]}
+        onPickerDismiss={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "marginTop": 5,
+          }
+        }
+        testID="datePicker"
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "padding": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Start time
+      </Text>
+      <RNDateTimePicker
+        date={1693094400000}
+        displayIOS="default"
+        enabled={true}
+        is24Hour={true}
+        mode="time"
+        onChange={[Function]}
+        onPickerDismiss={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "marginTop": 5,
+          }
+        }
+        testID="timePicker"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Total Time
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "rgba(231, 224, 236, 1)",
+            "borderTopLeftRadius": 4,
+            "borderTopRightRadius": 4,
+          },
+          {
+            "width": 100,
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "backgroundColor": "rgba(28, 27, 31, 1)",
+            "bottom": 0,
+            "height": 1,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "transform": [
+              {
+                "scaleY": 0.5,
+              },
+            ],
+            "zIndex": 1,
+          }
+        }
+        testID="text-input-underline"
+      />
+      <View
+        style={
+          [
+            {
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            },
+            {
+              "minHeight": 30,
+            },
+          ]
+        }
+      >
+        <TextInput
+          cursorColor="rgba(103, 80, 164, 1)"
+          defaultValue=""
+          editable={true}
+          id="form-input-field"
+          maxFontSizeMultiplier={1.5}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="30:00"
+          placeholderTextColor="rgba(73, 69, 79, 1)"
+          selectionColor="rgba(103, 80, 164, 1)"
+          style={
+            [
+              {
+                "margin": 0,
+              },
+              {
+                "height": 30,
+              },
+              {
+                "paddingBottom": 0,
+                "paddingTop": 0,
+              },
+              {
+                "color": "rgba(73, 69, 79, 1)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": undefined,
+                "letterSpacing": 0.15,
+                "lineHeight": undefined,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "textAlign": "right",
+                "textAlignVertical": "center",
+              },
+              false,
+              [
+                {},
+              ],
+              undefined,
+            ]
+          }
+          testID="text-input-flat"
+          underlineColorAndroid="transparent"
+          value=""
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Total Distance
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "rgba(231, 224, 236, 1)",
+            "borderTopLeftRadius": 4,
+            "borderTopRightRadius": 4,
+          },
+          {
+            "width": 100,
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "backgroundColor": "rgba(179, 38, 30, 1)",
+            "bottom": 0,
+            "height": 1,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "transform": [
+              {
+                "scaleY": 2,
+              },
+            ],
+            "zIndex": 1,
+          }
+        }
+        testID="text-input-underline"
+      />
+      <View
+        style={
+          [
+            {
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            },
+            {
+              "minHeight": 30,
+            },
+          ]
+        }
+      >
+        <TextInput
+          cursorColor="rgba(179, 38, 30, 1)"
+          defaultValue=""
+          editable={true}
+          id="form-input-field"
+          maxFontSizeMultiplier={1.5}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="5000m"
+          placeholderTextColor="rgba(73, 69, 79, 1)"
+          selectionColor="rgba(179, 38, 30, 1)"
+          style={
+            [
+              {
+                "margin": 0,
+              },
+              {
+                "height": 30,
+              },
+              {
+                "paddingBottom": 0,
+                "paddingTop": 0,
+              },
+              {
+                "color": "rgba(73, 69, 79, 1)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": undefined,
+                "letterSpacing": 0.15,
+                "lineHeight": undefined,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "textAlign": "right",
+                "textAlignVertical": "center",
+              },
+              false,
+              [
+                {},
+              ],
+              undefined,
+            ]
+          }
+          testID="text-input-flat"
+          underlineColorAndroid="transparent"
+          value="-1"
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "blue",
+          "borderRadius": 20,
+          "height": 40,
+          "marginTop": 25,
+          "shadowColor": "#000",
+          "shadowOffset": {
+            "height": 0,
+            "width": 0,
+          },
+          "shadowOpacity": 0,
+          "shadowRadius": 0,
+          "width": "25%",
+        }
+      }
+      testID="button-container-outer-layer"
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "blue",
+            "borderColor": "transparent",
+            "borderRadius": 20,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flex": 1,
+            "justifyContent": "center",
+            "minWidth": "auto",
+            "shadowColor": "#000",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0,
+            "shadowRadius": 0,
+          }
+        }
+        testID="button-container"
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "overflow": "hidden",
+              },
+              {
+                "borderRadius": 20,
+              },
+            ]
+          }
+          testID="button"
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+                {
+                  "flexDirection": "row",
+                },
+              ]
+            }
+          >
+            <Text
+              numberOfLines={1}
+              selectable={false}
+              style={
+                [
+                  {
+                    "textAlign": "left",
+                  },
+                  {
+                    "color": "rgba(28, 27, 31, 1)",
+                    "writingDirection": "ltr",
+                  },
+                  [
+                    {
+                      "fontFamily": "System",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.1,
+                      "lineHeight": 20,
+                    },
+                    [
+                      {
+                        "marginHorizontal": 16,
+                        "marginVertical": 9,
+                        "textAlign": "center",
+                      },
+                      false,
+                      {
+                        "marginHorizontal": 24,
+                        "marginVertical": 10,
+                      },
+                      {
+                        "marginHorizontal": 8,
+                      },
+                      false,
+                      {
+                        "color": "rgba(255, 255, 255, 1)",
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "500",
+                        "letterSpacing": 0.1,
+                        "lineHeight": 20,
+                      },
+                      undefined,
+                    ],
+                  ],
+                ]
+              }
+              testID="button-text"
+            >
+              Save
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`WorkoutForm renders error style when time input is invalid 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "padding": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Date
+      </Text>
+      <RNDateTimePicker
+        date={1693094400000}
+        displayIOS="default"
+        enabled={true}
+        is24Hour={true}
+        mode="date"
+        onChange={[Function]}
+        onPickerDismiss={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "marginTop": 5,
+          }
+        }
+        testID="datePicker"
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "padding": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Start time
+      </Text>
+      <RNDateTimePicker
+        date={1693094400000}
+        displayIOS="default"
+        enabled={true}
+        is24Hour={true}
+        mode="time"
+        onChange={[Function]}
+        onPickerDismiss={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "marginTop": 5,
+          }
+        }
+        testID="timePicker"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Total Time
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "rgba(231, 224, 236, 1)",
+            "borderTopLeftRadius": 4,
+            "borderTopRightRadius": 4,
+          },
+          {
+            "width": 100,
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "backgroundColor": "rgba(179, 38, 30, 1)",
+            "bottom": 0,
+            "height": 1,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "transform": [
+              {
+                "scaleY": 2,
+              },
+            ],
+            "zIndex": 1,
+          }
+        }
+        testID="text-input-underline"
+      />
+      <View
+        style={
+          [
+            {
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            },
+            {
+              "minHeight": 30,
+            },
+          ]
+        }
+      >
+        <TextInput
+          cursorColor="rgba(179, 38, 30, 1)"
+          defaultValue=""
+          editable={true}
+          id="form-input-field"
+          maxFontSizeMultiplier={1.5}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="30:00"
+          placeholderTextColor="rgba(73, 69, 79, 1)"
+          selectionColor="rgba(179, 38, 30, 1)"
+          style={
+            [
+              {
+                "margin": 0,
+              },
+              {
+                "height": 30,
+              },
+              {
+                "paddingBottom": 0,
+                "paddingTop": 0,
+              },
+              {
+                "color": "rgba(73, 69, 79, 1)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": undefined,
+                "letterSpacing": 0.15,
+                "lineHeight": undefined,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "textAlign": "right",
+                "textAlignVertical": "center",
+              },
+              false,
+              [
+                {},
+              ],
+              undefined,
+            ]
+          }
+          testID="text-input-flat"
+          underlineColorAndroid="transparent"
+          value="foo"
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              undefined,
+            ],
+          ]
+        }
+      >
+        Total Distance
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "rgba(231, 224, 236, 1)",
+            "borderTopLeftRadius": 4,
+            "borderTopRightRadius": 4,
+          },
+          {
+            "width": 100,
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "backgroundColor": "rgba(28, 27, 31, 1)",
+            "bottom": 0,
+            "height": 1,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "transform": [
+              {
+                "scaleY": 0.5,
+              },
+            ],
+            "zIndex": 1,
+          }
+        }
+        testID="text-input-underline"
+      />
+      <View
+        style={
+          [
+            {
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            },
+            {
+              "minHeight": 30,
+            },
+          ]
+        }
+      >
+        <TextInput
+          cursorColor="rgba(103, 80, 164, 1)"
+          defaultValue=""
+          editable={true}
+          id="form-input-field"
+          maxFontSizeMultiplier={1.5}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="5000m"
+          placeholderTextColor="rgba(73, 69, 79, 1)"
+          selectionColor="rgba(103, 80, 164, 1)"
+          style={
+            [
+              {
+                "margin": 0,
+              },
+              {
+                "height": 30,
+              },
+              {
+                "paddingBottom": 0,
+                "paddingTop": 0,
+              },
+              {
+                "color": "rgba(73, 69, 79, 1)",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": undefined,
+                "letterSpacing": 0.15,
+                "lineHeight": undefined,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "textAlign": "right",
+                "textAlignVertical": "center",
+              },
+              false,
+              [
+                {},
+              ],
+              undefined,
+            ]
+          }
+          testID="text-input-flat"
+          underlineColorAndroid="transparent"
+          value=""
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "height": 0.5,
+        },
+        undefined,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "blue",
+          "borderRadius": 20,
+          "height": 40,
+          "marginTop": 25,
+          "shadowColor": "#000",
+          "shadowOffset": {
+            "height": 0,
+            "width": 0,
+          },
+          "shadowOpacity": 0,
+          "shadowRadius": 0,
+          "width": "25%",
+        }
+      }
+      testID="button-container-outer-layer"
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "blue",
+            "borderColor": "transparent",
+            "borderRadius": 20,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flex": 1,
+            "justifyContent": "center",
+            "minWidth": "auto",
+            "shadowColor": "#000",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0,
+            "shadowRadius": 0,
+          }
+        }
+        testID="button-container"
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "overflow": "hidden",
+              },
+              {
+                "borderRadius": 20,
+              },
+            ]
+          }
+          testID="button"
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+                {
+                  "flexDirection": "row",
+                },
+              ]
+            }
+          >
+            <Text
+              numberOfLines={1}
+              selectable={false}
+              style={
+                [
+                  {
+                    "textAlign": "left",
+                  },
+                  {
+                    "color": "rgba(28, 27, 31, 1)",
+                    "writingDirection": "ltr",
+                  },
+                  [
+                    {
+                      "fontFamily": "System",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.1,
+                      "lineHeight": 20,
+                    },
+                    [
+                      {
+                        "marginHorizontal": 16,
+                        "marginVertical": 9,
+                        "textAlign": "center",
+                      },
+                      false,
+                      {
+                        "marginHorizontal": 24,
+                        "marginVertical": 10,
+                      },
+                      {
+                        "marginHorizontal": 8,
+                      },
+                      false,
+                      {
+                        "color": "rgba(255, 255, 255, 1)",
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "500",
+                        "letterSpacing": 0.1,
+                        "lineHeight": 20,
+                      },
+                      undefined,
+                    ],
+                  ],
+                ]
+              }
+              testID="button-text"
+            >
+              Save
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
