@@ -1,11 +1,18 @@
-import { format } from "date-fns";
+import { act } from "@testing-library/react-native";
+import { format, parse as parseDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Alert, View } from "react-native";
 import { Button, Divider } from "react-native-paper";
-import { appendToGoogleSheet } from "../../services/sheetService";
+import { GoogleSheetDataValues } from "../../models/GoogleSheet";
+import {
+  appendToGoogleSheet,
+  readSheetData,
+} from "../../services/sheetService";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { FormInputField } from "../FormInputField/FormInputField";
+
+const SPREADSHEET_ID = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
 
 const DISTANCE_REGEX = /^\d+(\.\d+)?\s*(mi|km|m|ft|yd|cm|mm|in)$/;
 const TIMER_MINUTES_SECONDS_REGEX = /^[0-5][0-9]:[0-5][0-9]$/;
@@ -16,16 +23,35 @@ interface WorkoutFormProps {}
 export function WorkoutForm(props: WorkoutFormProps) {
   const [dateInput, setDateInput] = useState(new Date());
   const [startTimeInput, setStartTimeInput] = useState(new Date());
+  const [workoutHistory, setWorkoutHistory] = useState(null);
   const [rowerWorkoutTimeInput, setRowerWorkoutTimeInput] = useState("");
   const [rowerWorkoutDistanceInput, setRowerWorkoutDistanceInput] =
     useState("");
   const [isAppendingToSheet, setIsAppendingToSheet] = useState(false);
 
-  async function _appendToSheet() {
-    const spreadsheetId = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
+  useEffect(() => {
+    async function readSheetValuesWrapper() {
+      const sheetData = await readSheetData(SPREADSHEET_ID);
 
+      if (!sheetData.values) {
+        throw new Error(`Spreadsheet has no values.`);
+      }
+
+      const workoutHistory = convertSheetValuesToWorkoutHistory(
+        sheetData.values
+      );
+
+      act(() => {
+        setWorkoutHistory(workoutHistory);
+      });
+    }
+
+    readSheetValuesWrapper();
+  }, []);
+
+  async function _appendToSheet() {
     try {
-      await appendToGoogleSheet(spreadsheetId, [
+      await appendToGoogleSheet(SPREADSHEET_ID, [
         format(dateInput, "MM/dd/yyyy"),
         format(startTimeInput, "HH:mm"),
         rowerWorkoutTimeInput,
@@ -106,6 +132,25 @@ export function WorkoutForm(props: WorkoutFormProps) {
       </View>
     </View>
   );
+}
+
+function convertSheetValuesToWorkoutHistory(
+  sheetValues: GoogleSheetDataValues
+) {
+  const workoutHistory = [];
+  const [header, ...rest] = sheetValues;
+  for (const row of rest) {
+    const record = {
+      date: parseDate(row[0], "MM/dd/yyyy", new Date()),
+      workoutValues: {},
+    };
+    for (let i = 1; i < row.length; i++) {
+      record.workoutValues[header[i]] = row[i];
+    }
+    workoutHistory.push(record);
+  }
+
+  return workoutHistory;
 }
 
 function isValidTimerInput(timer: string): boolean {

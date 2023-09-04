@@ -1,10 +1,11 @@
 import { GoogleSignin } from "@react-native-google-signin/google-signin";
+import { GoogleSheetData } from "../models/GoogleSheet";
 import { SheetError } from "./sheetError";
 
-export async function readSheetValues(spreadsheetId: string) {
+export async function readSheetData(spreadsheetId: string): Promise<GoogleSheetData> {
   const authTokens = await GoogleSignin.getTokens();
 
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}`;
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1!A1:Z100`;
 
   const headers = {
     Authorization: `Bearer ${authTokens.accessToken}`,
@@ -13,15 +14,13 @@ export async function readSheetValues(spreadsheetId: string) {
   const response = await fetch(url, { headers });
 
   if (!response.ok) {
-    throw new SheetError(`Failed to read spreadsheet: ${JSON.stringify(response)}`); 
+    throw new SheetError(`Failed to read spreadsheet: ${JSON.stringify(response)}`);
   }
-  
-  const data = await response.json();
 
-  return data;
+  return await response.json();
 }
 
-export async function appendToGoogleSheet(spreadsheetId: string, inputValues: string[]) {
+export async function appendToGoogleSheet(spreadsheetId: string, inputValues: string[]): Promise<void> {
   const authTokens = await GoogleSignin.getTokens();
 
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1!A1:A1:append?valueInputOption=RAW`;

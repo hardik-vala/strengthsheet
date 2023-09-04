@@ -7,7 +7,7 @@ jest.useFakeTimers().setSystemTime(new Date("2023-08-27"));
 jest.mock("../../services/sheetService", () => {
   return {
     appendToGoogleSheet: jest.fn(),
-    readSheetValues: jest.fn(),
+    readSheetData: jest.fn(),
   };
 });
 

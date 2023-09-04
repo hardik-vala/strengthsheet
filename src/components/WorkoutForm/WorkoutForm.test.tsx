@@ -2,31 +2,35 @@ import { act, fireEvent, render, screen } from "@testing-library/react-native";
 import { format } from "date-fns";
 import React from "react";
 
-import { WorkoutForm } from "./WorkoutForm";
-
 jest.useFakeTimers().setSystemTime(new Date("2023-08-27"));
 
 jest.mock("../../services/sheetService", () => {
   return {
     appendToGoogleSheet: jest.fn(),
-    readSheetValues: jest.fn(),
+    readSheetData: jest.fn().mockResolvedValue({
+      range: "Sheet1!A1:A1",
+      majorDimension: "ROWS",
+      values: [
+        ["Date", "Field1", "Field2"],
+        ["08/27/2023", "foo", "bar"],
+      ],
+    }),
   };
 });
 
-import {
-  appendToGoogleSheet,
-  readSheetValues,
-} from "../../services/sheetService";
+import { WorkoutForm } from "./WorkoutForm";
+
+import { appendToGoogleSheet } from "../../services/sheetService";
 
 describe("WorkoutForm", () => {
-  it("renders correctly", () => {
-    const tree = render(<WorkoutForm />).toJSON();
-
-    expect(tree).toMatchSnapshot();
+  it("renders correctly", async () => {
+    render(<WorkoutForm />);
+    
+    expect(screen).toMatchSnapshot();
   });
 
   it("renders error style when time input is invalid", async () => {
-    render(<WorkoutForm />).toJSON();
+    render(<WorkoutForm />);
 
     await act(() => {
       fireEvent.changeText(screen.getByPlaceholderText("30:00"), "foo");
@@ -36,7 +40,7 @@ describe("WorkoutForm", () => {
   });
 
   it("renders error style when distance input is invalid", async () => {
-    render(<WorkoutForm />).toJSON();
+    render(<WorkoutForm />);
 
     await act(() => {
       fireEvent.changeText(screen.getByPlaceholderText("5000m"), "-1");
