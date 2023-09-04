@@ -1,10 +1,14 @@
 import { act } from "@testing-library/react-native";
-import { format, parse as parseDate } from "date-fns";
+import { format as formatDate, parse as parseDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
 import { Alert, View } from "react-native";
 import { Button, Divider } from "react-native-paper";
 import { GoogleSheetDataValues } from "../../models/GoogleSheet";
+import {
+  WorkoutFieldHistory,
+  WorkoutHistory,
+} from "../../models/WorkoutHistory";
 import {
   appendToGoogleSheet,
   readSheetData,
@@ -23,7 +27,7 @@ interface WorkoutFormProps {}
 export function WorkoutForm(props: WorkoutFormProps) {
   const [dateInput, setDateInput] = useState(new Date());
   const [startTimeInput, setStartTimeInput] = useState(new Date());
-  const [workoutHistory, setWorkoutHistory] = useState(null);
+  const [workoutHistory, setWorkoutHistory] = useState([]);
   const [rowerWorkoutTimeInput, setRowerWorkoutTimeInput] = useState("");
   const [rowerWorkoutDistanceInput, setRowerWorkoutDistanceInput] =
     useState("");
@@ -52,8 +56,8 @@ export function WorkoutForm(props: WorkoutFormProps) {
   async function _appendToSheet() {
     try {
       await appendToGoogleSheet(SPREADSHEET_ID, [
-        format(dateInput, "MM/dd/yyyy"),
-        format(startTimeInput, "HH:mm"),
+        formatDate(dateInput, "MM/dd/yyyy"),
+        formatDate(startTimeInput, "HH:mm"),
         rowerWorkoutTimeInput,
         rowerWorkoutDistanceInput,
       ]);
@@ -93,6 +97,7 @@ export function WorkoutForm(props: WorkoutFormProps) {
         label="Total Time"
         placeholder="30:00"
         value={rowerWorkoutTimeInput}
+        fieldHistory={getWorkoutFieldHistory(workoutHistory, "Time", 3)}
         onChangeText={(text) => setRowerWorkoutTimeInput(text)}
         error={!isValidTimerInput(rowerWorkoutTimeInput)}
       />
@@ -101,6 +106,7 @@ export function WorkoutForm(props: WorkoutFormProps) {
         label="Total Distance"
         placeholder="5000m"
         value={rowerWorkoutDistanceInput}
+        fieldHistory={getWorkoutFieldHistory(workoutHistory, "Distance", 3)}
         onChangeText={(text) => setRowerWorkoutDistanceInput(text)}
         error={!isValidDistanceInput(rowerWorkoutDistanceInput)}
       />
@@ -136,21 +142,53 @@ export function WorkoutForm(props: WorkoutFormProps) {
 
 function convertSheetValuesToWorkoutHistory(
   sheetValues: GoogleSheetDataValues
-) {
+): WorkoutHistory {
   const workoutHistory = [];
   const [header, ...rest] = sheetValues;
   for (const row of rest) {
     const record = {
-      date: parseDate(row[0], "MM/dd/yyyy", new Date()),
+      datetime: parseDate(
+        `${row[0]} ${row[1]}`,
+        "MM/dd/yyyy HH:mm",
+        new Date()
+      ),
       workoutValues: {},
     };
-    for (let i = 1; i < row.length; i++) {
+    for (let i = 2; i < row.length; i++) {
       record.workoutValues[header[i]] = row[i];
     }
     workoutHistory.push(record);
   }
 
   return workoutHistory;
+}
+
+function getWorkoutFieldHistory(
+  workoutHistory: WorkoutHistory,
+  fieldName: string,
+  n: number
+): WorkoutFieldHistory {
+  return {
+    fieldName: fieldName,
+    historyRecords: selectWorkHistory(
+      getRecentWorkoutHistory(workoutHistory, n),
+      fieldName
+    ),
+  };
+}
+
+function getRecentWorkoutHistory(workoutHistory: WorkoutHistory, n: number) {
+  const sortedWorkoutHistory = [...workoutHistory];
+  sortedWorkoutHistory.sort(
+    (r1, r2) => r2.datetime.getTime() - r1.datetime.getTime()
+  );
+  return sortedWorkoutHistory.slice(0, n);
+}
+
+function selectWorkHistory(workoutHistory: WorkoutHistory, fieldName: string) {
+  return workoutHistory.map((r) => {
+    return { datetime: r.datetime, fieldValue: r.workoutValues[fieldName] };
+  });
 }
 
 function isValidTimerInput(timer: string): boolean {

@@ -11,8 +11,8 @@ jest.mock("../../services/sheetService", () => {
       range: "Sheet1!A1:A1",
       majorDimension: "ROWS",
       values: [
-        ["Date", "Field1", "Field2"],
-        ["08/27/2023", "foo", "bar"],
+        ["Date", "Start time", "Field1", "Field2"],
+        ["08/27/2023", "20:00", "foo", "bar"],
       ],
     }),
   };
