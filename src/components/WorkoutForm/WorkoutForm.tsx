@@ -13,6 +13,7 @@ import {
   appendToGoogleSheet,
   readSheetData,
 } from "../../services/sheetService";
+import { styles } from "../../styles/style";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { FormInputField } from "../FormInputField/FormInputField";
 
@@ -69,7 +70,7 @@ export function WorkoutForm(props: WorkoutFormProps) {
   }
 
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+    <View style={styles.center}>
       <StatusBar style="auto" />
       <View
         style={{

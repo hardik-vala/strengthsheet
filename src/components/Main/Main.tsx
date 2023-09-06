@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { View } from "react-native";
 import { BottomNavigation, Button } from "react-native-paper";
+import { styles } from "../../styles/style";
 import { SignOut } from "../SignOut/SignOut";
 import { WorkoutForm } from "../WorkoutForm/WorkoutForm";
 
@@ -29,7 +30,7 @@ export function Main({ onSignOut }: MainProps) {
       } else {
         return (
           <View
-            style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+            style={styles.center}
           >
             <Button
               buttonColor="blue"
@@ -42,8 +43,7 @@ export function Main({ onSignOut }: MainProps) {
       }
     },
     account: () => (
-      // TODO: Define this style as a reusable asset.
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <View style={styles.center}>
         <SignOut onSignOut={onSignOut} />
       </View>
     ),
