@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react-native";
+import { act, fireEvent, render, screen } from "@testing-library/react-native";
 import React from "react";
 
 jest.useFakeTimers().setSystemTime(new Date("2023-08-27"));
@@ -18,12 +18,12 @@ const mockOnSignOut = jest.fn();
 
 describe("Main", () => {
   it("renders correctly", () => {
-    const tree = render(
+    render(
       <SafeAreaProvider>
         <Main onSignOut={mockOnSignOut} />
       </SafeAreaProvider>
-    ).toJSON();
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(screen).toMatchSnapshot();
   });
 });
