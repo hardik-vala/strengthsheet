@@ -3,7 +3,8 @@ import { format as formatDate, parse as parseDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
 import { Alert, View } from "react-native";
-import { Button, Divider } from "react-native-paper";
+import { Appbar, Button, Divider } from "react-native-paper";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import { GoogleSheetDataValues } from "../../models/GoogleSheet";
 import {
   WorkoutFieldHistory,
@@ -23,9 +24,11 @@ const DISTANCE_REGEX = /^\d+(\.\d+)?\s*(mi|km|m|ft|yd|cm|mm|in)$/;
 const TIMER_MINUTES_SECONDS_REGEX = /^[0-5][0-9]:[0-5][0-9]$/;
 const TIMER_HOURS_MINUTES_SECONDS_REGEX = /^[0-9][0-9]:[0-5][0-9]:[0-5][0-9]$/;
 
-interface WorkoutFormProps {}
+interface WorkoutFormProps {
+  onBack: () => void;
+}
 
-export function WorkoutForm(props: WorkoutFormProps) {
+export function WorkoutForm({ onBack }: WorkoutFormProps) {
   const [dateInput, setDateInput] = useState(new Date());
   const [startTimeInput, setStartTimeInput] = useState(new Date());
   const [workoutHistory, setWorkoutHistory] = useState([]);
@@ -70,7 +73,11 @@ export function WorkoutForm(props: WorkoutFormProps) {
   }
 
   return (
+    <SafeAreaProvider>
     <View style={styles.center}>
+      <Appbar.Header>
+        <Appbar.BackAction onPress={onBack} />
+      </Appbar.Header>
       <StatusBar style="auto" />
       <View
         style={{
@@ -138,6 +145,7 @@ export function WorkoutForm(props: WorkoutFormProps) {
         </Button>
       </View>
     </View>
+    </SafeAreaProvider>
   );
 }
 

@@ -1,7 +1,10 @@
 import { act, fireEvent, render, screen } from "@testing-library/react-native";
 import React from "react";
+import mockSafeAreaContext from "react-native-safe-area-context/jest/mock";
 
 jest.useFakeTimers().setSystemTime(new Date("2023-08-27"));
+
+jest.mock("react-native-safe-area-context", () => mockSafeAreaContext);
 
 // TODO: Replace with WorkoutForm mock.
 jest.mock("../../services/sheetService", () => {
@@ -11,18 +14,13 @@ jest.mock("../../services/sheetService", () => {
   };
 });
 
-import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Main } from "./Main";
 
 const mockOnSignOut = jest.fn();
 
 describe("Main", () => {
   it("renders correctly", () => {
-    render(
-      <SafeAreaProvider>
-        <Main onSignOut={mockOnSignOut} />
-      </SafeAreaProvider>
-    );
+    render(<Main onSignOut={mockOnSignOut} />);
 
     expect(screen).toMatchSnapshot();
   });
