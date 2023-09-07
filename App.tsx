@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Alert, StyleSheet, View } from "react-native";
 import { MD3LightTheme, PaperProvider } from "react-native-paper";
-import { Main } from "./src/components/Main/Main";
 import { SignIn } from "./src/components/SignIn/SignIn";
+import { WorkoutLibrary } from "./src/components/WorkoutLibrary/WorkoutLibrary";
 import { User } from "./src/models/User";
 import { signIn, signOut } from "./src/services/authService";
 
@@ -47,7 +47,7 @@ export default function App() {
 
 export function Content({ user, onSignIn, onSignOut }) {
   if (user) {
-    return <Main onSignOut={onSignOut} />;
+    return <WorkoutLibrary onSignOut={onSignOut} />;
   }
 
   return <SignIn onSignIn={onSignIn} />;

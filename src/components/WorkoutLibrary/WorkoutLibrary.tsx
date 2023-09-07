@@ -6,11 +6,11 @@ import { styles } from "../../styles/style";
 import { SignOut } from "../SignOut/SignOut";
 import { WorkoutForm } from "../WorkoutForm/WorkoutForm";
 
-interface MainProps {
+interface WorkoutLibraryProps {
   onSignOut: () => void;
 }
 
-export function Main({ onSignOut }: MainProps) {
+export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
   const [index, setIndex] = useState(0);
   const [selectedWorkout, setSelectedWorkout] = useState(null);
 

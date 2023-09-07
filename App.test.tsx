@@ -1,12 +1,11 @@
-
 import { render } from "@testing-library/react-native";
 import React from "react";
 
 import { Content } from "./App";
 
-jest.mock("./src/components/Main/Main", () => {
+jest.mock("./src/components/WorkoutLibrary/WorkoutLibrary", () => {
   return {
-    Main: jest.fn(() => <div>Mock Main</div>),
+    WorkoutLibrary: jest.fn(() => <div>Mock WorkoutLibrary</div>),
   };
 });
 
@@ -28,18 +27,22 @@ const mockOnSignOut = jest.fn();
 
 describe("Content", () => {
   it("renders sign in if the user hasn't signed in", () => {
-    const tree = render(<Content user={null} onSignIn={mockOnSignIn} onSignOut={mockOnSignOut}/>).toJSON();
+    const tree = render(
+      <Content user={null} onSignIn={mockOnSignIn} onSignOut={mockOnSignOut} />
+    ).toJSON();
 
     expect(tree).toMatchSnapshot();
     expect(tree.children.length).toBe(1);
     expect(tree.children[0]).toEqual("Mock SignIn");
   });
 
-  it("renders main page if the user has signed in", () => {
-    const tree = render(<Content user={{}} onSignIn={mockOnSignIn} onSignOut={mockOnSignOut}/>).toJSON();
+  it("renders workout library if the user has signed in", () => {
+    const tree = render(
+      <Content user={{}} onSignIn={mockOnSignIn} onSignOut={mockOnSignOut} />
+    ).toJSON();
 
     expect(tree).toMatchSnapshot();
     expect(tree.children.length).toBe(1);
-    expect(tree.children[0]).toEqual("Mock Main");
+    expect(tree.children[0]).toEqual("Mock WorkoutLibrary");
   });
 });

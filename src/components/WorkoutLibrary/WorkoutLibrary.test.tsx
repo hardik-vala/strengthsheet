@@ -14,13 +14,13 @@ jest.mock("../../services/sheetService", () => {
   };
 });
 
-import { Main } from "./Main";
+import { WorkoutLibrary } from "./WorkoutLibrary";
 
 const mockOnSignOut = jest.fn();
 
 describe("Main", () => {
   it("renders correctly", () => {
-    render(<Main onSignOut={mockOnSignOut} />);
+    render(<WorkoutLibrary onSignOut={mockOnSignOut} />);
 
     expect(screen).toMatchSnapshot();
   });
