@@ -76,7 +76,7 @@ export function WorkoutForm({ onBack }: WorkoutFormProps) {
     <SafeAreaProvider>
     <View style={styles.center}>
       <Appbar.Header>
-        <Appbar.BackAction onPress={onBack} />
+        <Appbar.BackAction onPress={onBack} testID="back-action" />
       </Appbar.Header>
       <StatusBar style="auto" />
       <View

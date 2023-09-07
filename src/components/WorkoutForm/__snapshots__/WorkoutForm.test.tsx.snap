@@ -85,7 +85,7 @@ exports[`WorkoutForm renders correctly 1`] = `
               "width": 40,
             }
           }
-          testID="icon-button-container-outer-layer"
+          testID="back-action-container-outer-layer"
         >
           <View
             collapsable={false}
@@ -107,7 +107,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                 "shadowRadius": 0,
               }
             }
-            testID="icon-button-container"
+            testID="back-action-container"
           >
             <View
               accessibilityComponentType="button"
@@ -169,7 +169,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                   ],
                 ]
               }
-              testID="icon-button"
+              testID="back-action"
             >
               <View
                 style={
@@ -1261,7 +1261,7 @@ exports[`WorkoutForm renders error style when distance input is invalid 1`] = `
               "width": 40,
             }
           }
-          testID="icon-button-container-outer-layer"
+          testID="back-action-container-outer-layer"
         >
           <View
             collapsable={false}
@@ -1283,7 +1283,7 @@ exports[`WorkoutForm renders error style when distance input is invalid 1`] = `
                 "shadowRadius": 0,
               }
             }
-            testID="icon-button-container"
+            testID="back-action-container"
           >
             <View
               accessibilityComponentType="button"
@@ -1345,7 +1345,7 @@ exports[`WorkoutForm renders error style when distance input is invalid 1`] = `
                   ],
                 ]
               }
-              testID="icon-button"
+              testID="back-action"
             >
               <View
                 style={
@@ -2577,7 +2577,7 @@ exports[`WorkoutForm renders error style when time input is invalid 1`] = `
               "width": 40,
             }
           }
-          testID="icon-button-container-outer-layer"
+          testID="back-action-container-outer-layer"
         >
           <View
             collapsable={false}
@@ -2599,7 +2599,7 @@ exports[`WorkoutForm renders error style when time input is invalid 1`] = `
                 "shadowRadius": 0,
               }
             }
-            testID="icon-button-container"
+            testID="back-action-container"
           >
             <View
               accessibilityComponentType="button"
@@ -2661,7 +2661,7 @@ exports[`WorkoutForm renders error style when time input is invalid 1`] = `
                   ],
                 ]
               }
-              testID="icon-button"
+              testID="back-action"
             >
               <View
                 style={
