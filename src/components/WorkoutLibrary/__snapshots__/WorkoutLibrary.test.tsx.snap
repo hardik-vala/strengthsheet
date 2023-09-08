@@ -440,6 +440,39 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                   >
                     Rower
                   </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={1}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                  >
+                    Rower, Cool Down
+                  </Text>
                 </View>
               </View>
             </View>
@@ -595,6 +628,39 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                   >
                     Push
                   </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={1}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                  >
+                    Flat Bench Press, Angled Bench Press
+                  </Text>
                 </View>
               </View>
             </View>
@@ -710,6 +776,39 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                   >
                     Pull
                   </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={1}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                  >
+                    Lat Pull-ups, Tricep Dips, Bent Over Rows
+                  </Text>
                 </View>
               </View>
             </View>
@@ -824,6 +923,39 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     }
                   >
                     Legs
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={1}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                  >
+                    Wide-stance Squats, Hip Thrusts, Bulgarian Split Squats
                   </Text>
                 </View>
               </View>
@@ -980,6 +1112,39 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                   >
                     PT routine
                   </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={1}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                  >
+                    Chicken Wings, Side-to-sides, Single-leg Bridges
+                  </Text>
                 </View>
               </View>
             </View>
@@ -1094,6 +1259,39 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     }
                   >
                     Stretching
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={1}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                  >
+                    Standing Calf Stretch, Standing IT Band Stretch
                   </Text>
                 </View>
               </View>
