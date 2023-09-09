@@ -18,22 +18,49 @@ jest.mock("../../services/sheetService", () => {
   };
 });
 
+import { PaperProvider } from "react-native-paper";
 import { WorkoutLibrary } from "./WorkoutLibrary";
 
 const mockOnSignOut = jest.fn();
 
 describe("WorkoutLibrary", () => {
   it("renders correctly", () => {
-    render(<WorkoutLibrary onSignOut={mockOnSignOut} />);
+    render(
+      <PaperProvider>
+        <WorkoutLibrary onSignOut={mockOnSignOut} />
+      </PaperProvider>
+    );
 
     expect(screen).toMatchSnapshot();
   });
 
-  it("renders workout form when a workout is selected", async () => {
-    render(<WorkoutLibrary onSignOut={mockOnSignOut} />);
+  it("renders workout preview when a workout is selected", async () => {
+    render(
+      <PaperProvider>
+        <WorkoutLibrary onSignOut={mockOnSignOut} />
+      </PaperProvider>
+    );
 
     await act(() => {
       fireEvent.press(screen.getByText("Rower"));
+    });
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("renders workout form when a workout is started", async () => {
+    render(
+      <PaperProvider>
+        <WorkoutLibrary onSignOut={mockOnSignOut} />
+      </PaperProvider>
+    );
+
+    await act(() => {
+      fireEvent.press(screen.getByText("Rower"));
+    });
+
+    await act(() => {
+      fireEvent.press(screen.getByText("Start"));
     });
 
     expect(screen).toMatchSnapshot();

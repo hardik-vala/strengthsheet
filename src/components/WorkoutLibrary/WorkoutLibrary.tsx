@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { StyleSheet, View } from "react-native";
-import { BottomNavigation, List } from "react-native-paper";
+import {
+  BottomNavigation,
+  Button,
+  List,
+  Modal,
+  Portal,
+} from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { styles } from "../../styles/style";
 import { SignOut } from "../SignOut/SignOut";
@@ -12,6 +18,7 @@ interface WorkoutLibraryProps {
 
 export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
   const [index, setIndex] = useState(0);
+  const [previewWorkout, setPreviewWorkout] = useState(null);
   const [selectedWorkout, setSelectedWorkout] = useState(null);
 
   const [routes] = useState([
@@ -36,6 +43,34 @@ export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
 
       return (
         <SafeAreaProvider>
+          <Portal>
+            <Modal
+              visible={!!previewWorkout}
+              onDismiss={() => setPreviewWorkout(null)}
+              contentContainerStyle={{ backgroundColor: "white", padding: 20 }}
+            >
+              <List.Section title={previewWorkout}>
+              <List.Item
+                  title="Rower"
+                />
+              </List.Section>
+              <Button
+                mode="contained-tonal"
+                onPress={() => {
+                  setSelectedWorkout("rower");
+                  setPreviewWorkout(null);
+                }}
+              >
+                Start
+              </Button>
+              <Button
+                mode="contained-tonal"
+                onPress={() => setPreviewWorkout(null)}
+              >
+                Cancel
+              </Button>
+            </Modal>
+          </Portal>
           <View style={{ marginTop: "25%" }}>
             <List.Section title="Workouts">
               <List.Subheader>Cardio</List.Subheader>
@@ -43,39 +78,39 @@ export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
                 title="Rower"
                 description="Rower, Cool Down"
                 iconName="rowing"
-                onPress={() => setSelectedWorkout("rower")}
+                onPress={() => setPreviewWorkout("rower")}
               />
               <List.Subheader>Strength</List.Subheader>
               <WorkoutListItem
                 title="Push"
                 description="Flat Bench Press, Angled Bench Press"
                 iconName="weight-lifter"
-                onPress={() => setSelectedWorkout("push")}
+                onPress={() => setPreviewWorkout("push")}
               />
               <WorkoutListItem
                 title="Pull"
                 description="Lat Pull-ups, Tricep Dips, Bent Over Rows"
                 iconName="weight-lifter"
-                onPress={() => setSelectedWorkout("pull")}
+                onPress={() => setPreviewWorkout("pull")}
               />
               <WorkoutListItem
                 title="Legs"
                 description="Wide-stance Squats, Hip Thrusts, Bulgarian Split Squats"
                 iconName="weight-lifter"
-                onPress={() => setSelectedWorkout("legs")}
+                onPress={() => setPreviewWorkout("legs")}
               />
               <List.Subheader>PT</List.Subheader>
               <WorkoutListItem
                 title="PT routine"
                 description="Chicken Wings, Side-to-sides, Single-leg Bridges"
                 iconName="yoga"
-                onPress={() => setSelectedWorkout("ptRoutine")}
+                onPress={() => setPreviewWorkout("ptRoutine")}
               />
               <WorkoutListItem
                 title="Stretching"
                 description="Standing Calf Stretch, Standing IT Band Stretch"
                 iconName="yoga"
-                onPress={() => setSelectedWorkout("stretching")}
+                onPress={() => setPreviewWorkout("stretching")}
               />
             </List.Section>
           </View>
