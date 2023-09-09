@@ -39,61 +39,43 @@ export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
           <View style={{ marginTop: "25%" }}>
             <List.Section title="Workouts">
               <List.Subheader>Cardio</List.Subheader>
-              <List.Item
+              <WorkoutListItem
                 title="Rower"
                 description="Rower, Cool Down"
-                descriptionNumberOfLines={1}
-                descriptionEllipsizeMode="tail"
-                left={() => <List.Icon icon="rowing" />}
+                iconName="rowing"
                 onPress={() => setSelectedWorkout("rower")}
-                style={workoutLibraryStyles.workoutListItem}
               />
               <List.Subheader>Strength</List.Subheader>
-              <List.Item
+              <WorkoutListItem
                 title="Push"
                 description="Flat Bench Press, Angled Bench Press"
-                descriptionNumberOfLines={1}
-                descriptionEllipsizeMode="tail"
-                left={() => <List.Icon icon="weight-lifter" />}
+                iconName="weight-lifter"
                 onPress={() => setSelectedWorkout("push")}
-                style={workoutLibraryStyles.workoutListItem}
               />
-              <List.Item
+              <WorkoutListItem
                 title="Pull"
                 description="Lat Pull-ups, Tricep Dips, Bent Over Rows"
-                descriptionNumberOfLines={1}
-                descriptionEllipsizeMode="tail"
-                left={() => <List.Icon icon="weight-lifter" />}
+                iconName="weight-lifter"
                 onPress={() => setSelectedWorkout("pull")}
-                style={workoutLibraryStyles.workoutListItem}
               />
-              <List.Item
+              <WorkoutListItem
                 title="Legs"
                 description="Wide-stance Squats, Hip Thrusts, Bulgarian Split Squats"
-                descriptionNumberOfLines={1}
-                descriptionEllipsizeMode="tail"
-                left={() => <List.Icon icon="weight-lifter" />}
+                iconName="weight-lifter"
                 onPress={() => setSelectedWorkout("legs")}
-                style={workoutLibraryStyles.workoutListItem}
               />
               <List.Subheader>PT</List.Subheader>
-              <List.Item
+              <WorkoutListItem
                 title="PT routine"
                 description="Chicken Wings, Side-to-sides, Single-leg Bridges"
-                descriptionNumberOfLines={1}
-                descriptionEllipsizeMode="tail"
-                left={() => <List.Icon icon="yoga" />}
+                iconName="yoga"
                 onPress={() => setSelectedWorkout("ptRoutine")}
-                style={workoutLibraryStyles.workoutListItem}
               />
-              <List.Item
+              <WorkoutListItem
                 title="Stretching"
                 description="Standing Calf Stretch, Standing IT Band Stretch"
-                descriptionNumberOfLines={1}
-                descriptionEllipsizeMode="tail"
-                left={() => <List.Icon icon="yoga" />}
+                iconName="yoga"
                 onPress={() => setSelectedWorkout("stretching")}
-                style={workoutLibraryStyles.workoutListItem}
               />
             </List.Section>
           </View>
@@ -112,6 +94,32 @@ export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
       navigationState={{ index, routes }}
       onIndexChange={setIndex}
       renderScene={renderScene}
+    />
+  );
+}
+
+interface WorkoutListItemProps {
+  title: string;
+  description: string;
+  iconName: string;
+  onPress: () => void;
+}
+
+function WorkoutListItem({
+  title,
+  description,
+  iconName,
+  onPress,
+}: WorkoutListItemProps) {
+  return (
+    <List.Item
+      title={title}
+      description={description}
+      descriptionNumberOfLines={1}
+      descriptionEllipsizeMode="tail"
+      left={() => <List.Icon icon={iconName} />}
+      onPress={onPress}
+      style={workoutLibraryStyles.workoutListItem}
     />
   );
 }
