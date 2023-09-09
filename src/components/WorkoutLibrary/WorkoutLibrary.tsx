@@ -32,7 +32,12 @@ export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
   ]);
 
   function routeWorkout(selectedWorkout: string) {
-    return <WorkoutForm onBack={() => setSelectedWorkout(null)} />;
+    return (
+      <WorkoutForm
+        workoutKey={selectedWorkout}
+        onBack={() => setSelectedWorkout(null)}
+      />
+    );
   }
 
   const renderScene = BottomNavigation.SceneMap({
@@ -50,14 +55,12 @@ export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
               contentContainerStyle={{ backgroundColor: "white", padding: 20 }}
             >
               <List.Section title={previewWorkout}>
-              <List.Item
-                  title="Rower"
-                />
+                <List.Item title="Rower" />
               </List.Section>
               <Button
                 mode="contained-tonal"
                 onPress={() => {
-                  setSelectedWorkout("rower");
+                  setSelectedWorkout("rowing");
                   setPreviewWorkout(null);
                 }}
               >

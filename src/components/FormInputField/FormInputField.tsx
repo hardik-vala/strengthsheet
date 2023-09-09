@@ -7,6 +7,7 @@ import "./FormInputField.css";
 const DATETIME_FORMAT = "MM/dd/yyyy HH:mm";
 
 interface FormInputFieldProps {
+  key: string,
   label: string;
   placeholder: string;
   value: string;
@@ -16,6 +17,7 @@ interface FormInputFieldProps {
 }
 
 export function FormInputField({
+  key,
   label,
   placeholder,
   value,
@@ -25,6 +27,7 @@ export function FormInputField({
 }: FormInputFieldProps) {
   return (
     <View
+      key={key}
       style={{
         flexDirection: "column",
         width: "100%",
