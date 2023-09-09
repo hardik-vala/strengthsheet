@@ -1,10 +1,10 @@
+import { WorkoutTemplate } from "../models/WorkoutTemplate";
+
 const DISTANCE_REGEX = /^\d+(\.\d+)?\s*(mi|km|m|ft|yd|cm|mm|in)$/;
 const TIMER_MINUTES_SECONDS_REGEX = /^[0-5][0-9]:[0-5][0-9]$/;
 const TIMER_HOURS_MINUTES_SECONDS_REGEX = /^[0-9][0-9]:[0-5][0-9]:[0-5][0-9]$/;
 
-// TODO: Define custom types.
-export const WORKOUT_TEMPLATE_REGISTRY = {
-  // TODO: Add date and start time of workout as template properties.
+export const WORKOUT_TEMPLATE_REGISTRY: { [k: string]: WorkoutTemplate } = {
   rowing: {
     key: "rowing",
     displayTitle: "Rowing",
@@ -14,7 +14,7 @@ export const WORKOUT_TEMPLATE_REGISTRY = {
         key: "total-time",
         index: 0,
         displayTitle: "Total Time",
-        sheetTitle: "Total Time",
+        sheetTitle: "Time",
         placeholder: "30:00",
         validator: isValidTimerInput,
       },
