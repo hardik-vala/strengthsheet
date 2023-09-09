@@ -3,7 +3,7 @@ import { format as formatDate, parse as parseDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
 import { Alert, View } from "react-native";
-import { Appbar, Button, Divider } from "react-native-paper";
+import { Appbar, Button, Divider, Text } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { WORKOUT_TEMPLATE_REGISTRY } from "../../data/registry";
 import { GoogleSheetDataValues } from "../../models/GoogleSheet";
@@ -72,7 +72,6 @@ export function WorkoutForm({ workoutKey, onBack }: WorkoutFormProps) {
     }
   }
 
-  // TODO: Show workout title
   return (
     <SafeAreaProvider>
       <View style={styles.center}>
@@ -80,6 +79,7 @@ export function WorkoutForm({ workoutKey, onBack }: WorkoutFormProps) {
           <Appbar.BackAction onPress={onBack} testID="back-action" />
         </Appbar.Header>
         <StatusBar style="auto" />
+        <Text variant="headlineMedium">{workoutTemplate.displayTitle}</Text>
         <View
           style={{
             flexDirection: "row",
