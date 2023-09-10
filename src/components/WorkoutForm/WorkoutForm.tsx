@@ -103,10 +103,9 @@ export function WorkoutForm({ workoutKey, onBack }: WorkoutFormProps) {
         </View>
         {workoutTemplate.inputs.map((input) => {
           return (
-            <>
+            <View key={input.key} style={{ width: "100%" }}>
               <Divider />
               <FormInputField
-                inputKey={input.key}
                 label={input.displayTitle}
                 placeholder={input.placeholder}
                 value={workoutInputs[input.key]}
@@ -125,7 +124,7 @@ export function WorkoutForm({ workoutKey, onBack }: WorkoutFormProps) {
                   !input.validator(workoutInputs[input.key])
                 }
               />
-            </>
+            </View>
           );
         })}
         <Divider />

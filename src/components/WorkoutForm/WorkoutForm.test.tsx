@@ -31,13 +31,13 @@ describe("WorkoutForm", () => {
   });
 
   it("renders correctly", async () => {
-    render(<WorkoutForm onBack={onBack} />);
+    render(<WorkoutForm workoutKey="rowing" onBack={onBack} />);
 
     expect(screen).toMatchSnapshot();
   });
 
   it("renders error style when time input is invalid", async () => {
-    render(<WorkoutForm onBack={onBack} />);
+    render(<WorkoutForm workoutKey="rowing" onBack={onBack} />);
 
     await act(() => {
       fireEvent.changeText(screen.getByPlaceholderText("30:00"), "foo");
@@ -47,7 +47,7 @@ describe("WorkoutForm", () => {
   });
 
   it("renders error style when distance input is invalid", async () => {
-    render(<WorkoutForm onBack={onBack} />);
+    render(<WorkoutForm workoutKey="rowing" onBack={onBack} />);
 
     await act(() => {
       fireEvent.changeText(screen.getByPlaceholderText("5000m"), "-1");
@@ -57,11 +57,10 @@ describe("WorkoutForm", () => {
   });
 
   it("appends the text input to a spreadsheet upon submission", async () => {
-    render(<WorkoutForm onBack={onBack} />);
+    render(<WorkoutForm workoutKey="rowing" onBack={onBack} />);
 
     await act(() => {
       fireEvent.changeText(screen.getByPlaceholderText("30:00"), "45:00");
-      fireEvent.changeText(screen.getByPlaceholderText("5000m"), "10000m");
     });
 
     await act(() => {
@@ -74,13 +73,12 @@ describe("WorkoutForm", () => {
         format(new Date(), "MM/dd/yyyy"),
         format(new Date(), "HH:mm"),
         "45:00",
-        "10000m",
       ]
     );
   });
 
   it("Calls onBack after performing back action", async () => {
-    render(<WorkoutForm onBack={onBack} />);
+    render(<WorkoutForm workoutKey="rowing" onBack={onBack} />);
 
     await act(() => {
       fireEvent.press(screen.getByTestId("back-action"));

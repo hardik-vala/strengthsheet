@@ -10,7 +10,7 @@ const TEST_FIELD_HISTORY = {
     { datetime: new Date("2023-08-27"), fieldValue: "value3" },
     { datetime: new Date("2023-08-26"), fieldValue: "value2" },
     { datetime: new Date("2023-08-25"), fieldValue: "value1" },
-  ]
+  ],
 };
 
 describe("FormInputField", () => {
@@ -23,6 +23,21 @@ describe("FormInputField", () => {
         fieldHistory={TEST_FIELD_HISTORY}
         onChangeText={() => {}}
         error={false}
+      />
+    );
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("renders error indicator correctly", () => {
+    render(
+      <FormInputField
+        label="My field"
+        placeholder="foobar"
+        value=""
+        fieldHistory={TEST_FIELD_HISTORY}
+        onChangeText={() => {}}
+        error={true}
       />
     );
 
