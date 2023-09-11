@@ -1,7 +1,9 @@
 export interface WorkoutTemplate {
   key: string;
-  displayTitle: string;
   category: string;
+  displayTitle: string;
+  description?: string;
+  iconName: string;
   inputs: WorkoutInput[];
 }
 

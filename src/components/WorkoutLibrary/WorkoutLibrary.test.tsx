@@ -42,7 +42,7 @@ describe("WorkoutLibrary", () => {
     );
 
     await act(() => {
-      fireEvent.press(screen.getByText("Rower"));
+      fireEvent.press(screen.getByText("Rowing"));
     });
 
     expect(screen).toMatchSnapshot();
@@ -56,7 +56,7 @@ describe("WorkoutLibrary", () => {
     );
 
     await act(() => {
-      fireEvent.press(screen.getByText("Rower"));
+      fireEvent.press(screen.getByText("Rowing"));
     });
 
     await act(() => {

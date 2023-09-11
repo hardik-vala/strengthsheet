@@ -7,8 +7,10 @@ const TIMER_HOURS_MINUTES_SECONDS_REGEX = /^[0-9][0-9]:[0-5][0-9]:[0-5][0-9]$/;
 export const WORKOUT_TEMPLATE_REGISTRY: { [k: string]: WorkoutTemplate } = {
   rowing: {
     key: "rowing",
-    displayTitle: "Rowing",
     category: "cardio",
+    displayTitle: "Rowing",
+    description: "Rower, Cool Down",
+    iconName: "rowing",
     inputs: [
       {
         key: "total-time",
@@ -27,6 +29,46 @@ export const WORKOUT_TEMPLATE_REGISTRY: { [k: string]: WorkoutTemplate } = {
         validator: isValidDistanceInput,
       },
     ],
+  },
+  push: {
+    key: "push",
+    category: "strength",
+    displayTitle: "Push",
+    description: "Flat Bench Press, Angled Bench Press",
+    iconName: "weight-lifter",
+    inputs: [],
+  },
+  pull: {
+    key: "pull",
+    category: "strength",
+    displayTitle: "Pull",
+    description: "Lat Pull-ups, Tricep Dips, Bent Over Rows",
+    iconName: "weight-lifter",
+    inputs: [],
+  },
+  legs: {
+    key: "legs",
+    category: "strength",
+    displayTitle: "Legs",
+    description: "Wide-stance Squats, Hip Thrusts, Bulgarian Split Squats",
+    iconName: "weight-lifter",
+    inputs: [],
+  },
+  ptRoutine: {
+    key: "ptRoutine",
+    category: "pt",
+    displayTitle: "PT Routine",
+    description: "Chicken Wings, Side-to-sides, Single-leg Bridges",
+    iconName: "yoga",
+    inputs: [],
+  },
+  stretching: {
+    key: "stretching",
+    category: "pt",
+    displayTitle: "Stretching",
+    description: "Standing Calf Stretch, Standing IT Band Stretch",
+    iconName: "yoga",
+    inputs: [],
   },
 };
 

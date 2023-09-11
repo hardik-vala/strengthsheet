@@ -298,1011 +298,1017 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                 >
                   Workouts
                 </Text>
-                <Text
-                  numberOfLines={1}
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
+                <View>
+                  <Text
+                    numberOfLines={1}
+                    style={
                       [
                         {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "writingDirection": "ltr",
                         },
                         [
                           {
-                            "paddingHorizontal": 16,
-                            "paddingVertical": 13,
-                          },
-                          {
-                            "color": "rgba(73, 69, 79, 1)",
                             "fontFamily": "System",
                             "fontSize": 14,
                             "fontWeight": "400",
                             "letterSpacing": 0.25,
                             "lineHeight": 20,
                           },
-                          undefined,
+                          [
+                            {
+                              "paddingHorizontal": 16,
+                              "paddingVertical": 13,
+                            },
+                            {
+                              "color": "rgba(73, 69, 79, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "letterSpacing": 0.25,
+                              "lineHeight": 20,
+                            },
+                            undefined,
+                          ],
                         ],
-                      ],
-                    ]
-                  }
-                >
-                  Cardio
-                </Text>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
+                      ]
                     }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
+                  >
+                    Cardio
+                  </Text>
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text />
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "alignItems": "center",
+                              "justifyContent": "center",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        <Text />
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Rower
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Rowing
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Rower, Cool Down
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Rower, Cool Down
+                        </Text>
+                      </View>
                     </View>
                   </View>
                 </View>
-                <Text
-                  numberOfLines={1}
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
+                <View>
+                  <Text
+                    numberOfLines={1}
+                    style={
                       [
                         {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "writingDirection": "ltr",
                         },
                         [
                           {
-                            "paddingHorizontal": 16,
-                            "paddingVertical": 13,
-                          },
-                          {
-                            "color": "rgba(73, 69, 79, 1)",
                             "fontFamily": "System",
                             "fontSize": 14,
                             "fontWeight": "400",
                             "letterSpacing": 0.25,
                             "lineHeight": 20,
                           },
-                          undefined,
+                          [
+                            {
+                              "paddingHorizontal": 16,
+                              "paddingVertical": 13,
+                            },
+                            {
+                              "color": "rgba(73, 69, 79, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "letterSpacing": 0.25,
+                              "lineHeight": 20,
+                            },
+                            undefined,
+                          ],
                         ],
-                      ],
-                    ]
-                  }
-                >
-                  Strength
-                </Text>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
+                      ]
                     }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
+                  >
+                    Strength
+                  </Text>
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text />
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "alignItems": "center",
+                              "justifyContent": "center",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        <Text />
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Push
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Push
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Flat Bench Press, Angled Bench Press
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Flat Bench Press, Angled Bench Press
+                        </Text>
+                      </View>
                     </View>
                   </View>
-                </View>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
-                    }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text />
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "alignItems": "center",
+                              "justifyContent": "center",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        <Text />
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Pull
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Pull
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Lat Pull-ups, Tricep Dips, Bent Over Rows
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Lat Pull-ups, Tricep Dips, Bent Over Rows
+                        </Text>
+                      </View>
                     </View>
                   </View>
-                </View>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
-                    }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text />
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "alignItems": "center",
+                              "justifyContent": "center",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        <Text />
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Legs
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Legs
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Wide-stance Squats, Hip Thrusts, Bulgarian Split Squats
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Wide-stance Squats, Hip Thrusts, Bulgarian Split Squats
+                        </Text>
+                      </View>
                     </View>
                   </View>
                 </View>
-                <Text
-                  numberOfLines={1}
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
+                <View>
+                  <Text
+                    numberOfLines={1}
+                    style={
                       [
                         {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "writingDirection": "ltr",
                         },
                         [
                           {
-                            "paddingHorizontal": 16,
-                            "paddingVertical": 13,
-                          },
-                          {
-                            "color": "rgba(73, 69, 79, 1)",
                             "fontFamily": "System",
                             "fontSize": 14,
                             "fontWeight": "400",
                             "letterSpacing": 0.25,
                             "lineHeight": 20,
                           },
-                          undefined,
+                          [
+                            {
+                              "paddingHorizontal": 16,
+                              "paddingVertical": 13,
+                            },
+                            {
+                              "color": "rgba(73, 69, 79, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "letterSpacing": 0.25,
+                              "lineHeight": 20,
+                            },
+                            undefined,
+                          ],
                         ],
-                      ],
-                    ]
-                  }
-                >
-                  PT
-                </Text>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
+                      ]
                     }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
+                  >
+                    PT
+                  </Text>
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text />
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "alignItems": "center",
+                              "justifyContent": "center",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        <Text />
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        PT routine
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          PT Routine
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Chicken Wings, Side-to-sides, Single-leg Bridges
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Chicken Wings, Side-to-sides, Single-leg Bridges
+                        </Text>
+                      </View>
                     </View>
                   </View>
-                </View>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
-                    }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text />
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "alignItems": "center",
+                              "justifyContent": "center",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        <Text />
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Stretching
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Stretching
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Standing Calf Stretch, Standing IT Band Stretch
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Standing Calf Stretch, Standing IT Band Stretch
+                        </Text>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -4359,1221 +4365,1227 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                 >
                   Workouts
                 </Text>
-                <Text
-                  numberOfLines={1}
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
+                <View>
+                  <Text
+                    numberOfLines={1}
+                    style={
                       [
                         {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "writingDirection": "ltr",
                         },
                         [
                           {
-                            "paddingHorizontal": 16,
-                            "paddingVertical": 13,
-                          },
-                          {
-                            "color": "rgba(73, 69, 79, 1)",
                             "fontFamily": "System",
                             "fontSize": 14,
                             "fontWeight": "400",
                             "letterSpacing": 0.25,
                             "lineHeight": 20,
                           },
-                          undefined,
+                          [
+                            {
+                              "paddingHorizontal": 16,
+                              "paddingVertical": 13,
+                            },
+                            {
+                              "color": "rgba(73, 69, 79, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "letterSpacing": 0.25,
+                              "lineHeight": 20,
+                            },
+                            undefined,
+                          ],
                         ],
-                      ],
-                    ]
-                  }
-                >
-                  Cardio
-                </Text>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
+                      ]
                     }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
+                  >
+                    Cardio
+                  </Text>
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontSize": 24,
+                              "alignItems": "center",
+                              "justifyContent": "center",
                             },
-                            [
-                              {
-                                "lineHeight": 24,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
+                            undefined,
                           ]
                         }
                       >
-                        󰘈
-                      </Text>
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontSize": 24,
+                              },
+                              [
+                                {
+                                  "lineHeight": 24,
+                                  "transform": [
+                                    {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              {
+                                "fontFamily": "material-community",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          󰘈
+                        </Text>
+                      </View>
+                      <View
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Rower
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Rowing
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Rower, Cool Down
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Rower, Cool Down
+                        </Text>
+                      </View>
                     </View>
                   </View>
                 </View>
-                <Text
-                  numberOfLines={1}
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
+                <View>
+                  <Text
+                    numberOfLines={1}
+                    style={
                       [
                         {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "writingDirection": "ltr",
                         },
                         [
                           {
-                            "paddingHorizontal": 16,
-                            "paddingVertical": 13,
-                          },
-                          {
-                            "color": "rgba(73, 69, 79, 1)",
                             "fontFamily": "System",
                             "fontSize": 14,
                             "fontWeight": "400",
                             "letterSpacing": 0.25,
                             "lineHeight": 20,
                           },
-                          undefined,
+                          [
+                            {
+                              "paddingHorizontal": 16,
+                              "paddingVertical": 13,
+                            },
+                            {
+                              "color": "rgba(73, 69, 79, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "letterSpacing": 0.25,
+                              "lineHeight": 20,
+                            },
+                            undefined,
+                          ],
                         ],
-                      ],
-                    ]
-                  }
-                >
-                  Strength
-                </Text>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
+                      ]
                     }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
+                  >
+                    Strength
+                  </Text>
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontSize": 24,
+                              "alignItems": "center",
+                              "justifyContent": "center",
                             },
-                            [
-                              {
-                                "lineHeight": 24,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
+                            undefined,
                           ]
                         }
                       >
-                        󱅝
-                      </Text>
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontSize": 24,
+                              },
+                              [
+                                {
+                                  "lineHeight": 24,
+                                  "transform": [
+                                    {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              {
+                                "fontFamily": "material-community",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          󱅝
+                        </Text>
+                      </View>
+                      <View
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Push
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Push
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Flat Bench Press, Angled Bench Press
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Flat Bench Press, Angled Bench Press
+                        </Text>
+                      </View>
                     </View>
                   </View>
-                </View>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
-                    }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontSize": 24,
+                              "alignItems": "center",
+                              "justifyContent": "center",
                             },
-                            [
-                              {
-                                "lineHeight": 24,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
+                            undefined,
                           ]
                         }
                       >
-                        󱅝
-                      </Text>
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontSize": 24,
+                              },
+                              [
+                                {
+                                  "lineHeight": 24,
+                                  "transform": [
+                                    {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              {
+                                "fontFamily": "material-community",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          󱅝
+                        </Text>
+                      </View>
+                      <View
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Pull
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Pull
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Lat Pull-ups, Tricep Dips, Bent Over Rows
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Lat Pull-ups, Tricep Dips, Bent Over Rows
+                        </Text>
+                      </View>
                     </View>
                   </View>
-                </View>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
-                    }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontSize": 24,
+                              "alignItems": "center",
+                              "justifyContent": "center",
                             },
-                            [
-                              {
-                                "lineHeight": 24,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
+                            undefined,
                           ]
                         }
                       >
-                        󱅝
-                      </Text>
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontSize": 24,
+                              },
+                              [
+                                {
+                                  "lineHeight": 24,
+                                  "transform": [
+                                    {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              {
+                                "fontFamily": "material-community",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          󱅝
+                        </Text>
+                      </View>
+                      <View
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Legs
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Legs
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Wide-stance Squats, Hip Thrusts, Bulgarian Split Squats
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Wide-stance Squats, Hip Thrusts, Bulgarian Split Squats
+                        </Text>
+                      </View>
                     </View>
                   </View>
                 </View>
-                <Text
-                  numberOfLines={1}
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
+                <View>
+                  <Text
+                    numberOfLines={1}
+                    style={
                       [
                         {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "writingDirection": "ltr",
                         },
                         [
                           {
-                            "paddingHorizontal": 16,
-                            "paddingVertical": 13,
-                          },
-                          {
-                            "color": "rgba(73, 69, 79, 1)",
                             "fontFamily": "System",
                             "fontSize": 14,
                             "fontWeight": "400",
                             "letterSpacing": 0.25,
                             "lineHeight": 20,
                           },
-                          undefined,
+                          [
+                            {
+                              "paddingHorizontal": 16,
+                              "paddingVertical": 13,
+                            },
+                            {
+                              "color": "rgba(73, 69, 79, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "letterSpacing": 0.25,
+                              "lineHeight": 20,
+                            },
+                            undefined,
+                          ],
                         ],
-                      ],
-                    ]
-                  }
-                >
-                  PT
-                </Text>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
+                      ]
                     }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
+                  >
+                    PT
+                  </Text>
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontSize": 24,
+                              "alignItems": "center",
+                              "justifyContent": "center",
                             },
-                            [
-                              {
-                                "lineHeight": 24,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
+                            undefined,
                           ]
                         }
                       >
-                        󱅼
-                      </Text>
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontSize": 24,
+                              },
+                              [
+                                {
+                                  "lineHeight": 24,
+                                  "transform": [
+                                    {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              {
+                                "fontFamily": "material-community",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          󱅼
+                        </Text>
+                      </View>
+                      <View
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        PT routine
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          PT Routine
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Chicken Wings, Side-to-sides, Single-leg Bridges
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Chicken Wings, Side-to-sides, Single-leg Bridges
+                        </Text>
+                      </View>
                     </View>
                   </View>
-                </View>
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": false,
-                      "expanded": undefined,
-                      "selected": undefined,
-                    }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    [
-                      false,
-                      [
-                        {
-                          "paddingRight": 24,
-                          "paddingVertical": 8,
-                        },
-                        {
-                          "marginHorizontal": 12,
-                        },
-                      ],
-                    ]
-                  }
-                >
                   <View
-                    style={
+                    accessibilityState={
                       {
-                        "flexDirection": "row",
-                        "marginVertical": 6,
-                        "width": "100%",
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
                       }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        false,
+                        [
+                          {
+                            "paddingRight": 24,
+                            "paddingVertical": 8,
+                          },
+                          {
+                            "marginHorizontal": 12,
+                          },
+                        ],
+                      ]
                     }
                   >
                     <View
-                      pointerEvents="box-none"
                       style={
-                        [
-                          {
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                          },
-                          undefined,
-                        ]
+                        {
+                          "flexDirection": "row",
+                          "marginVertical": 6,
+                          "width": "100%",
+                        }
                       }
                     >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
+                      <View
+                        pointerEvents="box-none"
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontSize": 24,
+                              "alignItems": "center",
+                              "justifyContent": "center",
                             },
-                            [
-                              {
-                                "lineHeight": 24,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
+                            undefined,
                           ]
                         }
                       >
-                        󱅼
-                      </Text>
-                    </View>
-                    <View
-                      style={
-                        [
-                          {
-                            "paddingLeft": 16,
-                          },
-                          {
-                            "flex": 1,
-                            "justifyContent": "center",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        numberOfLines={1}
-                        selectable={false}
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontSize": 24,
+                              },
+                              [
+                                {
+                                  "lineHeight": 24,
+                                  "transform": [
+                                    {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              {
+                                "fontFamily": "material-community",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          󱅼
+                        </Text>
+                      </View>
+                      <View
                         style={
                           [
                             {
-                              "textAlign": "left",
+                              "paddingLeft": 16,
                             },
                             {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
+                              "flex": 1,
+                              "justifyContent": "center",
                             },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          numberOfLines={1}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 16,
+                                "textAlign": "left",
                               },
                               {
                                 "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Stretching
-                      </Text>
-                      <Text
-                        ellipsizeMode="tail"
-                        numberOfLines={1}
-                        onTextLayout={[Function]}
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "textAlign": "left",
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                              "fontFamily": "System",
-                              "fontWeight": "400",
-                              "letterSpacing": 0,
-                            },
-                            {
-                              "writingDirection": "ltr",
-                            },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 16,
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Stretching
+                        </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
                             [
                               {
-                                "fontSize": 14,
+                                "textAlign": "left",
                               },
                               {
-                                "color": "rgba(73, 69, 79, 1)",
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
                               },
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Standing Calf Stretch, Standing IT Band Stretch
-                      </Text>
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Standing Calf Stretch, Standing IT Band Stretch
+                        </Text>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -6634,7 +6646,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                   ]
                 }
               >
-                rower
+                rowing
               </Text>
               <View
                 accessibilityState={
