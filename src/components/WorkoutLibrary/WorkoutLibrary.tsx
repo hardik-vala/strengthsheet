@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import {
   BottomNavigation,
   Button,
@@ -95,7 +95,7 @@ export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
               </Button>
             </Modal>
           </Portal>
-          <View style={{ marginTop: "25%" }}>
+          <ScrollView style={{ marginTop: "25%" }}>
             <List.Section title="Workouts">
               {WORKOUT_CATEGORY_METADATA.map((m) => {
                 return (
@@ -115,47 +115,8 @@ export function WorkoutLibrary({ onSignOut }: WorkoutLibraryProps) {
                   </View>
                 );
               })}
-              {/* <List.Subheader>Cardio</List.Subheader>
-              <WorkoutListItem
-                title="Rower"
-                description="Rower, Cool Down"
-                iconName="rowing"
-                onPress={() => setPreviewWorkout("rower")}
-              />
-              <List.Subheader>Strength</List.Subheader>
-              <WorkoutListItem
-                title="Push"
-                description="Flat Bench Press, Angled Bench Press"
-                iconName="weight-lifter"
-                onPress={() => setPreviewWorkout("push")}
-              />
-              <WorkoutListItem
-                title="Pull"
-                description="Lat Pull-ups, Tricep Dips, Bent Over Rows"
-                iconName="weight-lifter"
-                onPress={() => setPreviewWorkout("pull")}
-              />
-              <WorkoutListItem
-                title="Legs"
-                description="Wide-stance Squats, Hip Thrusts, Bulgarian Split Squats"
-                iconName="weight-lifter"
-                onPress={() => setPreviewWorkout("legs")}
-              />
-              <List.Subheader>PT</List.Subheader>
-              <WorkoutListItem
-                title="PT routine"
-                description="Chicken Wings, Side-to-sides, Single-leg Bridges"
-                iconName="yoga"
-                onPress={() => setPreviewWorkout("ptRoutine")}
-              />
-              <WorkoutListItem
-                title="Stretching"
-                description="Standing Calf Stretch, Standing IT Band Stretch"
-                iconName="yoga"
-                onPress={() => setPreviewWorkout("stretching")}
-              /> */}
             </List.Section>
-          </View>
+          </ScrollView>
         </SafeAreaProvider>
       );
     },
