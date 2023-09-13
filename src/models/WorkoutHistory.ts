@@ -14,3 +14,10 @@ export interface WorkoutFieldHistory {
   fieldName: string;
   historyRecords: WorkoutFieldHistoryRecord[];
 }
+
+interface SetFieldCompleted {
+	key: string;
+	templateKey: string;
+	timestamp: Date;
+	value: number | Date;
+}
