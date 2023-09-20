@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Alert, StyleSheet, View } from "react-native";
 import { MD3LightTheme, PaperProvider } from "react-native-paper";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import { SignIn } from "./src/components/SignIn/SignIn";
 import { WorkoutPortal } from "./src/components/WorkoutPortal/WorkoutPortal";
 import { WORKOUT_TEMPLATE_REGISTRY } from "./src/data/registry";
@@ -38,11 +39,17 @@ export default function App() {
   };
 
   return (
-    <PaperProvider theme={theme}>
-      <View style={styles.container}>
-        <Content user={user} onSignIn={_signIn} onSignOut={_signOut}></Content>
-      </View>
-    </PaperProvider>
+    <SafeAreaProvider>
+      <PaperProvider theme={theme}>
+        <View style={styles.container}>
+          <Content
+            user={user}
+            onSignIn={_signIn}
+            onSignOut={_signOut}
+          ></Content>
+        </View>
+      </PaperProvider>
+    </SafeAreaProvider>
   );
 }
 

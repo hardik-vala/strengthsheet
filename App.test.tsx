@@ -1,11 +1,14 @@
 import { render } from "@testing-library/react-native";
 import React from "react";
+import mockSafeAreaContext from "react-native-safe-area-context/jest/mock";
+
+jest.mock("react-native-safe-area-context", () => mockSafeAreaContext);
 
 import { Content } from "./App";
 
-jest.mock("./src/components/WorkoutLibrary/WorkoutLibrary", () => {
+jest.mock("./src/components/WorkoutPortal/WorkoutPortal", () => {
   return {
-    WorkoutLibrary: jest.fn(() => <div>Mock WorkoutLibrary</div>),
+    WorkoutPortal: jest.fn(() => <div>Mock WorkoutPortal</div>),
   };
 });
 
@@ -43,6 +46,6 @@ describe("Content", () => {
 
     expect(tree).toMatchSnapshot();
     expect(tree.children.length).toBe(1);
-    expect(tree.children[0]).toEqual("Mock WorkoutLibrary");
+    expect(tree.children[0]).toEqual("Mock WorkoutPortal");
   });
 });

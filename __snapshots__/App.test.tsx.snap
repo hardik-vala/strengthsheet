@@ -8,6 +8,6 @@ exports[`Content renders sign in if the user hasn't signed in 1`] = `
 
 exports[`Content renders workout library if the user has signed in 1`] = `
 <div>
-  Mock WorkoutLibrary
+  Mock WorkoutPortal
 </div>
 `;

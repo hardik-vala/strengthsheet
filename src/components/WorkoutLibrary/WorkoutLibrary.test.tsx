@@ -19,15 +19,19 @@ jest.mock("../../services/sheetService", () => {
 });
 
 import { PaperProvider } from "react-native-paper";
+import { WORKOUT_TEMPLATE_REGISTRY } from "../../data/registry";
 import { WorkoutLibrary } from "./WorkoutLibrary";
 
-const mockOnSignOut = jest.fn();
+const mockOnStartWorkout = jest.fn();
 
 describe("WorkoutLibrary", () => {
   it("renders correctly", () => {
     render(
       <PaperProvider>
-        <WorkoutLibrary onSignOut={mockOnSignOut} />
+        <WorkoutLibrary
+          workoutTemplateRegistry={WORKOUT_TEMPLATE_REGISTRY}
+          onStartWorkout={mockOnStartWorkout}
+        />
       </PaperProvider>
     );
 
@@ -37,12 +41,15 @@ describe("WorkoutLibrary", () => {
   it("renders workout preview when a workout is selected", async () => {
     render(
       <PaperProvider>
-        <WorkoutLibrary onSignOut={mockOnSignOut} />
+        <WorkoutLibrary
+          workoutTemplateRegistry={WORKOUT_TEMPLATE_REGISTRY}
+          onStartWorkout={mockOnStartWorkout}
+        />
       </PaperProvider>
     );
 
     await act(() => {
-      fireEvent.press(screen.getByText("Rowing"));
+      fireEvent.press(screen.getByText("Rowing (Machine)"));
     });
 
     expect(screen).toMatchSnapshot();
@@ -51,12 +58,15 @@ describe("WorkoutLibrary", () => {
   it("renders workout form when a workout is started", async () => {
     render(
       <PaperProvider>
-        <WorkoutLibrary onSignOut={mockOnSignOut} />
+        <WorkoutLibrary
+          workoutTemplateRegistry={WORKOUT_TEMPLATE_REGISTRY}
+          onStartWorkout={mockOnStartWorkout}
+        />
       </PaperProvider>
     );
 
     await act(() => {
-      fireEvent.press(screen.getByText("Rowing"));
+      fireEvent.press(screen.getByText("Rowing (Machine)"));
     });
 
     await act(() => {

@@ -60,19 +60,6 @@ export class WorkoutValueKey {
   }
 }
 
-export function buildWorkoutValueKey(
-  exercise: Exercise,
-  set: DrillSet,
-  measure: ExerciseMeasure
-): WorkoutValueKey {
-  return WorkoutValueKey.create(
-    exercise.key,
-    set.index,
-    set.setType,
-    measure.key
-  );
-}
-
 const TIME_MINUTES_SECONDS_REGEX = /^[0-5][0-9]:[0-5][0-9]$/;
 const TIME_HOURS_MINUTES_SECONDS_REGEX = /^[0-9][0-9]:[0-5][0-9]:[0-5][0-9]$/;
 
