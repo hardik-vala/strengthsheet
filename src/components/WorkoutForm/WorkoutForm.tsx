@@ -1,72 +1,74 @@
-import { act } from "@testing-library/react-native";
 import { format as formatDate, parse as parseDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
 import { Alert, View } from "react-native";
-import { Appbar, Button, Divider, Text } from "react-native-paper";
+import {
+  Appbar,
+  Button,
+  Divider,
+  Text
+} from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { WORKOUT_TEMPLATE_REGISTRY } from "../../data/registry";
-import { GoogleSheetDataValues } from "../../models/GoogleSheet";
 import {
-  WorkoutFieldHistory,
+  DrillSet,
+  Exercise,
+  SetType,
+  WorkoutValueKey
+} from "../../models/Workout/Core";
+import {
+  ExerciseHistoryRecord,
   WorkoutHistory,
-} from "../../models/WorkoutHistory";
+  WorkoutHistoryRecord,
+} from "../../models/Workout/WorkoutHistory";
 import {
-  appendToGoogleSheet,
-  readSheetData,
-} from "../../services/sheetService";
+  ExerciseTemplate,
+  WorkoutTemplate,
+} from "../../models/Workout/WorkoutTemplate";
+import { WORKOUT_HISTORY_PROVIDER } from "../../server/WorkoutHistoryProvider";
 import { styles } from "../../styles/style";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
-import { FormInputField } from "../FormInputField/FormInputField";
+import { MeasureFormInput } from "./MeasureFormInput/MeasureFormInput";
+import { ExerciseMeasureHistoryRecord, WorkoutValues } from "./common";
 
-const SPREADSHEET_ID = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
+const NUM_RECENT_WORKOUT_HISTORY_RECORDS = 3;
 
 interface WorkoutFormProps {
-  workoutKey: string;
+  workoutTemplate: WorkoutTemplate;
   onBack: () => void;
 }
 
-export function WorkoutForm({ workoutKey, onBack }: WorkoutFormProps) {
-  const [dateInput, setDateInput] = useState(new Date());
-  const [startTimeInput, setStartTimeInput] = useState(new Date());
-  const [workoutHistory, setWorkoutHistory] = useState([]);
-  const [workoutInputs, setWorkoutInputs] = useState({});
-  const [isAppendingToSheet, setIsAppendingToSheet] = useState(false);
-
-  const workoutTemplate = WORKOUT_TEMPLATE_REGISTRY[workoutKey];
+export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
+  const [workoutDate, setWorkoutDate] = useState(new Date());
+  const [workoutStartTime, setWorkoutStartTime] = useState(new Date());
+  const [workoutHistory, setWorkoutHistory] = useState(null);
+  const [workoutValues, setWorkoutValues] = useState({});
+  const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
-    async function readSheetValuesWrapper() {
-      const sheetData = await readSheetData(SPREADSHEET_ID);
-
-      if (!sheetData.values) {
-        throw new Error(`Spreadsheet has no values.`);
+    async function getWorkoutHistoryWrapper() {
+      try {
+        setWorkoutHistory(getWorkoutHistory(workoutTemplate.key));
+      } catch (error) {
+        Alert.alert("Error fetching workout history.");
       }
-
-      const workoutHistory = convertSheetValuesToWorkoutHistory(
-        sheetData.values
-      );
-
-      act(() => {
-        setWorkoutHistory(workoutHistory);
-      });
     }
 
-    readSheetValuesWrapper();
+    getWorkoutHistoryWrapper();
   }, []);
 
-  async function _appendToSheet() {
-    const sortedInputs = [...workoutTemplate.inputs];
-    sortedInputs.sort((a, b) => a.index - b.index);
-
+  async function saveWorkout() {
     try {
-      await appendToGoogleSheet(SPREADSHEET_ID, [
-        formatDate(dateInput, "MM/dd/yyyy"),
-        formatDate(startTimeInput, "HH:mm"),
-        ...sortedInputs.map((i) => workoutInputs[i.key]),
-      ]);
+      
+      setTimeout(() => {
+        convertWorkoutValuesToRecord(
+          workoutTemplate,
+          workoutValues,
+          workoutDate,
+          workoutStartTime
+        );
+      }, 5000);
     } catch (error) {
-      Alert.alert("Error writing to Google Sheets");
+      Alert.alert("Error saving workout.");
       console.error(error);
       return;
     }
@@ -79,7 +81,7 @@ export function WorkoutForm({ workoutKey, onBack }: WorkoutFormProps) {
           <Appbar.BackAction onPress={onBack} testID="back-action" />
         </Appbar.Header>
         <StatusBar style="auto" />
-        <Text variant="headlineMedium">{workoutTemplate.displayTitle}</Text>
+        <Text variant="headlineMedium">{workoutTemplate.displayName}</Text>
         <View
           style={{
             flexDirection: "row",
@@ -89,55 +91,46 @@ export function WorkoutForm({ workoutKey, onBack }: WorkoutFormProps) {
           <DateTimePicker
             label="Date"
             testID="datePicker"
-            value={dateInput}
+            value={workoutDate}
             isDate={true}
-            onChange={(_, d) => setDateInput(d)}
+            onChange={(_, d) => {
+              setWorkoutDate(d);
+            }}
           />
           <DateTimePicker
             label="Start time"
             testID="timePicker"
-            value={startTimeInput}
+            value={workoutStartTime}
             isDate={false}
-            onChange={(_, t) => setStartTimeInput(t)}
+            onChange={(_, t) => setWorkoutStartTime(t)}
           />
         </View>
-        {workoutTemplate.inputs.map((input) => {
-          return (
-            <View key={input.key} style={{ width: "100%" }}>
-              <Divider />
-              <FormInputField
-                label={input.displayTitle}
-                placeholder={input.placeholder}
-                value={workoutInputs[input.key]}
-                fieldHistory={getWorkoutFieldHistory(
-                  workoutHistory,
-                  input.sheetTitle,
-                  3
-                )}
-                onChangeText={(text) => {
-                  const updatedWorkoutInputs = { ...workoutInputs };
-                  updatedWorkoutInputs[input.key] = text;
-                  setWorkoutInputs(updatedWorkoutInputs);
-                }}
-                error={
-                  workoutInputs[input.key] &&
-                  !input.validator(workoutInputs[input.key])
+        {workoutTemplate.drills.map((drill) => {
+          if ("exercise" in drill) {
+            return (
+              <ExerciseForm
+                key={drill.exercise.key}
+                exerciseTemplate={drill}
+                workoutHistory={workoutHistory}
+                workoutValues={workoutValues}
+                onUpdateWorkoutValues={(updatedWorkoutValues) =>
+                  setWorkoutValues({ ...updatedWorkoutValues })
                 }
               />
-            </View>
-          );
+            );
+          }
         })}
         <Divider />
         <View style={{ flexDirection: "row", justifyContent: "center" }}>
           <Button
             buttonColor="blue"
             compact={true}
-            loading={isAppendingToSheet}
+            loading={isSaving}
             mode="contained"
             onPress={async () => {
-              setIsAppendingToSheet(true);
-              await _appendToSheet();
-              setIsAppendingToSheet(false);
+              setIsSaving(true);
+              await saveWorkout();
+              setIsSaving(false);
             }}
             contentStyle={{
               flexDirection: "row",
@@ -150,7 +143,7 @@ export function WorkoutForm({ workoutKey, onBack }: WorkoutFormProps) {
               justifyContent: "center",
             }}
           >
-            {isAppendingToSheet ? "Saving" : "Save"}
+            {isSaving ? "Saving" : "Finish"}
           </Button>
         </View>
       </View>
@@ -158,53 +151,187 @@ export function WorkoutForm({ workoutKey, onBack }: WorkoutFormProps) {
   );
 }
 
-function convertSheetValuesToWorkoutHistory(
-  sheetValues: GoogleSheetDataValues
-): WorkoutHistory {
-  const workoutHistory = [];
-  const [header, ...rest] = sheetValues;
-  for (const row of rest) {
-    const record = {
-      datetime: parseDate(
-        `${row[0]} ${row[1]}`,
-        "MM/dd/yyyy HH:mm",
-        new Date()
-      ),
-      workoutValues: {},
-    };
-    for (let i = 2; i < row.length; i++) {
-      record.workoutValues[header[i]] = row[i];
-    }
-    workoutHistory.push(record);
-  }
-
-  return workoutHistory;
+interface ExerciseFormProps {
+  exerciseTemplate: ExerciseTemplate;
+  workoutHistory: WorkoutHistory | null;
+  workoutValues: WorkoutValues;
+  onUpdateWorkoutValues: (updatedWorkoutValues: WorkoutValues) => void;
 }
 
-function getWorkoutFieldHistory(
-  workoutHistory: WorkoutHistory,
-  fieldName: string,
+function ExerciseForm({
+  exerciseTemplate,
+  workoutHistory,
+  workoutValues,
+  onUpdateWorkoutValues,
+}: ExerciseFormProps) {
+  return (
+    <>
+      <Text variant="titleMedium">{exerciseTemplate.displayName}</Text>
+      {exerciseTemplate.sets.map((s) => {
+        return (
+          <SetForm
+            key={`${s.setType.toString()} : ${s.index}`}
+            exercise={exerciseTemplate.exercise}
+            set={s}
+            workoutHistory={workoutHistory}
+            workoutValues={workoutValues}
+            onUpdateWorkoutValues={onUpdateWorkoutValues}
+          />
+        );
+      })}
+    </>
+  );
+}
+
+interface SetFormProps {
+  exercise: Exercise;
+  set: DrillSet;
+  workoutHistory: WorkoutHistory | null;
+  workoutValues: WorkoutValues;
+  onUpdateWorkoutValues: (updatedWorkoutValues: WorkoutValues) => void;
+}
+
+function SetForm({
+  exercise,
+  set,
+  workoutHistory,
+  workoutValues,
+  onUpdateWorkoutValues,
+}: SetFormProps) {
+  return (
+    <View style={{ width: "100%" }}>
+      <Divider />
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          padding: 10,
+          width: "100%",
+        }}
+      >
+        <View
+          style={{
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <Text variant="bodyLarge">
+            {set.setType === SetType.Warmup ? "W" : `Set ${set.index}`}
+          </Text>
+        </View>
+        {exercise.measures.map((measure) => {
+          return (
+            <MeasureFormInput
+              key={measure.key}
+              exercise={exercise}
+              set={set}
+              measure={measure}
+              measureHistory={
+                workoutHistory
+                  ? projectWorkoutHistory(
+                      workoutHistory.records,
+                      measure.key,
+                      set.setType,
+                      NUM_RECENT_WORKOUT_HISTORY_RECORDS
+                    )
+                  : []
+              }
+              workoutValues={workoutValues}
+              onUpdateWorkoutValues={onUpdateWorkoutValues}
+            />
+          );
+        })}
+      </View>
+    </View>
+  );
+}
+
+function getWorkoutHistory(workoutKey: string) {
+  return WORKOUT_HISTORY_PROVIDER.getWorkoutHistory(workoutKey);
+}
+
+function projectWorkoutHistory(
+  records: WorkoutHistoryRecord[],
+  measureKey: string,
+  setType: SetType,
   n: number
-): WorkoutFieldHistory {
+): ExerciseMeasureHistoryRecord[] {
+  return selectWorkoutHistory(
+    filterRecentWorkoutHistory(records, n),
+    measureKey,
+    setType
+  );
+}
+
+function filterRecentWorkoutHistory(
+  records: WorkoutHistoryRecord[],
+  n: number
+): WorkoutHistoryRecord[] {
+  const sortedRecords = [...records];
+  sortedRecords.sort(
+    (r1, r2) => r2.startTimestamp.getTime() - r1.startTimestamp.getTime()
+  );
+  return sortedRecords.slice(0, n);
+}
+
+function selectWorkoutHistory(
+  records: WorkoutHistoryRecord[],
+  measureKey: string,
+  setType: SetType
+): ExerciseMeasureHistoryRecord[] {
+  return records.flatMap((r) => {
+    return r.exercises
+      .filter(
+        (e) => e.key.measureKey === measureKey && e.key.setType === setType
+      )
+      .map((e) => ({
+        timestamp: r.startTimestamp,
+        measureKey: e.key,
+        value: e.value,
+      }));
+  });
+}
+
+function convertWorkoutValuesToRecord(
+  workoutTemplate: WorkoutTemplate,
+  workoutValues: WorkoutValues,
+  workoutDate: Date,
+  workoutStartTime: Date
+): WorkoutHistoryRecord {
+  const exercises: ExerciseHistoryRecord[] = [];
+
+  workoutTemplate.drills.forEach((drill) => {
+    if ("exercise" in drill) {
+      drill.sets.forEach((set) => {
+        drill.exercise.measures.forEach((measure) => {
+          const key = WorkoutValueKey.create(
+            drill.exercise.key,
+            set.index,
+            set.setType,
+            measure.key
+          );
+
+          const value = workoutValues[key.toString()];
+
+          if (value) {
+            exercises.push({
+              key,
+              value,
+            });
+          }
+        });
+      });
+    }
+  });
+
   return {
-    fieldName: fieldName,
-    historyRecords: selectWorkHistory(
-      getRecentWorkoutHistory(workoutHistory, n),
-      fieldName
-    ),
+    startTimestamp: getStartTimestamp(workoutDate, workoutStartTime),
+    exercises,
   };
 }
 
-function getRecentWorkoutHistory(workoutHistory: WorkoutHistory, n: number) {
-  const sortedWorkoutHistory = [...workoutHistory];
-  sortedWorkoutHistory.sort(
-    (r1, r2) => r2.datetime.getTime() - r1.datetime.getTime()
-  );
-  return sortedWorkoutHistory.slice(0, n);
-}
-
-function selectWorkHistory(workoutHistory: WorkoutHistory, fieldName: string) {
-  return workoutHistory.map((r) => {
-    return { datetime: r.datetime, fieldValue: r.workoutValues[fieldName] };
-  });
+function getStartTimestamp(startDate: Date, startTime: Date) {
+  const dateStr = formatDate(startDate, "MM/dd/yyyy");
+  const timeStr = formatDate(startTime, "HH:mm");
+  return parseDate(`${dateStr} ${timeStr}`, "MM/dd/yyyy HH:mm", new Date());
 }

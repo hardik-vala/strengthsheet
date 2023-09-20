@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Alert, StyleSheet, View } from "react-native";
 import { MD3LightTheme, PaperProvider } from "react-native-paper";
 import { SignIn } from "./src/components/SignIn/SignIn";
-import { WorkoutLibrary } from "./src/components/WorkoutLibrary/WorkoutLibrary";
+import { WorkoutPortal } from "./src/components/WorkoutPortal/WorkoutPortal";
+import { WORKOUT_TEMPLATE_REGISTRY } from "./src/data/registry";
 import { User } from "./src/models/User";
 import { signIn, signOut } from "./src/services/authService";
 
@@ -10,8 +11,8 @@ const theme = {
   ...MD3LightTheme,
   colors: {
     ...MD3LightTheme.colors,
-    primary: 'black',
-    secondary: 'gray',
+    primary: "black",
+    secondary: "gray",
   },
 };
 
@@ -47,7 +48,12 @@ export default function App() {
 
 export function Content({ user, onSignIn, onSignOut }) {
   if (user) {
-    return <WorkoutLibrary onSignOut={onSignOut} />;
+    return (
+      <WorkoutPortal
+        workoutTemplateRegistry={WORKOUT_TEMPLATE_REGISTRY}
+        onSignOut={onSignOut}
+      />
+    );
   }
 
   return <SignIn onSignIn={onSignIn} />;
