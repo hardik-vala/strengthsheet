@@ -1,13 +1,9 @@
 import { View } from "react-native";
 import { Divider, Text } from "react-native-paper";
-import {
-  DrillSet,
-  Exercise,
-  SetType
-} from "../../../models/Workout/Core";
+import { DrillSet, Exercise } from "../../../models/Workout/Core";
 import {
   WorkoutHistory,
-  WorkoutHistoryRecord
+  WorkoutHistoryRecord,
 } from "../../../models/Workout/WorkoutHistory";
 import { MeasureFormInput } from "../MeasureFormInput/MeasureFormInput";
 import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
@@ -48,9 +44,7 @@ export function ShelfForm({
             justifyContent: "center",
           }}
         >
-          <Text variant="bodyLarge">
-            {title}
-          </Text>
+          <Text variant="bodyLarge">{title}</Text>
         </View>
         {exercise.measures.map((measure) => {
           return (
@@ -64,7 +58,7 @@ export function ShelfForm({
                   ? projectWorkoutHistory(
                       workoutHistory.records,
                       measure.key,
-                      set.setType,
+                      set,
                       NUM_RECENT_WORKOUT_HISTORY_RECORDS
                     )
                   : []
@@ -82,13 +76,13 @@ export function ShelfForm({
 function projectWorkoutHistory(
   records: WorkoutHistoryRecord[],
   measureKey: string,
-  setType: SetType,
+  set: DrillSet,
   n: number
 ): ExerciseMeasureHistoryRecord[] {
   return selectWorkoutHistory(
     filterRecentWorkoutHistory(records, n),
     measureKey,
-    setType
+    set
   );
 }
 
@@ -106,12 +100,15 @@ function filterRecentWorkoutHistory(
 function selectWorkoutHistory(
   records: WorkoutHistoryRecord[],
   measureKey: string,
-  setType: SetType
+  set: DrillSet
 ): ExerciseMeasureHistoryRecord[] {
   return records.flatMap((r) => {
     return r.exercises
       .filter(
-        (e) => e.key.measureKey === measureKey && e.key.setType === setType
+        (e) =>
+          e.key.measureKey === measureKey &&
+          e.key.setIndex === set.index &&
+          e.key.setType === set.setType
       )
       .map((e) => ({
         timestamp: r.startTimestamp,

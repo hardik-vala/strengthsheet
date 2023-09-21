@@ -114,7 +114,7 @@ exports[`CircuitForm renders correctly 1`] = `
             ]
           }
         >
-          Test Exercise
+          Test Exercise 1
         </Text>
       </View>
       <View>
@@ -580,7 +580,7 @@ exports[`CircuitForm renders correctly 1`] = `
             ]
           }
         >
-          Test Exercise
+          Test Exercise 2
         </Text>
       </View>
       <View>
@@ -1071,7 +1071,7 @@ exports[`CircuitForm renders correctly 1`] = `
             ]
           }
         >
-          Test Exercise
+          Test Exercise 1
         </Text>
       </View>
       <View>
@@ -1537,7 +1537,7 @@ exports[`CircuitForm renders correctly 1`] = `
             ]
           }
         >
-          Test Exercise
+          Test Exercise 2
         </Text>
       </View>
       <View>

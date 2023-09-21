@@ -7,9 +7,22 @@ import {
 } from "../../../models/Workout/Core";
 import { CircuitForm } from "./CircuitForm";
 
-const TEST_EXERCISE = {
-  key: "test_exercise",
-  displayName: "Test Exercise",
+const TEST_EXERCISE_1 = {
+  key: "test_exercise_1",
+  displayName: "Test Exercise 1",
+  measures: [
+    { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+    {
+      key: "test_measure",
+      displayName: "reps",
+      unit: ExerciseUnit.reps,
+    },
+  ],
+};
+
+const TEST_EXERCISE_2 = {
+  key: "test_exercise_2",
+  displayName: "Test Exercise 2",
   measures: [
     { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
     {
@@ -23,8 +36,8 @@ const TEST_EXERCISE = {
 const TEST_CIRCUIT = {
   key: "test_circuit",
   exercises: [
-    { exercise: TEST_EXERCISE, note: null },
-    { exercise: TEST_EXERCISE, note: null },
+    { exercise: TEST_EXERCISE_1, note: null },
+    { exercise: TEST_EXERCISE_2, note: null },
   ],
 };
 
