@@ -1,4 +1,4 @@
-import { Exercise, ExerciseUnit, SetType } from "../models/Workout/Core";
+import { Circuit, Exercise, ExerciseUnit, SetType } from "../models/Workout/Core";
 import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 
 export type WorkoutTemplateRegistry = { [k: string]: WorkoutTemplate };
@@ -53,6 +53,22 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
   },
 };
 
+export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
+  hip_thrust_circuit: {
+    key: "hip_thrust_circuit",
+    exercises: [
+      {
+        exercise: EXERCISE_REGISTRY["hip_thrust_single_leg"],
+        note: null
+      },
+      {
+        exercise: EXERCISE_REGISTRY["hip_thrust"],
+        note: null
+      },
+    ],
+  }
+}
+
 export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
   rowing_machine: {
     key: "rowing_machine",
@@ -92,20 +108,7 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         ],
       },
       {
-        exercises: [
-          {
-            exercise: EXERCISE_REGISTRY["hip_thrust_single_leg"],
-            note: "Left leg"
-          },
-          {
-            exercise: EXERCISE_REGISTRY["hip_thrust_single_leg"],
-            note: "Right leg"
-          },
-          {
-            exercise: EXERCISE_REGISTRY["hip_thrust"],
-            note: null
-          },
-        ],
+        circuit: CIRCUIT_REGISTRY["hip_thrust_circuit"],
         displayName: "Hip Thrust Circuit",
         iconKey: "",
         note: null,

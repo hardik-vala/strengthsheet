@@ -1,4 +1,4 @@
-import { DrillSet, Exercise } from "./Core";
+import { Circuit, DrillSet, Exercise } from "./Core";
 
 export interface WorkoutTemplate {
 	key: string;
@@ -19,7 +19,7 @@ export interface ExerciseTemplate {
 }
 
 export interface CircuitTemplate {
-	exercises: { exercise: Exercise, note: string | null }[];
+	circuit: Circuit;
 	displayName: string | null;
 	iconKey: string;
 	note: string | null;

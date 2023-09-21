@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SetForm renders correctly 1`] = `
+exports[`ShelfForm renders correctly 1`] = `
 <View
   style={
     {
@@ -63,7 +63,7 @@ exports[`SetForm renders correctly 1`] = `
           ]
         }
       >
-        Set 2
+        Test Title
       </Text>
     </View>
     <View>

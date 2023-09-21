@@ -14,7 +14,8 @@ import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
 
 const NUM_RECENT_WORKOUT_HISTORY_RECORDS = 3;
 
-export interface SetFormProps {
+export interface ShelfFormProps {
+  title: string;
   exercise: Exercise;
   set: DrillSet;
   workoutHistory: WorkoutHistory | null;
@@ -22,13 +23,14 @@ export interface SetFormProps {
   onUpdateWorkoutValues: (updatedWorkoutValues: WorkoutValues) => void;
 }
 
-export function SetForm({
+export function ShelfForm({
+  title,
   exercise,
   set,
   workoutHistory,
   workoutValues,
   onUpdateWorkoutValues,
-}: SetFormProps) {
+}: ShelfFormProps) {
   return (
     <View style={{ width: "100%" }}>
       <Divider />
@@ -47,7 +49,7 @@ export function SetForm({
           }}
         >
           <Text variant="bodyLarge">
-            {set.setType === SetType.Warmup ? "W" : `Set ${set.index}`}
+            {title}
           </Text>
         </View>
         {exercise.measures.map((measure) => {

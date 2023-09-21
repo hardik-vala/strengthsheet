@@ -1,27 +1,19 @@
 import { format as formatDate, parse as parseDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
-import { Alert, View } from "react-native";
-import {
-  Appbar,
-  Button,
-  Divider,
-  Text
-} from "react-native-paper";
+import { Alert, ScrollView, View } from "react-native";
+import { Appbar, Button, Divider, Text } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import {
-  WorkoutValueKey
-} from "../../models/Workout/Core";
+import { WorkoutValueKey } from "../../models/Workout/Core";
 import {
   ExerciseHistoryRecord,
-  WorkoutHistoryRecord
+  WorkoutHistoryRecord,
 } from "../../models/Workout/WorkoutHistory";
-import {
-  WorkoutTemplate
-} from "../../models/Workout/WorkoutTemplate";
+import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
 import { WORKOUT_HISTORY_PROVIDER } from "../../server/WorkoutHistoryProvider";
 import { styles } from "../../styles/style";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
+import { CircuitForm } from "./CircuitForm/CircuitForm";
 import { ExerciseForm } from "./ExerciseForm/ExerciseForm";
 import { WorkoutValues } from "./common";
 
@@ -51,7 +43,6 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
 
   async function saveWorkout() {
     try {
-      
       setTimeout(() => {
         convertWorkoutValuesToRecord(
           workoutTemplate,
@@ -98,47 +89,61 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
             onChange={(_, t) => setWorkoutStartTime(t)}
           />
         </View>
-        {workoutTemplate.drills.map((drill) => {
-          if ("exercise" in drill) {
-            return (
-              <ExerciseForm
-                key={drill.exercise.key}
-                exerciseTemplate={drill}
-                workoutHistory={workoutHistory}
-                workoutValues={workoutValues}
-                onUpdateWorkoutValues={(updatedWorkoutValues) =>
-                  setWorkoutValues({ ...updatedWorkoutValues })
-                }
-              />
-            );
-          }
-        })}
-        <Divider />
-        <View style={{ flexDirection: "row", justifyContent: "center" }}>
-          <Button
-            buttonColor="blue"
-            compact={true}
-            loading={isSaving}
-            mode="contained"
-            onPress={async () => {
-              setIsSaving(true);
-              await saveWorkout();
-              setIsSaving(false);
-            }}
-            contentStyle={{
-              flexDirection: "row",
-            }}
-            style={{
-              marginTop: 25,
-              height: 40,
-              width: "25%",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            {isSaving ? "Saving" : "Finish"}
-          </Button>
-        </View>
+        <ScrollView style={{ width: "100%" }}>
+          {workoutTemplate.drills.map((drill) => {
+            if ("exercise" in drill) {
+              return (
+                <ExerciseForm
+                  key={drill.exercise.key}
+                  exerciseTemplate={drill}
+                  workoutHistory={workoutHistory}
+                  workoutValues={workoutValues}
+                  onUpdateWorkoutValues={(updatedWorkoutValues) =>
+                    setWorkoutValues({ ...updatedWorkoutValues })
+                  }
+                />
+              );
+            } else if ("circuit" in drill) {
+              return (
+                <CircuitForm
+                  key={drill.circuit.key}
+                  circuitTemplate={drill}
+                  workoutHistory={workoutHistory}
+                  workoutValues={workoutValues}
+                  onUpdateWorkoutValues={(updatedWorkoutValues) =>
+                    setWorkoutValues({ ...updatedWorkoutValues })
+                  }
+                />
+              );
+            }
+          })}
+          <Divider />
+          <View style={{ flexDirection: "row", justifyContent: "center" }}>
+            <Button
+              buttonColor="blue"
+              compact={true}
+              loading={isSaving}
+              mode="contained"
+              onPress={async () => {
+                setIsSaving(true);
+                await saveWorkout();
+                setIsSaving(false);
+              }}
+              contentStyle={{
+                flexDirection: "row",
+              }}
+              style={{
+                marginTop: 25,
+                height: 40,
+                width: "25%",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              {isSaving ? "Saving" : "Finish"}
+            </Button>
+          </View>
+        </ScrollView>
       </View>
     </SafeAreaProvider>
   );

@@ -14,6 +14,11 @@ export enum SetType {
   Failure
 }
 
+export interface Circuit {
+  key: string;
+  exercises: { exercise: Exercise, note: string | null }[];
+}
+
 export interface Exercise {
   key: string;
   displayName: string;

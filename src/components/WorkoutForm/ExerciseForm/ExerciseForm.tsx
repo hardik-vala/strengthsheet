@@ -1,11 +1,8 @@
 import { Text } from "react-native-paper";
-import {
-  WorkoutHistory
-} from "../../../models/Workout/WorkoutHistory";
-import {
-  ExerciseTemplate
-} from "../../../models/Workout/WorkoutTemplate";
-import { SetForm } from "../SetForm/SetForm";
+import { SetType } from "../../../models/Workout/Core";
+import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
+import { ExerciseTemplate } from "../../../models/Workout/WorkoutTemplate";
+import { ShelfForm } from "../ShelfForm/ShelfForm";
 import { WorkoutValues } from "../common";
 
 export interface ExerciseFormProps {
@@ -24,12 +21,13 @@ export function ExerciseForm({
   return (
     <>
       <Text variant="titleMedium">{exerciseTemplate.displayName}</Text>
-      {exerciseTemplate.sets.map((s) => {
+      {exerciseTemplate.sets.map((set) => {
         return (
-          <SetForm
-            key={`${s.setType.toString()} : ${s.index}`}
+          <ShelfForm
+            key={`${set.setType.toString()}:${set.index}`}
+            title={set.setType === SetType.Warmup ? "W" : `Set ${set.index}`}
             exercise={exerciseTemplate.exercise}
-            set={s}
+            set={set}
             workoutHistory={workoutHistory}
             workoutValues={workoutValues}
             onUpdateWorkoutValues={onUpdateWorkoutValues}

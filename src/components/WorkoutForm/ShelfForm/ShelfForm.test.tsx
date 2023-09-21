@@ -5,7 +5,7 @@ import {
   SetType,
   WorkoutValueKey,
 } from "../../../models/Workout/Core";
-import { SetForm } from "./SetForm";
+import { ShelfForm } from "./ShelfForm";
 
 const TEST_EXERCISE = {
   key: "test_exercise",
@@ -74,10 +74,11 @@ const TEST_HISTORY = {
   ],
 };
 
-describe("SetForm", () => {
+describe("ShelfForm", () => {
   it("renders correctly", () => {
     render(
-      <SetForm
+      <ShelfForm
+        title="Test Title"
         exercise={TEST_EXERCISE}
         set={TEST_SET}
         workoutHistory={TEST_HISTORY}
