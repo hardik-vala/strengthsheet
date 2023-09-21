@@ -73,6 +73,53 @@ const WORKOUT_HISTORY_DATABASE: { [k: string]: WorkoutHistory } = {
         ],
       },
     ],
+  },
+  legs: {
+    workoutTemplate: WORKOUT_TEMPLATE_REGISTRY["legs"],
+    records: [
+      {
+        startTimestamp: convertToDateObj("09/20/2023 20:00"),
+        exercises: [
+          {
+            key: WorkoutValueKey.create("squat_wide_stance_barbell", 1, SetType.Warmup, "lb"),
+            value: "45",
+          },
+          {
+            key: WorkoutValueKey.create("squat_wide_stance_barbell", 1, SetType.Warmup, "reps"),
+            value: "15",
+          },
+          {
+            key: WorkoutValueKey.create("squat_wide_stance_barbell", 2, SetType.Warmup, "lb"),
+            value: "65",
+          },
+          {
+            key: WorkoutValueKey.create("squat_wide_stance_barbell", 2, SetType.Warmup, "reps"),
+            value: "15",
+          }
+        ],
+      },
+      {
+        startTimestamp: convertToDateObj("09/19/2023 20:00"),
+        exercises: [
+          {
+            key: WorkoutValueKey.create("squat_wide_stance_barbell", 1, SetType.Warmup, "lb"),
+            value: "45",
+          },
+          {
+            key: WorkoutValueKey.create("squat_wide_stance_barbell", 1, SetType.Warmup, "reps"),
+            value: "15",
+          },
+          {
+            key: WorkoutValueKey.create("squat_wide_stance_barbell", 2, SetType.Warmup, "lb"),
+            value: "65",
+          },
+          {
+            key: WorkoutValueKey.create("squat_wide_stance_barbell", 2, SetType.Warmup, "reps"),
+            value: "15",
+          }
+        ],
+      },
+    ]
   }
 }
 
