@@ -6,7 +6,7 @@ import { MeasureHistoryList } from "./MeasureHistoryList";
 const TEST_HISTORY = [
   {
     timestamp: new Date("2023-08-28"),
-    measureKey: WorkoutValueKey.create(
+    measureKey: WorkoutValueKey.createFromExercise(
       "some_exercise",
       1,
       SetType.Working,
@@ -16,7 +16,7 @@ const TEST_HISTORY = [
   },
   {
     timestamp: new Date("2023-08-27"),
-    measureKey: WorkoutValueKey.create(
+    measureKey: WorkoutValueKey.createFromExercise(
       "some_exercise",
       1,
       SetType.Working,
@@ -26,7 +26,7 @@ const TEST_HISTORY = [
   },
   {
     timestamp: new Date("2023-08-26"),
-    measureKey: WorkoutValueKey.create(
+    measureKey: WorkoutValueKey.createFromExercise(
       "some_exercise",
       1,
       SetType.Working,
@@ -36,7 +36,7 @@ const TEST_HISTORY = [
   },
   {
     timestamp: new Date("2023-08-25"),
-    measureKey: WorkoutValueKey.create(
+    measureKey: WorkoutValueKey.createFromExercise(
       "some_exercise",
       1,
       SetType.Working,

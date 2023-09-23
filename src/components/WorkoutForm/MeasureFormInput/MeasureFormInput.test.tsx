@@ -27,7 +27,7 @@ const TEST_SET = { index: 2, setType: SetType.Working };
 const TEST_MEASURE_HISTORY = [
   {
     timestamp: new Date("2023-08-28"),
-    measureKey: WorkoutValueKey.create(
+    measureKey: WorkoutValueKey.createFromExercise(
       "test_exercise",
       2,
       SetType.Working,
@@ -37,7 +37,7 @@ const TEST_MEASURE_HISTORY = [
   },
   {
     timestamp: new Date("2023-08-27"),
-    measureKey: WorkoutValueKey.create(
+    measureKey: WorkoutValueKey.createFromExercise(
       "test_exercise",
       2,
       SetType.Working,

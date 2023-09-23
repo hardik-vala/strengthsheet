@@ -59,7 +59,7 @@ const TEST_HISTORY = {
       startTimestamp: new Date("2023-08-28"),
       exercises: [
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             1,
             SetType.Working,
@@ -68,7 +68,7 @@ const TEST_HISTORY = {
           value: "13",
         },
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             2,
             SetType.Working,
@@ -82,7 +82,7 @@ const TEST_HISTORY = {
       startTimestamp: new Date("2023-08-27"),
       exercises: [
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             1,
             SetType.Working,
@@ -91,7 +91,7 @@ const TEST_HISTORY = {
           value: "12",
         },
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             2,
             SetType.Working,
