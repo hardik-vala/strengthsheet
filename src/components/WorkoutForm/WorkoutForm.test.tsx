@@ -27,6 +27,17 @@ describe("WorkoutForm", () => {
     expect(screen).toMatchSnapshot();
   });
 
+  it("renders workouts with circuits correctly", async () => {
+    render(
+      <WorkoutForm
+        workoutTemplate={WORKOUT_TEMPLATE_REGISTRY["legs"]}
+        onBack={onBack}
+      />
+    );
+
+    expect(screen).toMatchSnapshot();
+  });
+
   it("calls onBack after performing back action", async () => {
     render(
       <WorkoutForm

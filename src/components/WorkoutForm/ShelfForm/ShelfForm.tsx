@@ -118,7 +118,7 @@ function selectWorkoutHistory(
       .filter((e) => e.key.equals(workoutValueKey))
       .map((e) => ({
         timestamp: r.startTimestamp,
-        measureKey: e.key,
+        key: e.key,
         value: e.value,
       }));
   });

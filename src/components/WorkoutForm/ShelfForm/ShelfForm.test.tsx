@@ -20,6 +20,13 @@ const TEST_EXERCISE = {
   ],
 };
 
+const TEST_CIRCUIT = {
+  key: "test_circuit",
+  exercises: [
+    { exercise: TEST_EXERCISE, note: null }
+  ]
+}
+
 const TEST_SET = { index: 2, setType: SetType.Working };
 
 const TEST_HISTORY = {
@@ -29,7 +36,7 @@ const TEST_HISTORY = {
       startTimestamp: new Date("2023-08-28"),
       exercises: [
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             1,
             SetType.Working,
@@ -38,13 +45,33 @@ const TEST_HISTORY = {
           value: "13",
         },
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             2,
             SetType.Working,
             "test_measure"
           ),
           value: "13",
+        },
+        {
+          key: WorkoutValueKey.createFromCircuit(
+            "test_circuit",
+            "test_exercise",
+            1,
+            SetType.Working,
+            "test_measure"
+          ),
+          value: "23",
+        },
+        {
+          key: WorkoutValueKey.createFromCircuit(
+            "test_circuit",
+            "test_exercise",
+            2,
+            SetType.Working,
+            "test_measure"
+          ),
+          value: "23",
         },
       ],
     },
@@ -52,7 +79,7 @@ const TEST_HISTORY = {
       startTimestamp: new Date("2023-08-27"),
       exercises: [
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             1,
             SetType.Working,
@@ -61,13 +88,33 @@ const TEST_HISTORY = {
           value: "12",
         },
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             2,
             SetType.Working,
             "test_measure"
           ),
           value: "12",
+        },
+        {
+          key: WorkoutValueKey.createFromCircuit(
+            "test_circuit",
+            "test_exercise",
+            1,
+            SetType.Working,
+            "test_measure"
+          ),
+          value: "22",
+        },
+        {
+          key: WorkoutValueKey.createFromCircuit(
+            "test_circuit",
+            "test_exercise",
+            2,
+            SetType.Working,
+            "test_measure"
+          ),
+          value: "22",
         },
       ],
     },
@@ -81,6 +128,22 @@ describe("ShelfForm", () => {
         title="Test Title"
         exercise={TEST_EXERCISE}
         set={TEST_SET}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{}}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("renders circuit shelf correctly", () => {
+    render(
+      <ShelfForm
+        title="Test Title"
+        exercise={TEST_EXERCISE}
+        set={TEST_SET}
+        circuitKey={TEST_CIRCUIT.key}
         workoutHistory={TEST_HISTORY}
         workoutValues={{}}
         onUpdateWorkoutValues={() => {}}

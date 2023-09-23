@@ -2,7 +2,7 @@ import { WorkoutValueKey } from "../../models/Workout/Core";
 
 export interface ExerciseMeasureHistoryRecord {
   timestamp: Date;
-  measureKey: WorkoutValueKey;
+  key: WorkoutValueKey;
   value: string;
 }
 
