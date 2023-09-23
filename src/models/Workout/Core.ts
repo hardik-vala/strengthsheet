@@ -38,12 +38,14 @@ export interface DrillSet {
 
 export class WorkoutValueKey {
 
+  readonly circuitKey: string | null;
   readonly exerciseKey: string;
   readonly setIndex: number;
   readonly setType: SetType;
   readonly measureKey: string;
 
-  private constructor(exerciseKey: string, setIndex: number, setType: SetType, measureKey: string) {
+  private constructor(circuitKey: string | null, exerciseKey: string, setIndex: number, setType: SetType, measureKey: string) {
+    this.circuitKey = circuitKey;
     this.exerciseKey = exerciseKey;
     this.setIndex = setIndex;
     this.setType = setType;
@@ -54,14 +56,40 @@ export class WorkoutValueKey {
     Object.freeze(this);
   }
 
-  public static create(exerciseKey: string, setIndex: number, setType: SetType, measureKey: string): WorkoutValueKey {
-    const key = new WorkoutValueKey(exerciseKey, setIndex, setType, measureKey);
+  public static create(circuitKey: string | null, exerciseKey: string, setIndex: number, setType: SetType, measureKey: string): WorkoutValueKey {
+    if (circuitKey) {
+      return WorkoutValueKey.createFromCircuit(circuitKey, exerciseKey, setIndex, setType, measureKey);
+    }
+
+    return WorkoutValueKey.createFromExercise(exerciseKey, setIndex, setType, measureKey);
+  }
+
+  public static createFromExercise(exerciseKey: string, setIndex: number, setType: SetType, measureKey: string): WorkoutValueKey {
+    return WorkoutValueKey.createFromCircuit(null, exerciseKey, setIndex, setType, measureKey);
+  }
+
+  public static createFromCircuit(circuitKey: string, exerciseKey: string, setIndex: number, setType: SetType, measureKey: string): WorkoutValueKey {
+    const key = new WorkoutValueKey(circuitKey, exerciseKey, setIndex, setType, measureKey);
     key.freeze();
     return key;
   }
 
+  public equals(other: WorkoutValueKey) {
+    return this.circuitKey === other.circuitKey
+      && this.exerciseKey === other.exerciseKey
+      && this.setIndex === other.setIndex
+      && this.setType === other.setType
+      && this.measureKey === other.measureKey
+  }
+
   public toString(): string {
-    return `${this.exerciseKey}:${this.setIndex}:${this.setType.toString()}:${this.measureKey}`;
+    let s = `${this.exerciseKey}:${this.setIndex}:${this.setType.toString()}:${this.measureKey}`;
+
+    if (this.circuitKey) {
+      s = `${this.circuitKey}:${s}`
+    }
+
+    return s;
   }
 }
 

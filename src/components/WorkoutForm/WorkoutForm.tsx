@@ -165,7 +165,7 @@ function convertWorkoutValuesToRecord(
     if ("exercise" in drill) {
       drill.sets.forEach((set) => {
         drill.exercise.measures.forEach((measure) => {
-          const key = WorkoutValueKey.create(
+          const key = WorkoutValueKey.createFromExercise(
             drill.exercise.key,
             set.index,
             set.setType,
@@ -180,6 +180,29 @@ function convertWorkoutValuesToRecord(
               value,
             });
           }
+        });
+      });
+    } else if ("circuit" in drill) {
+      drill.sets.forEach((set) => {
+        drill.circuit.exercises.forEach((wrappedExercise) => {
+          wrappedExercise.exercise.measures.forEach((measure) => {
+            const key = WorkoutValueKey.createFromCircuit(
+              drill.circuit.key,
+              wrappedExercise.exercise.key,
+              set.index,
+              set.setType,
+              measure.key
+            );
+  
+            const value = workoutValues[key.toString()];
+  
+            if (value) {
+              exercises.push({
+                key,
+                value,
+              });
+            }
+          });
         });
       });
     }

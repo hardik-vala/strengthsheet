@@ -15,6 +15,7 @@ import { MeasureHistoryList } from "../MeasureHistoryList/MeasureHistoryList";
 import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
 
 export interface MeasureFormInputProps {
+  circuitKey?: string;
   exercise: Exercise;
   set: DrillSet;
   measure: ExerciseMeasure;
@@ -24,6 +25,7 @@ export interface MeasureFormInputProps {
 }
 
 export function MeasureFormInput({
+  circuitKey,
   exercise,
   set,
   measure,
@@ -34,10 +36,12 @@ export function MeasureFormInput({
   const [currWorkoutValue, setCurrWorkoutValue] = useState("");
   const [isError, setIsError] = useState(false);
 
-  const workoutValueKeyStr = buildWorkoutValueKey(
-    exercise,
-    set,
-    measure
+  const workoutValueKeyStr = WorkoutValueKey.create(
+    circuitKey,
+    exercise.key,
+    set.index,
+    set.setType,
+    measure.key,
   ).toString();
 
   function getPlaceholder() {
@@ -82,18 +86,5 @@ export function MeasureFormInput({
         <MeasureHistoryList measureHistory={measureHistory} />
       )}
     </View>
-  );
-}
-
-function buildWorkoutValueKey(
-  exercise: Exercise,
-  set: DrillSet,
-  measure: ExerciseMeasure
-): WorkoutValueKey {
-  return WorkoutValueKey.create(
-    exercise.key,
-    set.index,
-    set.setType,
-    measure.key
   );
 }

@@ -66,6 +66,7 @@ export function CircuitSetForm({
             title={wrappedExercise.exercise.displayName}
             exercise={wrappedExercise.exercise}
             set={set}
+            circuitKey={circuitTemplate.circuit.key}
             workoutHistory={workoutHistory}
             workoutValues={workoutValues}
             onUpdateWorkoutValues={onUpdateWorkoutValues}

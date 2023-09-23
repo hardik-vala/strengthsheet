@@ -1,6 +1,10 @@
 import { View } from "react-native";
 import { Divider, Text } from "react-native-paper";
-import { DrillSet, Exercise } from "../../../models/Workout/Core";
+import {
+  DrillSet,
+  Exercise,
+  WorkoutValueKey,
+} from "../../../models/Workout/Core";
 import {
   WorkoutHistory,
   WorkoutHistoryRecord,
@@ -14,6 +18,7 @@ export interface ShelfFormProps {
   title: string;
   exercise: Exercise;
   set: DrillSet;
+  circuitKey?: string;
   workoutHistory: WorkoutHistory | null;
   workoutValues: WorkoutValues;
   onUpdateWorkoutValues: (updatedWorkoutValues: WorkoutValues) => void;
@@ -23,6 +28,7 @@ export function ShelfForm({
   title,
   exercise,
   set,
+  circuitKey,
   workoutHistory,
   workoutValues,
   onUpdateWorkoutValues,
@@ -47,9 +53,18 @@ export function ShelfForm({
           <Text variant="bodyLarge">{title}</Text>
         </View>
         {exercise.measures.map((measure) => {
+          const workoutValueKey = WorkoutValueKey.create(
+            circuitKey,
+            exercise.key,
+            set.index,
+            set.setType,
+            measure.key
+          );
+
           return (
             <MeasureFormInput
               key={measure.key}
+              circuitKey={circuitKey}
               exercise={exercise}
               set={set}
               measure={measure}
@@ -57,8 +72,7 @@ export function ShelfForm({
                 workoutHistory
                   ? projectWorkoutHistory(
                       workoutHistory.records,
-                      measure.key,
-                      set,
+                      workoutValueKey,
                       NUM_RECENT_WORKOUT_HISTORY_RECORDS
                     )
                   : []
@@ -75,14 +89,12 @@ export function ShelfForm({
 
 function projectWorkoutHistory(
   records: WorkoutHistoryRecord[],
-  measureKey: string,
-  set: DrillSet,
+  workoutValueKey: WorkoutValueKey,
   n: number
 ): ExerciseMeasureHistoryRecord[] {
   return selectWorkoutHistory(
     filterRecentWorkoutHistory(records, n),
-    measureKey,
-    set
+    workoutValueKey
   );
 }
 
@@ -99,17 +111,11 @@ function filterRecentWorkoutHistory(
 
 function selectWorkoutHistory(
   records: WorkoutHistoryRecord[],
-  measureKey: string,
-  set: DrillSet
+  workoutValueKey: WorkoutValueKey
 ): ExerciseMeasureHistoryRecord[] {
   return records.flatMap((r) => {
     return r.exercises
-      .filter(
-        (e) =>
-          e.key.measureKey === measureKey &&
-          e.key.setIndex === set.index &&
-          e.key.setType === set.setType
-      )
+      .filter((e) => e.key.equals(workoutValueKey))
       .map((e) => ({
         timestamp: r.startTimestamp,
         measureKey: e.key,
