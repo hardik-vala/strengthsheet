@@ -28,6 +28,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ]
   },
+  lat_pullup_bodyweight: {
+    key: "lat_pullup_bodyweight",
+    displayName: "Lat Pull-up (Bodyweight)",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
   rowing_machine: {
     key: "rowing_machine",
     displayName: "Rowing (Machine)",
@@ -51,6 +58,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ]
   },
+  tricep_dip_bodyweight: {
+    key: "tricep_dip_bodyweight",
+    displayName: "Tricep Dip (Bodyweight)",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
 };
 
 export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
@@ -63,6 +77,19 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
       },
       {
         exercise: EXERCISE_REGISTRY["hip_thrust"],
+        note: null
+      },
+    ],
+  },
+  pull_warmup_circuit: {
+    key: "pull_warmup_circuit",
+    exercises: [
+      {
+        exercise: EXERCISE_REGISTRY["lat_pullup_bodyweight"],
+        note: null
+      },
+      {
+        exercise: EXERCISE_REGISTRY["tricep_dip_bodyweight"],
         note: null
       },
     ],
@@ -147,4 +174,25 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
       }
     ],
   },
+  pull: {
+    key: "pull",
+    displayName: "Pull",
+    iconKey: "weight-lifter",
+    note: "10 second break in-between sets",
+    drills: [
+      {
+        circuit: CIRCUIT_REGISTRY["pull_warmup_circuit"],
+        displayName: "Pull Warm-up Circuit",
+        iconKey: "",
+        note: null,
+        sets: [
+          {index: 1, setType: SetType.Working},
+          {index: 2, setType: SetType.Working},
+          {index: 3, setType: SetType.Working},
+          {index: 4, setType: SetType.Working},
+          {index: 5, setType: SetType.Working},
+        ],
+      },
+    ]
+  }
 };
