@@ -152,6 +152,10 @@ const WORKOUT_HISTORY_DATABASE: { [k: string]: WorkoutHistory } = {
         ],
       },
     ]
+  },
+  pull: {
+    workoutTemplate: WORKOUT_TEMPLATE_REGISTRY["pull"],
+    records: [],
   }
 }
 

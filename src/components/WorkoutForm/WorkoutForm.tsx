@@ -34,7 +34,7 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
       try {
         setWorkoutHistory(getWorkoutHistory(workoutTemplate.key));
       } catch (error) {
-        Alert.alert("Error fetching workout history.");
+        console.error("Error fetching workout history.");
       }
     }
 
