@@ -1,4 +1,4 @@
-# Strengthsheet
+# Strengthsheet Client
 
 ## Install
 
