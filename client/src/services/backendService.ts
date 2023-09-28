@@ -8,7 +8,8 @@ export async function fetchWorkoutHistory(
   const searchParams = new URLSearchParams();
   searchParams.append('workoutKey', workoutTemplate.key);
 
-  const url = `http://localhost:3000/api/v1/workout/history?${searchParams.toString()}`;
+  const domain = process.env.EXPO_PUBLIC_BACKEND_DOMAIN;
+  const url = `${domain}/api/v1/workout/history?${searchParams.toString()}`;
 
   const response = await fetch(url, { method: "GET" });
 
