@@ -13,7 +13,7 @@ app.get("/api/v1/workout/history", (req, res) => {
     });
   }
 
-  res.send("GET request received!");
+  res.send(`GET request received for ${workoutKey}!`);
 });
 
 app.post("/api/v1/workout/save", (req, res) => {

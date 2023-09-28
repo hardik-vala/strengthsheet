@@ -11,6 +11,7 @@ import {
 } from "../../models/Workout/WorkoutHistory";
 import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
 import { WORKOUT_HISTORY_PROVIDER } from "../../server/WorkoutHistoryProvider";
+import { fetchWorkoutHistory } from "../../services/backendService";
 import { styles } from "../../styles/style";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { CircuitForm } from "./CircuitForm/CircuitForm";
@@ -32,6 +33,8 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
   useEffect(() => {
     async function getWorkoutHistoryWrapper() {
       try {
+        const response = await fetchWorkoutHistory(workoutTemplate);
+        console.log(response);
         setWorkoutHistory(getWorkoutHistory(workoutTemplate.key));
       } catch (error) {
         console.error("Error fetching workout history.");
