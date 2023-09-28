@@ -11,7 +11,7 @@ import {
 } from "../../models/Workout/WorkoutHistory";
 import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
 import { WORKOUT_HISTORY_PROVIDER } from "../../server/WorkoutHistoryProvider";
-import { fetchWorkoutHistory } from "../../services/backendService";
+import { fetchWorkoutHistory, storeWorkout } from "../../services/backendService";
 import { styles } from "../../styles/style";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { CircuitForm } from "./CircuitForm/CircuitForm";
@@ -37,7 +37,7 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
         console.log(response);
         setWorkoutHistory(getWorkoutHistory(workoutTemplate.key));
       } catch (error) {
-        console.error("Error fetching workout history.");
+        console.error(`${JSON.stringify(error)}`);
       }
     }
 
@@ -46,17 +46,17 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
 
   async function saveWorkout() {
     try {
-      setTimeout(() => {
-        convertWorkoutValuesToRecord(
-          workoutTemplate,
-          workoutValues,
-          workoutDate,
-          workoutStartTime
-        );
-      }, 5000);
+      const workoutRecord = convertWorkoutValuesToRecord(
+        workoutTemplate,
+        workoutValues,
+        workoutDate,
+        workoutStartTime
+      );
+      const response = await storeWorkout(workoutRecord);
+      console.log(response);
     } catch (error) {
-      Alert.alert("Error saving workout.");
-      console.error(error);
+      Alert.alert(`Error saving workout: ${error.message}`);
+      console.error(`${JSON.stringify(error)}`);
       return;
     }
   }

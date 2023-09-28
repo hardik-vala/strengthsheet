@@ -1,7 +1,8 @@
-import express from 'express';
+import cors from "cors";
+import express from "express";
 
 const app = express();
-
+app.use(cors());
 app.use(express.json()); 
 
 app.get("/api/v1/workout/history", (req, res) => {
@@ -19,7 +20,7 @@ app.get("/api/v1/workout/history", (req, res) => {
 app.post("/api/v1/workout/save", (req, res) => {
   const body = req.body;
   
-  // Do something with body...
+  console.log(JSON.stringify(body));
   
   res.send("POST request received!");
 });
