@@ -11,7 +11,10 @@ import {
 } from "../../models/Workout/WorkoutHistory";
 import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
 import { WORKOUT_HISTORY_PROVIDER } from "../../server/WorkoutHistoryProvider";
-import { fetchWorkoutHistory, storeWorkout } from "../../services/backendService";
+import {
+  fetchWorkoutHistory,
+  storeWorkout,
+} from "../../services/backendService";
 import { styles } from "../../styles/style";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { CircuitForm } from "./CircuitForm/CircuitForm";
@@ -37,7 +40,9 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
         console.log(response);
         setWorkoutHistory(getWorkoutHistory(workoutTemplate.key));
       } catch (error) {
-        console.error(`${JSON.stringify(error)}`);
+        console.error(
+          `Failed to get workout history: ${JSON.stringify(error)}`
+        );
       }
     }
 
@@ -196,9 +201,9 @@ function convertWorkoutValuesToRecord(
               set.setType,
               measure.key
             );
-  
+
             const value = workoutValues[key.toString()];
-  
+
             if (value) {
               exercises.push({
                 key,
