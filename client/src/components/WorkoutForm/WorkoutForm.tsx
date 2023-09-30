@@ -10,7 +10,7 @@ import {
   WorkoutHistoryRecord,
 } from "../../models/Workout/WorkoutHistory";
 import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
-import { WORKOUT_HISTORY_PROVIDER } from "../../provider/WorkoutHistoryProvider";
+import { WORKOUT_HISTORY_PROVIDER } from "../../providers/WorkoutHistoryProvider";
 import { storeWorkout } from "../../services/backendService";
 import { styles } from "../../styles/style";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
