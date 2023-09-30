@@ -1,11 +1,15 @@
-import { parse as parseDate } from "date-fns";
-import { WORKOUT_TEMPLATE_REGISTRY } from "../data/registry";
-import { SetType, WorkoutValueKey } from "../models/Workout/Core";
-import { WorkoutHistory } from "../models/Workout/WorkoutHistory";
+import { SetType, WorkoutValueKey } from "@models/Workout/Core";
+import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
+import { format as formatDate, parse as parseDate } from "date-fns";
 
-const WORKOUT_HISTORY_DATABASE: { [k: string]: WorkoutHistory } = {
+export interface WorkoutHistoryTableRow {
+  workoutKey: string;
+  records: WorkoutHistoryRecord[];
+}
+
+export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
   rowing_machine: {
-    workoutTemplate: WORKOUT_TEMPLATE_REGISTRY["rowing_machine"],
+    workoutKey: "rowing_machine",
     records: [
       {
         startTimestamp: convertToDateObj("08/25/2023 20:04"),
@@ -75,7 +79,7 @@ const WORKOUT_HISTORY_DATABASE: { [k: string]: WorkoutHistory } = {
     ],
   },
   legs: {
-    workoutTemplate: WORKOUT_TEMPLATE_REGISTRY["legs"],
+    workoutKey: "legs",
     records: [
       {
         startTimestamp: convertToDateObj("09/20/2023 20:00"),
@@ -154,42 +158,21 @@ const WORKOUT_HISTORY_DATABASE: { [k: string]: WorkoutHistory } = {
     ]
   },
   pull: {
-    workoutTemplate: WORKOUT_TEMPLATE_REGISTRY["pull"],
+    workoutKey: "pull",
     records: [],
   }
 }
 
-class WorkoutHistoryProvider {
-  private static instance: WorkoutHistoryProvider;
-
-  private constructor() {};
-
-  static getInstance() {
-    if (!WorkoutHistoryProvider.instance) {
-      WorkoutHistoryProvider.instance = new WorkoutHistoryProvider();
-    }
-
-    return WorkoutHistoryProvider.instance;
-  }
-
-  getWorkoutHistory(workoutKey: string): WorkoutHistory {
-    if (!WORKOUT_HISTORY_DATABASE[workoutKey]) {
-      throw new WorkoutNotFoundError(workoutKey);
-    }
-  
-    return WORKOUT_HISTORY_DATABASE[workoutKey];
-  }
+export function serializeWorkoutHistoryTableRow(row: WorkoutHistoryTableRow) {
+  return {
+    ...row,
+    records: row.records.map(record => ({
+      ...record,
+      startTimestamp: formatDate(record.startTimestamp, "MM/dd/yyyy HH:mm")
+    }))
+  };
 }
-
-export const WORKOUT_HISTORY_PROVIDER = WorkoutHistoryProvider.getInstance();
 
 function convertToDateObj(dateStr: string) {
   return parseDate(dateStr, "MM/dd/yyyy HH:mm", new Date());
-}
-
-export class WorkoutNotFoundError extends Error {
-  constructor(workoutKey: string) {
-    super(`Workout with key ${workoutKey} not found.`);
-    this.name = "WorkoutNotFoundError";
-  }
 }

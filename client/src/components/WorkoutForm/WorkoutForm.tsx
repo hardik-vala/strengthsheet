@@ -10,11 +10,8 @@ import {
   WorkoutHistoryRecord,
 } from "../../models/Workout/WorkoutHistory";
 import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
-import { WORKOUT_HISTORY_PROVIDER } from "../../server/WorkoutHistoryProvider";
-import {
-  fetchWorkoutHistory,
-  storeWorkout,
-} from "../../services/backendService";
+import { WORKOUT_HISTORY_PROVIDER } from "../../provider/WorkoutHistoryProvider";
+import { storeWorkout } from "../../services/backendService";
 import { styles } from "../../styles/style";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { CircuitForm } from "./CircuitForm/CircuitForm";
@@ -36,9 +33,8 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
   useEffect(() => {
     async function getWorkoutHistoryWrapper() {
       try {
-        const response = await fetchWorkoutHistory(workoutTemplate);
-        console.log(response);
-        setWorkoutHistory(getWorkoutHistory(workoutTemplate.key));
+        const ret = await getWorkoutHistory(workoutTemplate);
+        setWorkoutHistory(ret);
       } catch (error) {
         console.error(
           `Failed to get workout history: ${JSON.stringify(error)}`
@@ -157,8 +153,8 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
   );
 }
 
-function getWorkoutHistory(workoutKey: string) {
-  return WORKOUT_HISTORY_PROVIDER.getWorkoutHistory(workoutKey);
+async function getWorkoutHistory(workoutTemplate: WorkoutTemplate) {
+  return WORKOUT_HISTORY_PROVIDER.getWorkoutHistory(workoutTemplate);
 }
 
 function convertWorkoutValuesToRecord(

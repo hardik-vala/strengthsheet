@@ -1,10 +1,11 @@
+import { WORKOUT_TEMPLATE_REGISTRY } from "../data/registry";
+import { FetchWorkoutHistoryResponse } from "../models/Backend";
 import { WorkoutHistory, WorkoutHistoryRecord } from "../models/Workout/WorkoutHistory";
 import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 
 export async function fetchWorkoutHistory(
   workoutTemplate: WorkoutTemplate
-// ): Promise<WorkoutHistory> {
-) {
+): Promise<FetchWorkoutHistoryResponse> {
   const searchParams = new URLSearchParams();
   searchParams.append('workoutKey', workoutTemplate.key);
 
@@ -17,14 +18,13 @@ export async function fetchWorkoutHistory(
     throw new Error(`Failed to fetch workout history: ${JSON.stringify(response)}`);
   }
 
-  // return await response.json();
-  return await response.text();
+  return await response.json();
 }
 
 export async function storeWorkout(
   workoutRecord: WorkoutHistoryRecord
 ) {
-// ): Promise<void> {
+  // ): Promise<void> {
   const domain = process.env.EXPO_PUBLIC_BACKEND_DOMAIN;
   const url = `${domain}/api/v1/workout/save`;
 
