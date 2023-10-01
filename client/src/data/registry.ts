@@ -43,6 +43,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "time", displayName: "time", unit: ExerciseUnit.time }
     ],
   },
+  squat_deep_bodyweight: {
+    key: "squat_wide_stance_barbell",
+    displayName: "Deep Squat (Bodyweight)",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
   squat_split_bulgarian_bodyweight: {
     key: "squat_split_bulgarian_bodyweight",
     displayName: "Bulgarian Split Squat (Bodyweight)",
