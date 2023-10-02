@@ -104,20 +104,47 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
 }
 
 export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
-  rowing_machine: {
-    key: "rowing_machine",
-    displayName: "Rowing (Machine)",
-    iconKey: "rowing",
-    note: "Rowing machine for cardio.",
-    drills: [
-      {
-        exercise: EXERCISE_REGISTRY["rowing_machine"],
-        displayName: "Rowing (Machine)",
-        iconKey: "",
-        note: null,
-        sets: [{ index: 1, setType: SetType.Warmup }, { index: 1, setType: SetType.Working }],
-      },
-    ]
+  stretches: {
+    key: "stretches",
+    displayName: "Stretches",
+    iconKey: "weight-lifter",
+    note: "",
+    drills: [],
+  },
+  push_shoulders: {
+    key: "push_shoulders",
+    displayName: "Push (Shoulders)",
+    iconKey: "weight-lifter",
+    note: "",
+    drills: [],
+  },
+  push_chest: {
+    key: "push_chest",
+    displayName: "Push (Chest)",
+    iconKey: "weight-lifter",
+    note: "",
+    drills: [],
+  },
+  ab_ripper_x: {
+    key: "ab_ripper_x",
+    displayName: "Ab Ripper X",
+    iconKey: "weight-lifter",
+    note: "",
+    drills: [],
+  },
+  it_band_rehab: {
+    key: "it_band_rehab",
+    displayName: "IT Band Rehab",
+    iconKey: "weight-lifter",
+    note: "",
+    drills: [],
+  },
+  basketball_warmup: {
+    key: "basketball_warmup",
+    displayName: "Basketball Warmup",
+    iconKey: "weight-lifter",
+    note: "",
+    drills: [],
   },
   legs: {
     key: "legs",
@@ -181,17 +208,17 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
       }
     ],
   },
-  pull: {
-    key: "pull",
-    displayName: "Pull",
+  pull_upper_back: {
+    key: "pull_upper_back",
+    displayName: "Pull (Upper back)",
     iconKey: "weight-lifter",
-    note: "10 second break in-between sets",
+    note: "",
     drills: [
       {
         circuit: CIRCUIT_REGISTRY["pull_warmup_circuit"],
         displayName: "Pull Warm-up Circuit",
         iconKey: "",
-        note: null,
+        note: "10 second break in-between sets",
         sets: [
           { index: 1, setType: SetType.Working },
           { index: 2, setType: SetType.Working },
@@ -200,6 +227,28 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
           { index: 5, setType: SetType.Working },
         ],
       },
+    ],
+  },
+  pull_lower_back: {
+    key: "pull_lower_back",
+    displayName: "Pull (Lower Back)",
+    iconKey: "weight-lifter",
+    note: "",
+    drills: [],
+  },
+  rowing_machine: {
+    key: "rowing_machine",
+    displayName: "Rowing (Machine)",
+    iconKey: "rowing",
+    note: "Rowing machine for cardio.",
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["rowing_machine"],
+        displayName: "Rowing (Machine)",
+        iconKey: "",
+        note: null,
+        sets: [{ index: 1, setType: SetType.Warmup }, { index: 1, setType: SetType.Working }],
+      },
     ]
-  }
+  },
 };
