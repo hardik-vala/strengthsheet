@@ -115,7 +115,7 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         displayName: "Rowing (Machine)",
         iconKey: "",
         note: null,
-        sets: [{index: 1, setType: SetType.Warmup}, {index: 1, setType: SetType.Working}],
+        sets: [{ index: 1, setType: SetType.Warmup }, { index: 1, setType: SetType.Working }],
       },
     ]
   },
@@ -131,14 +131,14 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         iconKey: "",
         note: null,
         sets: [
-          {index: 1, setType: SetType.Warmup},
-          {index: 2, setType: SetType.Warmup},
-          {index: 3, setType: SetType.Warmup},
-          {index: 1, setType: SetType.Working},
-          {index: 2, setType: SetType.Working},
-          {index: 3, setType: SetType.Working},
-          {index: 4, setType: SetType.Working},
-          {index: 5, setType: SetType.Working}
+          { index: 1, setType: SetType.Warmup },
+          { index: 2, setType: SetType.Warmup },
+          { index: 3, setType: SetType.Warmup },
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working }
         ],
       },
       {
@@ -147,12 +147,12 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         iconKey: "",
         note: null,
         sets: [
-          {index: 1, setType: SetType.Working},
-          {index: 2, setType: SetType.Working},
-          {index: 3, setType: SetType.Working},
-          {index: 4, setType: SetType.Working},
-          {index: 5, setType: SetType.Working},
-          {index: 6, setType: SetType.Working},
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+          { index: 6, setType: SetType.Working },
         ],
       },
       {
@@ -161,11 +161,11 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         iconKey: "",
         note: null,
         sets: [
-          {index: 1, setType: SetType.Working},
-          {index: 2, setType: SetType.Working},
-          {index: 3, setType: SetType.Working},
-          {index: 4, setType: SetType.Working},
-          {index: 5, setType: SetType.Working},
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
         ],
       },
       {
@@ -174,9 +174,9 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         iconKey: "",
         note: null,
         sets: [
-          {index: 1, setType: SetType.Working},
-          {index: 2, setType: SetType.Working},
-          {index: 3, setType: SetType.Working},
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
         ],
       }
     ],
@@ -193,11 +193,11 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         iconKey: "",
         note: null,
         sets: [
-          {index: 1, setType: SetType.Working},
-          {index: 2, setType: SetType.Working},
-          {index: 3, setType: SetType.Working},
-          {index: 4, setType: SetType.Working},
-          {index: 5, setType: SetType.Working},
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
         ],
       },
     ]
