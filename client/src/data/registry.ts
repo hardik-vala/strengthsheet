@@ -4,6 +4,30 @@ import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 export type WorkoutTemplateRegistry = { [k: string]: WorkoutTemplate };
 
 export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
+  bench_press_flat_barbell: {
+    key: "bench_press_flat_barbell",
+    displayName: "Bench Press (Flat)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
+  bench_press_incline_barbell: {
+    key: "bench_press_incline_barbell",
+    displayName: "Bench Press (Incline)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
+  dumbbell_press_close_grip_incline: {
+    key: "dumbbell_press_close_grip_incline",
+    displayName: "Close-Grip Dumbbell Press (Incline)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
   hamstring_curl_machine: {
     key: "hamstring_curl_machine",
     displayName: "Hamstring Curl (Machine)",
@@ -33,6 +57,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "Lat Pull-up (Bodyweight)",
     measures: [
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
+  lateral_raise_hold_dumbbells: {
+    key: "lateral_raise_hold_dumbbells",
+    displayName: "Lateral Raise Hold (Dumbbells)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "time", displayName: "time", unit: ExerciseUnit.time }
     ]
   },
   rowing_machine: {
@@ -72,9 +104,29 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ]
   },
+  y_lift_off: {
+    key: "y_lift_off",
+    displayName: "Y Lift-Off",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  }
 };
 
 export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
+  bench_press_incline_circuit: {
+    key: "bench_press_incline_circuit",
+    exercises: [
+      {
+        exercise: EXERCISE_REGISTRY["bench_press_incline_barbell"],
+        note: null
+      },
+      {
+        exercise: EXERCISE_REGISTRY["dumbbell_press_close_grip_incline"],
+        note: null
+      },
+    ],
+  },
   hip_thrust_circuit: {
     key: "hip_thrust_circuit",
     exercises: [
@@ -109,21 +161,99 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
     displayName: "Stretches",
     iconKey: "weight-lifter",
     note: "",
-    drills: [],
+    drills: [
+      
+    ],
   },
   push_shoulders: {
     key: "push_shoulders",
     displayName: "Push (Shoulders)",
     iconKey: "weight-lifter",
     note: "",
-    drills: [],
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["lateral_raise_hold_dumbbells"],
+        displayName: "Lateral Raise Hold (Dumbbells)",
+        iconKey: "",
+        note: "1 min. hold with 10 lb. dumbbells",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["y_lift_off"],
+        displayName: "Y Lift-Off",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+    ],
   },
   push_chest: {
     key: "push_chest",
     displayName: "Push (Chest)",
     iconKey: "weight-lifter",
     note: "",
-    drills: [],
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["lateral_raise_hold_dumbbells"],
+        displayName: "Lateral Raise Hold (Dumbbells)",
+        iconKey: "",
+        note: "1 min. hold with 10 lb. dumbbells",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["y_lift_off"],
+        displayName: "Y Lift-Off",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["bench_press_flat_barbell"],
+        displayName: "Bench Press (Flat)",
+        iconKey: "45 lb, 65 lb, 95 lb @ 15 reps, then 145 lb @ 10 reps",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Warmup },
+          { index: 2, setType: SetType.Warmup },
+          { index: 3, setType: SetType.Warmup },
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working }
+        ],
+      },
+      {
+        circuit: CIRCUIT_REGISTRY["bench_press_incline_circuit"],
+        displayName: "Bench Press (Incline)",
+        iconKey: "20 reps down to 10 (-2 reps per round) @ 65 lb and 20 lb DBs",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+          { index: 6, setType: SetType.Working },
+        ],
+      },
+    ],
   },
   ab_ripper_x: {
     key: "ab_ripper_x",
