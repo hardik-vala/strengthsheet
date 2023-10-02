@@ -4,6 +4,14 @@ import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 export type WorkoutTemplateRegistry = { [k: string]: WorkoutTemplate };
 
 export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
+  arnold_press_dumbbells: {
+    key: "arnold_press_dumbbells",
+    displayName: "Arnold Press (Dumbbells)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
   bench_press_flat_barbell: {
     key: "bench_press_flat_barbell",
     displayName: "Bench Press (Flat)",
@@ -23,6 +31,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
   dumbbell_press_close_grip_incline: {
     key: "dumbbell_press_close_grip_incline",
     displayName: "Close-Grip Dumbbell Press (Incline)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
+  face_pull_cable: {
+    key: "face_pull_cable",
+    displayName: "Face Pull (Cable)",
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
@@ -59,6 +75,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ]
   },
+  lateral_raise_dumbbells: {
+    key: "lateral_raise_dumbbells",
+    displayName: "Lateral Raise (Dumbbells)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
   lateral_raise_hold_dumbbells: {
     key: "lateral_raise_hold_dumbbells",
     displayName: "Lateral Raise Hold (Dumbbells)",
@@ -74,6 +98,22 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "meters", displayName: "meters", unit: ExerciseUnit.meters },
       { key: "time", displayName: "time", unit: ExerciseUnit.time }
     ],
+  },
+  shoulder_press_barbell: {
+    key: "shoulder_press_barbell",
+    displayName: "Shoulder Press (Barbell)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
+  shoulder_press_barbell_alternating: {
+    key: "shoulder_press_barbell_alternating",
+    displayName: "Alternating Shoulder Press (Barbell)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
   },
   squat_deep_bodyweight: {
     key: "squat_wide_stance_barbell",
@@ -104,6 +144,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ]
   },
+  tricep_extension_cable: {
+    key: "tricep_extension_cable",
+    displayName: "Tricep Extension (Cable)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ]
+  },
   y_lift_off: {
     key: "y_lift_off",
     displayName: "Y Lift-Off",
@@ -123,6 +171,19 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
       },
       {
         exercise: EXERCISE_REGISTRY["dumbbell_press_close_grip_incline"],
+        note: null
+      },
+    ],
+  },
+  face_pulls_and_triceps_circuit: {
+    key: "face_pulls_and_triceps_circuit",
+    exercises: [
+      {
+        exercise: EXERCISE_REGISTRY["face_pull_cable"],
+        note: null
+      },
+      {
+        exercise: EXERCISE_REGISTRY["tricep_extension_cable"],
         note: null
       },
     ],
@@ -152,7 +213,20 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
         note: null
       },
     ],
-  }
+  },
+  shoulder_press_barbell_alternating_circuit: {
+    key: "shoulder_press_barbell_alternating_circuit",
+    exercises: [
+      {
+        exercise: EXERCISE_REGISTRY["shoulder_press_barbell_alternating"],
+        note: null
+      },
+      {
+        exercise: EXERCISE_REGISTRY["face_pull_cable"],
+        note: null
+      },
+    ],
+  },
 }
 
 export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
@@ -191,6 +265,62 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
           { index: 1, setType: SetType.Working },
           { index: 2, setType: SetType.Working },
           { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["shoulder_press_barbell"],
+        displayName: "Shoulder Press (Barbell)",
+        iconKey: "",
+        note: "45 lb, 65 lb, 75 lb @ 15 reps and 95 lb @ 8 reps",
+        sets: [
+          { index: 1, setType: SetType.Warmup },
+          { index: 2, setType: SetType.Warmup },
+          { index: 3, setType: SetType.Warmup },
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        circuit: CIRCUIT_REGISTRY["shoulder_press_barbell_alternating_circuit"],
+        displayName: "Alternating Shoulder Press Circuit",
+        iconKey: "",
+        note: "75 lb @ 6 reps, 60 lb @ 20 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["arnold_press_dumbbells"],
+        displayName: "Arnold Press (Dumbbells)",
+        iconKey: "",
+        note: "30 lb @ 10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        circuit: CIRCUIT_REGISTRY["face_pulls_and_triceps_circuit"],
+        displayName: "Face-Pulls & Tricep Extensions",
+        iconKey: "",
+        note: "20 reps down to 10 (-2 reps per round), 30 lb",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+          { index: 6, setType: SetType.Working },
         ],
       },
     ],
@@ -236,12 +366,17 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
           { index: 2, setType: SetType.Working },
           { index: 3, setType: SetType.Working },
           { index: 4, setType: SetType.Working },
-          { index: 5, setType: SetType.Working }
+          { index: 5, setType: SetType.Working },
+          { index: 6, setType: SetType.Working },
+          { index: 7, setType: SetType.Working },
+          { index: 8, setType: SetType.Working },
+          { index: 9, setType: SetType.Working },
+          { index: 10, setType: SetType.Working },
         ],
       },
       {
         circuit: CIRCUIT_REGISTRY["bench_press_incline_circuit"],
-        displayName: "Bench Press (Incline)",
+        displayName: "Bench Press Circuit (Incline)",
         iconKey: "20 reps down to 10 (-2 reps per round) @ 65 lb and 20 lb DBs",
         note: null,
         sets: [
