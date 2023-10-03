@@ -1,4 +1,4 @@
-import { ExerciseHistoryRecord } from "./Workout/WorkoutHistory";
+import { ExerciseHistoryRecord, WorkoutHistoryRecord } from "./Workout/WorkoutHistory";
 
 export interface FetchWorkoutHistoryResponse {
   workoutKey: string;
@@ -6,4 +6,9 @@ export interface FetchWorkoutHistoryResponse {
     startTimestamp: string;
     exercises: ExerciseHistoryRecord[];
   }[];
+}
+
+export interface SaveWorkoutHistoryRecordRequestBody {
+  workoutKey: string;
+  workoutRecord: WorkoutHistoryRecord;
 }

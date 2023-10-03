@@ -1,6 +1,8 @@
+import { SaveWorkoutHistoryRecordRequestBody } from "@models/Backend";
 import cors from "cors";
 import express from "express";
-import { WORKOUT_HISTORY_TABLE, serializeWorkoutHistoryTableRow } from "./database";
+import { deserializeWorkoutHistoryRecord, serializeWorkoutHistoryTableRow } from "./database";
+import { WORKOUT_HISTORY_PROVIDER } from "./providers/workoutHistoryProvider";
 
 const app = express();
 app.use(cors());
@@ -11,27 +13,37 @@ app.get("/api/v1/workout/history", (req, res) => {
 
   if (!workoutKey) {
     return res.status(400).json({
-      error: "workoutKey is required"
+      error: "workoutKey is required",
     });
   }
 
-  if (!WORKOUT_HISTORY_TABLE[workoutKey.toString()]) {
-    return res.status(400).json({
-      error: `No workout for key "${workoutKey}"`
-    });
-  }
-
-  const payload = serializeWorkoutHistoryTableRow(
-    WORKOUT_HISTORY_TABLE[workoutKey.toString()]
+  const workoutHistory = WORKOUT_HISTORY_PROVIDER.fetchWorkoutHistory(
+    workoutKey.toString()
   );
+  if (!workoutHistory) {
+    return res.status(400).json({
+      error: `No workout for key "${workoutKey}"`,
+    });
+  }
+
+  const payload = serializeWorkoutHistoryTableRow(workoutHistory);
 
   res.send(payload);
 });
 
 app.post("/api/v1/workout/save", (req, res) => {
-  const body = req.body;
+  const body = req.body as SaveWorkoutHistoryRecordRequestBody;
 
-  console.log(JSON.stringify(body));
+  try {
+    WORKOUT_HISTORY_PROVIDER.appendRecordToWorkoutHistory(
+      body.workoutKey,
+      deserializeWorkoutHistoryRecord(body.workoutRecord)
+    );
+  } catch (error) {
+    return res.status(400).json({
+      error: `Error appending record to workout history: ${error.message}`,
+    });
+  }
 
   res.send("POST request received!");
 });

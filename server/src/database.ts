@@ -311,6 +311,13 @@ export function serializeWorkoutHistoryTableRow(row: WorkoutHistoryTableRow) {
   };
 }
 
+export function deserializeWorkoutHistoryRecord(record: any) {
+  return {
+    ...record,
+    startTimestamp: convertToDateObj(record.startTimestamp),
+  };
+}
+
 function convertToDateObj(dateStr: string) {
   return parseDate(dateStr, "MM/dd/yyyy HH:mm", new Date());
 }

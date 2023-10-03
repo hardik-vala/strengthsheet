@@ -53,8 +53,7 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
         workoutDate,
         workoutStartTime
       );
-      const response = await storeWorkout(workoutRecord);
-      console.log(response);
+      await storeWorkout(workoutTemplate.key, workoutRecord);
     } catch (error) {
       Alert.alert(`Error saving workout: ${error.message}`);
       console.error(`${JSON.stringify(error)}`);
