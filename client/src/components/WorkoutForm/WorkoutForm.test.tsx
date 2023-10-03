@@ -1,4 +1,10 @@
-import { act, fireEvent, render, screen, waitFor } from "@testing-library/react-native";
+import {
+  act,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from "@testing-library/react-native";
 import { parse as parseDate } from "date-fns";
 import React from "react";
 import mockSafeAreaContext from "react-native-safe-area-context/jest/mock";
@@ -7,7 +13,9 @@ import { SetType, WorkoutValueKey } from "../../models/Workout/Core";
 import { WorkoutHistory } from "../../models/Workout/WorkoutHistory";
 import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
 
-jest.useFakeTimers().setSystemTime(new Date("2023-08-27"));
+const CURRENT_DATETIME = new Date("2023-08-27");
+
+jest.useFakeTimers().setSystemTime(CURRENT_DATETIME);
 
 jest.mock("react-native-safe-area-context", () => mockSafeAreaContext);
 
@@ -305,14 +313,23 @@ function convertToDateObj(dateStr: string) {
   return parseDate(dateStr, "MM/dd/yyyy HH:mm", new Date());
 }
 
+jest.mock("../../services/backendService", () => {
+  return {
+    storeWorkout: jest.fn(),
+  };
+});
+
 import { WORKOUT_HISTORY_PROVIDER } from "../../providers/WorkoutHistoryProvider";
 
-WORKOUT_HISTORY_PROVIDER.getWorkoutHistory = jest.fn().mockImplementation(
-  async (workoutTemplate: WorkoutTemplate): Promise<WorkoutHistory> => {
-    return MOCK_WORKOUT_HISTORY[workoutTemplate.key];
-  }
-);
+WORKOUT_HISTORY_PROVIDER.getWorkoutHistory = jest
+  .fn()
+  .mockImplementation(
+    async (workoutTemplate: WorkoutTemplate): Promise<WorkoutHistory> => {
+      return MOCK_WORKOUT_HISTORY[workoutTemplate.key];
+    }
+  );
 
+import { storeWorkout } from "../../services/backendService";
 import { WorkoutForm } from "./WorkoutForm";
 
 describe("WorkoutForm", () => {
@@ -365,5 +382,41 @@ describe("WorkoutForm", () => {
     });
 
     expect(onBack).toHaveBeenCalledTimes(1);
+  });
+
+  it("stores workout on save", async () => {
+    render(
+      <WorkoutForm
+        workoutTemplate={WORKOUT_TEMPLATE_REGISTRY["rowing_machine"]}
+        onBack={onBack}
+      />
+    );
+
+    await waitFor(() => {
+      screen.getByPlaceholderText("4000");
+    });
+
+    await act(() => {
+      fireEvent.changeText(screen.getByPlaceholderText("4000"), "5000");
+    });
+
+    await act(() => {
+      fireEvent.press(screen.getByText("Finish"));
+    });
+
+    expect(storeWorkout).toHaveBeenCalledWith("rowing_machine", {
+      startTimestamp: CURRENT_DATETIME,
+      exercises: [
+        {
+          key: WorkoutValueKey.createFromExercise(
+            "rowing_machine",
+            1,
+            SetType.Working,
+            "meters"
+          ),
+          value: "5000",
+        },
+      ],
+    });
   });
 });
