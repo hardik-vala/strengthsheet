@@ -2,13 +2,15 @@ import { ExerciseHistoryRecord, WorkoutHistoryRecord } from "./Workout/WorkoutHi
 
 export interface FetchWorkoutHistoryResponse {
   workoutKey: string;
-  records: {
-    startTimestamp: string;
-    exercises: ExerciseHistoryRecord[];
-  }[];
+  records: SerializedWorkoutHistoryRecord[];
 }
 
 export interface SaveWorkoutHistoryRecordRequestBody {
   workoutKey: string;
-  workoutRecord: WorkoutHistoryRecord;
+  workoutRecord: SerializedWorkoutHistoryRecord;
+}
+
+interface SerializedWorkoutHistoryRecord {
+  startTimestamp: string;
+  exercises: ExerciseHistoryRecord[];
 }

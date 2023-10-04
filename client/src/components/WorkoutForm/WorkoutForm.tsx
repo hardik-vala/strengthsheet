@@ -11,7 +11,6 @@ import {
 } from "../../models/Workout/WorkoutHistory";
 import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
 import { WORKOUT_HISTORY_PROVIDER } from "../../providers/WorkoutHistoryProvider";
-import { storeWorkout } from "../../services/backendService";
 import { styles } from "../../styles/style";
 import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { CircuitForm } from "./CircuitForm/CircuitForm";
@@ -53,7 +52,10 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
         workoutDate,
         workoutStartTime
       );
-      await storeWorkout(workoutTemplate.key, workoutRecord);
+      await WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory(
+        workoutTemplate.key,
+        workoutRecord
+      );
     } catch (error) {
       Alert.alert(`Error saving workout: ${error.message}`);
       console.error(`${JSON.stringify(error)}`);

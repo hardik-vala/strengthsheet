@@ -1,5 +1,4 @@
-import { format as formatDate } from "date-fns";
-import { FetchWorkoutHistoryResponse } from "../models/Backend";
+import { FetchWorkoutHistoryResponse, SaveWorkoutHistoryRecordRequestBody } from "../models/Backend";
 import { WorkoutHistoryRecord } from "../models/Workout/WorkoutHistory";
 import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 
@@ -23,17 +22,11 @@ export async function fetchWorkoutHistory(
   return await response.json();
 }
 
-export async function storeWorkout(
-  workoutKey: string,
-  workoutRecord: WorkoutHistoryRecord
+export async function storeRecordInWorkoutHistory(
+  body: SaveWorkoutHistoryRecordRequestBody
 ): Promise<void> {
   const domain = process.env.EXPO_PUBLIC_BACKEND_DOMAIN;
   const url = `${domain}/api/v1/workout/save`;
-
-  const body = {
-    workoutKey,
-    workoutRecord: serializeWorkoutHistoryRecord(workoutRecord),
-  };
 
   const response = await fetch(url, {
     method: "POST",
@@ -46,11 +39,4 @@ export async function storeWorkout(
   if (!response.ok) {
     throw new Error(`Failed to save workout: ${JSON.stringify(response)}`);
   }
-}
-
-function serializeWorkoutHistoryRecord(record: WorkoutHistoryRecord) {
-  return {
-    ...record,
-    startTimestamp: formatDate(record.startTimestamp, "MM/dd/yyyy HH:mm"),
-  };
 }

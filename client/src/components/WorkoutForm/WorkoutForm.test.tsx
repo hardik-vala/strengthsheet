@@ -313,11 +313,7 @@ function convertToDateObj(dateStr: string) {
   return parseDate(dateStr, "MM/dd/yyyy HH:mm", new Date());
 }
 
-jest.mock("../../services/backendService", () => {
-  return {
-    storeWorkout: jest.fn(),
-  };
-});
+const MOCK_ADD_RECORD_TO_WORKOUT_HISTORY = jest.fn();
 
 import { WORKOUT_HISTORY_PROVIDER } from "../../providers/WorkoutHistoryProvider";
 
@@ -329,7 +325,8 @@ WORKOUT_HISTORY_PROVIDER.getWorkoutHistory = jest
     }
   );
 
-import { storeWorkout } from "../../services/backendService";
+WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory = jest.fn();
+
 import { WorkoutForm } from "./WorkoutForm";
 
 describe("WorkoutForm", () => {
@@ -404,7 +401,9 @@ describe("WorkoutForm", () => {
       fireEvent.press(screen.getByText("Finish"));
     });
 
-    expect(storeWorkout).toHaveBeenCalledWith("rowing_machine", {
+    expect(
+      WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory
+    ).toHaveBeenCalledWith("rowing_machine", {
       startTimestamp: CURRENT_DATETIME,
       exercises: [
         {
