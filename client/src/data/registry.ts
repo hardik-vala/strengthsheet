@@ -1,4 +1,9 @@
-import { Circuit, Exercise, ExerciseUnit, SetType } from "../models/Workout/Core";
+import {
+  Circuit,
+  Exercise,
+  ExerciseUnit,
+  SetType,
+} from "../models/Workout/Core";
 import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 
 export type WorkoutTemplateRegistry = { [k: string]: WorkoutTemplate };
@@ -10,7 +15,7 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   bench_press_flat_barbell: {
     key: "bench_press_flat_barbell",
@@ -18,7 +23,7 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   bench_press_incline_barbell: {
     key: "bench_press_incline_barbell",
@@ -26,7 +31,7 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   dumbbell_press_close_grip_incline: {
     key: "dumbbell_press_close_grip_incline",
@@ -34,7 +39,7 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   face_pull_cable: {
     key: "face_pull_cable",
@@ -42,7 +47,7 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   hamstring_curl_machine: {
     key: "hamstring_curl_machine",
@@ -50,7 +55,7 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   hip_thrust: {
     key: "hip_thrust",
@@ -58,7 +63,7 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   hip_thrust_single_leg: {
     key: "hip_thrust_single_leg",
@@ -66,14 +71,12 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   lat_pullup_bodyweight: {
     key: "lat_pullup_bodyweight",
     displayName: "Lat Pull-up (Bodyweight)",
-    measures: [
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
   lateral_raise_dumbbells: {
     key: "lateral_raise_dumbbells",
@@ -81,22 +84,22 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   lateral_raise_hold_dumbbells: {
     key: "lateral_raise_hold_dumbbells",
     displayName: "Lateral Raise Hold (Dumbbells)",
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
-      { key: "time", displayName: "time", unit: ExerciseUnit.time }
-    ]
+      { key: "time", displayName: "time", unit: ExerciseUnit.time },
+    ],
   },
   rowing_machine: {
     key: "rowing_machine",
     displayName: "Rowing (Machine)",
     measures: [
       { key: "meters", displayName: "meters", unit: ExerciseUnit.meters },
-      { key: "time", displayName: "time", unit: ExerciseUnit.time }
+      { key: "time", displayName: "time", unit: ExerciseUnit.time },
     ],
   },
   shoulder_press_barbell: {
@@ -105,7 +108,7 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   shoulder_press_barbell_alternating: {
     key: "shoulder_press_barbell_alternating",
@@ -113,21 +116,17 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   squat_deep_bodyweight: {
     key: "squat_wide_stance_barbell",
     displayName: "Deep Squat (Bodyweight)",
-    measures: [
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
   squat_split_bulgarian_bodyweight: {
     key: "squat_split_bulgarian_bodyweight",
     displayName: "Bulgarian Split Squat (Bodyweight)",
-    measures: [
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
   squat_wide_stance_barbell: {
     key: "squat_wide_stance_barbell",
@@ -135,14 +134,12 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   tricep_dip_bodyweight: {
     key: "tricep_dip_bodyweight",
     displayName: "Tricep Dip (Bodyweight)",
-    measures: [
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
   tricep_extension_cable: {
     key: "tricep_extension_cable",
@@ -150,15 +147,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
+    ],
   },
   y_lift_off: {
     key: "y_lift_off",
     displayName: "Y Lift-Off",
-    measures: [
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ]
-  }
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
 };
 
 export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
@@ -167,11 +162,11 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["bench_press_incline_barbell"],
-        note: null
+        note: null,
       },
       {
         exercise: EXERCISE_REGISTRY["dumbbell_press_close_grip_incline"],
-        note: null
+        note: null,
       },
     ],
   },
@@ -180,11 +175,11 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["face_pull_cable"],
-        note: null
+        note: null,
       },
       {
         exercise: EXERCISE_REGISTRY["tricep_extension_cable"],
-        note: null
+        note: null,
       },
     ],
   },
@@ -193,11 +188,11 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["hip_thrust_single_leg"],
-        note: null
+        note: null,
       },
       {
         exercise: EXERCISE_REGISTRY["hip_thrust"],
-        note: null
+        note: null,
       },
     ],
   },
@@ -206,11 +201,11 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["lat_pullup_bodyweight"],
-        note: null
+        note: null,
       },
       {
         exercise: EXERCISE_REGISTRY["tricep_dip_bodyweight"],
-        note: null
+        note: null,
       },
     ],
   },
@@ -219,15 +214,15 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["shoulder_press_barbell_alternating"],
-        note: null
+        note: null,
       },
       {
         exercise: EXERCISE_REGISTRY["face_pull_cable"],
-        note: null
+        note: null,
       },
     ],
   },
-}
+};
 
 export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
   stretches: {
@@ -235,9 +230,7 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
     displayName: "Stretches",
     iconKey: "weight-lifter",
     note: "",
-    drills: [
-      
-    ],
+    drills: [],
   },
   push_shoulders: {
     key: "push_shoulders",
@@ -430,7 +423,7 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
           { index: 2, setType: SetType.Working },
           { index: 3, setType: SetType.Working },
           { index: 4, setType: SetType.Working },
-          { index: 5, setType: SetType.Working }
+          { index: 5, setType: SetType.Working },
         ],
       },
       {
@@ -470,7 +463,7 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
           { index: 2, setType: SetType.Working },
           { index: 3, setType: SetType.Working },
         ],
-      }
+      },
     ],
   },
   pull_upper_back: {
@@ -512,8 +505,11 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         displayName: "Rowing (Machine)",
         iconKey: "",
         note: null,
-        sets: [{ index: 1, setType: SetType.Warmup }, { index: 1, setType: SetType.Working }],
+        sets: [
+          { index: 1, setType: SetType.Warmup },
+          { index: 1, setType: SetType.Working },
+        ],
       },
-    ]
+    ],
   },
 };
