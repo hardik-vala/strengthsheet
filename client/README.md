@@ -25,4 +25,5 @@ npx expo start
 
 ### iOS Device
 
-[Link](https://reactnative.dev/docs/running-on-device)
+1. Make sure device is connected to the same network.
+2. Run `npx expo run:ios --device` and select the device when prompted.
