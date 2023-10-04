@@ -33,6 +33,11 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  bent_knee_fall_out_band: {
+    key: "bent_knee_fall_out_band",
+    displayName: "Bent Knee Fallout (Band)",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
   dumbbell_press_close_grip_incline: {
     key: "dumbbell_press_close_grip_incline",
     displayName: "Close-Grip Dumbbell Press (Incline)",
@@ -56,6 +61,11 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
+  },
+  hip_abduction_looped_elastic_band: {
+    key: "hip_abduction_looped_elastic_band",
+    displayName: "Hip Abduction (Looped Elastic Band)",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
   hip_thrust: {
     key: "hip_thrust",
@@ -94,6 +104,21 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "time", displayName: "time", unit: ExerciseUnit.time },
     ],
   },
+  lateral_step_down: {
+    key: "lateral_step_down",
+    displayName: "Lateral Step Down",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  ninety_ninety: {
+    key: "ninety_ninety",
+    displayName: "90-90",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  plank_alternating_leg_lifts: {
+    key: "plank_alternating_leg_lifts",
+    displayName: "Plank with Alternating Leg Lifts",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
   rowing_machine: {
     key: "rowing_machine",
     displayName: "Rowing (Machine)",
@@ -119,8 +144,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     ],
   },
   squat_deep_bodyweight: {
-    key: "squat_wide_stance_barbell",
+    key: "squat_deep_bodyweight",
     displayName: "Deep Squat (Bodyweight)",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  squat_jump_forward_bodyweight: {
+    key: "squat_jump_forward_bodyweight",
+    displayName: "Forward Jump Squats (Bodyweight)",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
   squat_split_bulgarian_bodyweight: {
@@ -393,9 +423,75 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
   it_band_rehab: {
     key: "it_band_rehab",
     displayName: "IT Band Rehab",
-    iconKey: "weight-lifter",
+    iconKey: "yoga",
     note: "",
-    drills: [],
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["ninety_ninety"],
+        displayName: "90-90",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["hip_abduction_looped_elastic_band"],
+        displayName: "Hip Abduction (Looped Elastic Band)",
+        iconKey: "",
+        note: "10 reps with 1 second hold",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["lateral_step_down"],
+        displayName: "Lateral Step Down",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["squat_jump_forward_bodyweight"],
+        displayName: "Forward Jump Squats (Bodyweight)",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["bent_knee_fall_out_band"],
+        displayName: "Bent Knee Fallout (Band)",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["plank_alternating_leg_lifts"],
+        displayName: "Plank with Alternating Leg Lifts",
+        iconKey: "",
+        note: "10 reps with 2 second hold",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+    ],
   },
   basketball_warmup: {
     key: "basketball_warmup",
