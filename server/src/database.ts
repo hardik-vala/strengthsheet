@@ -4,12 +4,14 @@ import { format as formatDate, parse as parseDate } from "date-fns";
 
 export interface WorkoutHistoryTableRow {
   workoutKey: string;
+  sheetId: string;
   records: WorkoutHistoryRecord[];
 }
 
 export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
   rowing_machine: {
     workoutKey: "rowing_machine",
+    sheetId: "Rowing (Machine)",
     records: [
       {
         startTimestamp: convertToDateObj("08/25/2023 20:04"),
@@ -130,6 +132,7 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
   },
   legs: {
     workoutKey: "legs",
+    sheetId: "Legs",
     records: [
       {
         startTimestamp: convertToDateObj("09/20/2023 20:00"),
@@ -294,10 +297,6 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
         ],
       },
     ],
-  },
-  pull: {
-    workoutKey: "pull",
-    records: [],
   },
 };
 

@@ -1,5 +1,9 @@
 import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
+import { format as formatDate } from "date-fns";
 import { WORKOUT_HISTORY_TABLE, WorkoutHistoryTableRow } from "../database";
+import { SHEET_PROVIDER } from "./sheetProvider";
+
+const SPREADSHEET_ID = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
 
 class WorkoutHistoryProvider {
   private static instance: WorkoutHistoryProvider;
@@ -15,6 +19,7 @@ class WorkoutHistoryProvider {
   }
 
   appendRecordToWorkoutHistory(
+    accessToken: string,
     workoutKey: string,
     record: WorkoutHistoryRecord
   ): void {
@@ -23,6 +28,13 @@ class WorkoutHistoryProvider {
     }
 
     WORKOUT_HISTORY_TABLE[workoutKey].records.push(record);
+
+    SHEET_PROVIDER.appendRowToGoogleSheet(
+      accessToken,
+      SPREADSHEET_ID,
+      WORKOUT_HISTORY_TABLE[workoutKey].sheetId,
+      serializeRecordAsSheetRow(record)
+    );
   }
 
   fetchWorkoutHistory(workoutKey: string): WorkoutHistoryTableRow {
@@ -31,3 +43,10 @@ class WorkoutHistoryProvider {
 }
 
 export const WORKOUT_HISTORY_PROVIDER = WorkoutHistoryProvider.getInstance();
+
+function serializeRecordAsSheetRow(record: WorkoutHistoryRecord): string[] {
+  const dateStr = formatDate(record.startTimestamp, "MM/dd/yyyy");
+  const startTimeStr = formatDate(record.startTimestamp, "HH:mm");
+
+  return [dateStr, startTimeStr].concat(record.exercises.map((e) => e.value));
+}

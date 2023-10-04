@@ -18,8 +18,6 @@ app.get("/api/v1/workout/history", (req, res) => {
     return res.status(401).json({ error: "Authorization header required" });
   }
 
-  const accessToken = req.headers.authorization.split(" ")[1];
-
   const { workoutKey } = req.query;
 
   if (!workoutKey) {
@@ -55,6 +53,7 @@ app.post("/api/v1/workout/save", (req, res) => {
 
   try {
     WORKOUT_HISTORY_PROVIDER.appendRecordToWorkoutHistory(
+      accessToken,
       body.workoutKey,
       deserializeWorkoutHistoryRecord(body.workoutRecord)
     );
