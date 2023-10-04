@@ -6,6 +6,13 @@ jest.useFakeTimers().setSystemTime(new Date("2023-08-27"));
 
 jest.mock("react-native-safe-area-context", () => mockSafeAreaContext);
 
+jest.mock("../../services/backendService", () => {
+  return {
+    fetchWorkoutHistory: jest.fn(),
+    storeRecordInWorkoutHistory: jest.fn(),
+  };
+});
+
 import { PaperProvider } from "react-native-paper";
 import { WORKOUT_TEMPLATE_REGISTRY } from "../../data/registry";
 import { WorkoutPortal } from "./WorkoutPortal";

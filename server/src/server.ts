@@ -1,7 +1,10 @@
 import { SaveWorkoutHistoryRecordRequestBody } from "@models/Backend";
 import cors from "cors";
 import express from "express";
-import { deserializeWorkoutHistoryRecord, serializeWorkoutHistoryTableRow } from "./database";
+import {
+  deserializeWorkoutHistoryRecord,
+  serializeWorkoutHistoryTableRow,
+} from "./database";
 import { WORKOUT_HISTORY_PROVIDER } from "./providers/workoutHistoryProvider";
 
 const app = express();
@@ -9,6 +12,14 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/v1/workout/history", (req, res) => {
+  const authHeader = req.headers.authorization;
+
+  if (!authHeader) {
+    return res.status(401).json({ error: "Authorization header required" });
+  }
+
+  const accessToken = req.headers.authorization.split(" ")[1];
+
   const { workoutKey } = req.query;
 
   if (!workoutKey) {
@@ -32,6 +43,14 @@ app.get("/api/v1/workout/history", (req, res) => {
 });
 
 app.post("/api/v1/workout/save", (req, res) => {
+  const authHeader = req.headers.authorization;
+
+  if (!authHeader) {
+    return res.status(401).json({ error: "Authorization header required" });
+  }
+
+  const accessToken = req.headers.authorization.split(" ")[1];
+
   const body = req.body as SaveWorkoutHistoryRecordRequestBody;
 
   try {

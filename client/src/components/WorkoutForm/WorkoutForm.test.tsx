@@ -313,7 +313,12 @@ function convertToDateObj(dateStr: string) {
   return parseDate(dateStr, "MM/dd/yyyy HH:mm", new Date());
 }
 
-const MOCK_ADD_RECORD_TO_WORKOUT_HISTORY = jest.fn();
+jest.mock("../../services/backendService", () => {
+  return {
+    fetchWorkoutHistory: jest.fn(),
+    storeRecordInWorkoutHistory: jest.fn(),
+  };
+});
 
 import { WORKOUT_HISTORY_PROVIDER } from "../../providers/WorkoutHistoryProvider";
 
