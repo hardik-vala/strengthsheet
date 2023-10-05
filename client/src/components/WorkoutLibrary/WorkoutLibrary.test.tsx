@@ -43,6 +43,23 @@ describe("WorkoutLibrary", () => {
     expect(screen).toMatchSnapshot();
   });
 
+  it("renders workout preview when a complex workout is selected", async () => {
+    render(
+      <PaperProvider>
+        <WorkoutLibrary
+          workoutTemplateRegistry={WORKOUT_TEMPLATE_REGISTRY}
+          onStartWorkout={mockOnStartWorkout}
+        />
+      </PaperProvider>
+    );
+
+    await act(() => {
+      fireEvent.press(screen.getByText("Legs"));
+    });
+
+    expect(screen).toMatchSnapshot();
+  });
+
   it("renders workout form when a workout is started", async () => {
     render(
       <PaperProvider>
