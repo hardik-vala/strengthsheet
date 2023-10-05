@@ -9,6 +9,20 @@ import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 export type WorkoutTemplateRegistry = { [k: string]: WorkoutTemplate };
 
 export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
+  arm_circle: {
+    key: "arm_circle",
+    displayName: "Arm Circle",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  arm_cross_over: {
+    key: "arm_cross_over",
+    displayName: "Arm Cross-Over",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   arnold_press_dumbbells: {
     key: "arnold_press_dumbbells",
     displayName: "Arnold Press (Dumbbells)",
@@ -38,6 +52,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "Bent Knee Fallout (Band)",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
+  carioca: {
+    key: "carioca",
+    displayName: "Carioca",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   dumbbell_press_close_grip_incline: {
     key: "dumbbell_press_close_grip_incline",
     displayName: "Close-Grip Dumbbell Press (Incline)",
@@ -51,6 +72,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "Face Pull (Cable)",
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  frankenstein_mark_rdl: {
+    key: "frankenstein_mark_rdl",
+    displayName: "Frankenstein March with RDL",
+    measures: [
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
@@ -83,6 +111,20 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  knee_hug: {
+    key: "knee_hug",
+    displayName: "Knee Hug",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  knee_raise_alternating: {
+    key: "knee_raise_alternating",
+    displayName: "Alternating Knee Raise",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   lat_pullup_bodyweight: {
     key: "lat_pullup_bodyweight",
     displayName: "Lat Pull-up (Bodyweight)",
@@ -109,6 +151,34 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "Lateral Step Down",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
+  lateral_touch: {
+    key: "lateral_touch",
+    displayName: "Lateral Touch",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  leg_swing_forward_backward: {
+    key: "leg_swing_forward_backward",
+    displayName: "Leg Swing (Forward / Backward)",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  leg_swing_lateral: {
+    key: "leg_swing_lateral",
+    displayName: "Leg Swing (Lateral)",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  lunges_walking_torso_twist_calf_raise: {
+    key: "lunges_walking_torso_twist_calf_raise",
+    displayName: "Walking Lunge with Torso Twist into Calf-Raise",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   ninety_ninety: {
     key: "ninety_ninety",
     displayName: "90-90",
@@ -118,6 +188,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     key: "plank_alternating_leg_lifts",
     displayName: "Plank with Alternating Leg Lifts",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  quad_walk_lean: {
+    key: "quad_walk_lean",
+    displayName: "Quad-Walk with Lean",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
   },
   rowing_machine: {
     key: "rowing_machine",
@@ -152,6 +229,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     key: "squat_jump_forward_bodyweight",
     displayName: "Forward Jump Squats (Bodyweight)",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  squat_over_the_fence: {
+    key: "squat_over_the_fence",
+    displayName: "Over-The-Fence and Squat",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
   },
   squat_split_bulgarian_bodyweight: {
     key: "squat_split_bulgarian_bodyweight",
@@ -496,9 +580,118 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
   basketball_warmup: {
     key: "basketball_warmup",
     displayName: "Basketball Warmup",
-    iconKey: "weight-lifter",
+    iconKey: "basketball",
     note: "",
-    drills: [],
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["arm_cross_over"],
+        displayName: "Arm Cross-Over",
+        iconKey: "",
+        note: "About 30",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["arm_circle"],
+        displayName: "Arm Circle",
+        iconKey: "",
+        note: "About 30 forward / backward",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["knee_hug"],
+        displayName: "Knee Hug",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["lunges_walking_torso_twist_calf_raise"],
+        displayName: "Walking Lunge with Torso Twist into Calf-Raise",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["quad_walk_lean"],
+        displayName: "Quad-Walk with Lean",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["knee_raise_alternating"],
+        displayName: "Alternating Knee Raise",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["carioca"],
+        displayName: "Carioca",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["frankenstein_mark_rdl"],
+        displayName: "Frankenstein March with RDL",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["lateral_touch"],
+        displayName: "Lateral Touch",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["squat_over_the_fence"],
+        displayName: "Over-The-Fence and Squat",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["leg_swing_forward_backward"],
+        displayName: "Leg Swing (Forward / Backward)",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["leg_swing_lateral"],
+        displayName: "Leg Swing (Lateral)",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+    ],
   },
   legs: {
     key: "legs",

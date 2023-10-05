@@ -1085,6 +1085,39 @@ exports[`WorkoutPortal renders correctly 1`] = `
                         >
                           Basketball Warmup
                         </Text>
+                        <Text
+                          ellipsizeMode="tail"
+                          numberOfLines={1}
+                          onTextLayout={[Function]}
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "textAlign": "left",
+                              },
+                              {
+                                "color": "rgba(28, 27, 31, 1)",
+                                "fontFamily": "System",
+                                "fontWeight": "400",
+                                "letterSpacing": 0,
+                              },
+                              {
+                                "writingDirection": "ltr",
+                              },
+                              [
+                                {
+                                  "fontSize": 14,
+                                },
+                                {
+                                  "color": "rgba(73, 69, 79, 1)",
+                                },
+                                undefined,
+                              ],
+                            ]
+                          }
+                        >
+                          Arm Cross-Over, Arm Circle, Knee Hug, Walking Lunge with Torso Twist into Calf-Raise, Quad-Walk with Lean, Alternating Knee Raise, Carioca, Frankenstein March with RDL, Lateral Touch, Over-The-Fence and Squat, Leg Swing (Forward / Backward), Leg Swing (Lateral)
+                        </Text>
                       </View>
                     </View>
                   </View>
