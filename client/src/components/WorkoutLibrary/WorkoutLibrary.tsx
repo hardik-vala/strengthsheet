@@ -43,7 +43,7 @@ export function WorkoutLibrary({
               <WorkoutListItem
                 key={w.key}
                 title={w.displayName}
-                description={w.note}
+                description={getWorkoutDescription(w)}
                 iconKey={w.iconKey}
                 onPress={() => setPreviewWorkout(w)}
               />
@@ -111,6 +111,14 @@ function WorkoutListItem({
       style={workoutLibraryStyles.workoutListItem}
     />
   );
+}
+
+function getWorkoutDescription(workoutTemplate: WorkoutTemplate) {
+  if (workoutTemplate.note) {
+    return workoutTemplate.note;
+  }
+
+  return workoutTemplate.drills.map(d => d.displayName).join(", ");
 }
 
 const workoutLibraryStyles = StyleSheet.create({
