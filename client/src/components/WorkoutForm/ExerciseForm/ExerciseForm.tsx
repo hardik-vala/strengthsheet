@@ -21,6 +21,7 @@ export function ExerciseForm({
   return (
     <>
       <Text variant="titleMedium">{exerciseTemplate.displayName}</Text>
+      <Text variant="bodyMedium">{exerciseTemplate.note}</Text>
       {exerciseTemplate.sets.map((set) => {
         return (
           <ShelfForm
