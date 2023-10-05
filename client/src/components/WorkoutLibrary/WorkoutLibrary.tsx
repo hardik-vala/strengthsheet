@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
-import {
-  Button,
-  List,
-  Modal,
-  Portal,
-} from "react-native-paper";
+import { Button, List, Modal, Portal } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { WorkoutTemplateRegistry } from "../../data/registry";
-import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
+import { SetType } from "../../models/Workout/Core";
+import {
+  DrillTemplate,
+  WorkoutTemplate,
+} from "../../models/Workout/WorkoutTemplate";
 
 interface WorkoutLibraryProps {
   workoutTemplateRegistry: WorkoutTemplateRegistry;
@@ -75,7 +74,12 @@ function WorkoutPreviewModal({
       contentContainerStyle={{ backgroundColor: "white", padding: 20 }}
     >
       <List.Section title={workoutTemplate.displayName}>
-        <List.Item title="TODO" />
+        {workoutTemplate.drills.map((d) => (
+          <List.Item
+            key={getDrillKey(d)}
+            title={getDrillPreview(d)}
+          />
+        ))}
       </List.Section>
       <Button mode="contained-tonal" onPress={onStartWorkout}>
         Start
@@ -118,7 +122,25 @@ function getWorkoutDescription(workoutTemplate: WorkoutTemplate) {
     return workoutTemplate.note;
   }
 
-  return workoutTemplate.drills.map(d => d.displayName).join(", ");
+  return workoutTemplate.drills.map((d) => d.displayName).join(", ");
+}
+
+function getDrillKey(drill: DrillTemplate): string {
+  if ("circuit" in drill) {
+    return drill.circuit.key;
+  }
+
+  if ("exercise" in drill) {
+    return drill.exercise.key;
+  }
+
+  throw new Error(`Cannot find key for drill: ${JSON.stringify(drill)}`);
+}
+
+function getDrillPreview(drill: DrillTemplate): string {
+  const setNum = drill.sets.filter(s => s.setType !== SetType.Warmup).length;
+
+  return (setNum > 0 ? `${setNum} x ` : "") + drill.displayName;
 }
 
 const workoutLibraryStyles = StyleSheet.create({
