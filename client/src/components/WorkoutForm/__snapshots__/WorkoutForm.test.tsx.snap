@@ -273,6 +273,31 @@ exports[`WorkoutForm renders correctly 1`] = `
   >
     Rowing (Machine)
   </Text>
+  <Text
+    style={
+      [
+        {
+          "textAlign": "left",
+        },
+        {
+          "color": "rgba(28, 27, 31, 1)",
+          "writingDirection": "ltr",
+        },
+        [
+          {
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.15,
+            "lineHeight": 24,
+          },
+          undefined,
+        ],
+      ]
+    }
+  >
+    Rowing machine for cardio.
+  </Text>
   <View
     style={
       {
@@ -1949,6 +1974,29 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
   >
     Legs
   </Text>
+  <Text
+    style={
+      [
+        {
+          "textAlign": "left",
+        },
+        {
+          "color": "rgba(28, 27, 31, 1)",
+          "writingDirection": "ltr",
+        },
+        [
+          {
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.15,
+            "lineHeight": 24,
+          },
+          undefined,
+        ],
+      ]
+    }
+  />
   <View
     style={
       {

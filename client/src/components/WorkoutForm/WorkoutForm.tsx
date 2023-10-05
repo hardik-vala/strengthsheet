@@ -71,6 +71,7 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
         </Appbar.Header>
         <StatusBar style="auto" />
         <Text variant="headlineMedium">{workoutTemplate.displayName}</Text>
+        <Text variant="bodyLarge">{workoutTemplate.note}</Text>
         <View
           style={{
             flexDirection: "row",
