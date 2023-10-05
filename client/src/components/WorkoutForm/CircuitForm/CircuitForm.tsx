@@ -23,6 +23,7 @@ export function CircuitForm({
   return (
     <>
       <Text variant="titleMedium">{circuitTemplate.displayName}</Text>
+      <Text variant="bodyMedium">{circuitTemplate.note}</Text>
       {circuitTemplate.sets.map((set) => {
         return (
           <CircuitSetForm

@@ -379,8 +379,8 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
       {
         exercise: EXERCISE_REGISTRY["bench_press_flat_barbell"],
         displayName: "Bench Press (Flat)",
-        iconKey: "45 lb, 65 lb, 95 lb @ 15 reps, then 145 lb @ 10 reps",
-        note: null,
+        iconKey: "",
+        note: "45 lb, 65 lb, 95 lb @ 15 reps, then 145 lb @ 10 reps",
         sets: [
           { index: 1, setType: SetType.Warmup },
           { index: 2, setType: SetType.Warmup },
@@ -400,8 +400,8 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
       {
         circuit: CIRCUIT_REGISTRY["bench_press_incline_circuit"],
         displayName: "Bench Press Circuit (Incline)",
-        iconKey: "20 reps down to 10 (-2 reps per round) @ 65 lb and 20 lb DBs",
-        note: null,
+        iconKey: "",
+        note: "20 reps down to 10 (-2 reps per round) @ 65 lb and 20 lb DBs",
         sets: [
           { index: 1, setType: SetType.Working },
           { index: 2, setType: SetType.Working },
