@@ -1347,7 +1347,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     ]
                   }
                 >
-                  Pull Warm-up Circuit
+                  Dead Bug, Chin Tuck, Pull Warm-up Circuit, Bent-Over Row (Barbell), Cable Row Circuit, Bicep Curl Circuit
                 </Text>
               </View>
             </View>
@@ -1463,6 +1463,39 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                   }
                 >
                   Pull (Lower Back)
+                </Text>
+                <Text
+                  ellipsizeMode="tail"
+                  numberOfLines={1}
+                  onTextLayout={[Function]}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "textAlign": "left",
+                      },
+                      {
+                        "color": "rgba(28, 27, 31, 1)",
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                        "letterSpacing": 0,
+                      },
+                      {
+                        "writingDirection": "ltr",
+                      },
+                      [
+                        {
+                          "fontSize": 14,
+                        },
+                        {
+                          "color": "rgba(73, 69, 79, 1)",
+                        },
+                        undefined,
+                      ],
+                    ]
+                  }
+                >
+                  Dead Bug, Chin Tuck
                 </Text>
               </View>
             </View>
@@ -3262,7 +3295,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     ]
                   }
                 >
-                  Pull Warm-up Circuit
+                  Dead Bug, Chin Tuck, Pull Warm-up Circuit, Bent-Over Row (Barbell), Cable Row Circuit, Bicep Curl Circuit
                 </Text>
               </View>
             </View>
@@ -3413,6 +3446,39 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                   }
                 >
                   Pull (Lower Back)
+                </Text>
+                <Text
+                  ellipsizeMode="tail"
+                  numberOfLines={1}
+                  onTextLayout={[Function]}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "textAlign": "left",
+                      },
+                      {
+                        "color": "rgba(28, 27, 31, 1)",
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                        "letterSpacing": 0,
+                      },
+                      {
+                        "writingDirection": "ltr",
+                      },
+                      [
+                        {
+                          "fontSize": 14,
+                        },
+                        {
+                          "color": "rgba(73, 69, 79, 1)",
+                        },
+                        undefined,
+                      ],
+                    ]
+                  }
+                >
+                  Dead Bug, Chin Tuck
                 </Text>
               </View>
             </View>
@@ -5247,7 +5313,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     ]
                   }
                 >
-                  Pull Warm-up Circuit
+                  Dead Bug, Chin Tuck, Pull Warm-up Circuit, Bent-Over Row (Barbell), Cable Row Circuit, Bicep Curl Circuit
                 </Text>
               </View>
             </View>
@@ -5398,6 +5464,39 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                   }
                 >
                   Pull (Lower Back)
+                </Text>
+                <Text
+                  ellipsizeMode="tail"
+                  numberOfLines={1}
+                  onTextLayout={[Function]}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "textAlign": "left",
+                      },
+                      {
+                        "color": "rgba(28, 27, 31, 1)",
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                        "letterSpacing": 0,
+                      },
+                      {
+                        "writingDirection": "ltr",
+                      },
+                      [
+                        {
+                          "fontSize": 14,
+                        },
+                        {
+                          "color": "rgba(73, 69, 79, 1)",
+                        },
+                        undefined,
+                      ],
+                    ]
+                  }
+                >
+                  Dead Bug, Chin Tuck
                 </Text>
               </View>
             </View>
@@ -8251,7 +8350,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     ]
                   }
                 >
-                  Pull Warm-up Circuit
+                  Dead Bug, Chin Tuck, Pull Warm-up Circuit, Bent-Over Row (Barbell), Cable Row Circuit, Bicep Curl Circuit
                 </Text>
               </View>
             </View>
@@ -8402,6 +8501,39 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                   }
                 >
                   Pull (Lower Back)
+                </Text>
+                <Text
+                  ellipsizeMode="tail"
+                  numberOfLines={1}
+                  onTextLayout={[Function]}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "textAlign": "left",
+                      },
+                      {
+                        "color": "rgba(28, 27, 31, 1)",
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                        "letterSpacing": 0,
+                      },
+                      {
+                        "writingDirection": "ltr",
+                      },
+                      [
+                        {
+                          "fontSize": 14,
+                        },
+                        {
+                          "color": "rgba(73, 69, 79, 1)",
+                        },
+                        undefined,
+                      ],
+                    ]
+                  }
+                >
+                  Dead Bug, Chin Tuck
                 </Text>
               </View>
             </View>

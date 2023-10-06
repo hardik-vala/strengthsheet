@@ -59,6 +59,20 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  chin_tuck: {
+    key: "chin_tuck",
+    displayName: "Chin Tuck",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  dead_bug: {
+    key: "dead_bug",
+    displayName: "Dead Bug",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   dumbbell_press_close_grip_incline: {
     key: "dumbbell_press_close_grip_incline",
     displayName: "Close-Grip Dumbbell Press (Incline)",
@@ -268,6 +282,55 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "Y Lift-Off",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
+
+  row_bent_over_barbell: {
+    key: "row_bent_over_barbell",
+    displayName: "Bent-Over Row (Barbell)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  row_cable: {
+    key: "row_cable",
+    displayName: "Cable Row",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  pull_mid_chest_cable: {
+    key: "pull_mid_chest_cable",
+    displayName: "Mid-Chest Pull (Cable)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  bicep_curl_under_hand_chest_supported_dumbbells: {
+    key: "bicep_curl_under_hand_chest_supported_dumbbells",
+    displayName: "Chest-Supported Underhand Bicep Curl (Dumbbells)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  bicep_curl_hammer_chest_supported_dumbbells: {
+    key: "bicep_curl_hammer_chest_supported_dumbbells",
+    displayName: "Chest-Supported Hammer Bicep Curl (Dumbbells)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  bicep_curl_gorilla_chest_supported_dumbbells: {
+    key: "bicep_curl_gorilla_chest_supported_dumbbells",
+    displayName: "Chest-Supported Gorilla Bicep Curl (Dumbbells)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
 };
 
 export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
@@ -280,6 +343,23 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
       },
       {
         exercise: EXERCISE_REGISTRY["dumbbell_press_close_grip_incline"],
+        note: null,
+      },
+    ],
+  },
+  bicep_curl_circuit: {
+    key: "bicep_curl_circuit",
+    exercises: [
+      {
+        exercise: EXERCISE_REGISTRY["bicep_curl_under_hand_chest_supported_dumbbells"],
+        note: null,
+      },
+      {
+        exercise: EXERCISE_REGISTRY["bicep_curl_hammer_chest_supported_dumbbells"],
+        note: null,
+      },
+      {
+        exercise: EXERCISE_REGISTRY["bicep_curl_gorilla_chest_supported_dumbbells"],
         note: null,
       },
     ],
@@ -319,6 +399,19 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
       },
       {
         exercise: EXERCISE_REGISTRY["tricep_dip_bodyweight"],
+        note: null,
+      },
+    ],
+  },
+  row_cable_circuit: {
+    key: "row_cable_circuit",
+    exercises: [
+      {
+        exercise: EXERCISE_REGISTRY["row_cable"],
+        note: null,
+      },
+      {
+        exercise: EXERCISE_REGISTRY["pull_mid_chest_cable"],
         note: null,
       },
     ],
@@ -762,6 +855,28 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
     note: "",
     drills: [
       {
+        exercise: EXERCISE_REGISTRY["dead_bug"],
+        displayName: "Dead Bug",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["chin_tuck"],
+        displayName: "Chin Tuck",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
         circuit: CIRCUIT_REGISTRY["pull_warmup_circuit"],
         displayName: "Pull Warm-up Circuit",
         iconKey: "",
@@ -774,6 +889,48 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
           { index: 5, setType: SetType.Working },
         ],
       },
+      {
+        exercise: EXERCISE_REGISTRY["row_bent_over_barbell"],
+        displayName: "Bent-Over Row (Barbell)",
+        iconKey: "",
+        note: "Touch chest. Warm-up: 15 reps @ 45 lb, 95 lb, Working: 8 reps, 115 reps.",
+        sets: [
+          { index: 1, setType: SetType.Warmup },
+          { index: 2, setType: SetType.Warmup },
+          { index: 3, setType: SetType.Warmup },
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        circuit: CIRCUIT_REGISTRY["row_cable_circuit"],
+        displayName: "Cable Row Circuit",
+        iconKey: "",
+        note: "40 lb",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+          { index: 6, setType: SetType.Working },
+          { index: 7, setType: SetType.Working },
+        ],
+      },
+      {
+        circuit: CIRCUIT_REGISTRY["bicep_curl_circuit"],
+        displayName: "Bicep Curl Circuit",
+        iconKey: "",
+        note: "10 reps @ 25 lb",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
     ],
   },
   pull_lower_back: {
@@ -781,7 +938,30 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
     displayName: "Pull (Lower Back)",
     iconKey: "weight-lifter",
     note: "",
-    drills: [],
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["dead_bug"],
+        displayName: "Dead Bug",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["chin_tuck"],
+        displayName: "Chin Tuck",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+    ],
   },
   rowing_machine: {
     key: "rowing_machine",
