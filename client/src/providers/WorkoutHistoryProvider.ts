@@ -37,7 +37,7 @@ class WorkoutHistoryProvider {
       workoutKey,
       workoutRecord: serializeWorkoutHistoryRecord(workoutRecord),
     };
-    storeRecordInWorkoutHistory(body);
+    await storeRecordInWorkoutHistory(body);
   }
 
   deserializeWorkoutHistoryResponse(
