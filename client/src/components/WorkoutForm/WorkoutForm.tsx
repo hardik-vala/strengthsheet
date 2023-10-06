@@ -180,12 +180,10 @@ function convertWorkoutValuesToRecord(
 
           const value = workoutValues[key.toString()];
 
-          if (value) {
-            exercises.push({
-              key,
-              value,
-            });
-          }
+          exercises.push({
+            key,
+            value,
+          });
         });
       });
     } else if ("circuit" in drill) {
