@@ -291,7 +291,10 @@ exports[`WorkoutPortal renders correctly 1`] = `
                               "letterSpacing": 0.25,
                               "lineHeight": 20,
                             },
-                            undefined,
+                            {
+                              "fontSize": 32,
+                              "fontWeight": "bold",
+                            },
                           ],
                         ],
                       ]

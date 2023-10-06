@@ -36,7 +36,10 @@ export function WorkoutLibrary({
         )}
       </Portal>
       <ScrollView style={{ marginTop: "25%" }}>
-        <List.Section title="Workouts">
+        <List.Section
+          title="Workouts"
+          titleStyle={{ fontSize: 32, fontWeight: "bold" }}
+        >
           {Object.values(workoutTemplateRegistry).map((w: WorkoutTemplate) => {
             return (
               <WorkoutListItem
@@ -75,10 +78,7 @@ function WorkoutPreviewModal({
     >
       <List.Section title={workoutTemplate.displayName}>
         {workoutTemplate.drills.map((d) => (
-          <List.Item
-            key={getDrillKey(d)}
-            title={getDrillPreview(d)}
-          />
+          <List.Item key={getDrillKey(d)} title={getDrillPreview(d)} />
         ))}
       </List.Section>
       <Button mode="contained-tonal" onPress={onStartWorkout}>
@@ -138,7 +138,7 @@ function getDrillKey(drill: DrillTemplate): string {
 }
 
 function getDrillPreview(drill: DrillTemplate): string {
-  const setNum = drill.sets.filter(s => s.setType !== SetType.Warmup).length;
+  const setNum = drill.sets.filter((s) => s.setType !== SetType.Warmup).length;
 
   return (setNum > 0 ? `${setNum} x ` : "") + drill.displayName;
 }

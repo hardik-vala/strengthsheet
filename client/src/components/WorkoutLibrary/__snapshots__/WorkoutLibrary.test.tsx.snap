@@ -226,7 +226,10 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                       "letterSpacing": 0.25,
                       "lineHeight": 20,
                     },
-                    undefined,
+                    {
+                      "fontSize": 32,
+                      "fontWeight": "bold",
+                    },
                   ],
                 ],
               ]
@@ -1894,7 +1897,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                       "letterSpacing": 0.25,
                       "lineHeight": 20,
                     },
-                    undefined,
+                    {
+                      "fontSize": 32,
+                      "fontWeight": "bold",
+                    },
                   ],
                 ],
               ]
@@ -3912,7 +3918,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                       "letterSpacing": 0.25,
                       "lineHeight": 20,
                     },
-                    undefined,
+                    {
+                      "fontSize": 32,
+                      "fontWeight": "bold",
+                    },
                   ],
                 ],
               ]
@@ -6949,7 +6958,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                       "letterSpacing": 0.25,
                       "lineHeight": 20,
                     },
-                    undefined,
+                    {
+                      "fontSize": 32,
+                      "fontWeight": "bold",
+                    },
                   ],
                 ],
               ]
