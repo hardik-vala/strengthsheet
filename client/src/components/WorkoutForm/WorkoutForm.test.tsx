@@ -415,10 +415,37 @@ describe("WorkoutForm", () => {
           key: WorkoutValueKey.createFromExercise(
             "rowing_machine",
             1,
+            SetType.Warmup,
+            "meters"
+          ),
+          value: undefined,
+        },
+        {
+          key: WorkoutValueKey.createFromExercise(
+            "rowing_machine",
+            1,
+            SetType.Warmup,
+            "time"
+          ),
+          value: undefined,
+        },
+        {
+          key: WorkoutValueKey.createFromExercise(
+            "rowing_machine",
+            1,
             SetType.Working,
             "meters"
           ),
           value: "5000",
+        },
+        {
+          key: WorkoutValueKey.createFromExercise(
+            "rowing_machine",
+            1,
+            SetType.Working,
+            "time"
+          ),
+          value: undefined,
         },
       ],
     });
