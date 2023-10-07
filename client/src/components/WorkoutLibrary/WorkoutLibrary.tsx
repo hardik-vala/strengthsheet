@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
-import { Button, List, Modal, Portal } from "react-native-paper";
+import { Button, Divider, List, Modal, Portal } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { WorkoutTemplateRegistry } from "../../data/registry";
 import { SetType } from "../../models/Workout/Core";
@@ -51,6 +51,7 @@ export function WorkoutLibrary({
               />
             );
           })}
+          <Divider style={workoutLibraryStyles.workoutListItemDivider} />
         </List.Section>
       </ScrollView>
     </SafeAreaProvider>
@@ -105,15 +106,20 @@ function WorkoutListItem({
   onPress,
 }: WorkoutListItemProps) {
   return (
-    <List.Item
-      title={title}
-      description={description}
-      descriptionNumberOfLines={1}
-      descriptionEllipsizeMode="tail"
-      left={() => <List.Icon icon={iconKey} />}
-      onPress={onPress}
-      style={workoutLibraryStyles.workoutListItem}
-    />
+    <>
+      <Divider style={workoutLibraryStyles.workoutListItemDivider} />
+      <List.Item
+        title={title}
+        titleStyle={{ marginBottom: 5, fontWeight: "bold" }}
+        description={description}
+        descriptionStyle={{ fontSize: 13 }}
+        descriptionNumberOfLines={2}
+        descriptionEllipsizeMode="tail"
+        left={() => <List.Icon icon={iconKey} />}
+        onPress={onPress}
+        style={workoutLibraryStyles.workoutListItem}
+      />
+    </>
   );
 }
 
@@ -145,6 +151,9 @@ function getDrillPreview(drill: DrillTemplate): string {
 
 const workoutLibraryStyles = StyleSheet.create({
   workoutListItem: {
-    marginHorizontal: 12,
+    paddingHorizontal: 10,
   },
+  workoutListItemDivider: {
+    height: 2,
+  }
 });
