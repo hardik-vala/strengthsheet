@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Alert, StyleSheet, View } from "react-native";
-import { MD3LightTheme, PaperProvider } from "react-native-paper";
+import { MD3DarkTheme as DefaultTheme, PaperProvider } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { SignIn } from "./src/components/SignIn/SignIn";
 import { WorkoutPortal } from "./src/components/WorkoutPortal/WorkoutPortal";
@@ -9,11 +9,11 @@ import { User } from "./src/models/User";
 import { signIn, signOut } from "./src/services/authService";
 
 const theme = {
-  ...MD3LightTheme,
+  ...DefaultTheme,
+  dark: true,
   colors: {
-    ...MD3LightTheme.colors,
+    ...DefaultTheme.colors,
     primary: "black",
-    secondary: "gray",
   },
 };
 
@@ -69,7 +69,6 @@ export function Content({ user, onSignIn, onSignOut }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     justifyContent: "center",
   },
 });

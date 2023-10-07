@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ScrollView, StyleSheet } from "react-native";
-import { Button, Divider, List, Modal, Portal } from "react-native-paper";
+import { ScrollView, StyleSheet, View } from "react-native";
+import { Button, Divider, List, Modal, Portal, Text } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { WorkoutTemplateRegistry } from "../../data/registry";
 import { SetType } from "../../models/Workout/Core";
@@ -35,25 +35,31 @@ export function WorkoutLibrary({
           />
         )}
       </Portal>
-      <ScrollView style={{ marginTop: "25%" }}>
-        <List.Section
-          title="Workouts"
-          titleStyle={{ fontSize: 32, fontWeight: "bold" }}
+      <View style={{ marginTop: "25%" }}>
+        <Text
+          variant="headlineLarge"
+          style={{ marginBottom: 10, fontWeight: "bold" }}
         >
-          {Object.values(workoutTemplateRegistry).map((w: WorkoutTemplate) => {
-            return (
-              <WorkoutListItem
-                key={w.key}
-                title={w.displayName}
-                description={getWorkoutDescription(w)}
-                iconKey={w.iconKey}
-                onPress={() => setPreviewWorkout(w)}
-              />
-            );
-          })}
-          <Divider style={workoutLibraryStyles.workoutListItemDivider} />
-        </List.Section>
-      </ScrollView>
+          Workouts
+        </Text>
+        <ScrollView>
+          <List.Section>
+            {Object.values(workoutTemplateRegistry).map(
+              (w: WorkoutTemplate) => {
+                return (
+                  <WorkoutListItem
+                    key={w.key}
+                    title={w.displayName}
+                    description={getWorkoutDescription(w)}
+                    iconKey={w.iconKey}
+                    onPress={() => setPreviewWorkout(w)}
+                  />
+                );
+              }
+            )}
+          </List.Section>
+        </ScrollView>
+      </View>
     </SafeAreaProvider>
   );
 }
@@ -107,7 +113,6 @@ function WorkoutListItem({
 }: WorkoutListItemProps) {
   return (
     <>
-      <Divider style={workoutLibraryStyles.workoutListItemDivider} />
       <List.Item
         title={title}
         titleStyle={{ marginBottom: 5, fontWeight: "bold" }}
@@ -119,6 +124,7 @@ function WorkoutListItem({
         onPress={onPress}
         style={workoutLibraryStyles.workoutListItem}
       />
+      <Divider style={workoutLibraryStyles.workoutListItemDivider} />
     </>
   );
 }
@@ -151,9 +157,10 @@ function getDrillPreview(drill: DrillTemplate): string {
 
 const workoutLibraryStyles = StyleSheet.create({
   workoutListItem: {
+    backgroundColor: "#333",
     paddingHorizontal: 10,
   },
   workoutListItemDivider: {
     height: 2,
-  }
+  },
 });
