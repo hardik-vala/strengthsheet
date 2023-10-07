@@ -238,6 +238,22 @@ exports[`WorkoutLibrary renders correctly 1`] = `
             Workouts
           </Text>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -276,7 +292,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -342,7 +358,10 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -353,6 +372,22 @@ exports[`WorkoutLibrary renders correctly 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -391,7 +426,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -457,7 +492,10 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -466,7 +504,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -490,7 +528,9 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -501,6 +541,22 @@ exports[`WorkoutLibrary renders correctly 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -539,7 +595,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -605,7 +661,10 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -614,7 +673,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -638,7 +697,9 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -649,6 +710,22 @@ exports[`WorkoutLibrary renders correctly 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -687,7 +764,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -753,7 +830,10 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -764,6 +844,22 @@ exports[`WorkoutLibrary renders correctly 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -802,7 +898,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -868,7 +964,10 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -877,7 +976,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -901,7 +1000,9 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -912,6 +1013,22 @@ exports[`WorkoutLibrary renders correctly 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -950,7 +1067,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -1016,7 +1133,10 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -1025,7 +1145,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -1049,7 +1169,9 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -1060,6 +1182,22 @@ exports[`WorkoutLibrary renders correctly 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -1098,7 +1236,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -1164,7 +1302,10 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -1173,7 +1314,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -1197,7 +1338,9 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -1208,6 +1351,22 @@ exports[`WorkoutLibrary renders correctly 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -1246,7 +1405,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -1312,7 +1471,10 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -1321,7 +1483,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -1345,7 +1507,9 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -1356,153 +1520,21 @@ exports[`WorkoutLibrary renders correctly 1`] = `
             </View>
           </View>
           <View
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": false,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             style={
               [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
                 false,
-                [
-                  {
-                    "paddingRight": 24,
-                    "paddingVertical": 8,
-                  },
-                  {
-                    "marginHorizontal": 12,
-                  },
-                ],
+                false,
+                {
+                  "height": 2,
+                },
               ]
             }
-          >
-            <View
-              style={
-                {
-                  "flexDirection": "row",
-                  "marginVertical": 6,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                pointerEvents="box-none"
-                style={
-                  [
-                    {
-                      "alignItems": "center",
-                      "justifyContent": "center",
-                    },
-                    undefined,
-                  ]
-                }
-              >
-                <Text />
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "paddingLeft": 16,
-                    },
-                    {
-                      "flex": 1,
-                      "justifyContent": "center",
-                    },
-                  ]
-                }
-              >
-                <Text
-                  numberOfLines={1}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "fontFamily": "System",
-                        "fontWeight": "400",
-                        "letterSpacing": 0,
-                      },
-                      {
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontSize": 16,
-                        },
-                        {
-                          "color": "rgba(28, 27, 31, 1)",
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  Pull (Lower Back)
-                </Text>
-                <Text
-                  ellipsizeMode="tail"
-                  numberOfLines={1}
-                  onTextLayout={[Function]}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "fontFamily": "System",
-                        "fontWeight": "400",
-                        "letterSpacing": 0,
-                      },
-                      {
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontSize": 14,
-                        },
-                        {
-                          "color": "rgba(73, 69, 79, 1)",
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  Dead Bug, Chin Tuck
-                </Text>
-              </View>
-            </View>
-          </View>
+          />
           <View
             accessibilityState={
               {
@@ -1542,7 +1574,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -1608,16 +1640,19 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
                 >
-                  Rowing (Machine)
+                  Pull (Lower Back)
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -1641,7 +1676,178 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
+                      ],
+                    ]
+                  }
+                >
+                  Dead Bug, Chin Tuck
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                false,
+                [
+                  {
+                    "paddingRight": 24,
+                    "paddingVertical": 8,
+                  },
+                  {
+                    "paddingHorizontal": 10,
+                  },
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                  "marginVertical": 6,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                pointerEvents="box-none"
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <Text />
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "paddingLeft": 16,
+                    },
+                    {
+                      "flex": 1,
+                      "justifyContent": "center",
+                    },
+                  ]
+                }
+              >
+                <Text
+                  numberOfLines={1}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "textAlign": "left",
+                      },
+                      {
+                        "color": "rgba(28, 27, 31, 1)",
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                        "letterSpacing": 0,
+                      },
+                      {
+                        "writingDirection": "ltr",
+                      },
+                      [
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                        },
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
+                      ],
+                    ]
+                  }
+                >
+                  Rowing (Machine)
+                </Text>
+                <Text
+                  ellipsizeMode="tail"
+                  numberOfLines={2}
+                  onTextLayout={[Function]}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "textAlign": "left",
+                      },
+                      {
+                        "color": "rgba(28, 27, 31, 1)",
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                        "letterSpacing": 0,
+                      },
+                      {
+                        "writingDirection": "ltr",
+                      },
+                      [
+                        {
+                          "fontSize": 14,
+                        },
+                        {
+                          "color": "rgba(73, 69, 79, 1)",
+                        },
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -1651,6 +1857,22 @@ exports[`WorkoutLibrary renders correctly 1`] = `
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
         </View>
       </View>
     </RCTScrollView>
@@ -1909,6 +2131,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
             Workouts
           </Text>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -1947,7 +2185,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -2048,7 +2286,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -2059,6 +2300,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -2097,7 +2354,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -2198,7 +2455,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -2207,7 +2467,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -2231,7 +2491,9 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -2242,6 +2504,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -2280,7 +2558,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -2381,7 +2659,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -2390,7 +2671,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -2414,7 +2695,9 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -2424,6 +2707,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -2463,7 +2762,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -2564,7 +2863,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -2574,6 +2876,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -2613,7 +2931,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -2714,7 +3032,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -2723,7 +3044,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -2747,7 +3068,9 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -2757,6 +3080,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -2796,7 +3135,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -2897,7 +3236,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -2906,7 +3248,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -2930,7 +3272,9 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -2941,6 +3285,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -2979,7 +3339,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -3080,7 +3440,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -3089,7 +3452,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -3113,7 +3476,9 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -3124,6 +3489,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -3162,7 +3543,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -3263,7 +3644,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -3272,7 +3656,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -3296,7 +3680,9 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -3307,6 +3693,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -3345,7 +3747,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -3446,7 +3848,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -3455,7 +3860,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -3479,7 +3884,9 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -3489,6 +3896,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -3528,7 +3951,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -3629,7 +4052,10 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -3638,7 +4064,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -3662,7 +4088,9 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -3672,6 +4100,22 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
         </View>
       </View>
     </RCTScrollView>
@@ -3930,6 +4374,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
             Workouts
           </Text>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -3968,7 +4428,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -4069,7 +4529,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -4080,6 +4543,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -4118,7 +4597,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -4219,7 +4698,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -4228,7 +4710,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -4252,7 +4734,9 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -4263,6 +4747,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -4301,7 +4801,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -4402,7 +4902,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -4411,7 +4914,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -4435,7 +4938,9 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -4445,6 +4950,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -4484,7 +5005,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -4585,7 +5106,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -4595,6 +5119,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -4634,7 +5174,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -4735,7 +5275,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -4744,7 +5287,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -4768,7 +5311,9 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -4778,6 +5323,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -4817,7 +5378,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -4918,7 +5479,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -4927,7 +5491,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -4951,7 +5515,9 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -4962,6 +5528,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -5000,7 +5582,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -5101,7 +5683,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -5110,7 +5695,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -5134,7 +5719,9 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -5145,6 +5732,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -5183,7 +5786,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -5284,7 +5887,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -5293,7 +5899,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -5317,7 +5923,9 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -5328,6 +5936,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -5366,7 +5990,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -5467,7 +6091,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -5476,7 +6103,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -5500,7 +6127,9 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -5510,6 +6139,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -5549,7 +6194,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -5650,7 +6295,10 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -5659,7 +6307,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -5683,7 +6331,9 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -5693,6 +6343,22 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
         </View>
       </View>
     </RCTScrollView>
@@ -6970,6 +7636,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
             Workouts
           </Text>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -7008,7 +7690,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -7109,7 +7791,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -7120,6 +7805,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -7158,7 +7859,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -7259,7 +7960,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -7268,7 +7972,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -7292,7 +7996,9 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -7303,6 +8009,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -7341,7 +8063,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -7442,7 +8164,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -7451,7 +8176,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -7475,7 +8200,9 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -7485,6 +8212,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -7524,7 +8267,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -7625,7 +8368,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -7635,6 +8381,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -7674,7 +8436,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -7775,7 +8537,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -7784,7 +8549,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -7808,7 +8573,9 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -7818,6 +8585,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -7857,7 +8640,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -7958,7 +8741,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -7967,7 +8753,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -7991,7 +8777,9 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -8002,6 +8790,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -8040,7 +8844,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -8141,7 +8945,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -8150,7 +8957,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -8174,7 +8981,9 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -8185,6 +8994,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -8223,7 +9048,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -8324,7 +9149,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -8333,7 +9161,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -8357,7 +9185,9 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -8368,6 +9198,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -8406,7 +9252,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -8507,7 +9353,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -8516,7 +9365,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -8540,7 +9389,9 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -8550,6 +9401,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
           <View
             accessibilityState={
               {
@@ -8589,7 +9456,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     "paddingVertical": 8,
                   },
                   {
-                    "marginHorizontal": 12,
+                    "paddingHorizontal": 10,
                   },
                 ],
               ]
@@ -8690,7 +9557,10 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(28, 27, 31, 1)",
                         },
-                        undefined,
+                        {
+                          "fontWeight": "bold",
+                          "marginBottom": 5,
+                        },
                       ],
                     ]
                   }
@@ -8699,7 +9569,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                 </Text>
                 <Text
                   ellipsizeMode="tail"
-                  numberOfLines={1}
+                  numberOfLines={2}
                   onTextLayout={[Function]}
                   selectable={false}
                   style={
@@ -8723,7 +9593,9 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                         {
                           "color": "rgba(73, 69, 79, 1)",
                         },
-                        undefined,
+                        {
+                          "fontSize": 13,
+                        },
                       ],
                     ]
                   }
@@ -8733,6 +9605,22 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
               </View>
             </View>
           </View>
+          <View
+            style={
+              [
+                {
+                  "backgroundColor": "rgba(202, 196, 208, 1)",
+                  "height": 0.5,
+                },
+                undefined,
+                false,
+                false,
+                {
+                  "height": 2,
+                },
+              ]
+            }
+          />
         </View>
       </View>
     </RCTScrollView>
