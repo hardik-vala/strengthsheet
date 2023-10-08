@@ -125,6 +125,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  in_and_out: {
+    key: "in_and_out",
+    displayName: "In-And-Out",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   knee_hug: {
     key: "knee_hug",
     displayName: "Knee Hug",
@@ -595,7 +602,17 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
     displayName: "Ab Ripper X",
     iconKey: "weight-lifter",
     note: "",
-    drills: [],
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["in_and_out"],
+        displayName: "In-And-Out",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+    ],
   },
   it_band_rehab: {
     key: "it_band_rehab",
