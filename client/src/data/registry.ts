@@ -52,6 +52,20 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "Bent Knee Fallout (Band)",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
+  bicycle_backward: {
+    key: "bicycle_backward",
+    displayName: "Bicycle (Backward)",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  bicycle_forward: {
+    key: "bicycle_forward",
+    displayName: "Bicycle (Forward)",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   carioca: {
     key: "carioca",
     displayName: "Carioca",
@@ -62,6 +76,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
   chin_tuck: {
     key: "chin_tuck",
     displayName: "Chin Tuck",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  crunchy_frog: {
+    key: "crunchy_frog",
+    displayName: "Crunchy Frog",
     measures: [
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
@@ -89,6 +110,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  fifer_scissor: {
+    key: "fifer_scissor",
+    displayName: "Fifer Scissor",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   frankenstein_mark_rdl: {
     key: "frankenstein_mark_rdl",
     displayName: "Frankenstein March with RDL",
@@ -108,6 +136,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     key: "hip_abduction_looped_elastic_band",
     displayName: "Hip Abduction (Looped Elastic Band)",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  hip_rock_n_raise: {
+    key: "hip_rock_n_raise",
+    displayName: "Hip Rock 'N Raise",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
   },
   hip_thrust: {
     key: "hip_thrust",
@@ -179,6 +214,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  leg_climb: {
+    key: "leg_climb",
+    displayName: "Leg Climb",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   leg_swing_forward_backward: {
     key: "leg_swing_forward_backward",
     displayName: "Leg Swing (Forward / Backward)",
@@ -200,15 +242,36 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  mason_twist: {
+    key: "mason_twist",
+    displayName: "Mason Twist",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   ninety_ninety: {
     key: "ninety_ninety",
     displayName: "90-90",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
+  oblique_v_up: {
+    key: "oblique_v_up",
+    displayName: "Oblique V-Up",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   plank_alternating_leg_lifts: {
     key: "plank_alternating_leg_lifts",
     displayName: "Plank with Alternating Leg Lifts",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  pulse_up: {
+    key: "pulse_up",
+    displayName: "Pulse-Up",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
   },
   quad_walk_lean: {
     key: "quad_walk_lean",
@@ -281,6 +344,20 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "Tricep Extension (Cable)",
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  v_up_roll_up_combo: {
+    key: "v_up_roll_up_combo",
+    displayName: "V-Up / Roll-Up Combo",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  wide_leg_sit_up: {
+    key: "wide_leg_sit_up",
+    displayName: "Wide-Leg Sit-Up",
+    measures: [
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
@@ -606,6 +683,105 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
       {
         exercise: EXERCISE_REGISTRY["in_and_out"],
         displayName: "In-And-Out",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["bicycle_forward"],
+        displayName: "Bicycle (Forward)",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["bicycle_backward"],
+        displayName: "Bicycle (Backward)",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["crunchy_frog"],
+        displayName: "Crunchy Frog",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["wide_leg_sit_up"],
+        displayName: "Wide-Leg Sit-Up",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["fifer_scissor"],
+        displayName: "Fifer Scissor",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["hip_rock_n_raise"],
+        displayName: "Hip Rock 'N Raise",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["pulse_up"],
+        displayName: "Pulse-Up",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["v_up_roll_up_combo"],
+        displayName: "V-Up / Roll-Up Combo",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["oblique_v_up"],
+        displayName: "Oblique V-Up",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["leg_climb"],
+        displayName: "Leg Climb",
+        iconKey: "",
+        note: "25 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["mason_twist"],
+        displayName: "Mason Twist",
         iconKey: "",
         note: "25 reps",
         sets: [
