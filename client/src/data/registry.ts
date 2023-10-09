@@ -52,6 +52,30 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "Bent Knee Fallout (Band)",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
+  bicep_curl_under_hand_chest_supported_dumbbells: {
+    key: "bicep_curl_under_hand_chest_supported_dumbbells",
+    displayName: "Chest-Supported Underhand Bicep Curl (Dumbbells)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  bicep_curl_hammer_chest_supported_dumbbells: {
+    key: "bicep_curl_hammer_chest_supported_dumbbells",
+    displayName: "Chest-Supported Hammer Bicep Curl (Dumbbells)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  bicep_curl_gorilla_chest_supported_dumbbells: {
+    key: "bicep_curl_gorilla_chest_supported_dumbbells",
+    displayName: "Chest-Supported Gorilla Bicep Curl (Dumbbells)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   bicycle_backward: {
     key: "bicycle_backward",
     displayName: "Bicycle (Backward)",
@@ -266,6 +290,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "Plank with Alternating Leg Lifts",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
+  pull_mid_chest_cable: {
+    key: "pull_mid_chest_cable",
+    displayName: "Mid-Chest Pull (Cable)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   pulse_up: {
     key: "pulse_up",
     displayName: "Pulse-Up",
@@ -277,6 +309,22 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     key: "quad_walk_lean",
     displayName: "Quad-Walk with Lean",
     measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  row_bent_over_barbell: {
+    key: "row_bent_over_barbell",
+    displayName: "Bent-Over Row (Barbell)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  row_cable: {
+    key: "row_cable",
+    displayName: "Cable Row",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
@@ -365,55 +413,6 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     key: "y_lift_off",
     displayName: "Y Lift-Off",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
-  },
-
-  row_bent_over_barbell: {
-    key: "row_bent_over_barbell",
-    displayName: "Bent-Over Row (Barbell)",
-    measures: [
-      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ],
-  },
-  row_cable: {
-    key: "row_cable",
-    displayName: "Cable Row",
-    measures: [
-      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ],
-  },
-  pull_mid_chest_cable: {
-    key: "pull_mid_chest_cable",
-    displayName: "Mid-Chest Pull (Cable)",
-    measures: [
-      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ],
-  },
-  bicep_curl_under_hand_chest_supported_dumbbells: {
-    key: "bicep_curl_under_hand_chest_supported_dumbbells",
-    displayName: "Chest-Supported Underhand Bicep Curl (Dumbbells)",
-    measures: [
-      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ],
-  },
-  bicep_curl_hammer_chest_supported_dumbbells: {
-    key: "bicep_curl_hammer_chest_supported_dumbbells",
-    displayName: "Chest-Supported Hammer Bicep Curl (Dumbbells)",
-    measures: [
-      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ],
-  },
-  bicep_curl_gorilla_chest_supported_dumbbells: {
-    key: "bicep_curl_gorilla_chest_supported_dumbbells",
-    displayName: "Chest-Supported Gorilla Bicep Curl (Dumbbells)",
-    measures: [
-      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
-      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
-    ],
   },
 };
 
