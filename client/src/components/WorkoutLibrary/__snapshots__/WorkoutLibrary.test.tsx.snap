@@ -2235,7 +2235,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                       ]
                     }
                   >
-                    󱅝
+                    󱅼
                   </Text>
                 </View>
                 <View
@@ -4495,7 +4495,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                       ]
                     }
                   >
-                    󱅝
+                    󱅼
                   </Text>
                 </View>
                 <View
@@ -6501,7 +6501,9 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
           collapsable={false}
           style={
             {
-              "backgroundColor": "white",
+              "backgroundColor": "gray",
+              "borderRadius": 10,
+              "margin": 10,
               "opacity": 1,
               "shadowColor": "#000",
               "shadowOffset": {
@@ -6518,10 +6520,11 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
             collapsable={false}
             style={
               {
-                "backgroundColor": "white",
+                "backgroundColor": "gray",
+                "borderRadius": 10,
                 "flex": undefined,
                 "justifyContent": "center",
-                "padding": 20,
+                "padding": 10,
                 "shadowColor": "#000",
                 "shadowOffset": {
                   "height": 1,
@@ -7774,7 +7777,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                       ]
                     }
                   >
-                    󱅝
+                    󱅼
                   </Text>
                 </View>
                 <View
@@ -9780,7 +9783,9 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
           collapsable={false}
           style={
             {
-              "backgroundColor": "white",
+              "backgroundColor": "gray",
+              "borderRadius": 10,
+              "margin": 10,
               "opacity": 1,
               "shadowColor": "#000",
               "shadowOffset": {
@@ -9797,10 +9802,11 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
             collapsable={false}
             style={
               {
-                "backgroundColor": "white",
+                "backgroundColor": "gray",
+                "borderRadius": 10,
                 "flex": undefined,
                 "justifyContent": "center",
-                "padding": 20,
+                "padding": 10,
                 "shadowColor": "#000",
                 "shadowOffset": {
                   "height": 1,
