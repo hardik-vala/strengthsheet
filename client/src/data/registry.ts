@@ -518,7 +518,7 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
   stretches: {
     key: "stretches",
     displayName: "Stretches",
-    iconKey: "weight-lifter",
+    iconKey: "yoga",
     note: "",
     drills: [],
   },
