@@ -80,6 +80,7 @@ exports[`WorkoutPortal renders correctly 1`] = `
               style={
                 {
                   "marginTop": "25%",
+                  "paddingBottom": 50,
                 }
               }
             >

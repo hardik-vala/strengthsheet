@@ -15,6 +15,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
       style={
         {
           "marginTop": "25%",
+          "paddingBottom": 50,
         }
       }
     >
@@ -1924,6 +1925,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
       style={
         {
           "marginTop": "25%",
+          "paddingBottom": 50,
         }
       }
     >
@@ -4183,6 +4185,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
       style={
         {
           "marginTop": "25%",
+          "paddingBottom": 50,
         }
       }
     >
@@ -7461,6 +7464,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
       style={
         {
           "marginTop": "25%",
+          "paddingBottom": 50,
         }
       }
     >

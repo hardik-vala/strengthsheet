@@ -35,7 +35,7 @@ export function WorkoutLibrary({
           />
         )}
       </Portal>
-      <View style={{ marginTop: "25%" }}>
+      <View style={{ marginTop: "25%", paddingBottom: 50 }}>
         <Text
           variant="headlineLarge"
           style={{ marginBottom: 10, fontWeight: "bold" }}
