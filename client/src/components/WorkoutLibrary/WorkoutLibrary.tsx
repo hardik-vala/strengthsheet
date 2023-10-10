@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
-import { Button, Divider, List, Modal, Portal, Text } from "react-native-paper";
+import {
+  Appbar,
+  Button,
+  Divider,
+  List,
+  Modal,
+  Portal,
+  Text,
+} from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { WorkoutTemplateRegistry } from "../../data/registry";
 import { SetType } from "../../models/Workout/Core";
@@ -88,16 +96,26 @@ function WorkoutPreviewModal({
         padding: 10,
       }}
     >
-      <List.Section title={workoutTemplate.displayName}>
+      <Appbar.Header statusBarHeight={0} style={{ borderRadius: 10 }}>
+        <Appbar.Action icon="close" onPress={onDismiss} />
+        <Appbar.Content title={workoutTemplate.displayName} />
+      </Appbar.Header>
+      <List.Section>
         {workoutTemplate.drills.map((d) => (
-          <List.Item key={getDrillKey(d)} title={getDrillPreview(d)} />
+          <List.Item
+            key={getDrillKey(d)}
+            title={getDrillPreview(d)}
+            titleStyle={{ fontWeight: "bold" }}
+          />
         ))}
       </List.Section>
-      <Button mode="contained-tonal" onPress={onStartWorkout}>
+      <Button
+        mode="contained-tonal"
+        onPress={onStartWorkout}
+        uppercase={true}
+        labelStyle={{ fontSize: 16, fontWeight: "bold" }}
+      >
         Start
-      </Button>
-      <Button mode="contained-tonal" onPress={onDismiss}>
-        Cancel
       </Button>
     </Modal>
   );
@@ -161,6 +179,9 @@ function getDrillPreview(drill: DrillTemplate): string {
 }
 
 const workoutLibraryStyles = StyleSheet.create({
+  modal: {
+    borderRadius: 10,
+  },
   workoutListItem: {
     backgroundColor: "#333",
     paddingHorizontal: 10,
