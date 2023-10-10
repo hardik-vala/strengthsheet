@@ -81,7 +81,12 @@ function WorkoutPreviewModal({
     <Modal
       visible={visible}
       onDismiss={onDismiss}
-      contentContainerStyle={{ backgroundColor: "white", padding: 20 }}
+      contentContainerStyle={{
+        backgroundColor: "gray",
+        borderRadius: 10,
+        margin: 10,
+        padding: 10,
+      }}
     >
       <List.Section title={workoutTemplate.displayName}>
         {workoutTemplate.drills.map((d) => (
