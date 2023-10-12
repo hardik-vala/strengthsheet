@@ -65,12 +65,12 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
 
   return (
     <SafeAreaProvider>
+      <Appbar.Header>
+        <Appbar.BackAction onPress={onBack} testID="back-action" />
+        <Appbar.Content title={workoutTemplate.displayName} titleStyle={{fontWeight: "bold"}} />
+      </Appbar.Header>
       <View style={styles.center}>
-        <Appbar.Header>
-          <Appbar.BackAction onPress={onBack} testID="back-action" />
-        </Appbar.Header>
         <StatusBar style="auto" />
-        <Text variant="headlineMedium">{workoutTemplate.displayName}</Text>
         <Text variant="bodyLarge">{workoutTemplate.note}</Text>
         <View
           style={{
