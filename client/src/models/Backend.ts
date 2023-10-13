@@ -12,5 +12,6 @@ export interface SaveWorkoutHistoryRecordRequestBody {
 
 interface SerializedWorkoutHistoryRecord {
   startTimestamp: string;
+  elapsedTime: number;
   exercises: ExerciseHistoryRecord[];
 }

@@ -1,4 +1,3 @@
-import { format as formatDate, parse as parseDate } from "date-fns";
 import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
 import { Alert, ScrollView, View } from "react-native";
@@ -12,7 +11,6 @@ import {
 import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
 import { WORKOUT_HISTORY_PROVIDER } from "../../providers/WorkoutHistoryProvider";
 import { styles } from "../../styles/style";
-import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 import { CircuitForm } from "./CircuitForm/CircuitForm";
 import { ExerciseForm } from "./ExerciseForm/ExerciseForm";
 import { WorkoutValues } from "./common";
@@ -23,11 +21,20 @@ interface WorkoutFormProps {
 }
 
 export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
-  const [workoutDate, setWorkoutDate] = useState(new Date());
-  const [workoutStartTime, setWorkoutStartTime] = useState(new Date());
   const [workoutHistory, setWorkoutHistory] = useState(null);
   const [workoutValues, setWorkoutValues] = useState({});
   const [isSaving, setIsSaving] = useState(false);
+
+  const [startTime, setStartTime] = useState(new Date());
+  const [elapsedTime, setElapsedTime] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setElapsedTime(Date.now() - startTime.getMilliseconds());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     async function getWorkoutHistoryWrapper() {
@@ -49,8 +56,8 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
       const workoutRecord = convertWorkoutValuesToRecord(
         workoutTemplate,
         workoutValues,
-        workoutDate,
-        workoutStartTime
+        startTime,
+        elapsedTime
       );
       await WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory(
         workoutTemplate.key,
@@ -72,29 +79,7 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
       <View style={styles.center}>
         <StatusBar style="auto" />
         <Text variant="bodyLarge">{workoutTemplate.note}</Text>
-        <View
-          style={{
-            flexDirection: "row",
-            justifyContent: "space-evenly",
-          }}
-        >
-          <DateTimePicker
-            label="Date"
-            testID="datePicker"
-            value={workoutDate}
-            isDate={true}
-            onChange={(_, d) => {
-              setWorkoutDate(d);
-            }}
-          />
-          <DateTimePicker
-            label="Start time"
-            testID="timePicker"
-            value={workoutStartTime}
-            isDate={false}
-            onChange={(_, t) => setWorkoutStartTime(t)}
-          />
-        </View>
+        <Text variant="bodySmall">{getFormattedTime(elapsedTime)}</Text>
         <ScrollView style={{ width: "100%" }}>
           {workoutTemplate.drills.map((drill) => {
             if ("exercise" in drill) {
@@ -155,6 +140,17 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
   );
 }
 
+function getFormattedTime(ms: number) {
+  const seconds = Math.floor(ms / 1000) % 60;
+  const minutes = Math.floor(seconds / 60);
+
+  return `${padTimePart(minutes)}:${padTimePart(seconds)}`;
+}
+
+function padTimePart(num: number) {
+  return num < 10 ? `0${num}` : num;
+}
+
 async function getWorkoutHistory(workoutTemplate: WorkoutTemplate) {
   return WORKOUT_HISTORY_PROVIDER.getWorkoutHistory(workoutTemplate);
 }
@@ -162,8 +158,8 @@ async function getWorkoutHistory(workoutTemplate: WorkoutTemplate) {
 function convertWorkoutValuesToRecord(
   workoutTemplate: WorkoutTemplate,
   workoutValues: WorkoutValues,
-  workoutDate: Date,
-  workoutStartTime: Date
+  workoutStartTime: Date,
+  workoutElapsedTime: number,
 ): WorkoutHistoryRecord {
   const exercises: ExerciseHistoryRecord[] = [];
 
@@ -213,13 +209,8 @@ function convertWorkoutValuesToRecord(
   });
 
   return {
-    startTimestamp: getStartTimestamp(workoutDate, workoutStartTime),
+    startTimestamp: workoutStartTime,
+    elapsedTime: workoutElapsedTime,
     exercises,
   };
-}
-
-function getStartTimestamp(startDate: Date, startTime: Date) {
-  const dateStr = formatDate(startDate, "MM/dd/yyyy");
-  const timeStr = formatDate(startTime, "HH:mm");
-  return parseDate(`${dateStr} ${timeStr}`, "MM/dd/yyyy HH:mm", new Date());
 }

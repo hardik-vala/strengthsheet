@@ -25,6 +25,7 @@ const MOCK_WORKOUT_HISTORY: { [k: string]: WorkoutHistory } = {
     records: [
       {
         startTimestamp: convertToDateObj("08/25/2023 20:04"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -48,6 +49,7 @@ const MOCK_WORKOUT_HISTORY: { [k: string]: WorkoutHistory } = {
       },
       {
         startTimestamp: convertToDateObj("08/25/2023 20:04"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -71,6 +73,7 @@ const MOCK_WORKOUT_HISTORY: { [k: string]: WorkoutHistory } = {
       },
       {
         startTimestamp: convertToDateObj("08/29/2023 21:19"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -94,6 +97,7 @@ const MOCK_WORKOUT_HISTORY: { [k: string]: WorkoutHistory } = {
       },
       {
         startTimestamp: convertToDateObj("08/29/2023 21:20"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -117,6 +121,7 @@ const MOCK_WORKOUT_HISTORY: { [k: string]: WorkoutHistory } = {
       },
       {
         startTimestamp: convertToDateObj("09/02/2023 21:10"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -145,6 +150,7 @@ const MOCK_WORKOUT_HISTORY: { [k: string]: WorkoutHistory } = {
     records: [
       {
         startTimestamp: convertToDateObj("09/20/2023 20:00"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -226,6 +232,7 @@ const MOCK_WORKOUT_HISTORY: { [k: string]: WorkoutHistory } = {
       },
       {
         startTimestamp: convertToDateObj("09/19/2023 20:00"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -409,7 +416,8 @@ describe("WorkoutForm", () => {
     expect(
       WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory
     ).toHaveBeenCalledWith("rowing_machine", {
-      startTimestamp: CURRENT_DATETIME,
+      startTimestamp: new Date(CURRENT_DATETIME.getTime() + 200),
+      elapsedTime: 0,
       exercises: [
         {
           key: WorkoutValueKey.createFromExercise(

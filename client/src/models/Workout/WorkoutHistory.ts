@@ -8,6 +8,7 @@ export interface WorkoutHistory {
 
 export interface WorkoutHistoryRecord {
   startTimestamp: Date;
+  elapsedTime: number;
   exercises: ExerciseHistoryRecord[];
 };
 

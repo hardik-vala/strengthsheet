@@ -347,119 +347,31 @@ exports[`WorkoutForm renders correctly 1`] = `
     >
       Rowing machine for cardio.
     </Text>
-    <View
+    <Text
       style={
-        {
-          "flexDirection": "row",
-          "justifyContent": "space-evenly",
-        }
+        [
+          {
+            "textAlign": "left",
+          },
+          {
+            "color": "rgba(28, 27, 31, 1)",
+            "writingDirection": "ltr",
+          },
+          [
+            {
+              "fontFamily": "System",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 0.4,
+              "lineHeight": 16,
+            },
+            undefined,
+          ],
+        ]
       }
     >
-      <View
-        style={
-          {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "padding": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            [
-              {
-                "textAlign": "left",
-              },
-              {
-                "color": "rgba(28, 27, 31, 1)",
-                "writingDirection": "ltr",
-              },
-              [
-                {
-                  "fontFamily": "System",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.15,
-                  "lineHeight": 24,
-                },
-                undefined,
-              ],
-            ]
-          }
-        >
-          Date
-        </Text>
-        <RNDateTimePicker
-          date={1693094400000}
-          displayIOS="default"
-          enabled={true}
-          is24Hour={true}
-          mode="date"
-          onChange={[Function]}
-          onPickerDismiss={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            {
-              "marginTop": 5,
-            }
-          }
-          testID="datePicker"
-        />
-      </View>
-      <View
-        style={
-          {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "padding": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            [
-              {
-                "textAlign": "left",
-              },
-              {
-                "color": "rgba(28, 27, 31, 1)",
-                "writingDirection": "ltr",
-              },
-              [
-                {
-                  "fontFamily": "System",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.15,
-                  "lineHeight": 24,
-                },
-                undefined,
-              ],
-            ]
-          }
-        >
-          Start time
-        </Text>
-        <RNDateTimePicker
-          date={1693094400000}
-          displayIOS="default"
-          enabled={true}
-          is24Hour={true}
-          mode="time"
-          onChange={[Function]}
-          onPickerDismiss={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            {
-              "marginTop": 5,
-            }
-          }
-          testID="timePicker"
-        />
-      </View>
-    </View>
+      00:00
+    </Text>
     <RCTScrollView
       style={
         {
@@ -2119,119 +2031,31 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
         ]
       }
     />
-    <View
+    <Text
       style={
-        {
-          "flexDirection": "row",
-          "justifyContent": "space-evenly",
-        }
+        [
+          {
+            "textAlign": "left",
+          },
+          {
+            "color": "rgba(28, 27, 31, 1)",
+            "writingDirection": "ltr",
+          },
+          [
+            {
+              "fontFamily": "System",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 0.4,
+              "lineHeight": 16,
+            },
+            undefined,
+          ],
+        ]
       }
     >
-      <View
-        style={
-          {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "padding": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            [
-              {
-                "textAlign": "left",
-              },
-              {
-                "color": "rgba(28, 27, 31, 1)",
-                "writingDirection": "ltr",
-              },
-              [
-                {
-                  "fontFamily": "System",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.15,
-                  "lineHeight": 24,
-                },
-                undefined,
-              ],
-            ]
-          }
-        >
-          Date
-        </Text>
-        <RNDateTimePicker
-          date={1693094400100}
-          displayIOS="default"
-          enabled={true}
-          is24Hour={true}
-          mode="date"
-          onChange={[Function]}
-          onPickerDismiss={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            {
-              "marginTop": 5,
-            }
-          }
-          testID="datePicker"
-        />
-      </View>
-      <View
-        style={
-          {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "padding": 10,
-          }
-        }
-      >
-        <Text
-          style={
-            [
-              {
-                "textAlign": "left",
-              },
-              {
-                "color": "rgba(28, 27, 31, 1)",
-                "writingDirection": "ltr",
-              },
-              [
-                {
-                  "fontFamily": "System",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.15,
-                  "lineHeight": 24,
-                },
-                undefined,
-              ],
-            ]
-          }
-        >
-          Start time
-        </Text>
-        <RNDateTimePicker
-          date={1693094400100}
-          displayIOS="default"
-          enabled={true}
-          is24Hour={true}
-          mode="time"
-          onChange={[Function]}
-          onPickerDismiss={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            {
-              "marginTop": 5,
-            }
-          }
-          testID="timePicker"
-        />
-      </View>
-    </View>
+      00:00
+    </Text>
     <RCTScrollView
       style={
         {

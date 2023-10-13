@@ -15,6 +15,7 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
     records: [
       {
         startTimestamp: convertToDateObj("08/25/2023 20:04"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -38,6 +39,7 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
       },
       {
         startTimestamp: convertToDateObj("08/25/2023 20:04"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -61,6 +63,7 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
       },
       {
         startTimestamp: convertToDateObj("08/29/2023 21:19"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -84,6 +87,7 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
       },
       {
         startTimestamp: convertToDateObj("08/29/2023 21:20"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -107,6 +111,7 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
       },
       {
         startTimestamp: convertToDateObj("09/02/2023 21:10"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -136,6 +141,7 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
     records: [
       {
         startTimestamp: convertToDateObj("09/20/2023 20:00"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(
@@ -217,6 +223,7 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
       },
       {
         startTimestamp: convertToDateObj("09/19/2023 20:00"),
+        elapsedTime: 1800000,
         exercises: [
           {
             key: WorkoutValueKey.createFromExercise(

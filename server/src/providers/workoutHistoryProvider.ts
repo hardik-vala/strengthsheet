@@ -47,6 +47,14 @@ export const WORKOUT_HISTORY_PROVIDER = WorkoutHistoryProvider.getInstance();
 function serializeRecordAsSheetRow(record: WorkoutHistoryRecord): string[] {
   const dateStr = formatDate(record.startTimestamp, "MM/dd/yyyy");
   const startTimeStr = formatDate(record.startTimestamp, "HH:mm");
+  const elapsedTime = getFormattedTime(record.elapsedTime);
 
-  return [dateStr, startTimeStr].concat(record.exercises.map((e) => e.value));
+  return [dateStr, startTimeStr, elapsedTime].concat(record.exercises.map((e) => e.value));
+}
+
+function getFormattedTime(ms: number) {
+  const seconds = Math.floor(ms / 1000) % 60;
+  const minutes = Math.floor(seconds / 60);
+
+  return `${minutes}:${seconds}`;
 }
