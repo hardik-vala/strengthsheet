@@ -30,7 +30,7 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setElapsedTime(Date.now() - startTime.getMilliseconds());
+      setElapsedTime(Date.now() - startTime.getTime());
     }, 1000);
 
     return () => clearInterval(interval);
@@ -87,7 +87,13 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
         <Text variant="bodyMedium" style={{ marginBottom: 15 }}>
           {getFormattedTime(elapsedTime)}
         </Text>
-        <View style={{ flexDirection: "row", justifyContent: "center", marginBottom: 15 }}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            marginBottom: 15,
+          }}
+        >
           <Button
             buttonColor="lightgreen"
             compact={true}
@@ -147,10 +153,10 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
 }
 
 function getFormattedTime(ms: number) {
-  const seconds = Math.floor(ms / 1000) % 60;
+  const seconds = Math.floor(ms / 1000);
   const minutes = Math.floor(seconds / 60);
 
-  return `${padTimePart(minutes)}:${padTimePart(seconds)}`;
+  return `${padTimePart(minutes)}:${padTimePart(seconds % 60)}`;
 }
 
 function padTimePart(num: number) {
