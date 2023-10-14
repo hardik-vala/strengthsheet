@@ -74,12 +74,43 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
     <SafeAreaProvider>
       <Appbar.Header>
         <Appbar.BackAction onPress={onBack} testID="back-action" />
-        <Appbar.Content title={workoutTemplate.displayName} titleStyle={{fontWeight: "bold"}} />
+        <Appbar.Content
+          title={workoutTemplate.displayName}
+          titleStyle={{ fontWeight: "bold" }}
+        />
       </Appbar.Header>
       <View style={styles.center}>
         <StatusBar style="auto" />
-        <Text variant="bodyLarge">{workoutTemplate.note}</Text>
-        <Text variant="bodySmall">{getFormattedTime(elapsedTime)}</Text>
+        {workoutTemplate.note && (
+          <Text variant="bodyLarge">{workoutTemplate.note}</Text>
+        )}
+        <Text variant="bodyMedium" style={{ marginBottom: 15 }}>
+          {getFormattedTime(elapsedTime)}
+        </Text>
+        <View style={{ flexDirection: "row", justifyContent: "center", marginBottom: 15 }}>
+          <Button
+            buttonColor="lightgreen"
+            compact={true}
+            loading={isSaving}
+            mode="contained"
+            onPress={async () => {
+              setIsSaving(true);
+              await saveWorkout();
+              setIsSaving(false);
+            }}
+            contentStyle={{
+              flexDirection: "row",
+            }}
+            style={{
+              height: 40,
+              width: "25%",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {isSaving ? "Saving" : "Finish"}
+          </Button>
+        </View>
         <ScrollView style={{ width: "100%" }}>
           {workoutTemplate.drills.map((drill) => {
             if ("exercise" in drill) {
@@ -109,31 +140,6 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
             }
           })}
           <Divider />
-          <View style={{ flexDirection: "row", justifyContent: "center" }}>
-            <Button
-              buttonColor="blue"
-              compact={true}
-              loading={isSaving}
-              mode="contained"
-              onPress={async () => {
-                setIsSaving(true);
-                await saveWorkout();
-                setIsSaving(false);
-              }}
-              contentStyle={{
-                flexDirection: "row",
-              }}
-              style={{
-                marginTop: 25,
-                height: 40,
-                width: "25%",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              {isSaving ? "Saving" : "Finish"}
-            </Button>
-          </View>
         </ScrollView>
       </View>
     </SafeAreaProvider>
@@ -159,7 +165,7 @@ function convertWorkoutValuesToRecord(
   workoutTemplate: WorkoutTemplate,
   workoutValues: WorkoutValues,
   workoutStartTime: Date,
-  workoutElapsedTime: number,
+  workoutElapsedTime: number
 ): WorkoutHistoryRecord {
   const exercises: ExerciseHistoryRecord[] = [];
 
