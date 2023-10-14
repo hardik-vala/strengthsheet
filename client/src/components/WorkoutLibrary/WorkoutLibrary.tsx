@@ -93,30 +93,34 @@ function WorkoutPreviewModal({
         backgroundColor: "gray",
         borderRadius: 10,
         margin: 10,
-        padding: 10,
+        maxHeight: "85%",
       }}
     >
-      <Appbar.Header statusBarHeight={0} style={{ borderRadius: 10 }}>
-        <Appbar.Action icon="close" onPress={onDismiss} />
-        <Appbar.Content title={workoutTemplate.displayName} />
-      </Appbar.Header>
-      <List.Section>
-        {workoutTemplate.drills.map((d) => (
-          <List.Item
-            key={getDrillKey(d)}
-            title={getDrillPreview(d)}
-            titleStyle={{ fontWeight: "bold" }}
-          />
-        ))}
-      </List.Section>
-      <Button
-        mode="contained-tonal"
-        onPress={onStartWorkout}
-        uppercase={true}
-        labelStyle={{ fontSize: 16, fontWeight: "bold" }}
-      >
-        Start
-      </Button>
+      <View style={{ backgroundColor: "gray", padding: 10 }}>
+        <Appbar.Header statusBarHeight={0} style={{ borderRadius: 10 }}>
+          <Appbar.Action icon="close" onPress={onDismiss} />
+          <Appbar.Content title={workoutTemplate.displayName} />
+        </Appbar.Header>
+        <ScrollView>
+          <List.Section>
+            {workoutTemplate.drills.map((d) => (
+              <List.Item
+                key={getDrillKey(d)}
+                title={getDrillPreview(d)}
+                titleStyle={{ fontWeight: "bold" }}
+              />
+            ))}
+          </List.Section>
+        </ScrollView>
+        <Button
+          mode="contained-tonal"
+          onPress={onStartWorkout}
+          uppercase={true}
+          labelStyle={{ fontSize: 16, fontWeight: "bold" }}
+        >
+          Start
+        </Button>
+      </View>
     </Modal>
   );
 }
