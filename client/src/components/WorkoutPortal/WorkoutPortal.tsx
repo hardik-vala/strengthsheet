@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { View } from "react-native";
-import {
-  BottomNavigation
-} from "react-native-paper";
+import { Appbar, BottomNavigation, Text } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { WorkoutTemplateRegistry } from "../../data/registry";
 import { WorkoutTemplate } from "../../models/Workout/WorkoutTemplate";
 import { styles } from "../../styles/style";
 import { SignOut } from "../SignOut/SignOut";
+import { WorkoutFinish } from "../WorkoutFinish/WorkoutFinish";
 import { WorkoutForm } from "../WorkoutForm/WorkoutForm";
 import { WorkoutLibrary } from "../WorkoutLibrary/WorkoutLibrary";
 
@@ -22,6 +21,7 @@ export function WorkoutPortal({
 }: WorkoutPortalProps) {
   const [tabIndex, setTabIndex] = useState(0);
   const [activeWorkout, setActiveWorkout] = useState(null);
+  const [finishedWorkout, setFinishedWorkout] = useState(null);
 
   const [routes] = useState([
     { key: "workoutLibrary", title: "Workout", focusedIcon: "weight-lifter" },
@@ -33,11 +33,24 @@ export function WorkoutPortal({
     },
   ]);
 
-  function routeWorkout() {
+  function routeActiveWorkout() {
     return (
       <WorkoutForm
         workoutTemplate={activeWorkout}
         onBack={() => setActiveWorkout(null)}
+        onFinish={() => {
+          setFinishedWorkout(activeWorkout);
+          setActiveWorkout(null);
+        }}
+      />
+    );
+  }
+
+  function routeFinishedWorkout() {
+    return (
+      <WorkoutFinish
+        workoutTemplate={finishedWorkout}
+        onDismiss={() => setFinishedWorkout(null)}
       />
     );
   }
@@ -45,7 +58,11 @@ export function WorkoutPortal({
   const renderScene = BottomNavigation.SceneMap({
     workoutLibrary: () => {
       if (activeWorkout) {
-        return routeWorkout();
+        return routeActiveWorkout();
+      }
+
+      if (finishedWorkout) {
+        return routeFinishedWorkout();
       }
 
       return (

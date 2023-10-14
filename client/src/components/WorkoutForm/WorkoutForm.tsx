@@ -18,9 +18,10 @@ import { WorkoutValues } from "./common";
 interface WorkoutFormProps {
   workoutTemplate: WorkoutTemplate;
   onBack: () => void;
+  onFinish: () => void;
 }
 
-export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
+export function WorkoutForm({ workoutTemplate, onBack, onFinish }: WorkoutFormProps) {
   const [workoutHistory, setWorkoutHistory] = useState(null);
   const [workoutValues, setWorkoutValues] = useState({});
   const [isSaving, setIsSaving] = useState(false);
@@ -103,6 +104,7 @@ export function WorkoutForm({ workoutTemplate, onBack }: WorkoutFormProps) {
               setIsSaving(true);
               await saveWorkout();
               setIsSaving(false);
+              onFinish();
             }}
             contentStyle={{
               flexDirection: "row",

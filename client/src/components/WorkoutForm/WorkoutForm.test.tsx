@@ -343,9 +343,11 @@ import { WorkoutForm } from "./WorkoutForm";
 
 describe("WorkoutForm", () => {
   let onBack;
+  let onFinish;
 
   beforeEach(() => {
     onBack = jest.fn();
+    onFinish = jest.fn();
   });
 
   it("renders correctly", async () => {
@@ -353,6 +355,7 @@ describe("WorkoutForm", () => {
       <WorkoutForm
         workoutTemplate={WORKOUT_TEMPLATE_REGISTRY["rowing_machine"]}
         onBack={onBack}
+        onFinish={onFinish}
       />
     );
 
@@ -368,6 +371,7 @@ describe("WorkoutForm", () => {
       <WorkoutForm
         workoutTemplate={WORKOUT_TEMPLATE_REGISTRY["legs"]}
         onBack={onBack}
+        onFinish={onFinish}
       />
     );
 
@@ -383,6 +387,7 @@ describe("WorkoutForm", () => {
       <WorkoutForm
         workoutTemplate={WORKOUT_TEMPLATE_REGISTRY["rowing_machine"]}
         onBack={onBack}
+        onFinish={onFinish}
       />
     );
 
@@ -398,6 +403,7 @@ describe("WorkoutForm", () => {
       <WorkoutForm
         workoutTemplate={WORKOUT_TEMPLATE_REGISTRY["rowing_machine"]}
         onBack={onBack}
+        onFinish={onFinish}
       />
     );
 
@@ -412,7 +418,7 @@ describe("WorkoutForm", () => {
     await act(() => {
       fireEvent.press(screen.getByText("Finish"));
     });
-
+ 
     expect(
       WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory
     ).toHaveBeenCalledWith("rowing_machine", {
@@ -457,5 +463,6 @@ describe("WorkoutForm", () => {
         },
       ],
     });
+    expect(onFinish).toHaveBeenCalled();
   });
 });
