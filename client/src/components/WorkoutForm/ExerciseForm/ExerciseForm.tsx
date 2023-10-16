@@ -3,8 +3,7 @@ import { SetType } from "../../../models/Workout/Core";
 import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
 import { ExerciseTemplate } from "../../../models/Workout/WorkoutTemplate";
 import { ShelfForm } from "../ShelfForm/ShelfForm";
-import { workoutFormStyles } from "../WorkoutForm";
-import { WorkoutValues } from "../common";
+import { WorkoutValues, workoutFormStyles } from "../common";
 
 export interface ExerciseFormProps {
   exerciseTemplate: ExerciseTemplate;

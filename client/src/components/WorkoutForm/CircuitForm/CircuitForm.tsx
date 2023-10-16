@@ -1,12 +1,9 @@
 import { Text } from "react-native-paper";
 import { DrillSet, SetType } from "../../../models/Workout/Core";
-import {
-  WorkoutHistory
-} from "../../../models/Workout/WorkoutHistory";
+import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
 import { CircuitTemplate } from "../../../models/Workout/WorkoutTemplate";
 import { ShelfForm } from "../ShelfForm/ShelfForm";
-import { workoutFormStyles } from "../WorkoutForm";
-import { WorkoutValues } from "../common";
+import { WorkoutValues, workoutFormStyles } from "../common";
 
 export interface CircuitFormProps {
   circuitTemplate: CircuitTemplate;
@@ -23,7 +20,9 @@ export function CircuitForm({
 }: CircuitFormProps) {
   return (
     <>
-      <Text variant="titleMedium" style={workoutFormStyles.drillTitle}>{circuitTemplate.displayName}</Text>
+      <Text variant="titleMedium" style={workoutFormStyles.drillTitle}>
+        {circuitTemplate.displayName}
+      </Text>
       <Text variant="bodyMedium">{circuitTemplate.note}</Text>
       {circuitTemplate.sets.map((set) => {
         return (

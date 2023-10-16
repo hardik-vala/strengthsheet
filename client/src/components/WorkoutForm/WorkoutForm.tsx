@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
-import { Alert, ScrollView, StyleSheet, View } from "react-native";
+import { Alert, ScrollView, View } from "react-native";
 import { Appbar, Button, Divider, Text } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { WorkoutValueKey } from "../../models/Workout/Core";
@@ -232,11 +232,3 @@ function convertWorkoutValuesToRecord(
     exercises,
   };
 }
-
-export const workoutFormStyles = StyleSheet.create({
-  drillTitle: {
-    color: "deepskyblue",
-    fontWeight: "bold",
-    marginVertical: 10,
-  },
-});
