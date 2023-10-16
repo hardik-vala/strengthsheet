@@ -123,7 +123,7 @@ export function WorkoutForm({
             {isSaving ? "Saving" : "Finish"}
           </Button>
         </View>
-        <ScrollView style={{ width: "100%" }}>
+        <ScrollView style={{ paddingHorizontal: 5, width: "100%" }}>
           {workoutTemplate.drills.map((drill) => {
             if ("exercise" in drill) {
               return (

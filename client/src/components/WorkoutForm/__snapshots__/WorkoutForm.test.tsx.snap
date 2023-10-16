@@ -543,6 +543,7 @@ exports[`WorkoutForm renders correctly 1`] = `
     <RCTScrollView
       style={
         {
+          "paddingHorizontal": 5,
           "width": "100%",
         }
       }
@@ -2210,6 +2211,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
     <RCTScrollView
       style={
         {
+          "paddingHorizontal": 5,
           "width": "100%",
         }
       }
