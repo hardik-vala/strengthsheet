@@ -5,7 +5,7 @@ import {
   SetType,
   WorkoutValueKey,
 } from "../../../models/Workout/Core";
-import { CircuitForm } from "./CircuitForm";
+import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
 
 const TEST_EXERCISE_1 = {
   key: "test_exercise_1",
@@ -52,11 +52,12 @@ const TEST_TEMPLATE = {
   ],
 };
 
-const TEST_HISTORY = {
+const TEST_HISTORY: WorkoutHistory = {
   workoutTemplate: null,
   records: [
     {
       startTimestamp: new Date("2023-08-28"),
+      elapsedTime: 3600000,
       exercises: [
         {
           key: WorkoutValueKey.createFromExercise(
@@ -80,6 +81,7 @@ const TEST_HISTORY = {
     },
     {
       startTimestamp: new Date("2023-08-27"),
+      elapsedTime: 3600000,
       exercises: [
         {
           key: WorkoutValueKey.createFromExercise(
@@ -103,6 +105,16 @@ const TEST_HISTORY = {
     },
   ],
 };
+
+
+jest.mock("../../../services/backendService", () => {
+  return {
+    fetchWorkoutHistory: jest.fn(),
+    storeRecordInWorkoutHistory: jest.fn(),
+  };
+});
+
+import { CircuitForm } from "./CircuitForm";
 
 describe("CircuitForm", () => {
   it("renders correctly", () => {

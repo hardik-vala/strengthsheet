@@ -5,7 +5,7 @@ import {
   SetType,
   WorkoutValueKey,
 } from "../../../models/Workout/Core";
-import { ExerciseForm } from "./ExerciseForm";
+import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
 
 const TEST_EXERCISE = {
   key: "test_exercise",
@@ -31,14 +31,15 @@ const TEST_TEMPLATE = {
   ],
 };
 
-const TEST_HISTORY = {
+const TEST_HISTORY: WorkoutHistory = {
   workoutTemplate: null,
   records: [
     {
       startTimestamp: new Date("2023-08-28"),
+      elapsedTime: 3600000,
       exercises: [
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             1,
             SetType.Working,
@@ -47,7 +48,7 @@ const TEST_HISTORY = {
           value: "13",
         },
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             2,
             SetType.Working,
@@ -59,9 +60,10 @@ const TEST_HISTORY = {
     },
     {
       startTimestamp: new Date("2023-08-27"),
+      elapsedTime: 3600000,
       exercises: [
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             1,
             SetType.Working,
@@ -70,7 +72,7 @@ const TEST_HISTORY = {
           value: "12",
         },
         {
-          key: WorkoutValueKey.create(
+          key: WorkoutValueKey.createFromExercise(
             "test_exercise",
             2,
             SetType.Working,
@@ -82,6 +84,15 @@ const TEST_HISTORY = {
     },
   ],
 };
+
+jest.mock("../../../services/backendService", () => {
+  return {
+    fetchWorkoutHistory: jest.fn(),
+    storeRecordInWorkoutHistory: jest.fn(),
+  };
+});
+
+import { ExerciseForm } from "./ExerciseForm";
 
 describe("ExerciseForm", () => {
   it("renders correctly", () => {

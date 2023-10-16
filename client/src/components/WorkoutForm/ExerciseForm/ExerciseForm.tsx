@@ -3,6 +3,7 @@ import { SetType } from "../../../models/Workout/Core";
 import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
 import { ExerciseTemplate } from "../../../models/Workout/WorkoutTemplate";
 import { ShelfForm } from "../ShelfForm/ShelfForm";
+import { workoutFormStyles } from "../WorkoutForm";
 import { WorkoutValues } from "../common";
 
 export interface ExerciseFormProps {
@@ -20,7 +21,7 @@ export function ExerciseForm({
 }: ExerciseFormProps) {
   return (
     <>
-      <Text variant="titleMedium">{exerciseTemplate.displayName}</Text>
+      <Text variant="titleMedium" style={workoutFormStyles.drillTitle}>{exerciseTemplate.displayName}</Text>
       <Text variant="bodyMedium">{exerciseTemplate.note}</Text>
       {exerciseTemplate.sets.map((set) => {
         return (

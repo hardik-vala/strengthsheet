@@ -20,7 +20,11 @@ exports[`CircuitForm renders correctly 1`] = `
             "letterSpacing": 0.15,
             "lineHeight": 24,
           },
-          undefined,
+          {
+            "color": "deepskyblue",
+            "fontWeight": "bold",
+            "marginVertical": 10,
+          },
         ],
       ]
     }

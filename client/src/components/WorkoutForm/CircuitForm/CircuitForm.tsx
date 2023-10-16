@@ -5,6 +5,7 @@ import {
 } from "../../../models/Workout/WorkoutHistory";
 import { CircuitTemplate } from "../../../models/Workout/WorkoutTemplate";
 import { ShelfForm } from "../ShelfForm/ShelfForm";
+import { workoutFormStyles } from "../WorkoutForm";
 import { WorkoutValues } from "../common";
 
 export interface CircuitFormProps {
@@ -22,7 +23,7 @@ export function CircuitForm({
 }: CircuitFormProps) {
   return (
     <>
-      <Text variant="titleMedium">{circuitTemplate.displayName}</Text>
+      <Text variant="titleMedium" style={workoutFormStyles.drillTitle}>{circuitTemplate.displayName}</Text>
       <Text variant="bodyMedium">{circuitTemplate.note}</Text>
       {circuitTemplate.sets.map((set) => {
         return (
