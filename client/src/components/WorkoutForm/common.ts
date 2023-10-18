@@ -15,4 +15,11 @@ export const workoutFormStyles = StyleSheet.create({
     fontWeight: "bold",
     marginVertical: 10,
   },
+  drillNoteContainer: {
+    backgroundColor: "gray",
+    padding: 5,
+  },
+  drillNoteText: {
+    color: "black",
+  },
 });

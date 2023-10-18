@@ -1,3 +1,4 @@
+import { View } from "react-native";
 import { Text } from "react-native-paper";
 import { SetType } from "../../../models/Workout/Core";
 import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
@@ -20,8 +21,14 @@ export function ExerciseForm({
 }: ExerciseFormProps) {
   return (
     <>
-      <Text variant="titleMedium" style={workoutFormStyles.drillTitle}>{exerciseTemplate.displayName}</Text>
-      <Text variant="bodyMedium">{exerciseTemplate.note}</Text>
+      <Text variant="titleMedium" style={workoutFormStyles.drillTitle}>
+        {exerciseTemplate.displayName}
+      </Text>
+      <View style={workoutFormStyles.drillNoteContainer}>
+        <Text variant="bodyMedium" style={workoutFormStyles.drillNoteText}>
+          {exerciseTemplate.note}
+        </Text>
+      </View>
       {exerciseTemplate.sets.map((set) => {
         return (
           <ShelfForm

@@ -1,3 +1,4 @@
+import { View } from "react-native";
 import { Text } from "react-native-paper";
 import { DrillSet, SetType } from "../../../models/Workout/Core";
 import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
@@ -23,7 +24,11 @@ export function CircuitForm({
       <Text variant="titleMedium" style={workoutFormStyles.drillTitle}>
         {circuitTemplate.displayName}
       </Text>
-      <Text variant="bodyMedium">{circuitTemplate.note}</Text>
+      <View style={workoutFormStyles.drillNoteContainer}>
+        <Text variant="bodyMedium" style={workoutFormStyles.drillNoteText}>
+          {circuitTemplate.note}
+        </Text>
+      </View>
       {circuitTemplate.sets.map((set) => {
         return (
           <CircuitSetForm

@@ -578,29 +578,40 @@ exports[`WorkoutForm renders correctly 1`] = `
         >
           Rowing (Machine)
         </Text>
-        <Text
+        <View
           style={
-            [
-              {
-                "textAlign": "left",
-              },
-              {
-                "color": "rgba(28, 27, 31, 1)",
-                "writingDirection": "ltr",
-              },
+            {
+              "backgroundColor": "gray",
+              "padding": 5,
+            }
+          }
+        >
+          <Text
+            style={
               [
                 {
-                  "fontFamily": "System",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.25,
-                  "lineHeight": 20,
+                  "textAlign": "left",
                 },
-                undefined,
-              ],
-            ]
-          }
-        />
+                {
+                  "color": "rgba(28, 27, 31, 1)",
+                  "writingDirection": "ltr",
+                },
+                [
+                  {
+                    "fontFamily": "System",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.25,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "color": "black",
+                  },
+                ],
+              ]
+            }
+          />
+        </View>
         <View
           style={
             {
@@ -2246,29 +2257,40 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
         >
           Wide-Stance Squats (Barbell)
         </Text>
-        <Text
+        <View
           style={
-            [
-              {
-                "textAlign": "left",
-              },
-              {
-                "color": "rgba(28, 27, 31, 1)",
-                "writingDirection": "ltr",
-              },
+            {
+              "backgroundColor": "gray",
+              "padding": 5,
+            }
+          }
+        >
+          <Text
+            style={
               [
                 {
-                  "fontFamily": "System",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.25,
-                  "lineHeight": 20,
+                  "textAlign": "left",
                 },
-                undefined,
-              ],
-            ]
-          }
-        />
+                {
+                  "color": "rgba(28, 27, 31, 1)",
+                  "writingDirection": "ltr",
+                },
+                [
+                  {
+                    "fontFamily": "System",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.25,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "color": "black",
+                  },
+                ],
+              ]
+            }
+          />
+        </View>
         <View
           style={
             {
@@ -5702,29 +5724,40 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
         >
           Hip Thrust Circuit
         </Text>
-        <Text
+        <View
           style={
-            [
-              {
-                "textAlign": "left",
-              },
-              {
-                "color": "rgba(28, 27, 31, 1)",
-                "writingDirection": "ltr",
-              },
+            {
+              "backgroundColor": "gray",
+              "padding": 5,
+            }
+          }
+        >
+          <Text
+            style={
               [
                 {
-                  "fontFamily": "System",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.25,
-                  "lineHeight": 20,
+                  "textAlign": "left",
                 },
-                undefined,
-              ],
-            ]
-          }
-        />
+                {
+                  "color": "rgba(28, 27, 31, 1)",
+                  "writingDirection": "ltr",
+                },
+                [
+                  {
+                    "fontFamily": "System",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.25,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "color": "black",
+                  },
+                ],
+              ]
+            }
+          />
+        </View>
         <Text
           style={
             [
@@ -10568,29 +10601,40 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
         >
           Bulgarian Split Squats (Bodyweight)
         </Text>
-        <Text
+        <View
           style={
-            [
-              {
-                "textAlign": "left",
-              },
-              {
-                "color": "rgba(28, 27, 31, 1)",
-                "writingDirection": "ltr",
-              },
+            {
+              "backgroundColor": "gray",
+              "padding": 5,
+            }
+          }
+        >
+          <Text
+            style={
               [
                 {
-                  "fontFamily": "System",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.25,
-                  "lineHeight": 20,
+                  "textAlign": "left",
                 },
-                undefined,
-              ],
-            ]
-          }
-        />
+                {
+                  "color": "rgba(28, 27, 31, 1)",
+                  "writingDirection": "ltr",
+                },
+                [
+                  {
+                    "fontFamily": "System",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.25,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "color": "black",
+                  },
+                ],
+              ]
+            }
+          />
+        </View>
         <View
           style={
             {
@@ -11575,29 +11619,40 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
         >
           Hamstring Curls (Machine)
         </Text>
-        <Text
+        <View
           style={
-            [
-              {
-                "textAlign": "left",
-              },
-              {
-                "color": "rgba(28, 27, 31, 1)",
-                "writingDirection": "ltr",
-              },
+            {
+              "backgroundColor": "gray",
+              "padding": 5,
+            }
+          }
+        >
+          <Text
+            style={
               [
                 {
-                  "fontFamily": "System",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.25,
-                  "lineHeight": 20,
+                  "textAlign": "left",
                 },
-                undefined,
-              ],
-            ]
-          }
-        />
+                {
+                  "color": "rgba(28, 27, 31, 1)",
+                  "writingDirection": "ltr",
+                },
+                [
+                  {
+                    "fontFamily": "System",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.25,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "color": "black",
+                  },
+                ],
+              ]
+            }
+          />
+        </View>
         <View
           style={
             {
