@@ -96,7 +96,7 @@ function WorkoutPreviewModal({
         maxHeight: "85%",
       }}
     >
-      <View style={{ backgroundColor: "gray", padding: 10 }}>
+      <View style={{ backgroundColor: "gray", borderRadius: 10, padding: 10 }}>
         <Appbar.Header statusBarHeight={0} style={{ borderRadius: 10 }}>
           <Appbar.Action icon="close" onPress={onDismiss} />
           <Appbar.Content title={workoutTemplate.displayName} />

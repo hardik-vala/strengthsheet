@@ -6540,6 +6540,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
               style={
                 {
                   "backgroundColor": "gray",
+                  "borderRadius": 10,
                   "padding": 10,
                 }
               }
@@ -9972,6 +9973,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
               style={
                 {
                   "backgroundColor": "gray",
+                  "borderRadius": 10,
                   "padding": 10,
                 }
               }
