@@ -10,7 +10,11 @@ import {
   WorkoutHistoryRecord,
 } from "../../../models/Workout/WorkoutHistory";
 import { MeasureFormInput } from "../MeasureFormInput/MeasureFormInput";
-import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
+import {
+  ExerciseMeasureHistoryRecord,
+  WorkoutValues,
+  workoutFormStyles,
+} from "../common";
 
 const NUM_RECENT_WORKOUT_HISTORY_RECORDS = 3;
 
@@ -36,21 +40,9 @@ export function ShelfForm({
   return (
     <View style={{ width: "100%" }}>
       <Divider />
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-between",
-          padding: 10,
-          width: "100%",
-        }}
-      >
-        <View
-          style={{
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <Text variant="bodyLarge">{title}</Text>
+      <View style={workoutFormStyles.exerciseFormShelfContainer}>
+        <View style={workoutFormStyles.exerciseFormShelfSetContainer}>
+          <Text variant="bodyMedium">{title}</Text>
         </View>
         {exercise.measures.map((measure) => {
           const workoutValueKey = WorkoutValueKey.create(

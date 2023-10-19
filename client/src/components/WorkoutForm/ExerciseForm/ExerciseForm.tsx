@@ -3,6 +3,7 @@ import { Text } from "react-native-paper";
 import { SetType } from "../../../models/Workout/Core";
 import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
 import { ExerciseTemplate } from "../../../models/Workout/WorkoutTemplate";
+import { ExerciseFormHeader } from "../ExerciseFormHeader/ExerciseFormHeader";
 import { ShelfForm } from "../ShelfForm/ShelfForm";
 import { WorkoutValues, workoutFormStyles } from "../common";
 
@@ -29,11 +30,12 @@ export function ExerciseForm({
           {exerciseTemplate.note}
         </Text>
       </View>
+      <ExerciseFormHeader exercise={exerciseTemplate.exercise} />
       {exerciseTemplate.sets.map((set) => {
         return (
           <ShelfForm
             key={`${set.setType.toString()}:${set.index}`}
-            title={set.setType === SetType.Warmup ? "W" : `Set ${set.index}`}
+            title={set.setType === SetType.Warmup ? "W" : `${set.index}`}
             exercise={exerciseTemplate.exercise}
             set={set}
             workoutHistory={workoutHistory}

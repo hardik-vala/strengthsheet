@@ -68,6 +68,121 @@ exports[`ExerciseForm renders correctly 1`] = `
   <View
     style={
       {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              {
+                "color": "gray",
+                "fontWeight": "bold",
+                "width": 80,
+              },
+            ],
+          ]
+        }
+      >
+        Set
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              {
+                "color": "gray",
+                "fontWeight": "bold",
+                "width": 80,
+              },
+            ],
+          ]
+        }
+      >
+        lb
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "textAlign": "left",
+            },
+            {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            [
+              {
+                "fontFamily": "System",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.15,
+                "lineHeight": 24,
+              },
+              {
+                "color": "gray",
+                "fontWeight": "bold",
+                "width": 80,
+              },
+            ],
+          ]
+        }
+      >
+        reps
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      {
         "width": "100%",
       }
     }
@@ -117,17 +232,17 @@ exports[`ExerciseForm renders correctly 1`] = `
               [
                 {
                   "fontFamily": "System",
-                  "fontSize": 16,
+                  "fontSize": 14,
                   "fontWeight": "400",
-                  "letterSpacing": 0.15,
-                  "lineHeight": 24,
+                  "letterSpacing": 0.25,
+                  "lineHeight": 20,
                 },
                 undefined,
               ],
             ]
           }
         >
-          Set 1
+          1
         </Text>
       </View>
       <View>
@@ -583,17 +698,17 @@ exports[`ExerciseForm renders correctly 1`] = `
               [
                 {
                   "fontFamily": "System",
-                  "fontSize": 16,
+                  "fontSize": 14,
                   "fontWeight": "400",
-                  "letterSpacing": 0.15,
-                  "lineHeight": 24,
+                  "letterSpacing": 0.25,
+                  "lineHeight": 20,
                 },
                 undefined,
               ],
             ]
           }
         >
-          Set 2
+          2
         </Text>
       </View>
       <View>

@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExerciseFormHeader renders correctly 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "padding": 10,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "column",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "textAlign": "left",
+          },
+          {
+            "color": "rgba(28, 27, 31, 1)",
+            "writingDirection": "ltr",
+          },
+          [
+            {
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.15,
+              "lineHeight": 24,
+            },
+            {
+              "color": "gray",
+              "fontWeight": "bold",
+              "width": 80,
+            },
+          ],
+        ]
+      }
+    >
+      Set
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "textAlign": "left",
+          },
+          {
+            "color": "rgba(28, 27, 31, 1)",
+            "writingDirection": "ltr",
+          },
+          [
+            {
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.15,
+              "lineHeight": 24,
+            },
+            {
+              "color": "gray",
+              "fontWeight": "bold",
+              "width": 80,
+            },
+          ],
+        ]
+      }
+    >
+      lb
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "textAlign": "left",
+          },
+          {
+            "color": "rgba(28, 27, 31, 1)",
+            "writingDirection": "ltr",
+          },
+          [
+            {
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.15,
+              "lineHeight": 24,
+            },
+            {
+              "color": "gray",
+              "fontWeight": "bold",
+              "width": 80,
+            },
+          ],
+        ]
+      }
+    >
+      reps
+    </Text>
+  </View>
+</View>
+`;

@@ -22,4 +22,19 @@ export const workoutFormStyles = StyleSheet.create({
   drillNoteText: {
     color: "black",
   },
+  exerciseFormShelfContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    padding: 10,
+    width: "100%",
+  },
+  exerciseFormShelfSetContainer: {
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  exerciseFormShelfText: {
+    color: "gray",
+    fontWeight: "bold",
+    width: 80
+  },
 });
