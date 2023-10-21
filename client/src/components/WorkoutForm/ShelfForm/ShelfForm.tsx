@@ -13,8 +13,8 @@ import { MeasureFormInput } from "../MeasureFormInput/MeasureFormInput";
 import {
   ExerciseMeasureHistoryRecord,
   WorkoutValues,
-  workoutFormStyles,
 } from "../common";
+import { styles } from "../style";
 
 const NUM_RECENT_WORKOUT_HISTORY_RECORDS = 3;
 
@@ -40,8 +40,8 @@ export function ShelfForm({
   return (
     <View style={{ width: "100%" }}>
       <Divider />
-      <View style={workoutFormStyles.exerciseFormShelfContainer}>
-        <View style={workoutFormStyles.exerciseFormShelfSetContainer}>
+      <View style={styles.exerciseFormShelfContainer}>
+        <View style={styles.exerciseFormShelfSetContainer}>
           <Text variant="bodyMedium">{title}</Text>
         </View>
         {exercise.measures.map((measure) => {

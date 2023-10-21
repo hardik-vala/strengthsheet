@@ -4,7 +4,8 @@ import { DrillSet, SetType } from "../../../models/Workout/Core";
 import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
 import { CircuitTemplate } from "../../../models/Workout/WorkoutTemplate";
 import { ShelfForm } from "../ShelfForm/ShelfForm";
-import { WorkoutValues, workoutFormStyles } from "../common";
+import { WorkoutValues } from "../common";
+import { styles } from "../style";
 
 export interface CircuitFormProps {
   circuitTemplate: CircuitTemplate;
@@ -21,11 +22,11 @@ export function CircuitForm({
 }: CircuitFormProps) {
   return (
     <>
-      <Text variant="titleMedium" style={workoutFormStyles.drillTitle}>
+      <Text variant="titleMedium" style={styles.drillTitle}>
         {circuitTemplate.displayName}
       </Text>
-      <View style={workoutFormStyles.drillNoteContainer}>
-        <Text variant="bodyMedium" style={workoutFormStyles.drillNoteText}>
+      <View style={styles.drillNoteContainer}>
+        <Text variant="bodyMedium" style={styles.drillNoteText}>
           {circuitTemplate.note}
         </Text>
       </View>

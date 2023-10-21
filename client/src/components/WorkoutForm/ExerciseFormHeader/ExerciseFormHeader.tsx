@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import { Text } from "react-native-paper";
 import { Exercise } from "../../../models/Workout/Core";
-import { workoutFormStyles } from "../common";
+import { styles } from "../style";
 
 export interface ExerciseFormHeaderProps {
   exercise: Exercise;
@@ -9,12 +9,9 @@ export interface ExerciseFormHeaderProps {
 
 export function ExerciseFormHeader({ exercise }: ExerciseFormHeaderProps) {
   return (
-    <View style={workoutFormStyles.exerciseFormShelfContainer}>
-      <View style={workoutFormStyles.exerciseFormShelfSetContainer}>
-        <Text
-          variant="bodyLarge"
-          style={workoutFormStyles.exerciseFormShelfText}
-        >
+    <View style={styles.exerciseFormShelfContainer}>
+      <View style={styles.exerciseFormShelfSetContainer}>
+        <Text variant="bodyLarge" style={styles.exerciseFormShelfText}>
           Set
         </Text>
       </View>
@@ -27,7 +24,7 @@ export function ExerciseFormHeader({ exercise }: ExerciseFormHeaderProps) {
           <Text
             key={measure.key}
             variant="bodyLarge"
-            style={workoutFormStyles.exerciseFormShelfText}
+            style={styles.exerciseFormShelfText}
           >
             {measure.displayName}
           </Text>

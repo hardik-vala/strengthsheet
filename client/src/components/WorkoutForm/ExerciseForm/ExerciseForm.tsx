@@ -5,7 +5,8 @@ import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
 import { ExerciseTemplate } from "../../../models/Workout/WorkoutTemplate";
 import { ExerciseFormHeader } from "../ExerciseFormHeader/ExerciseFormHeader";
 import { ShelfForm } from "../ShelfForm/ShelfForm";
-import { WorkoutValues, workoutFormStyles } from "../common";
+import { WorkoutValues } from "../common";
+import { styles } from "../style";
 
 export interface ExerciseFormProps {
   exerciseTemplate: ExerciseTemplate;
@@ -22,11 +23,11 @@ export function ExerciseForm({
 }: ExerciseFormProps) {
   return (
     <>
-      <Text variant="titleMedium" style={workoutFormStyles.drillTitle}>
+      <Text variant="titleMedium" style={styles.drillTitle}>
         {exerciseTemplate.displayName}
       </Text>
-      <View style={workoutFormStyles.drillNoteContainer}>
-        <Text variant="bodyMedium" style={workoutFormStyles.drillNoteText}>
+      <View style={styles.drillNoteContainer}>
+        <Text variant="bodyMedium" style={styles.drillNoteText}>
           {exerciseTemplate.note}
         </Text>
       </View>
