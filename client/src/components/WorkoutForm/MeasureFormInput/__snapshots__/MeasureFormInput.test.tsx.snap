@@ -2,32 +2,6 @@
 
 exports[`MeasureFormInput renders circuit measure inputs correctly 1`] = `
 <View>
-  <Text
-    style={
-      [
-        {
-          "textAlign": "left",
-        },
-        {
-          "color": "rgba(28, 27, 31, 1)",
-          "writingDirection": "ltr",
-        },
-        [
-          {
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.25,
-            "lineHeight": 20,
-          },
-          undefined,
-        ],
-      ]
-    }
-  >
-    reps
-    :
-  </Text>
   <View
     style={
       [
@@ -350,32 +324,6 @@ exports[`MeasureFormInput renders circuit measure inputs correctly 1`] = `
 
 exports[`MeasureFormInput renders correctly 1`] = `
 <View>
-  <Text
-    style={
-      [
-        {
-          "textAlign": "left",
-        },
-        {
-          "color": "rgba(28, 27, 31, 1)",
-          "writingDirection": "ltr",
-        },
-        [
-          {
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.25,
-            "lineHeight": 20,
-          },
-          undefined,
-        ],
-      ]
-    }
-  >
-    reps
-    :
-  </Text>
   <View
     style={
       [
@@ -477,32 +425,6 @@ exports[`MeasureFormInput renders correctly 1`] = `
 
 exports[`MeasureFormInput renders with history 1`] = `
 <View>
-  <Text
-    style={
-      [
-        {
-          "textAlign": "left",
-        },
-        {
-          "color": "rgba(28, 27, 31, 1)",
-          "writingDirection": "ltr",
-        },
-        [
-          {
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.25,
-            "lineHeight": 20,
-          },
-          undefined,
-        ],
-      ]
-    }
-  >
-    reps
-    :
-  </Text>
   <View
     style={
       [
@@ -755,32 +677,6 @@ exports[`MeasureFormInput renders with history 1`] = `
 
 exports[`MeasureFormInput when the text input is invalid renders the error indicator 1`] = `
 <View>
-  <Text
-    style={
-      [
-        {
-          "textAlign": "left",
-        },
-        {
-          "color": "rgba(28, 27, 31, 1)",
-          "writingDirection": "ltr",
-        },
-        [
-          {
-            "fontFamily": "System",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.25,
-            "lineHeight": 20,
-          },
-          undefined,
-        ],
-      ]
-    }
-  >
-    reps
-    :
-  </Text>
   <View
     style={
       [

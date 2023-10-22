@@ -59,7 +59,6 @@ export function MeasureFormInput({
 
   return (
     <View>
-      <Text variant="bodyMedium">{measure.displayName}:</Text>
       <TextInput
         style={{
           textAlign: "right",

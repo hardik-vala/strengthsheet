@@ -793,32 +793,6 @@ exports[`WorkoutForm renders correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                meters
-                :
-              </Text>
               <View
                 style={
                   [
@@ -917,32 +891,6 @@ exports[`WorkoutForm renders correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                time
-                :
-              </Text>
               <View
                 style={
                   [
@@ -1108,32 +1056,6 @@ exports[`WorkoutForm renders correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                meters
-                :
-              </Text>
               <View
                 style={
                   [
@@ -1453,32 +1375,6 @@ exports[`WorkoutForm renders correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                time
-                :
-              </Text>
               <View
                 style={
                   [
@@ -2587,32 +2483,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -2932,32 +2802,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -3344,32 +3188,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -3689,32 +3507,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -4101,32 +3893,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -4225,32 +3991,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -4416,32 +4156,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -4540,32 +4254,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -4731,32 +4419,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -4855,32 +4517,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -5046,32 +4682,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -5170,32 +4780,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -5361,32 +4945,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -5485,32 +5043,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -5676,32 +5208,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -5800,32 +5306,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -6199,32 +5679,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -6323,32 +5777,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -6514,32 +5942,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -6638,32 +6040,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -6829,32 +6205,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -6953,32 +6303,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -7144,32 +6468,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -7268,32 +6566,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -7459,32 +6731,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -7583,32 +6829,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -7774,32 +6994,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -7898,32 +7092,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -8235,32 +7403,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -8359,32 +7501,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -8550,32 +7666,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -8674,32 +7764,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -8865,32 +7929,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -8989,32 +8027,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -9180,32 +8192,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -9304,32 +8290,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -9495,32 +8455,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -9619,32 +8553,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -9810,32 +8718,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </Text>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  lb
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -9934,32 +8816,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 </View>
               </View>
               <View>
-                <Text
-                  style={
-                    [
-                      {
-                        "textAlign": "left",
-                      },
-                      {
-                        "color": "rgba(28, 27, 31, 1)",
-                        "writingDirection": "ltr",
-                      },
-                      [
-                        {
-                          "fontFamily": "System",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "letterSpacing": 0.25,
-                          "lineHeight": 20,
-                        },
-                        undefined,
-                      ],
-                    ]
-                  }
-                >
-                  reps
-                  :
-                </Text>
                 <View
                   style={
                     [
@@ -10275,32 +9131,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -10466,32 +9296,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -10657,32 +9461,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -10848,32 +9626,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -11039,32 +9791,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -11408,32 +10134,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -11532,32 +10232,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -11723,32 +10397,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -11847,32 +10495,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
@@ -12038,32 +10660,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </Text>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                lb
-                :
-              </Text>
               <View
                 style={
                   [
@@ -12162,32 +10758,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               </View>
             </View>
             <View>
-              <Text
-                style={
-                  [
-                    {
-                      "textAlign": "left",
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                      "writingDirection": "ltr",
-                    },
-                    [
-                      {
-                        "fontFamily": "System",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.25,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                    ],
-                  ]
-                }
-              >
-                reps
-                :
-              </Text>
               <View
                 style={
                   [
