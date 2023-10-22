@@ -1,15 +1,12 @@
 import { useState } from "react";
 import { View } from "react-native";
-import {
-  Text,
-  TextInput
-} from "react-native-paper";
+import { TextInput } from "react-native-paper";
 import {
   DrillSet,
   Exercise,
   ExerciseMeasure,
   WorkoutValueKey,
-  isValidMeasureValue
+  isValidMeasureValue,
 } from "../../../models/Workout/Core";
 import { MeasureHistoryList } from "../MeasureHistoryList/MeasureHistoryList";
 import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
@@ -41,7 +38,7 @@ export function MeasureFormInput({
     exercise.key,
     set.index,
     set.setType,
-    measure.key,
+    measure.key
   ).toString();
 
   function getPlaceholder() {

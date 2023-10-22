@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import { Divider, Text } from "react-native-paper";
+import { Chip, Divider, Text } from "react-native-paper";
 import {
   DrillSet,
   Exercise,
@@ -42,7 +42,7 @@ export function ShelfForm({
       <Divider />
       <View style={styles.exerciseFormShelfContainer}>
         <View style={styles.exerciseFormShelfSetContainer}>
-          <Text variant="bodyMedium">{title}</Text>
+          <Chip compact={true} textStyle={{fontSize: 12}}>{title}</Chip>
         </View>
         {exercise.measures.map((measure) => {
           const workoutValueKey = WorkoutValueKey.create(
