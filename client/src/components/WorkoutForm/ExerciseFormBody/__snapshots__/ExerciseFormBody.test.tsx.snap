@@ -33,10 +33,10 @@ exports[`ExerciseFormBody renders correctly 1`] = `
             [
               {
                 "fontFamily": "System",
-                "fontSize": 16,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "letterSpacing": 0.15,
-                "lineHeight": 24,
+                "letterSpacing": 0.25,
+                "lineHeight": 20,
               },
               {
                 "color": "gray",
@@ -70,10 +70,10 @@ exports[`ExerciseFormBody renders correctly 1`] = `
             [
               {
                 "fontFamily": "System",
-                "fontSize": 16,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "letterSpacing": 0.15,
-                "lineHeight": 24,
+                "letterSpacing": 0.25,
+                "lineHeight": 20,
               },
               {
                 "color": "gray",
@@ -99,10 +99,10 @@ exports[`ExerciseFormBody renders correctly 1`] = `
             [
               {
                 "fontFamily": "System",
-                "fontSize": 16,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "letterSpacing": 0.15,
-                "lineHeight": 24,
+                "letterSpacing": 0.25,
+                "lineHeight": 20,
               },
               {
                 "color": "gray",

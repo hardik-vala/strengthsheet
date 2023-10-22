@@ -11,7 +11,7 @@ export function ExerciseFormHeader({ exercise }: ExerciseFormHeaderProps) {
   return (
     <View style={styles.exerciseFormShelfContainer}>
       <View style={styles.exerciseFormShelfSetContainer}>
-        <Text variant="bodyLarge" style={styles.exerciseFormShelfText}>
+        <Text variant="bodyMedium" style={styles.exerciseFormShelfText}>
           Set
         </Text>
       </View>
@@ -23,7 +23,7 @@ export function ExerciseFormHeader({ exercise }: ExerciseFormHeaderProps) {
         {exercise.measures.map((measure) => (
           <Text
             key={measure.key}
-            variant="bodyLarge"
+            variant="bodyMedium"
             style={styles.exerciseFormShelfText}
           >
             {measure.displayName}
