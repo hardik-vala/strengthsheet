@@ -15,11 +15,7 @@ export function ExerciseFormHeader({ exercise }: ExerciseFormHeaderProps) {
           Set
         </Text>
       </View>
-      <View
-        style={{
-          flexDirection: "row",
-        }}
-      >
+      <View style={styles.shelfFormInputsContainer}>
         {exercise.measures.map((measure) => (
           <Text
             key={measure.key}

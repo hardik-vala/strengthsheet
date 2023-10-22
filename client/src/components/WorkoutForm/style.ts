@@ -28,4 +28,7 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     width: 80
   },
+  shelfFormInputsContainer: {
+    flexDirection: "row"
+  },
 });

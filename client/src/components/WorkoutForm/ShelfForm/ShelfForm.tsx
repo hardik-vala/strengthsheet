@@ -10,10 +10,7 @@ import {
   WorkoutHistoryRecord,
 } from "../../../models/Workout/WorkoutHistory";
 import { MeasureFormInput } from "../MeasureFormInput/MeasureFormInput";
-import {
-  ExerciseMeasureHistoryRecord,
-  WorkoutValues,
-} from "../common";
+import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
 import { styles } from "../style";
 
 const NUM_RECENT_WORKOUT_HISTORY_RECORDS = 3;
@@ -42,38 +39,42 @@ export function ShelfForm({
       <Divider />
       <View style={styles.exerciseFormShelfContainer}>
         <View style={styles.exerciseFormShelfSetContainer}>
-          <Chip compact={true} textStyle={{fontSize: 12}}>{title}</Chip>
+          <Chip compact={true} textStyle={{ fontSize: 12 }}>
+            {title}
+          </Chip>
         </View>
-        {exercise.measures.map((measure) => {
-          const workoutValueKey = WorkoutValueKey.create(
-            circuitKey,
-            exercise.key,
-            set.index,
-            set.setType,
-            measure.key
-          );
+        <View style={styles.shelfFormInputsContainer}>
+          {exercise.measures.map((measure) => {
+            const workoutValueKey = WorkoutValueKey.create(
+              circuitKey,
+              exercise.key,
+              set.index,
+              set.setType,
+              measure.key
+            );
 
-          return (
-            <MeasureFormInput
-              key={measure.key}
-              circuitKey={circuitKey}
-              exercise={exercise}
-              set={set}
-              measure={measure}
-              measureHistory={
-                workoutHistory
-                  ? projectWorkoutHistory(
-                      workoutHistory.records,
-                      workoutValueKey,
-                      NUM_RECENT_WORKOUT_HISTORY_RECORDS
-                    )
-                  : []
-              }
-              workoutValues={workoutValues}
-              onUpdateWorkoutValues={onUpdateWorkoutValues}
-            />
-          );
-        })}
+            return (
+              <MeasureFormInput
+                key={measure.key}
+                circuitKey={circuitKey}
+                exercise={exercise}
+                set={set}
+                measure={measure}
+                measureHistory={
+                  workoutHistory
+                    ? projectWorkoutHistory(
+                        workoutHistory.records,
+                        workoutValueKey,
+                        NUM_RECENT_WORKOUT_HISTORY_RECORDS
+                      )
+                    : []
+                }
+                workoutValues={workoutValues}
+                onUpdateWorkoutValues={onUpdateWorkoutValues}
+              />
+            );
+          })}
+        </View>
       </View>
     </View>
   );
