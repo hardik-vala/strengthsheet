@@ -40,7 +40,7 @@ exports[`ExerciseFormHeader renders correctly 1`] = `
             {
               "color": "gray",
               "fontWeight": "bold",
-              "width": 80,
+              "width": 90,
             },
           ],
         ]
@@ -77,7 +77,7 @@ exports[`ExerciseFormHeader renders correctly 1`] = `
             {
               "color": "gray",
               "fontWeight": "bold",
-              "width": 80,
+              "width": 90,
             },
           ],
         ]
@@ -106,7 +106,7 @@ exports[`ExerciseFormHeader renders correctly 1`] = `
             {
               "color": "gray",
               "fontWeight": "bold",
-              "width": 80,
+              "width": 90,
             },
           ],
         ]

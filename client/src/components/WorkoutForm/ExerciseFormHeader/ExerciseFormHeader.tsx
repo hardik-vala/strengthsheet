@@ -10,20 +10,21 @@ export interface ExerciseFormHeaderProps {
 export function ExerciseFormHeader({ exercise }: ExerciseFormHeaderProps) {
   return (
     <View style={styles.exerciseFormShelfContainer}>
-      <View style={styles.exerciseFormShelfSetContainer}>
-        <Text variant="bodyMedium" style={styles.exerciseFormShelfText}>
+      <View style={{ ...styles.exerciseFormShelfSetContainer, marginLeft: 3 }}>
+        <Text variant="bodyMedium" style={styles.exerciseFormHeaderText}>
           Set
         </Text>
       </View>
       <View style={styles.shelfFormInputsContainer}>
         {exercise.measures.map((measure) => (
-          <Text
-            key={measure.key}
-            variant="bodyMedium"
-            style={styles.exerciseFormShelfText}
-          >
-            {measure.displayName}
-          </Text>
+          <View key={measure.key} style={styles.exerciseFormTextContainer}>
+            <Text
+            style={styles.exerciseFormHeaderText}
+              variant="bodyMedium"
+            >
+              {measure.displayName}
+            </Text>
+          </View>
         ))}
       </View>
     </View>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { View } from "react-native";
-import { TextInput } from "react-native-paper";
+import { TextInput, useTheme } from "react-native-paper";
 import {
   DrillSet,
   Exercise,
@@ -10,6 +10,9 @@ import {
 } from "../../../models/Workout/Core";
 import { MeasureHistoryList } from "../MeasureHistoryList/MeasureHistoryList";
 import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
+import { styles } from "../style";
+
+const WIDTH = 75;
 
 export interface MeasureFormInputProps {
   circuitKey?: string;
@@ -32,6 +35,8 @@ export function MeasureFormInput({
 }: MeasureFormInputProps) {
   const [currWorkoutValue, setCurrWorkoutValue] = useState("");
   const [isError, setIsError] = useState(false);
+
+  const theme = useTheme();
 
   const workoutValueKeyStr = WorkoutValueKey.create(
     circuitKey,
@@ -57,10 +62,12 @@ export function MeasureFormInput({
   return (
     <View>
       <TextInput
+        activeOutlineColor="transparent"
+        contentStyle={{ fontSize: 12, fontWeight: "bold", textAlign: "center" }}
         defaultValue=""
         dense={true}
         error={isError}
-        mode="flat"
+        mode="outlined"
         onChangeText={(text) => {
           const isValid = isValidMeasureValue(text, measure.unit);
           setCurrWorkoutValue(text);
@@ -70,11 +77,13 @@ export function MeasureFormInput({
             onUpdateWorkoutValues(workoutValues);
           }
         }}
+        outlineColor="transparent"
+        outlineStyle={{ borderRadius: 5 }}
         placeholder={getPlaceholder()}
         style={{
-          textAlign: "right",
+          ...styles.exerciseFormTextContainer,
+          backgroundColor: theme.colors.secondaryContainer,
           height: 30,
-          width: 80,
         }}
         value={currWorkoutValue}
       />

@@ -23,10 +23,15 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
   },
-  exerciseFormShelfText: {
+  exerciseFormHeaderText: {
     color: "gray",
     fontWeight: "bold",
-    width: 80
+    textAlign: "center",
+  },
+  exerciseFormTextContainer: {
+    marginRight: 15,
+    textAlign: "center",
+    width: 75,
   },
   shelfFormInputsContainer: {
     flexDirection: "row"
