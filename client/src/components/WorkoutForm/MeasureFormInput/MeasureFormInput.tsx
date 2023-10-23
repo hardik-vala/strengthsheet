@@ -57,16 +57,10 @@ export function MeasureFormInput({
   return (
     <View>
       <TextInput
-        style={{
-          textAlign: "right",
-          height: 30,
-          width: 80,
-        }}
-        mode="flat"
-        dense={true}
         defaultValue=""
-        placeholder={getPlaceholder()}
-        value={currWorkoutValue}
+        dense={true}
+        error={isError}
+        mode="flat"
         onChangeText={(text) => {
           const isValid = isValidMeasureValue(text, measure.unit);
           setCurrWorkoutValue(text);
@@ -76,7 +70,13 @@ export function MeasureFormInput({
             onUpdateWorkoutValues(workoutValues);
           }
         }}
-        error={isError}
+        placeholder={getPlaceholder()}
+        style={{
+          textAlign: "right",
+          height: 30,
+          width: 80,
+        }}
+        value={currWorkoutValue}
       />
       {measureHistory && measureHistory.length > 0 && (
         <MeasureHistoryList measureHistory={measureHistory} />
