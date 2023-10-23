@@ -17,6 +17,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
         {
           "flexDirection": "column",
           "justifyContent": "center",
+          "marginLeft": 3,
         }
       }
     >
@@ -41,7 +42,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
               {
                 "color": "gray",
                 "fontWeight": "bold",
-                "width": 90,
+                "textAlign": "center",
               },
             ],
           ]
@@ -57,64 +58,84 @@ exports[`ExerciseFormBody renders correctly 1`] = `
         }
       }
     >
-      <Text
+      <View
         style={
-          [
-            {
-              "textAlign": "left",
-            },
-            {
-              "color": "rgba(28, 27, 31, 1)",
-              "writingDirection": "ltr",
-            },
-            [
-              {
-                "fontFamily": "System",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0.25,
-                "lineHeight": 20,
-              },
-              {
-                "color": "gray",
-                "fontWeight": "bold",
-                "width": 90,
-              },
-            ],
-          ]
+          {
+            "marginRight": 15,
+            "textAlign": "center",
+            "width": 75,
+          }
         }
       >
-        lb
-      </Text>
-      <Text
-        style={
-          [
-            {
-              "textAlign": "left",
-            },
-            {
-              "color": "rgba(28, 27, 31, 1)",
-              "writingDirection": "ltr",
-            },
+        <Text
+          style={
             [
               {
-                "fontFamily": "System",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0.25,
-                "lineHeight": 20,
+                "textAlign": "left",
               },
               {
-                "color": "gray",
-                "fontWeight": "bold",
-                "width": 90,
+                "color": "rgba(28, 27, 31, 1)",
+                "writingDirection": "ltr",
               },
-            ],
-          ]
+              [
+                {
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.25,
+                  "lineHeight": 20,
+                },
+                {
+                  "color": "gray",
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                },
+              ],
+            ]
+          }
+        >
+          lb
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "marginRight": 15,
+            "textAlign": "center",
+            "width": 75,
+          }
         }
       >
-        reps
-      </Text>
+        <Text
+          style={
+            [
+              {
+                "textAlign": "left",
+              },
+              {
+                "color": "rgba(28, 27, 31, 1)",
+                "writingDirection": "ltr",
+              },
+              [
+                {
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "letterSpacing": 0.25,
+                  "lineHeight": 20,
+                },
+                {
+                  "color": "gray",
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                },
+              ],
+            ]
+          }
+        >
+          reps
+        </Text>
+      </View>
     </View>
   </View>,
   <View
@@ -400,7 +421,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                         "letterSpacing": 0.15,
                         "lineHeight": undefined,
                         "paddingHorizontal": 16,
-                        "textAlign": "right",
+                        "textAlign": "center",
                         "textAlignVertical": "center",
                       },
                       false,
@@ -502,7 +523,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                         "letterSpacing": 0.15,
                         "lineHeight": undefined,
                         "paddingHorizontal": 16,
-                        "textAlign": "right",
+                        "textAlign": "center",
                         "textAlignVertical": "center",
                       },
                       false,
@@ -961,7 +982,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                         "letterSpacing": 0.15,
                         "lineHeight": undefined,
                         "paddingHorizontal": 16,
-                        "textAlign": "right",
+                        "textAlign": "center",
                         "textAlignVertical": "center",
                       },
                       false,
@@ -1063,7 +1084,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                         "letterSpacing": 0.15,
                         "lineHeight": undefined,
                         "paddingHorizontal": 16,
-                        "textAlign": "right",
+                        "textAlign": "center",
                         "textAlignVertical": "center",
                       },
                       false,
