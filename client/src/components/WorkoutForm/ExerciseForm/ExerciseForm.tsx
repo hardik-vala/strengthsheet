@@ -24,12 +24,14 @@ export function ExerciseForm({
       <Text variant="titleMedium" style={styles.drillTitle}>
         {exerciseTemplate.displayName}
       </Text>
-      <View style={styles.drillNoteContainer}>
-        <Text variant="bodyMedium" style={styles.drillNoteText}>
-          {exerciseTemplate.note}
-        </Text>
-      </View>
-      <ExerciseFormBody 
+      {exerciseTemplate.note && (
+        <View style={styles.drillNoteContainer}>
+          <Text variant="bodyMedium" style={styles.drillNoteText}>
+            {exerciseTemplate.note}
+          </Text>
+        </View>
+      )}
+      <ExerciseFormBody
         exercise={exerciseTemplate.exercise}
         sets={exerciseTemplate.sets}
         workoutHistory={workoutHistory}
