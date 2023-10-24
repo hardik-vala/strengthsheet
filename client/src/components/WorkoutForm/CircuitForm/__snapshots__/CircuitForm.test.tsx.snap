@@ -482,7 +482,7 @@ exports[`CircuitForm renders correctly 1`] = `
                   }
                 >
                   <TextInput
-                    cursorColor="transparent"
+                    cursorColor="rgba(98, 91, 113, 1)"
                     defaultValue=""
                     editable={true}
                     maxFontSizeMultiplier={1.5}
@@ -491,8 +491,8 @@ exports[`CircuitForm renders correctly 1`] = `
                     onChangeText={[Function]}
                     onFocus={[Function]}
                     placeholder=""
-                    placeholderTextColor="rgba(73, 69, 79, 1)"
-                    selectionColor="transparent"
+                    placeholderTextColor="darkgray"
+                    selectionColor="rgba(98, 91, 113, 1)"
                     style={
                       [
                         {
@@ -584,7 +584,7 @@ exports[`CircuitForm renders correctly 1`] = `
                   }
                 >
                   <TextInput
-                    cursorColor="transparent"
+                    cursorColor="rgba(98, 91, 113, 1)"
                     defaultValue=""
                     editable={true}
                     maxFontSizeMultiplier={1.5}
@@ -593,8 +593,8 @@ exports[`CircuitForm renders correctly 1`] = `
                     onChangeText={[Function]}
                     onFocus={[Function]}
                     placeholder=""
-                    placeholderTextColor="rgba(73, 69, 79, 1)"
-                    selectionColor="transparent"
+                    placeholderTextColor="darkgray"
+                    selectionColor="rgba(98, 91, 113, 1)"
                     style={
                       [
                         {
@@ -892,7 +892,7 @@ exports[`CircuitForm renders correctly 1`] = `
                   }
                 >
                   <TextInput
-                    cursorColor="transparent"
+                    cursorColor="rgba(98, 91, 113, 1)"
                     defaultValue=""
                     editable={true}
                     maxFontSizeMultiplier={1.5}
@@ -901,8 +901,8 @@ exports[`CircuitForm renders correctly 1`] = `
                     onChangeText={[Function]}
                     onFocus={[Function]}
                     placeholder=""
-                    placeholderTextColor="rgba(73, 69, 79, 1)"
-                    selectionColor="transparent"
+                    placeholderTextColor="darkgray"
+                    selectionColor="rgba(98, 91, 113, 1)"
                     style={
                       [
                         {
@@ -994,7 +994,7 @@ exports[`CircuitForm renders correctly 1`] = `
                   }
                 >
                   <TextInput
-                    cursorColor="transparent"
+                    cursorColor="rgba(98, 91, 113, 1)"
                     defaultValue=""
                     editable={true}
                     maxFontSizeMultiplier={1.5}
@@ -1003,8 +1003,8 @@ exports[`CircuitForm renders correctly 1`] = `
                     onChangeText={[Function]}
                     onFocus={[Function]}
                     placeholder=""
-                    placeholderTextColor="rgba(73, 69, 79, 1)"
-                    selectionColor="transparent"
+                    placeholderTextColor="darkgray"
+                    selectionColor="rgba(98, 91, 113, 1)"
                     style={
                       [
                         {
@@ -1469,7 +1469,7 @@ exports[`CircuitForm renders correctly 1`] = `
                   }
                 >
                   <TextInput
-                    cursorColor="transparent"
+                    cursorColor="rgba(98, 91, 113, 1)"
                     defaultValue=""
                     editable={true}
                     maxFontSizeMultiplier={1.5}
@@ -1478,8 +1478,8 @@ exports[`CircuitForm renders correctly 1`] = `
                     onChangeText={[Function]}
                     onFocus={[Function]}
                     placeholder=""
-                    placeholderTextColor="rgba(73, 69, 79, 1)"
-                    selectionColor="transparent"
+                    placeholderTextColor="darkgray"
+                    selectionColor="rgba(98, 91, 113, 1)"
                     style={
                       [
                         {
@@ -1571,7 +1571,7 @@ exports[`CircuitForm renders correctly 1`] = `
                   }
                 >
                   <TextInput
-                    cursorColor="transparent"
+                    cursorColor="rgba(98, 91, 113, 1)"
                     defaultValue=""
                     editable={true}
                     maxFontSizeMultiplier={1.5}
@@ -1580,8 +1580,8 @@ exports[`CircuitForm renders correctly 1`] = `
                     onChangeText={[Function]}
                     onFocus={[Function]}
                     placeholder=""
-                    placeholderTextColor="rgba(73, 69, 79, 1)"
-                    selectionColor="transparent"
+                    placeholderTextColor="darkgray"
+                    selectionColor="rgba(98, 91, 113, 1)"
                     style={
                       [
                         {
@@ -1879,7 +1879,7 @@ exports[`CircuitForm renders correctly 1`] = `
                   }
                 >
                   <TextInput
-                    cursorColor="transparent"
+                    cursorColor="rgba(98, 91, 113, 1)"
                     defaultValue=""
                     editable={true}
                     maxFontSizeMultiplier={1.5}
@@ -1888,8 +1888,8 @@ exports[`CircuitForm renders correctly 1`] = `
                     onChangeText={[Function]}
                     onFocus={[Function]}
                     placeholder=""
-                    placeholderTextColor="rgba(73, 69, 79, 1)"
-                    selectionColor="transparent"
+                    placeholderTextColor="darkgray"
+                    selectionColor="rgba(98, 91, 113, 1)"
                     style={
                       [
                         {
@@ -1981,7 +1981,7 @@ exports[`CircuitForm renders correctly 1`] = `
                   }
                 >
                   <TextInput
-                    cursorColor="transparent"
+                    cursorColor="rgba(98, 91, 113, 1)"
                     defaultValue=""
                     editable={true}
                     maxFontSizeMultiplier={1.5}
@@ -1990,8 +1990,8 @@ exports[`CircuitForm renders correctly 1`] = `
                     onChangeText={[Function]}
                     onFocus={[Function]}
                     placeholder=""
-                    placeholderTextColor="rgba(73, 69, 79, 1)"
-                    selectionColor="transparent"
+                    placeholderTextColor="darkgray"
+                    selectionColor="rgba(98, 91, 113, 1)"
                     style={
                       [
                         {

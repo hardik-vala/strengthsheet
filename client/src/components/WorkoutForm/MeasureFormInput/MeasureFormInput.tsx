@@ -12,8 +12,6 @@ import { MeasureHistoryList } from "../MeasureHistoryList/MeasureHistoryList";
 import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
 import { styles } from "../style";
 
-const WIDTH = 75;
-
 export interface MeasureFormInputProps {
   circuitKey?: string;
   exercise: Exercise;
@@ -62,7 +60,7 @@ export function MeasureFormInput({
   return (
     <View>
       <TextInput
-        activeOutlineColor="transparent"
+        activeOutlineColor={theme.colors.secondary}
         contentStyle={{ fontSize: 12, fontWeight: "bold", textAlign: "center" }}
         defaultValue=""
         dense={true}
@@ -80,6 +78,7 @@ export function MeasureFormInput({
         outlineColor="transparent"
         outlineStyle={{ borderRadius: 5 }}
         placeholder={getPlaceholder()}
+        placeholderTextColor="darkgray"
         style={{
           ...styles.exerciseFormTextContainer,
           backgroundColor: theme.colors.secondaryContainer,
@@ -87,9 +86,9 @@ export function MeasureFormInput({
         }}
         value={currWorkoutValue}
       />
-      {measureHistory && measureHistory.length > 0 && (
+      {/* {measureHistory && measureHistory.length > 0 && (
         <MeasureHistoryList measureHistory={measureHistory} />
-      )}
+      )} */}
     </View>
   );
 }

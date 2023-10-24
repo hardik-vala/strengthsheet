@@ -34,40 +34,6 @@ exports[`ExerciseForm renders correctly 1`] = `
   <View
     style={
       {
-        "backgroundColor": "gray",
-        "padding": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        [
-          {
-            "textAlign": "left",
-          },
-          {
-            "color": "rgba(28, 27, 31, 1)",
-            "writingDirection": "ltr",
-          },
-          [
-            {
-              "fontFamily": "System",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "letterSpacing": 0.25,
-              "lineHeight": 20,
-            },
-            {
-              "color": "black",
-            },
-          ],
-        ]
-      }
-    />
-  </View>,
-  <View
-    style={
-      {
         "flexDirection": "row",
         "justifyContent": "space-between",
         "padding": 10,
@@ -452,7 +418,7 @@ exports[`ExerciseForm renders correctly 1`] = `
                 }
               >
                 <TextInput
-                  cursorColor="transparent"
+                  cursorColor="rgba(98, 91, 113, 1)"
                   defaultValue=""
                   editable={true}
                   maxFontSizeMultiplier={1.5}
@@ -461,8 +427,8 @@ exports[`ExerciseForm renders correctly 1`] = `
                   onChangeText={[Function]}
                   onFocus={[Function]}
                   placeholder=""
-                  placeholderTextColor="rgba(73, 69, 79, 1)"
-                  selectionColor="transparent"
+                  placeholderTextColor="darkgray"
+                  selectionColor="rgba(98, 91, 113, 1)"
                   style={
                     [
                       {
@@ -554,7 +520,7 @@ exports[`ExerciseForm renders correctly 1`] = `
                 }
               >
                 <TextInput
-                  cursorColor="transparent"
+                  cursorColor="rgba(98, 91, 113, 1)"
                   defaultValue=""
                   editable={true}
                   maxFontSizeMultiplier={1.5}
@@ -563,8 +529,8 @@ exports[`ExerciseForm renders correctly 1`] = `
                   onChangeText={[Function]}
                   onFocus={[Function]}
                   placeholder="13"
-                  placeholderTextColor="rgba(73, 69, 79, 1)"
-                  selectionColor="transparent"
+                  placeholderTextColor="darkgray"
+                  selectionColor="rgba(98, 91, 113, 1)"
                   style={
                     [
                       {
@@ -604,157 +570,6 @@ exports[`ExerciseForm renders correctly 1`] = `
                   underlineColorAndroid="transparent"
                   value=""
                 />
-              </View>
-            </View>
-          </View>
-          <View>
-            <View
-              style={
-                {
-                  "backgroundColor": "rgba(255, 251, 254, 1)",
-                }
-              }
-            >
-              <View
-                accessibilityRole="button"
-                accessibilityState={
-                  {
-                    "busy": undefined,
-                    "checked": undefined,
-                    "disabled": false,
-                    "expanded": false,
-                    "selected": undefined,
-                  }
-                }
-                accessibilityValue={
-                  {
-                    "max": undefined,
-                    "min": undefined,
-                    "now": undefined,
-                    "text": undefined,
-                  }
-                }
-                accessible={true}
-                collapsable={false}
-                focusable={true}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  [
-                    {
-                      "overflow": "hidden",
-                    },
-                    [
-                      {
-                        "paddingRight": 24,
-                        "paddingVertical": 8,
-                      },
-                      {
-                        "marginBottom": -10,
-                        "marginLeft": 0,
-                        "marginTop": -25,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  pointerEvents="none"
-                  style={
-                    {
-                      "flexDirection": "row",
-                      "marginVertical": 6,
-                    }
-                  }
-                >
-                  <View
-                    pointerEvents="box-none"
-                    style={
-                      [
-                        {
-                          "alignItems": "center",
-                          "justifyContent": "center",
-                        },
-                        {
-                          "alignSelf": "center",
-                          "marginLeft": 16,
-                          "marginRight": 0,
-                          "marginVertical": 0,
-                        },
-                      ]
-                    }
-                  >
-                    <Text />
-                  </View>
-                  <View
-                    style={
-                      [
-                        {
-                          "paddingLeft": 16,
-                        },
-                        {
-                          "flex": 1,
-                          "justifyContent": "center",
-                        },
-                      ]
-                    }
-                  >
-                    <Text
-                      numberOfLines={1}
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "textAlign": "left",
-                          },
-                          {
-                            "color": "rgba(28, 27, 31, 1)",
-                            "fontFamily": "System",
-                            "fontWeight": "400",
-                            "letterSpacing": 0,
-                          },
-                          {
-                            "writingDirection": "ltr",
-                          },
-                          [
-                            {
-                              "fontSize": 16,
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                            },
-                            {
-                              "fontSize": 12,
-                              "marginLeft": -5,
-                            },
-                          ],
-                        ]
-                      }
-                    >
-                      History
-                    </Text>
-                  </View>
-                  <View
-                    style={
-                      [
-                        {
-                          "marginVertical": 6,
-                          "paddingLeft": 8,
-                        },
-                        undefined,
-                      ]
-                    }
-                  >
-                    <Text />
-                  </View>
-                </View>
               </View>
             </View>
           </View>
@@ -1013,7 +828,7 @@ exports[`ExerciseForm renders correctly 1`] = `
                 }
               >
                 <TextInput
-                  cursorColor="transparent"
+                  cursorColor="rgba(98, 91, 113, 1)"
                   defaultValue=""
                   editable={true}
                   maxFontSizeMultiplier={1.5}
@@ -1022,8 +837,8 @@ exports[`ExerciseForm renders correctly 1`] = `
                   onChangeText={[Function]}
                   onFocus={[Function]}
                   placeholder=""
-                  placeholderTextColor="rgba(73, 69, 79, 1)"
-                  selectionColor="transparent"
+                  placeholderTextColor="darkgray"
+                  selectionColor="rgba(98, 91, 113, 1)"
                   style={
                     [
                       {
@@ -1115,7 +930,7 @@ exports[`ExerciseForm renders correctly 1`] = `
                 }
               >
                 <TextInput
-                  cursorColor="transparent"
+                  cursorColor="rgba(98, 91, 113, 1)"
                   defaultValue=""
                   editable={true}
                   maxFontSizeMultiplier={1.5}
@@ -1124,8 +939,8 @@ exports[`ExerciseForm renders correctly 1`] = `
                   onChangeText={[Function]}
                   onFocus={[Function]}
                   placeholder="13"
-                  placeholderTextColor="rgba(73, 69, 79, 1)"
-                  selectionColor="transparent"
+                  placeholderTextColor="darkgray"
+                  selectionColor="rgba(98, 91, 113, 1)"
                   style={
                     [
                       {
@@ -1165,157 +980,6 @@ exports[`ExerciseForm renders correctly 1`] = `
                   underlineColorAndroid="transparent"
                   value=""
                 />
-              </View>
-            </View>
-          </View>
-          <View>
-            <View
-              style={
-                {
-                  "backgroundColor": "rgba(255, 251, 254, 1)",
-                }
-              }
-            >
-              <View
-                accessibilityRole="button"
-                accessibilityState={
-                  {
-                    "busy": undefined,
-                    "checked": undefined,
-                    "disabled": false,
-                    "expanded": false,
-                    "selected": undefined,
-                  }
-                }
-                accessibilityValue={
-                  {
-                    "max": undefined,
-                    "min": undefined,
-                    "now": undefined,
-                    "text": undefined,
-                  }
-                }
-                accessible={true}
-                collapsable={false}
-                focusable={true}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  [
-                    {
-                      "overflow": "hidden",
-                    },
-                    [
-                      {
-                        "paddingRight": 24,
-                        "paddingVertical": 8,
-                      },
-                      {
-                        "marginBottom": -10,
-                        "marginLeft": 0,
-                        "marginTop": -25,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  pointerEvents="none"
-                  style={
-                    {
-                      "flexDirection": "row",
-                      "marginVertical": 6,
-                    }
-                  }
-                >
-                  <View
-                    pointerEvents="box-none"
-                    style={
-                      [
-                        {
-                          "alignItems": "center",
-                          "justifyContent": "center",
-                        },
-                        {
-                          "alignSelf": "center",
-                          "marginLeft": 16,
-                          "marginRight": 0,
-                          "marginVertical": 0,
-                        },
-                      ]
-                    }
-                  >
-                    <Text />
-                  </View>
-                  <View
-                    style={
-                      [
-                        {
-                          "paddingLeft": 16,
-                        },
-                        {
-                          "flex": 1,
-                          "justifyContent": "center",
-                        },
-                      ]
-                    }
-                  >
-                    <Text
-                      numberOfLines={1}
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "textAlign": "left",
-                          },
-                          {
-                            "color": "rgba(28, 27, 31, 1)",
-                            "fontFamily": "System",
-                            "fontWeight": "400",
-                            "letterSpacing": 0,
-                          },
-                          {
-                            "writingDirection": "ltr",
-                          },
-                          [
-                            {
-                              "fontSize": 16,
-                            },
-                            {
-                              "color": "rgba(28, 27, 31, 1)",
-                            },
-                            {
-                              "fontSize": 12,
-                              "marginLeft": -5,
-                            },
-                          ],
-                        ]
-                      }
-                    >
-                      History
-                    </Text>
-                  </View>
-                  <View
-                    style={
-                      [
-                        {
-                          "marginVertical": 6,
-                          "paddingLeft": 8,
-                        },
-                        undefined,
-                      ]
-                    }
-                  >
-                    <Text />
-                  </View>
-                </View>
               </View>
             </View>
           </View>

@@ -49,7 +49,7 @@ exports[`MeasureFormInput renders circuit measure inputs correctly 1`] = `
         }
       >
         <TextInput
-          cursorColor="transparent"
+          cursorColor="rgba(98, 91, 113, 1)"
           defaultValue=""
           editable={true}
           maxFontSizeMultiplier={1.5}
@@ -58,8 +58,8 @@ exports[`MeasureFormInput renders circuit measure inputs correctly 1`] = `
           onChangeText={[Function]}
           onFocus={[Function]}
           placeholder="13"
-          placeholderTextColor="rgba(73, 69, 79, 1)"
-          selectionColor="transparent"
+          placeholderTextColor="darkgray"
+          selectionColor="rgba(98, 91, 113, 1)"
           style={
             [
               {
@@ -99,227 +99,6 @@ exports[`MeasureFormInput renders circuit measure inputs correctly 1`] = `
           underlineColorAndroid="transparent"
           value=""
         />
-      </View>
-    </View>
-  </View>
-  <View>
-    <View
-      style={
-        {
-          "backgroundColor": "rgba(255, 251, 254, 1)",
-        }
-      }
-    >
-      <View
-        accessibilityRole="button"
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": false,
-            "expanded": false,
-            "selected": undefined,
-          }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          [
-            {
-              "overflow": "hidden",
-            },
-            [
-              {
-                "paddingRight": 24,
-                "paddingVertical": 8,
-              },
-              {
-                "marginBottom": -10,
-                "marginLeft": 0,
-                "marginTop": -25,
-              },
-            ],
-          ]
-        }
-      >
-        <View
-          pointerEvents="none"
-          style={
-            {
-              "flexDirection": "row",
-              "marginVertical": 6,
-            }
-          }
-        >
-          <View
-            pointerEvents="box-none"
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                },
-                {
-                  "alignSelf": "center",
-                  "marginLeft": 16,
-                  "marginRight": 0,
-                  "marginVertical": 0,
-                },
-              ]
-            }
-          >
-            <Text
-              accessibilityElementsHidden={true}
-              allowFontScaling={false}
-              importantForAccessibility="no-hide-descendants"
-              pointerEvents="none"
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "rgba(73, 69, 79, 1)",
-                    "fontSize": 24,
-                  },
-                  [
-                    {
-                      "lineHeight": 24,
-                      "transform": [
-                        {
-                          "scaleX": 1,
-                        },
-                      ],
-                    },
-                    {
-                      "backgroundColor": "transparent",
-                    },
-                  ],
-                  {
-                    "fontFamily": "material-community",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              󰋚
-            </Text>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "paddingLeft": 16,
-                },
-                {
-                  "flex": 1,
-                  "justifyContent": "center",
-                },
-              ]
-            }
-          >
-            <Text
-              numberOfLines={1}
-              selectable={false}
-              style={
-                [
-                  {
-                    "textAlign": "left",
-                  },
-                  {
-                    "color": "rgba(28, 27, 31, 1)",
-                    "fontFamily": "System",
-                    "fontWeight": "400",
-                    "letterSpacing": 0,
-                  },
-                  {
-                    "writingDirection": "ltr",
-                  },
-                  [
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                    },
-                    {
-                      "fontSize": 12,
-                      "marginLeft": -5,
-                    },
-                  ],
-                ]
-              }
-            >
-              History
-            </Text>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "marginVertical": 6,
-                  "paddingLeft": 8,
-                },
-                undefined,
-              ]
-            }
-          >
-            <Text
-              accessibilityElementsHidden={true}
-              allowFontScaling={false}
-              importantForAccessibility="no-hide-descendants"
-              pointerEvents="none"
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "rgba(73, 69, 79, 1)",
-                    "fontSize": 24,
-                  },
-                  [
-                    {
-                      "lineHeight": 24,
-                      "transform": [
-                        {
-                          "scaleX": 1,
-                        },
-                      ],
-                    },
-                    {
-                      "backgroundColor": "transparent",
-                    },
-                  ],
-                  {
-                    "fontFamily": "material-community",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              󰅀
-            </Text>
-          </View>
-        </View>
       </View>
     </View>
   </View>
@@ -375,7 +154,7 @@ exports[`MeasureFormInput renders correctly 1`] = `
         }
       >
         <TextInput
-          cursorColor="transparent"
+          cursorColor="rgba(98, 91, 113, 1)"
           defaultValue=""
           editable={true}
           maxFontSizeMultiplier={1.5}
@@ -384,8 +163,8 @@ exports[`MeasureFormInput renders correctly 1`] = `
           onChangeText={[Function]}
           onFocus={[Function]}
           placeholder=""
-          placeholderTextColor="rgba(73, 69, 79, 1)"
-          selectionColor="transparent"
+          placeholderTextColor="darkgray"
+          selectionColor="rgba(98, 91, 113, 1)"
           style={
             [
               {
@@ -480,7 +259,7 @@ exports[`MeasureFormInput renders with history 1`] = `
         }
       >
         <TextInput
-          cursorColor="transparent"
+          cursorColor="rgba(98, 91, 113, 1)"
           defaultValue=""
           editable={true}
           maxFontSizeMultiplier={1.5}
@@ -489,8 +268,8 @@ exports[`MeasureFormInput renders with history 1`] = `
           onChangeText={[Function]}
           onFocus={[Function]}
           placeholder="13"
-          placeholderTextColor="rgba(73, 69, 79, 1)"
-          selectionColor="transparent"
+          placeholderTextColor="darkgray"
+          selectionColor="rgba(98, 91, 113, 1)"
           style={
             [
               {
@@ -530,157 +309,6 @@ exports[`MeasureFormInput renders with history 1`] = `
           underlineColorAndroid="transparent"
           value=""
         />
-      </View>
-    </View>
-  </View>
-  <View>
-    <View
-      style={
-        {
-          "backgroundColor": "rgba(255, 251, 254, 1)",
-        }
-      }
-    >
-      <View
-        accessibilityRole="button"
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": false,
-            "expanded": false,
-            "selected": undefined,
-          }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          [
-            {
-              "overflow": "hidden",
-            },
-            [
-              {
-                "paddingRight": 24,
-                "paddingVertical": 8,
-              },
-              {
-                "marginBottom": -10,
-                "marginLeft": 0,
-                "marginTop": -25,
-              },
-            ],
-          ]
-        }
-      >
-        <View
-          pointerEvents="none"
-          style={
-            {
-              "flexDirection": "row",
-              "marginVertical": 6,
-            }
-          }
-        >
-          <View
-            pointerEvents="box-none"
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                },
-                {
-                  "alignSelf": "center",
-                  "marginLeft": 16,
-                  "marginRight": 0,
-                  "marginVertical": 0,
-                },
-              ]
-            }
-          >
-            <Text />
-          </View>
-          <View
-            style={
-              [
-                {
-                  "paddingLeft": 16,
-                },
-                {
-                  "flex": 1,
-                  "justifyContent": "center",
-                },
-              ]
-            }
-          >
-            <Text
-              numberOfLines={1}
-              selectable={false}
-              style={
-                [
-                  {
-                    "textAlign": "left",
-                  },
-                  {
-                    "color": "rgba(28, 27, 31, 1)",
-                    "fontFamily": "System",
-                    "fontWeight": "400",
-                    "letterSpacing": 0,
-                  },
-                  {
-                    "writingDirection": "ltr",
-                  },
-                  [
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                    },
-                    {
-                      "fontSize": 12,
-                      "marginLeft": -5,
-                    },
-                  ],
-                ]
-              }
-            >
-              History
-            </Text>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "marginVertical": 6,
-                  "paddingLeft": 8,
-                },
-                undefined,
-              ]
-            }
-          >
-            <Text />
-          </View>
-        </View>
       </View>
     </View>
   </View>
@@ -745,7 +373,7 @@ exports[`MeasureFormInput when the text input is invalid renders the error indic
           onChangeText={[Function]}
           onFocus={[Function]}
           placeholder="13"
-          placeholderTextColor="rgba(73, 69, 79, 1)"
+          placeholderTextColor="darkgray"
           selectionColor="rgba(179, 38, 30, 1)"
           style={
             [
@@ -786,227 +414,6 @@ exports[`MeasureFormInput when the text input is invalid renders the error indic
           underlineColorAndroid="transparent"
           value="Q"
         />
-      </View>
-    </View>
-  </View>
-  <View>
-    <View
-      style={
-        {
-          "backgroundColor": "rgba(255, 251, 254, 1)",
-        }
-      }
-    >
-      <View
-        accessibilityRole="button"
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": false,
-            "expanded": false,
-            "selected": undefined,
-          }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          [
-            {
-              "overflow": "hidden",
-            },
-            [
-              {
-                "paddingRight": 24,
-                "paddingVertical": 8,
-              },
-              {
-                "marginBottom": -10,
-                "marginLeft": 0,
-                "marginTop": -25,
-              },
-            ],
-          ]
-        }
-      >
-        <View
-          pointerEvents="none"
-          style={
-            {
-              "flexDirection": "row",
-              "marginVertical": 6,
-            }
-          }
-        >
-          <View
-            pointerEvents="box-none"
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                },
-                {
-                  "alignSelf": "center",
-                  "marginLeft": 16,
-                  "marginRight": 0,
-                  "marginVertical": 0,
-                },
-              ]
-            }
-          >
-            <Text
-              accessibilityElementsHidden={true}
-              allowFontScaling={false}
-              importantForAccessibility="no-hide-descendants"
-              pointerEvents="none"
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "rgba(73, 69, 79, 1)",
-                    "fontSize": 24,
-                  },
-                  [
-                    {
-                      "lineHeight": 24,
-                      "transform": [
-                        {
-                          "scaleX": 1,
-                        },
-                      ],
-                    },
-                    {
-                      "backgroundColor": "transparent",
-                    },
-                  ],
-                  {
-                    "fontFamily": "material-community",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              󰋚
-            </Text>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "paddingLeft": 16,
-                },
-                {
-                  "flex": 1,
-                  "justifyContent": "center",
-                },
-              ]
-            }
-          >
-            <Text
-              numberOfLines={1}
-              selectable={false}
-              style={
-                [
-                  {
-                    "textAlign": "left",
-                  },
-                  {
-                    "color": "rgba(28, 27, 31, 1)",
-                    "fontFamily": "System",
-                    "fontWeight": "400",
-                    "letterSpacing": 0,
-                  },
-                  {
-                    "writingDirection": "ltr",
-                  },
-                  [
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "rgba(28, 27, 31, 1)",
-                    },
-                    {
-                      "fontSize": 12,
-                      "marginLeft": -5,
-                    },
-                  ],
-                ]
-              }
-            >
-              History
-            </Text>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "marginVertical": 6,
-                  "paddingLeft": 8,
-                },
-                undefined,
-              ]
-            }
-          >
-            <Text
-              accessibilityElementsHidden={true}
-              allowFontScaling={false}
-              importantForAccessibility="no-hide-descendants"
-              pointerEvents="none"
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "rgba(73, 69, 79, 1)",
-                    "fontSize": 24,
-                  },
-                  [
-                    {
-                      "lineHeight": 24,
-                      "transform": [
-                        {
-                          "scaleX": 1,
-                        },
-                      ],
-                    },
-                    {
-                      "backgroundColor": "transparent",
-                    },
-                  ],
-                  {
-                    "fontFamily": "material-community",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              󰅀
-            </Text>
-          </View>
-        </View>
       </View>
     </View>
   </View>
