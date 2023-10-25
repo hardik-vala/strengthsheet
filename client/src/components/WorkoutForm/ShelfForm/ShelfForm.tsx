@@ -1,5 +1,6 @@
 import { View } from "react-native";
-import { Chip, Divider, Text } from "react-native-paper";
+import { Chip, Divider, IconButton, Text } from "react-native-paper";
+import Icon from "react-native-paper/lib/typescript/components/Icon";
 import {
   DrillSet,
   Exercise,

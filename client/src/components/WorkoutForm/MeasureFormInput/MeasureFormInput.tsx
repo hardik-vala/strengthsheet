@@ -8,7 +8,6 @@ import {
   WorkoutValueKey,
   isValidMeasureValue,
 } from "../../../models/Workout/Core";
-import { MeasureHistoryList } from "../MeasureHistoryList/MeasureHistoryList";
 import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
 import { styles } from "../style";
 
@@ -86,9 +85,6 @@ export function MeasureFormInput({
         }}
         value={currWorkoutValue}
       />
-      {/* {measureHistory && measureHistory.length > 0 && (
-        <MeasureHistoryList measureHistory={measureHistory} />
-      )} */}
     </View>
   );
 }
