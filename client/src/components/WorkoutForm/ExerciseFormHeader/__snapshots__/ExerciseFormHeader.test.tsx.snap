@@ -54,6 +54,7 @@ exports[`ExerciseFormHeader renders correctly 1`] = `
     style={
       {
         "flexDirection": "row",
+        "marginRight": 40,
       }
     }
   >

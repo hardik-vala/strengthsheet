@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import { Chip, Divider, IconButton, Text } from "react-native-paper";
+import { Chip, Divider, IconButton, Text, useTheme } from "react-native-paper";
 import Icon from "react-native-paper/lib/typescript/components/Icon";
 import {
   DrillSet,
@@ -35,6 +35,8 @@ export function ShelfForm({
   workoutValues,
   onUpdateWorkoutValues,
 }: ShelfFormProps) {
+  const theme = useTheme();
+
   return (
     <View style={{ width: "100%" }}>
       <Divider />
@@ -82,6 +84,12 @@ export function ShelfForm({
               />
             );
           })}
+          <IconButton
+            icon="check"
+            iconColor="gray"
+            size={15}
+            style={{ backgroundColor: theme.colors.surfaceVariant }}
+          />
         </View>
       </View>
     </View>
