@@ -9,6 +9,11 @@ import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 export type WorkoutTemplateRegistry = { [k: string]: WorkoutTemplate };
 
 export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
+  ankle_evertor_exercise_band: {
+    key: "ankle_evertor_exercise_band",
+    displayName: "Ankle Evertor Exercise (Band)",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
   arm_circle: {
     key: "arm_circle",
     displayName: "Arm Circle",
@@ -309,6 +314,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     key: "quad_walk_lean",
     displayName: "Quad-Walk with Lean",
     measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  rdl_single_leg_dumbbell: {
+    key: "rdl_single_leg_dumbbell",
+    displayName: "Single-Leg RDL (Dumbbell)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
@@ -796,24 +809,12 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
     note: "",
     drills: [
       {
-        exercise: EXERCISE_REGISTRY["ninety_ninety"],
-        displayName: "90-90",
+        exercise: EXERCISE_REGISTRY["squat_deep_bodyweight"],
+        displayName: "Deep Squat (Bodyweight)",
         iconKey: "",
-        note: "10 reps",
+        note: "1 rep",
         sets: [
           { index: 1, setType: SetType.Working },
-          { index: 2, setType: SetType.Working },
-        ],
-      },
-      {
-        exercise: EXERCISE_REGISTRY["hip_abduction_looped_elastic_band"],
-        displayName: "Hip Abduction (Looped Elastic Band)",
-        iconKey: "",
-        note: "10 reps with 1 second hold",
-        sets: [
-          { index: 1, setType: SetType.Working },
-          { index: 2, setType: SetType.Working },
-          { index: 3, setType: SetType.Working },
         ],
       },
       {
@@ -832,6 +833,28 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         displayName: "Forward Jump Squats (Bodyweight)",
         iconKey: "",
         note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["rdl_single_leg_dumbbell"],
+        displayName: "Single-Leg RDL (Dumbbell)",
+        iconKey: "",
+        note: "10 reps with 20 lb dumbbell",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["hip_abduction_looped_elastic_band"],
+        displayName: "Hip Abduction (Looped Elastic Band)",
+        iconKey: "",
+        note: "10 reps with 1 second hold",
         sets: [
           { index: 1, setType: SetType.Working },
           { index: 2, setType: SetType.Working },
@@ -858,6 +881,27 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
           { index: 1, setType: SetType.Working },
           { index: 2, setType: SetType.Working },
           { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["ankle_evertor_exercise_band"],
+        displayName: "Ankle Evertor Exercise (Band)",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["ninety_ninety"],
+        displayName: "90-90",
+        iconKey: "",
+        note: "10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
         ],
       },
     ],

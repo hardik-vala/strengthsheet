@@ -1018,7 +1018,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                       ]
                     }
                   >
-                    90-90, Hip Abduction (Looped Elastic Band), Lateral Step Down, Forward Jump Squats (Bodyweight), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts
+                    Deep Squat (Bodyweight), Lateral Step Down, Forward Jump Squats (Bodyweight), Single-Leg RDL (Dumbbell), Hip Abduction (Looped Elastic Band), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts, Ankle Evertor Exercise (Band), 90-90
                   </Text>
                 </View>
               </View>
@@ -3103,7 +3103,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                       ]
                     }
                   >
-                    90-90, Hip Abduction (Looped Elastic Band), Lateral Step Down, Forward Jump Squats (Bodyweight), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts
+                    Deep Squat (Bodyweight), Lateral Step Down, Forward Jump Squats (Bodyweight), Single-Leg RDL (Dumbbell), Hip Abduction (Looped Elastic Band), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts, Ankle Evertor Exercise (Band), 90-90
                   </Text>
                 </View>
               </View>
@@ -5363,7 +5363,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                       ]
                     }
                   >
-                    90-90, Hip Abduction (Looped Elastic Band), Lateral Step Down, Forward Jump Squats (Bodyweight), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts
+                    Deep Squat (Bodyweight), Lateral Step Down, Forward Jump Squats (Bodyweight), Single-Leg RDL (Dumbbell), Hip Abduction (Looped Elastic Band), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts, Ankle Evertor Exercise (Band), 90-90
                   </Text>
                 </View>
               </View>
@@ -8796,7 +8796,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                       ]
                     }
                   >
-                    90-90, Hip Abduction (Looped Elastic Band), Lateral Step Down, Forward Jump Squats (Bodyweight), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts
+                    Deep Squat (Bodyweight), Lateral Step Down, Forward Jump Squats (Bodyweight), Single-Leg RDL (Dumbbell), Hip Abduction (Looped Elastic Band), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts, Ankle Evertor Exercise (Band), 90-90
                   </Text>
                 </View>
               </View>
