@@ -10,7 +10,7 @@ export interface ExerciseFormHeaderProps {
 export function ExerciseFormHeader({ exercise }: ExerciseFormHeaderProps) {
   return (
     <View style={styles.exerciseFormShelfContainer}>
-      <View style={{ ...styles.exerciseFormShelfSetContainer, marginLeft: 3 }}>
+      <View style={{ ...styles.exerciseFormShelfSetContainer, marginLeft: 50 }}>
         <Text variant="bodyMedium" style={styles.exerciseFormHeaderText}>
           Set
         </Text>

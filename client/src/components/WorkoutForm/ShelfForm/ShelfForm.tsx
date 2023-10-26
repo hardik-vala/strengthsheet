@@ -39,10 +39,17 @@ export function ShelfForm({
     <View style={{ width: "100%" }}>
       <Divider />
       <View style={styles.exerciseFormShelfContainer}>
-        <View style={styles.exerciseFormShelfSetContainer}>
-          <Chip compact={true} textStyle={{ fontSize: 12 }}>
-            {title}
-          </Chip>
+        <View style={styles.exerciseFormShelfLeftGroupContainer}>
+          <IconButton
+            icon="arrow-right-drop-circle-outline"
+            iconColor="gray"
+            size={20}
+          />
+          <View style={styles.exerciseFormShelfSetContainer}>
+            <Chip compact={true} textStyle={{ fontSize: 12 }}>
+              {title}
+            </Chip>
+          </View>
         </View>
         <View style={styles.shelfFormInputsContainer}>
           {exercise.measures.map((measure) => {

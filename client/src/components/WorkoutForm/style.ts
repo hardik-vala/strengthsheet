@@ -16,8 +16,13 @@ export const styles = StyleSheet.create({
   exerciseFormShelfContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 10,
+    paddingVertical: 5,
     width: "100%",
+  },
+  exerciseFormShelfLeftGroupContainer: {
+    flex: 2,
+    flexDirection: "row",
+    width: 50,
   },
   exerciseFormShelfSetContainer: {
     flexDirection: "column",
@@ -34,6 +39,6 @@ export const styles = StyleSheet.create({
     width: 75,
   },
   shelfFormInputsContainer: {
-    flexDirection: "row"
+    flexDirection: "row",
   },
 });
