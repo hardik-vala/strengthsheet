@@ -14,11 +14,8 @@ export interface MeasureHistoryListProps {
 
 export function MeasureHistoryList({ measureHistory }: MeasureHistoryListProps) {
   return (
-    <List.Accordion
+    <List.Section
       title="History"
-      titleStyle={{ fontSize: 12, marginLeft: -5 }}
-      style={{ marginLeft: 0, marginTop: -25, marginBottom: -10 }}
-      left={(props) => <List.Icon {...props} icon="history" />}
     >
       {measureHistory.map((r) => (
         <View
@@ -34,6 +31,6 @@ export function MeasureHistoryList({ measureHistory }: MeasureHistoryListProps) 
           <Text>{r.value}</Text>
         </View>
       ))}
-    </List.Accordion>
+    </List.Section>
   );
 }

@@ -38,6 +38,17 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     width: 75,
   },
+  measureFormInput: {
+    height: 30
+  },
+  measureFormInputContent: {
+    fontSize: 12,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+  measureFormInputOutline: {
+    borderRadius: 5
+  },
   shelfFormInputsContainer: {
     flexDirection: "row",
   },

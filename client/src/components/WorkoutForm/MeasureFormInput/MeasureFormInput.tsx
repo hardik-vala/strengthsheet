@@ -60,7 +60,7 @@ export function MeasureFormInput({
     <View>
       <TextInput
         activeOutlineColor={theme.colors.secondary}
-        contentStyle={{ fontSize: 12, fontWeight: "bold", textAlign: "center" }}
+        contentStyle={styles.measureFormInputContent}
         defaultValue=""
         dense={true}
         error={isError}
@@ -75,13 +75,13 @@ export function MeasureFormInput({
           }
         }}
         outlineColor="transparent"
-        outlineStyle={{ borderRadius: 5 }}
+        outlineStyle={styles.measureFormInputOutline}
         placeholder={getPlaceholder()}
         placeholderTextColor="darkgray"
         style={{
           ...styles.exerciseFormTextContainer,
+          ...styles.measureFormInput,
           backgroundColor: theme.colors.secondaryContainer,
-          height: 30,
         }}
         value={currWorkoutValue}
       />

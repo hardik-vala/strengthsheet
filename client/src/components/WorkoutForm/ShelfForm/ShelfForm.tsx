@@ -1,5 +1,14 @@
+import { format as formatDate } from "date-fns";
+import { useState } from "react";
 import { View } from "react-native";
-import { Chip, Divider, IconButton, Text, useTheme } from "react-native-paper";
+import {
+  Chip,
+  Divider,
+  IconButton,
+  Text,
+  TextInput,
+  useTheme,
+} from "react-native-paper";
 import {
   DrillSet,
   Exercise,
@@ -13,6 +22,7 @@ import { MeasureFormInput } from "../MeasureFormInput/MeasureFormInput";
 import { ExerciseMeasureHistoryRecord, WorkoutValues } from "../common";
 import { styles } from "../style";
 
+const HISTORY_RECORD_DATETIME_FORMAT = "MM/dd/yyyy";
 const NUM_RECENT_WORKOUT_HISTORY_RECORDS = 3;
 
 export interface ShelfFormProps {
@@ -34,6 +44,8 @@ export function ShelfForm({
   workoutValues,
   onUpdateWorkoutValues,
 }: ShelfFormProps) {
+  const [showHistory, setShowHistory] = useState(false);
+
   const theme = useTheme();
 
   return (
@@ -42,9 +54,14 @@ export function ShelfForm({
       <View style={styles.exerciseFormShelfContainer}>
         <View style={styles.exerciseFormShelfLeftGroupContainer}>
           <IconButton
-            icon="arrow-right-drop-circle-outline"
+            icon={
+              showHistory
+                ? "arrow-down-drop-circle-outline"
+                : "arrow-right-drop-circle-outline"
+            }
             iconColor="gray"
             size={20}
+            onPress={() => setShowHistory(!showHistory)}
           />
           <View style={styles.exerciseFormShelfSetContainer}>
             <Chip compact={true} textStyle={{ fontSize: 12 }}>
@@ -91,6 +108,14 @@ export function ShelfForm({
           />
         </View>
       </View>
+      {showHistory && (
+        <ShelfHistory
+          exercise={exercise}
+          set={set}
+          circuitKey={circuitKey}
+          workoutHistory={workoutHistory}
+        />
+      )}
     </View>
   );
 }
@@ -130,4 +155,97 @@ function selectWorkoutHistory(
         value: e.value,
       }));
   });
+}
+
+interface ShelfHistoryProps {
+  exercise: Exercise;
+  set: DrillSet;
+  circuitKey?: string;
+  workoutHistory: WorkoutHistory | null;
+}
+
+export function ShelfHistory({
+  exercise,
+  set,
+  circuitKey,
+  workoutHistory,
+}: ShelfHistoryProps) {
+  const theme = useTheme();
+
+  return (
+    <View
+      style={{
+        backgroundColor: theme.colors.backdrop,
+        flex: 1,
+        flexDirection: "column",
+        justifyContent: "space-evenly",
+        height: 150,
+      }}
+    >
+      {filterRecentWorkoutHistory(
+        workoutHistory.records,
+        NUM_RECENT_WORKOUT_HISTORY_RECORDS
+      ).map((r) => (
+        <View
+          key={r.startTimestamp.getTime()}
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <View
+            style={{
+              ...styles.exerciseFormShelfSetContainer,
+              marginLeft: 45,
+              paddingTop: 5,
+            }}
+          >
+            <Text variant="bodySmall" style={{ color: "gray" }}>
+              {formatDate(r.startTimestamp, HISTORY_RECORD_DATETIME_FORMAT)}
+            </Text>
+          </View>
+          <View
+            style={{
+              ...styles.shelfFormInputsContainer,
+              marginRight: 43,
+            }}
+          >
+            {exercise.measures.map((measure) => {
+              const workoutValueKey = WorkoutValueKey.create(
+                circuitKey,
+                exercise.key,
+                set.index,
+                set.setType,
+                measure.key
+              );
+
+              const workoutValue = r.exercises.find((e) =>
+                workoutValueKey.equals(e.key)
+              );
+
+              return (
+                <View key={measure.key}>
+                  <TextInput
+                    disabled={true}
+                    contentStyle={styles.measureFormInputContent}
+                    dense={true}
+                    mode="outlined"
+                    outlineStyle={styles.measureFormInputOutline}
+                    placeholder={workoutValue.value}
+                    placeholderTextColor="gray"
+                    style={{
+                      ...styles.exerciseFormTextContainer,
+                      ...styles.measureFormInput,
+                      backgroundColor: theme.colors.surfaceDisabled,
+                    }}
+                  />
+                </View>
+              );
+            })}
+          </View>
+        </View>
+      ))}
+    </View>
+  );
 }
