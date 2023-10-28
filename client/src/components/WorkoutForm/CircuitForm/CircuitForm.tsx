@@ -24,11 +24,11 @@ export function CircuitForm({
       <Text variant="titleMedium" style={styles.drillTitle}>
         {circuitTemplate.displayName}
       </Text>
-      <View style={styles.drillNoteContainer}>
+      {circuitTemplate.note && <View style={styles.drillNoteContainer}>
         <Text variant="bodyMedium" style={styles.drillNoteText}>
           {circuitTemplate.note}
         </Text>
-      </View>
+      </View>}
       {circuitTemplate.circuit.exercises.map((exercise) => (
         <View key={exercise.exercise.key}>
           <Text
