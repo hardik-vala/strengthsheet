@@ -7,6 +7,7 @@ import { WorkoutValues } from "../common";
 export interface ExerciseFormBodyProps {
   exercise: Exercise;
   sets: DrillSet[];
+  circuitKey?: string;
   workoutHistory: WorkoutHistory | null;
   workoutValues: WorkoutValues;
   onUpdateWorkoutValues: (updatedWorkoutValues: WorkoutValues) => void;
@@ -15,6 +16,7 @@ export interface ExerciseFormBodyProps {
 export function ExerciseFormBody({
   exercise,
   sets,
+  circuitKey,
   workoutHistory,
   workoutValues,
   onUpdateWorkoutValues,
@@ -29,6 +31,7 @@ export function ExerciseFormBody({
             title={set.setType === SetType.Warmup ? "W" : `${set.index}`}
             exercise={exercise}
             set={set}
+            circuitKey={circuitKey}
             workoutHistory={workoutHistory}
             workoutValues={workoutValues}
             onUpdateWorkoutValues={onUpdateWorkoutValues}

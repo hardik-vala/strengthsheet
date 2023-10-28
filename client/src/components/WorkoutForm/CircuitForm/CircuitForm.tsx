@@ -44,6 +44,7 @@ export function CircuitForm({
           <ExerciseFormBody
             exercise={exercise.exercise}
             sets={circuitTemplate.sets}
+            circuitKey={circuitTemplate.circuit.key}
             workoutHistory={workoutHistory}
             workoutValues={workoutValues}
             onUpdateWorkoutValues={onUpdateWorkoutValues}
