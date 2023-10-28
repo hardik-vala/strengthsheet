@@ -47,22 +47,39 @@ export function ShelfForm({
   const [showHistory, setShowHistory] = useState(false);
 
   const theme = useTheme();
+  const recentWorkoutHistoryRecords = workoutHistory
+    ? filterRecentWorkoutHistory(
+        workoutHistory.records,
+        NUM_RECENT_WORKOUT_HISTORY_RECORDS
+      )
+    : [];
+
+  const shelfHistory = filterShelfHistory(
+    recentWorkoutHistoryRecords,
+    exercise,
+    set,
+    circuitKey
+  );
 
   return (
     <View style={{ width: "100%" }}>
       <Divider />
       <View style={styles.exerciseFormShelfContainer}>
         <View style={styles.exerciseFormShelfLeftGroupContainer}>
-          <IconButton
-            icon={
-              showHistory
-                ? "arrow-down-drop-circle-outline"
-                : "arrow-right-drop-circle-outline"
-            }
-            iconColor="gray"
-            size={20}
-            onPress={() => setShowHistory(!showHistory)}
-          />
+          {shelfHistory.length > 0 ? (
+            <IconButton
+              icon={
+                showHistory
+                  ? "arrow-down-drop-circle-outline"
+                  : "arrow-right-drop-circle-outline"
+              }
+              iconColor="gray"
+              size={20}
+              onPress={() => setShowHistory(!showHistory)}
+            />
+          ) : (
+            <View style={styles.exerciseFormShelfEmptyFirstEntry}></View>
+          )}
           <View style={styles.exerciseFormShelfSetContainer}>
             <Chip compact={true} textStyle={{ fontSize: 12 }}>
               {title}
@@ -86,15 +103,10 @@ export function ShelfForm({
                 exercise={exercise}
                 set={set}
                 measure={measure}
-                measureHistory={
-                  workoutHistory
-                    ? projectWorkoutHistory(
-                        workoutHistory.records,
-                        workoutValueKey,
-                        NUM_RECENT_WORKOUT_HISTORY_RECORDS
-                      )
-                    : []
-                }
+                measureHistory={selectWorkoutHistory(
+                  recentWorkoutHistoryRecords,
+                  workoutValueKey
+                )}
                 workoutValues={workoutValues}
                 onUpdateWorkoutValues={onUpdateWorkoutValues}
               />
@@ -113,21 +125,10 @@ export function ShelfForm({
           exercise={exercise}
           set={set}
           circuitKey={circuitKey}
-          workoutHistory={workoutHistory}
+          history={shelfHistory}
         />
       )}
     </View>
-  );
-}
-
-function projectWorkoutHistory(
-  records: WorkoutHistoryRecord[],
-  workoutValueKey: WorkoutValueKey,
-  n: number
-): ExerciseMeasureHistoryRecord[] {
-  return selectWorkoutHistory(
-    filterRecentWorkoutHistory(records, n),
-    workoutValueKey
   );
 }
 
@@ -140,6 +141,43 @@ function filterRecentWorkoutHistory(
     (r1, r2) => r2.startTimestamp.getTime() - r1.startTimestamp.getTime()
   );
   return sortedRecords.slice(0, n);
+}
+
+function filterShelfHistory(
+  records: WorkoutHistoryRecord[],
+  exercise: Exercise,
+  set: DrillSet,
+  circuitKey?: string
+): WorkoutHistoryRecord[] {
+  return records.flatMap((r) => {
+    let hasNonEmptyMeasureValue = false;
+    const measureValues = exercise.measures.map((measure) => {
+      const workoutValueKey = WorkoutValueKey.create(
+        circuitKey,
+        exercise.key,
+        set.index,
+        set.setType,
+        measure.key
+      );
+
+      const value = r.exercises.find((e) => workoutValueKey.equals(e.key));
+
+      if (value) {
+        hasNonEmptyMeasureValue = true;
+      }
+
+      return value;
+    });
+
+    return hasNonEmptyMeasureValue
+      ? [
+          {
+            ...r,
+            exercises: measureValues,
+          },
+        ]
+      : [];
+  });
 }
 
 function selectWorkoutHistory(
@@ -161,14 +199,14 @@ interface ShelfHistoryProps {
   exercise: Exercise;
   set: DrillSet;
   circuitKey?: string;
-  workoutHistory: WorkoutHistory | null;
+  history: WorkoutHistoryRecord[];
 }
 
 export function ShelfHistory({
   exercise,
   set,
   circuitKey,
-  workoutHistory,
+  history,
 }: ShelfHistoryProps) {
   const theme = useTheme();
 
@@ -182,10 +220,7 @@ export function ShelfHistory({
         height: 150,
       }}
     >
-      {filterRecentWorkoutHistory(
-        workoutHistory.records,
-        NUM_RECENT_WORKOUT_HISTORY_RECORDS
-      ).map((r) => (
+      {history.map((r) => (
         <View
           key={r.startTimestamp.getTime()}
           style={{

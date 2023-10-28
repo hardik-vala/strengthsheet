@@ -20,9 +20,12 @@ export const styles = StyleSheet.create({
     width: "100%",
   },
   exerciseFormShelfLeftGroupContainer: {
-    flex: 2,
+    flex: 1,
     flexDirection: "row",
     width: 50,
+  },
+  exerciseFormShelfEmptyFirstEntry: {
+    width: 48
   },
   exerciseFormShelfSetContainer: {
     flexDirection: "column",
