@@ -217,7 +217,7 @@ export function ShelfHistory({
         flex: 1,
         flexDirection: "column",
         justifyContent: "space-evenly",
-        height: 150,
+        paddingBottom: 15
       }}
     >
       {history.map((r) => (
@@ -227,6 +227,7 @@ export function ShelfHistory({
             flexDirection: "row",
             justifyContent: "space-between",
             width: "100%",
+            marginTop: 10
           }}
         >
           <View
