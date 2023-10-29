@@ -76,6 +76,7 @@ export function ShelfForm({
               iconColor="gray"
               size={20}
               onPress={() => setShowHistory(!showHistory)}
+              testID={buildShelfHistoryButtonTestID(exercise, set, circuitKey)}
             />
           ) : (
             <View style={styles.exerciseFormShelfEmptyFirstEntry}></View>
@@ -180,6 +181,16 @@ function filterShelfHistory(
   });
 }
 
+function buildShelfHistoryButtonTestID(
+  exercise: Exercise,
+  set: DrillSet,
+  circuitKey?: string
+) {
+  return `${circuitKey ? `${circuitKey}:` : ""}${exercise.key}:${set.index}:${
+    set.setType
+  }`;
+}
+
 function selectWorkoutHistory(
   records: WorkoutHistoryRecord[],
   workoutValueKey: WorkoutValueKey
@@ -217,7 +228,7 @@ export function ShelfHistory({
         flex: 1,
         flexDirection: "column",
         justifyContent: "space-evenly",
-        paddingBottom: 15
+        paddingBottom: 15,
       }}
     >
       {history.map((r) => (
@@ -227,7 +238,7 @@ export function ShelfHistory({
             flexDirection: "row",
             justifyContent: "space-between",
             width: "100%",
-            marginTop: 10
+            marginTop: 10,
           }}
         >
           <View
@@ -256,8 +267,8 @@ export function ShelfHistory({
                 measure.key
               );
 
-              const workoutValue = r.exercises.find((e) =>
-                workoutValueKey.equals(e.key)
+              const workoutValue = r.exercises.find(
+                (e) => e && workoutValueKey.equals(e.key)
               );
 
               return (
@@ -268,7 +279,7 @@ export function ShelfHistory({
                     dense={true}
                     mode="outlined"
                     outlineStyle={styles.measureFormInputOutline}
-                    placeholder={workoutValue.value}
+                    placeholder={workoutValue ? workoutValue.value : ""}
                     placeholderTextColor="gray"
                     style={{
                       ...styles.exerciseFormTextContainer,
