@@ -564,7 +564,7 @@ exports[`ShelfForm renders circuit shelf correctly 1`] = `
         collapsable={false}
         style={
           {
-            "backgroundColor": "rgba(231, 224, 236, 1)",
+            "backgroundColor": "rgba(51, 45, 65, 1)",
             "borderRadius": 15.5,
             "height": 31,
             "margin": 6,
@@ -584,7 +584,7 @@ exports[`ShelfForm renders circuit shelf correctly 1`] = `
           collapsable={false}
           style={
             {
-              "backgroundColor": "rgba(231, 224, 236, 1)",
+              "backgroundColor": "rgba(51, 45, 65, 1)",
               "borderColor": "rgba(121, 116, 126, 1)",
               "borderRadius": 15.5,
               "borderWidth": 0,
@@ -672,7 +672,7 @@ exports[`ShelfForm renders circuit shelf correctly 1`] = `
               style={
                 [
                   {
-                    "color": "gray",
+                    "color": "rgba(28, 27, 31, 0.12)",
                     "fontSize": 15,
                   },
                   [
@@ -1236,7 +1236,7 @@ exports[`ShelfForm renders correctly 1`] = `
         collapsable={false}
         style={
           {
-            "backgroundColor": "rgba(231, 224, 236, 1)",
+            "backgroundColor": "rgba(51, 45, 65, 1)",
             "borderRadius": 15.5,
             "height": 31,
             "margin": 6,
@@ -1256,7 +1256,7 @@ exports[`ShelfForm renders correctly 1`] = `
           collapsable={false}
           style={
             {
-              "backgroundColor": "rgba(231, 224, 236, 1)",
+              "backgroundColor": "rgba(51, 45, 65, 1)",
               "borderColor": "rgba(121, 116, 126, 1)",
               "borderRadius": 15.5,
               "borderWidth": 0,
@@ -1908,7 +1908,7 @@ exports[`ShelfForm renders shelf history correctly 1`] = `
         collapsable={false}
         style={
           {
-            "backgroundColor": "rgba(231, 224, 236, 1)",
+            "backgroundColor": "rgba(51, 45, 65, 1)",
             "borderRadius": 15.5,
             "height": 31,
             "margin": 6,
@@ -1928,7 +1928,7 @@ exports[`ShelfForm renders shelf history correctly 1`] = `
           collapsable={false}
           style={
             {
-              "backgroundColor": "rgba(231, 224, 236, 1)",
+              "backgroundColor": "rgba(51, 45, 65, 1)",
               "borderColor": "rgba(121, 116, 126, 1)",
               "borderRadius": 15.5,
               "borderWidth": 0,
@@ -2016,7 +2016,7 @@ exports[`ShelfForm renders shelf history correctly 1`] = `
               style={
                 [
                   {
-                    "color": "gray",
+                    "color": "rgba(28, 27, 31, 0.12)",
                     "fontSize": 15,
                   },
                   [

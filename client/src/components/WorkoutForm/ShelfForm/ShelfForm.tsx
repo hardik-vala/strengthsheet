@@ -115,9 +115,9 @@ export function ShelfForm({
           })}
           <IconButton
             icon="check"
-            iconColor="gray"
+            iconColor={theme.colors.surfaceDisabled}
             size={15}
-            style={{ backgroundColor: theme.colors.surfaceVariant }}
+            style={{ backgroundColor: "rgba(51, 45, 65, 1)" }}
           />
         </View>
       </View>
