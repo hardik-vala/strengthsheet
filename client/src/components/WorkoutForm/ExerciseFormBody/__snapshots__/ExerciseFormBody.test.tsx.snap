@@ -173,7 +173,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
       <View
         style={
           {
-            "flex": 2,
+            "flex": 1,
             "flexDirection": "row",
             "width": 50,
           }
@@ -197,7 +197,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
               "width": 36,
             }
           }
-          testID="icon-button-container-outer-layer"
+          testID="test_exercise:1:1-container-outer-layer"
         >
           <View
             collapsable={false}
@@ -219,7 +219,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                 "shadowRadius": 0,
               }
             }
-            testID="icon-button-container"
+            testID="test_exercise:1:1-container"
           >
             <View
               accessibilityComponentType="button"
@@ -228,7 +228,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                 {
                   "busy": undefined,
                   "checked": undefined,
-                  "disabled": true,
+                  "disabled": false,
                   "expanded": undefined,
                   "selected": undefined,
                 }
@@ -280,7 +280,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                   ],
                 ]
               }
-              testID="icon-button"
+              testID="test_exercise:1:1"
             >
               <Text />
             </View>
@@ -807,7 +807,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
       <View
         style={
           {
-            "flex": 2,
+            "flex": 1,
             "flexDirection": "row",
             "width": 50,
           }
@@ -831,7 +831,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
               "width": 36,
             }
           }
-          testID="icon-button-container-outer-layer"
+          testID="test_exercise:2:1-container-outer-layer"
         >
           <View
             collapsable={false}
@@ -853,7 +853,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                 "shadowRadius": 0,
               }
             }
-            testID="icon-button-container"
+            testID="test_exercise:2:1-container"
           >
             <View
               accessibilityComponentType="button"
@@ -862,7 +862,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                 {
                   "busy": undefined,
                   "checked": undefined,
-                  "disabled": true,
+                  "disabled": false,
                   "expanded": undefined,
                   "selected": undefined,
                 }
@@ -914,7 +914,7 @@ exports[`ExerciseFormBody renders correctly 1`] = `
                   ],
                 ]
               }
-              testID="icon-button"
+              testID="test_exercise:2:1"
             >
               <Text />
             </View>

@@ -749,154 +749,19 @@ exports[`WorkoutForm renders correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -1453,7 +1318,7 @@ exports[`WorkoutForm renders correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
@@ -1477,7 +1342,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                     "width": 36,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="rowing_machine:1:1-container-outer-layer"
               >
                 <View
                   collapsable={false}
@@ -1499,7 +1364,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="rowing_machine:1:1-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -1508,7 +1373,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                       {
                         "busy": undefined,
                         "checked": undefined,
-                        "disabled": true,
+                        "disabled": false,
                         "expanded": undefined,
                         "selected": undefined,
                       }
@@ -1560,7 +1425,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="rowing_machine:1:1"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -2867,7 +2732,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
@@ -2891,7 +2756,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 36,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="squat_wide_stance_barbell:1:0-container-outer-layer"
               >
                 <View
                   collapsable={false}
@@ -2913,7 +2778,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="squat_wide_stance_barbell:1:0-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -2922,7 +2787,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       {
                         "busy": undefined,
                         "checked": undefined,
-                        "disabled": true,
+                        "disabled": false,
                         "expanded": undefined,
                         "selected": undefined,
                       }
@@ -2974,7 +2839,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="squat_wide_stance_barbell:1:0"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -3571,7 +3436,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
@@ -3595,7 +3460,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 36,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="squat_wide_stance_barbell:2:0-container-outer-layer"
               >
                 <View
                   collapsable={false}
@@ -3617,7 +3482,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="squat_wide_stance_barbell:2:0-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -3626,7 +3491,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       {
                         "busy": undefined,
                         "checked": undefined,
-                        "disabled": true,
+                        "disabled": false,
                         "expanded": undefined,
                         "selected": undefined,
                       }
@@ -3678,7 +3543,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="squat_wide_stance_barbell:2:0"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -4275,154 +4140,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -4979,154 +4709,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -5683,154 +5278,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -6387,154 +5847,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -7091,154 +6416,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -7795,154 +6985,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -8494,40 +7549,6 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
         >
           Hip Thrust Circuit
         </Text>
-        <View
-          style={
-            {
-              "backgroundColor": "gray",
-              "padding": 5,
-            }
-          }
-        >
-          <Text
-            style={
-              [
-                {
-                  "textAlign": "left",
-                },
-                {
-                  "color": "rgba(28, 27, 31, 1)",
-                  "writingDirection": "ltr",
-                },
-                [
-                  {
-                    "fontFamily": "System",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "letterSpacing": 0.25,
-                    "lineHeight": 20,
-                  },
-                  {
-                    "color": "black",
-                  },
-                ],
-              ]
-            }
-          />
-        </View>
         <View>
           <Text
             style={
@@ -8729,7 +7750,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
@@ -8753,7 +7774,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 36,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="hip_thrust_circuit:hip_thrust_single_leg:1:1-container-outer-layer"
                 >
                   <View
                     collapsable={false}
@@ -8775,7 +7796,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="hip_thrust_circuit:hip_thrust_single_leg:1:1-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -8784,7 +7805,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         {
                           "busy": undefined,
                           "checked": undefined,
-                          "disabled": true,
+                          "disabled": false,
                           "expanded": undefined,
                           "selected": undefined,
                         }
@@ -8836,7 +7857,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="hip_thrust_circuit:hip_thrust_single_leg:1:1"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -9106,7 +8127,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           onBlur={[Function]}
                           onChangeText={[Function]}
                           onFocus={[Function]}
-                          placeholder=""
+                          placeholder="25"
                           placeholderTextColor="darkgray"
                           selectionColor="rgba(98, 91, 113, 1)"
                           style={
@@ -9208,7 +8229,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           onBlur={[Function]}
                           onChangeText={[Function]}
                           onFocus={[Function]}
-                          placeholder=""
+                          placeholder="20"
                           placeholderTextColor="darkgray"
                           selectionColor="rgba(98, 91, 113, 1)"
                           style={
@@ -9433,7 +8454,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
@@ -9457,7 +8478,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 36,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="hip_thrust_circuit:hip_thrust_single_leg:2:1-container-outer-layer"
                 >
                   <View
                     collapsable={false}
@@ -9479,7 +8500,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="hip_thrust_circuit:hip_thrust_single_leg:2:1-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -9488,7 +8509,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         {
                           "busy": undefined,
                           "checked": undefined,
-                          "disabled": true,
+                          "disabled": false,
                           "expanded": undefined,
                           "selected": undefined,
                         }
@@ -9540,7 +8561,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="hip_thrust_circuit:hip_thrust_single_leg:2:1"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -9810,7 +8831,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           onBlur={[Function]}
                           onChangeText={[Function]}
                           onFocus={[Function]}
-                          placeholder=""
+                          placeholder="25"
                           placeholderTextColor="darkgray"
                           selectionColor="rgba(98, 91, 113, 1)"
                           style={
@@ -9912,7 +8933,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           onBlur={[Function]}
                           onChangeText={[Function]}
                           onFocus={[Function]}
-                          placeholder=""
+                          placeholder="20"
                           placeholderTextColor="darkgray"
                           selectionColor="rgba(98, 91, 113, 1)"
                           style={
@@ -10137,154 +9158,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -10841,154 +9727,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -11545,154 +10296,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -12249,154 +10865,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -13121,154 +11602,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -13825,154 +12171,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -14529,154 +12740,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -15233,154 +13309,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -15937,154 +13878,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -16641,154 +14447,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
               <View
                 style={
                   {
-                    "flex": 2,
+                    "flex": 1,
                     "flexDirection": "row",
                     "width": 50,
                   }
                 }
               >
                 <View
-                  collapsable={false}
                   style={
                     {
-                      "backgroundColor": "transparent",
-                      "borderRadius": 18,
-                      "height": 36,
-                      "margin": 6,
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                      "width": 36,
+                      "width": 48,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
-                >
-                  <View
-                    collapsable={false}
-                    style={
-                      {
-                        "backgroundColor": "transparent",
-                        "borderColor": "rgba(121, 116, 126, 1)",
-                        "borderRadius": 18,
-                        "borderWidth": 0,
-                        "elevation": 0,
-                        "flex": 1,
-                        "overflow": "hidden",
-                        "shadowColor": "#000",
-                        "shadowOffset": {
-                          "height": 0,
-                          "width": 0,
-                        },
-                        "shadowOpacity": 0,
-                        "shadowRadius": 0,
-                      }
-                    }
-                    testID="icon-button-container"
-                  >
-                    <View
-                      accessibilityComponentType="button"
-                      accessibilityRole="button"
-                      accessibilityState={
-                        {
-                          "busy": undefined,
-                          "checked": undefined,
-                          "disabled": true,
-                          "expanded": undefined,
-                          "selected": undefined,
-                        }
-                      }
-                      accessibilityTraits="button"
-                      accessibilityValue={
-                        {
-                          "max": undefined,
-                          "min": undefined,
-                          "now": undefined,
-                          "text": undefined,
-                        }
-                      }
-                      accessible={true}
-                      centered={true}
-                      collapsable={false}
-                      focusable={true}
-                      hitSlop={
-                        {
-                          "bottom": 6,
-                          "left": 6,
-                          "right": 6,
-                          "top": 6,
-                        }
-                      }
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        [
-                          {
-                            "overflow": "hidden",
-                          },
-                          [
-                            {
-                              "alignItems": "center",
-                              "flexGrow": 1,
-                              "justifyContent": "center",
-                            },
-                            {
-                              "borderRadius": 18,
-                            },
-                          ],
-                        ]
-                      }
-                      testID="icon-button"
-                    >
-                      <Text
-                        accessibilityElementsHidden={true}
-                        allowFontScaling={false}
-                        importantForAccessibility="no-hide-descendants"
-                        pointerEvents="none"
-                        selectable={false}
-                        style={
-                          [
-                            {
-                              "color": "gray",
-                              "fontSize": 20,
-                            },
-                            [
-                              {
-                                "lineHeight": 20,
-                                "transform": [
-                                  {
-                                    "scaleX": 1,
-                                  },
-                                ],
-                              },
-                              {
-                                "backgroundColor": "transparent",
-                              },
-                            ],
-                            {
-                              "fontFamily": "material-community",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                            {},
-                          ]
-                        }
-                      >
-                        󰁚
-                      </Text>
-                    </View>
-                  </View>
-                </View>
+                />
                 <View
                   style={
                     {
@@ -17473,154 +15144,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -18075,154 +15611,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -18677,154 +16078,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -19279,154 +16545,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -19881,154 +17012,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -20649,154 +17645,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -21353,154 +18214,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
@@ -22057,154 +18783,19 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
-                  "flex": 2,
+                  "flex": 1,
                   "flexDirection": "row",
                   "width": 50,
                 }
               }
             >
               <View
-                collapsable={false}
                 style={
                   {
-                    "backgroundColor": "transparent",
-                    "borderRadius": 18,
-                    "height": 36,
-                    "margin": 6,
-                    "shadowColor": "#000",
-                    "shadowOffset": {
-                      "height": 0,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "width": 36,
+                    "width": 48,
                   }
                 }
-                testID="icon-button-container-outer-layer"
-              >
-                <View
-                  collapsable={false}
-                  style={
-                    {
-                      "backgroundColor": "transparent",
-                      "borderColor": "rgba(121, 116, 126, 1)",
-                      "borderRadius": 18,
-                      "borderWidth": 0,
-                      "elevation": 0,
-                      "flex": 1,
-                      "overflow": "hidden",
-                      "shadowColor": "#000",
-                      "shadowOffset": {
-                        "height": 0,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 0,
-                      "shadowRadius": 0,
-                    }
-                  }
-                  testID="icon-button-container"
-                >
-                  <View
-                    accessibilityComponentType="button"
-                    accessibilityRole="button"
-                    accessibilityState={
-                      {
-                        "busy": undefined,
-                        "checked": undefined,
-                        "disabled": true,
-                        "expanded": undefined,
-                        "selected": undefined,
-                      }
-                    }
-                    accessibilityTraits="button"
-                    accessibilityValue={
-                      {
-                        "max": undefined,
-                        "min": undefined,
-                        "now": undefined,
-                        "text": undefined,
-                      }
-                    }
-                    accessible={true}
-                    centered={true}
-                    collapsable={false}
-                    focusable={true}
-                    hitSlop={
-                      {
-                        "bottom": 6,
-                        "left": 6,
-                        "right": 6,
-                        "top": 6,
-                      }
-                    }
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      [
-                        {
-                          "overflow": "hidden",
-                        },
-                        [
-                          {
-                            "alignItems": "center",
-                            "flexGrow": 1,
-                            "justifyContent": "center",
-                          },
-                          {
-                            "borderRadius": 18,
-                          },
-                        ],
-                      ]
-                    }
-                    testID="icon-button"
-                  >
-                    <Text
-                      accessibilityElementsHidden={true}
-                      allowFontScaling={false}
-                      importantForAccessibility="no-hide-descendants"
-                      pointerEvents="none"
-                      selectable={false}
-                      style={
-                        [
-                          {
-                            "color": "gray",
-                            "fontSize": 20,
-                          },
-                          [
-                            {
-                              "lineHeight": 20,
-                              "transform": [
-                                {
-                                  "scaleX": 1,
-                                },
-                              ],
-                            },
-                            {
-                              "backgroundColor": "transparent",
-                            },
-                          ],
-                          {
-                            "fontFamily": "material-community",
-                            "fontStyle": "normal",
-                            "fontWeight": "normal",
-                          },
-                          {},
-                        ]
-                      }
-                    >
-                      󰁚
-                    </Text>
-                  </View>
-                </View>
-              </View>
+              />
               <View
                 style={
                   {
