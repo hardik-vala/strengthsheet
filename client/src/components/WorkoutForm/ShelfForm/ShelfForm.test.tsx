@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react-native";
+import { act, fireEvent, render, screen } from "@testing-library/react-native";
 import React from "react";
 import {
   ExerciseUnit,
@@ -34,6 +34,7 @@ const TEST_HISTORY = {
   records: [
     {
       startTimestamp: new Date("2023-08-28"),
+      elapsedTime: 1800000,
       exercises: [
         {
           key: WorkoutValueKey.createFromExercise(
@@ -77,6 +78,7 @@ const TEST_HISTORY = {
     },
     {
       startTimestamp: new Date("2023-08-27"),
+      elapsedTime: 1800000,
       exercises: [
         {
           key: WorkoutValueKey.createFromExercise(
@@ -149,6 +151,25 @@ describe("ShelfForm", () => {
         onUpdateWorkoutValues={() => {}}
       />
     );
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("renders shelf history correctly", async () => {
+    render(
+      <ShelfForm
+        title="Test Title"
+        exercise={TEST_EXERCISE}
+        set={TEST_SET}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{}}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
+
+    await act(() => {
+      fireEvent.press(screen.getByTestId(`test_exercise:2:1`));
+    });
 
     expect(screen).toMatchSnapshot();
   });
