@@ -739,6 +739,7 @@ exports[`WorkoutForm renders correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -1157,14 +1158,14 @@ exports[`WorkoutForm renders correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -1179,7 +1180,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -1193,7 +1194,12 @@ exports[`WorkoutForm renders correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -1240,7 +1246,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -1251,7 +1257,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -1308,6 +1314,7 @@ exports[`WorkoutForm renders correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -1861,14 +1868,14 @@ exports[`WorkoutForm renders correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -1883,7 +1890,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -1897,7 +1904,12 @@ exports[`WorkoutForm renders correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -1944,7 +1956,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -1955,7 +1967,7 @@ exports[`WorkoutForm renders correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -2722,6 +2734,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -3275,14 +3288,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -3297,7 +3310,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -3311,7 +3324,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -3358,7 +3376,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -3369,7 +3387,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -3426,6 +3444,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -3979,14 +3998,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -4001,7 +4020,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -4015,7 +4034,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -4062,7 +4086,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -4073,7 +4097,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -4130,6 +4154,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -4548,14 +4573,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -4570,7 +4595,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -4584,7 +4609,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -4631,7 +4661,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -4642,7 +4672,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -4699,6 +4729,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -5117,14 +5148,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -5139,7 +5170,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -5153,7 +5184,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -5200,7 +5236,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -5211,7 +5247,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -5268,6 +5304,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -5686,14 +5723,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -5708,7 +5745,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -5722,7 +5759,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -5769,7 +5811,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -5780,7 +5822,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -5837,6 +5879,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -6255,14 +6298,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -6277,7 +6320,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -6291,7 +6334,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -6338,7 +6386,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -6349,7 +6397,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -6406,6 +6454,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -6824,14 +6873,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -6846,7 +6895,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -6860,7 +6909,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -6907,7 +6961,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -6918,7 +6972,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -6975,6 +7029,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -7393,14 +7448,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -7415,7 +7470,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -7429,7 +7484,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -7476,7 +7536,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -7487,7 +7547,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -7740,6 +7800,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -8293,14 +8354,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -8315,7 +8376,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -8329,7 +8390,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -8376,7 +8442,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -8387,7 +8453,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -8444,6 +8510,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -8997,14 +9064,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -9019,7 +9086,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -9033,7 +9100,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -9080,7 +9152,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -9091,7 +9163,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -9148,6 +9220,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -9566,14 +9639,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -9588,7 +9661,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -9602,7 +9675,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -9649,7 +9727,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -9660,7 +9738,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -9717,6 +9795,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -10135,14 +10214,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -10157,7 +10236,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -10171,7 +10250,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -10218,7 +10302,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -10229,7 +10313,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -10286,6 +10370,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -10704,14 +10789,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -10726,7 +10811,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -10740,7 +10825,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -10787,7 +10877,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -10798,7 +10888,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -10855,6 +10945,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -11273,14 +11364,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -11295,7 +11386,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -11309,7 +11400,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -11356,7 +11452,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -11367,7 +11463,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -11592,6 +11688,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -12010,14 +12107,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -12032,7 +12129,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -12046,7 +12143,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -12093,7 +12195,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -12104,7 +12206,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -12161,6 +12263,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -12579,14 +12682,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -12601,7 +12704,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -12615,7 +12718,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -12662,7 +12770,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -12673,7 +12781,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -12730,6 +12838,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -13148,14 +13257,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -13170,7 +13279,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -13184,7 +13293,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -13231,7 +13345,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -13242,7 +13356,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -13299,6 +13413,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -13717,14 +13832,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -13739,7 +13854,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -13753,7 +13868,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -13800,7 +13920,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -13811,7 +13931,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -13868,6 +13988,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -14286,14 +14407,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -14308,7 +14429,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -14322,7 +14443,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -14369,7 +14495,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -14380,7 +14506,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -14437,6 +14563,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
             <View
               style={
                 {
+                  "backgroundColor": "transparent",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingVertical": 5,
@@ -14855,14 +14982,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "width": 31,
                     }
                   }
-                  testID="icon-button-container-outer-layer"
+                  testID="shelf-check-button-container-outer-layer"
                 >
                   <View
                     collapsable={false}
                     style={
                       {
                         "backgroundColor": "rgba(51, 45, 65, 1)",
-                        "borderColor": "rgba(121, 116, 126, 1)",
+                        "borderColor": "rgba(28, 27, 31, 0.12)",
                         "borderRadius": 15.5,
                         "borderWidth": 0,
                         "elevation": 0,
@@ -14877,7 +15004,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "shadowRadius": 0,
                       }
                     }
-                    testID="icon-button-container"
+                    testID="shelf-check-button-container"
                   >
                     <View
                       accessibilityComponentType="button"
@@ -14891,7 +15018,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           "selected": undefined,
                         }
                       }
-                      accessibilityTraits="button"
+                      accessibilityTraits={
+                        [
+                          "button",
+                          "disabled",
+                        ]
+                      }
                       accessibilityValue={
                         {
                           "max": undefined,
@@ -14938,7 +15070,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                           ],
                         ]
                       }
-                      testID="icon-button"
+                      testID="shelf-check-button"
                     >
                       <Text
                         accessibilityElementsHidden={true}
@@ -14949,7 +15081,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         style={
                           [
                             {
-                              "color": "rgba(28, 27, 31, 0.12)",
+                              "color": "rgba(28, 27, 31, 0.38)",
                               "fontSize": 15,
                             },
                             [
@@ -15134,6 +15266,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -15450,14 +15583,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -15472,7 +15605,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -15486,7 +15619,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -15533,7 +15671,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -15544,7 +15682,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -15601,6 +15739,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -15917,14 +16056,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -15939,7 +16078,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -15953,7 +16092,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -16000,7 +16144,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -16011,7 +16155,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -16068,6 +16212,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -16384,14 +16529,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -16406,7 +16551,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -16420,7 +16565,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -16467,7 +16617,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -16478,7 +16628,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -16535,6 +16685,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -16851,14 +17002,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -16873,7 +17024,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -16887,7 +17038,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -16934,7 +17090,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -16945,7 +17101,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -17002,6 +17158,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -17318,14 +17475,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -17340,7 +17497,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -17354,7 +17511,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -17401,7 +17563,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -17412,7 +17574,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -17635,6 +17797,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -18053,14 +18216,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -18075,7 +18238,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -18089,7 +18252,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -18136,7 +18304,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -18147,7 +18315,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -18204,6 +18372,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -18622,14 +18791,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -18644,7 +18813,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -18658,7 +18827,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -18705,7 +18879,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -18716,7 +18890,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [
@@ -18773,6 +18947,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
           <View
             style={
               {
+                "backgroundColor": "transparent",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
                 "paddingVertical": 5,
@@ -19191,14 +19366,14 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                     "width": 31,
                   }
                 }
-                testID="icon-button-container-outer-layer"
+                testID="shelf-check-button-container-outer-layer"
               >
                 <View
                   collapsable={false}
                   style={
                     {
                       "backgroundColor": "rgba(51, 45, 65, 1)",
-                      "borderColor": "rgba(121, 116, 126, 1)",
+                      "borderColor": "rgba(28, 27, 31, 0.12)",
                       "borderRadius": 15.5,
                       "borderWidth": 0,
                       "elevation": 0,
@@ -19213,7 +19388,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       "shadowRadius": 0,
                     }
                   }
-                  testID="icon-button-container"
+                  testID="shelf-check-button-container"
                 >
                   <View
                     accessibilityComponentType="button"
@@ -19227,7 +19402,12 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         "selected": undefined,
                       }
                     }
-                    accessibilityTraits="button"
+                    accessibilityTraits={
+                      [
+                        "button",
+                        "disabled",
+                      ]
+                    }
                     accessibilityValue={
                       {
                         "max": undefined,
@@ -19274,7 +19454,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                         ],
                       ]
                     }
-                    testID="icon-button"
+                    testID="shelf-check-button"
                   >
                     <Text
                       accessibilityElementsHidden={true}
@@ -19285,7 +19465,7 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                       style={
                         [
                           {
-                            "color": "rgba(28, 27, 31, 0.12)",
+                            "color": "rgba(28, 27, 31, 0.38)",
                             "fontSize": 15,
                           },
                           [

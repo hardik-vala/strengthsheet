@@ -45,8 +45,8 @@ export function ShelfForm({
   onUpdateWorkoutValues,
 }: ShelfFormProps) {
   const [showHistory, setShowHistory] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
-  const theme = useTheme();
   const recentWorkoutHistoryRecords = workoutHistory
     ? filterRecentWorkoutHistory(
         workoutHistory.records,
@@ -61,10 +61,28 @@ export function ShelfForm({
     circuitKey
   );
 
+  let shelfCheckButtonState;
+  if (
+    isAllEmptyShelfInputWorkoutValues(workoutValues, exercise, set, circuitKey)
+  ) {
+    shelfCheckButtonState = ShelfCheckButtonState.Disabled;
+  } else {
+    shelfCheckButtonState = isChecked
+      ? ShelfCheckButtonState.Checked
+      : ShelfCheckButtonState.Active;
+  }
+
   return (
     <View style={{ width: "100%" }}>
       <Divider />
-      <View style={styles.exerciseFormShelfContainer}>
+      <View
+        style={{
+          ...styles.exerciseFormShelfContainer,
+          backgroundColor: isChecked
+            ? "rgba(144, 238, 144, 0.2)"
+            : "transparent",
+        }}
+      >
         <View style={styles.exerciseFormShelfLeftGroupContainer}>
           {shelfHistory.length > 0 ? (
             <IconButton
@@ -109,15 +127,29 @@ export function ShelfForm({
                   workoutValueKey
                 )}
                 workoutValues={workoutValues}
-                onUpdateWorkoutValues={onUpdateWorkoutValues}
+                onUpdateWorkoutValues={(
+                  updatedWorkoutValues: WorkoutValues
+                ) => {
+                  // If the check button was checked, then clear it when the
+                  // form inputs are cleared.
+                  if (
+                    isAllEmptyShelfInputWorkoutValues(
+                      updatedWorkoutValues,
+                      exercise,
+                      set,
+                      circuitKey
+                    )
+                  ) {
+                    setIsChecked(false);
+                  }
+                  onUpdateWorkoutValues(updatedWorkoutValues);
+                }}
               />
             );
           })}
-          <IconButton
-            icon="check"
-            iconColor={theme.colors.surfaceDisabled}
-            size={15}
-            style={{ backgroundColor: "rgba(51, 45, 65, 1)" }}
+          <ShelfCheckButton
+            state={shelfCheckButtonState}
+            onPress={() => setIsChecked(!isChecked)}
           />
         </View>
       </View>
@@ -204,6 +236,73 @@ function selectWorkoutHistory(
         value: e.value,
       }));
   });
+}
+
+function isAllEmptyShelfInputWorkoutValues(
+  workoutValues: WorkoutValues,
+  exercise: Exercise,
+  set: DrillSet,
+  circuitKey?: string
+): Boolean {
+  let isAllEmpty = true;
+  exercise.measures.forEach((measure) => {
+    const workoutValueKeyStr = WorkoutValueKey.create(
+      circuitKey,
+      exercise.key,
+      set.index,
+      set.setType,
+      measure.key
+    ).toString();
+
+    if (workoutValues[workoutValueKeyStr]) {
+      isAllEmpty = false;
+    }
+  });
+
+  return isAllEmpty;
+}
+
+enum ShelfCheckButtonState {
+  Active,
+  Checked,
+  Disabled,
+}
+
+interface ShelfCheckButtonProps {
+  state: ShelfCheckButtonState;
+  onPress: () => void;
+}
+
+export function ShelfCheckButton({ state, onPress }: ShelfCheckButtonProps) {
+  const theme = useTheme();
+
+  let backgroundColor, iconColor;
+  switch (state) {
+    case ShelfCheckButtonState.Active:
+      backgroundColor = theme.colors.outline;
+      iconColor = "black";
+      break;
+    case ShelfCheckButtonState.Checked:
+      backgroundColor = "lightgreen";
+      iconColor = "black";
+      break;
+    case ShelfCheckButtonState.Disabled:
+      backgroundColor = "rgba(51, 45, 65, 1)";
+      iconColor = theme.colors.surfaceDisabled;
+      break;
+  }
+
+  return (
+    <IconButton
+      disabled={state === ShelfCheckButtonState.Disabled}
+      icon="check"
+      iconColor={iconColor}
+      onPress={() => state !== ShelfCheckButtonState.Disabled && onPress()}
+      size={15}
+      style={{ backgroundColor: backgroundColor }}
+      testID="shelf-check-button"
+    />
+  );
 }
 
 interface ShelfHistoryProps {

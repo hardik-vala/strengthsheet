@@ -22,10 +22,8 @@ const TEST_EXERCISE = {
 
 const TEST_CIRCUIT = {
   key: "test_circuit",
-  exercises: [
-    { exercise: TEST_EXERCISE, note: null }
-  ]
-}
+  exercises: [{ exercise: TEST_EXERCISE, note: null }],
+};
 
 const TEST_SET = { index: 2, setType: SetType.Working };
 
@@ -168,7 +166,41 @@ describe("ShelfForm", () => {
     );
 
     await act(() => {
-      fireEvent.press(screen.getByTestId(`test_exercise:2:1`));
+      fireEvent.press(screen.getByTestId("test_exercise:2:1"));
+    });
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("enables shelf check button when input values are non-empty", async () => {
+    render(
+      <ShelfForm
+        title="Test Title"
+        exercise={TEST_EXERCISE}
+        set={TEST_SET}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{ "test_exercise:2:1:test_measure": "14" }}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("updates shelf style correctly when checked", async () => {
+    render(
+      <ShelfForm
+        title="Test Title"
+        exercise={TEST_EXERCISE}
+        set={TEST_SET}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{ "test_exercise:2:1:test_measure": "14" }}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
+
+    await act(() => {
+      fireEvent.press(screen.getByTestId("shelf-check-button"));
     });
 
     expect(screen).toMatchSnapshot();
