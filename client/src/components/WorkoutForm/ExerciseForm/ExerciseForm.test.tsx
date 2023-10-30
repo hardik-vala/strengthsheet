@@ -107,4 +107,17 @@ describe("ExerciseForm", () => {
 
     expect(screen).toMatchSnapshot();
   });
+
+  it("renders with note correctly", () => {
+    render(
+      <ExerciseForm
+        exerciseTemplate={{...TEST_TEMPLATE, note: "This is a test note."}}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{}}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
+
+    expect(screen).toMatchSnapshot();
+  });
 });

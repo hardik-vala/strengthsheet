@@ -129,4 +129,17 @@ describe("CircuitForm", () => {
 
     expect(screen).toMatchSnapshot();
   });
+
+  it("renders with note correctly", () => {
+    render(
+      <CircuitForm
+        circuitTemplate={{...TEST_TEMPLATE, note: "This is a test note."}}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{}}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
+
+    expect(screen).toMatchSnapshot();
+  });
 });
