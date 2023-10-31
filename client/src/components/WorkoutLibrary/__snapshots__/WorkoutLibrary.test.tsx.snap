@@ -508,7 +508,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                       ]
                     }
                   >
-                    Lateral Raise Hold (Dumbbells), Y Lift-Off, Shoulder Press (Barbell), Alternating Shoulder Press Circuit, Arnold Press (Dumbbells), Face-Pulls & Tricep Extensions
+                    Lateral Raise Hold (Dumbbells), Y Lift-Off, Shoulder Press (Barbell), Alternating Shoulder Press Circuit, Arnold Press (Dumbbells), Face-Pulls & Tricep Extensions, Lateral Raise (Dumbbells)
                   </Text>
                 </View>
               </View>
@@ -2488,7 +2488,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                       ]
                     }
                   >
-                    Lateral Raise Hold (Dumbbells), Y Lift-Off, Shoulder Press (Barbell), Alternating Shoulder Press Circuit, Arnold Press (Dumbbells), Face-Pulls & Tricep Extensions
+                    Lateral Raise Hold (Dumbbells), Y Lift-Off, Shoulder Press (Barbell), Alternating Shoulder Press Circuit, Arnold Press (Dumbbells), Face-Pulls & Tricep Extensions, Lateral Raise (Dumbbells)
                   </Text>
                 </View>
               </View>
@@ -4748,7 +4748,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                       ]
                     }
                   >
-                    Lateral Raise Hold (Dumbbells), Y Lift-Off, Shoulder Press (Barbell), Alternating Shoulder Press Circuit, Arnold Press (Dumbbells), Face-Pulls & Tricep Extensions
+                    Lateral Raise Hold (Dumbbells), Y Lift-Off, Shoulder Press (Barbell), Alternating Shoulder Press Circuit, Arnold Press (Dumbbells), Face-Pulls & Tricep Extensions, Lateral Raise (Dumbbells)
                   </Text>
                 </View>
               </View>
@@ -8181,7 +8181,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                       ]
                     }
                   >
-                    Lateral Raise Hold (Dumbbells), Y Lift-Off, Shoulder Press (Barbell), Alternating Shoulder Press Circuit, Arnold Press (Dumbbells), Face-Pulls & Tricep Extensions
+                    Lateral Raise Hold (Dumbbells), Y Lift-Off, Shoulder Press (Barbell), Alternating Shoulder Press Circuit, Arnold Press (Dumbbells), Face-Pulls & Tricep Extensions, Lateral Raise (Dumbbells)
                   </Text>
                 </View>
               </View>

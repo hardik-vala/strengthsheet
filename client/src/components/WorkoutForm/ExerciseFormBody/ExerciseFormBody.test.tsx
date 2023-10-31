@@ -31,6 +31,19 @@ const TEST_TEMPLATE = {
   ],
 };
 
+const TEST_TEMPLATE_WITH_DROP_SETS = {
+  exercise: TEST_EXERCISE,
+  displayName: "Test Exercise",
+  iconKey: "",
+  note: null,
+  sets: [
+    { index: 1, setType: SetType.Working },
+    { index: 1, setType: SetType.Drop },
+    { index: 2, setType: SetType.Working },
+    { index: 2, setType: SetType.Drop },
+  ],
+};
+
 const TEST_HISTORY: WorkoutHistory = {
   workoutTemplate: null,
   records: [
@@ -100,6 +113,20 @@ describe("ExerciseFormBody", () => {
       <ExerciseFormBody
         exercise={TEST_EXERCISE}
         sets={TEST_TEMPLATE.sets}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{}}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("renders drop sets correctly", () => {
+    render(
+      <ExerciseFormBody
+        exercise={TEST_EXERCISE}
+        sets={TEST_TEMPLATE_WITH_DROP_SETS.sets}
         workoutHistory={TEST_HISTORY}
         workoutValues={{}}
         onUpdateWorkoutValues={() => {}}

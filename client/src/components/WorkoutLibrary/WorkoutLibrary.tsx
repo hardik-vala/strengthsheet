@@ -177,7 +177,9 @@ function getDrillKey(drill: DrillTemplate): string {
 }
 
 function getDrillPreview(drill: DrillTemplate): string {
-  const setNum = drill.sets.filter((s) => s.setType !== SetType.Warmup).length;
+  const setNum = drill.sets.filter(
+    (s) => s.setType !== SetType.Drop && s.setType !== SetType.Warmup
+  ).length;
 
   return (setNum > 0 ? `${setNum} x ` : "") + drill.displayName;
 }

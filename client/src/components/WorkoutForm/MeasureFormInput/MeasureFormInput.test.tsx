@@ -127,7 +127,7 @@ describe("MeasureFormInput", () => {
 
     expect(onUpdateWorkoutValues).toHaveBeenCalledWith(
       expect.objectContaining({
-        "test_exercise:2:1:test_measure": "8",
+        "test_exercise:2:3:test_measure": "8",
       })
     );
   });

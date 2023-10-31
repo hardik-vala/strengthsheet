@@ -12,6 +12,7 @@ import {
 import {
   DrillSet,
   Exercise,
+  SetType,
   WorkoutValueKey,
 } from "../../../models/Workout/Core";
 import {
@@ -74,7 +75,7 @@ export function ShelfForm({
 
   return (
     <View style={{ width: "100%" }}>
-      <Divider />
+      {set.setType !== SetType.Drop && <Divider />}
       <View
         style={{
           ...styles.exerciseFormShelfContainer,

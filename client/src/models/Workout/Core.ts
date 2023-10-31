@@ -9,9 +9,10 @@ export enum ExerciseUnit {
 }
 
 export enum SetType {
+  Drop,
+  Failure,
   Warmup,
   Working,
-  Failure
 }
 
 export interface Circuit {

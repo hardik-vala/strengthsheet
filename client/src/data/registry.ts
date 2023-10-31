@@ -619,6 +619,23 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
           { index: 6, setType: SetType.Working },
         ],
       },
+      {
+        exercise: EXERCISE_REGISTRY["lateral_raise_dumbbells"],
+        displayName: "Lateral Raise (Dumbbells)",
+        iconKey: "",
+        note: "15, 10, 5 lb @ 10 reps",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 1, setType: SetType.Drop },
+          { index: 2, setType: SetType.Drop },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Drop },
+          { index: 4, setType: SetType.Drop },
+          { index: 3, setType: SetType.Working },
+          { index: 5, setType: SetType.Drop },
+          { index: 6, setType: SetType.Drop },
+        ],
+      },
     ],
   },
   push_chest: {

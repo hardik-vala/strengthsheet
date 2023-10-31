@@ -166,7 +166,7 @@ describe("ShelfForm", () => {
     );
 
     await act(() => {
-      fireEvent.press(screen.getByTestId("test_exercise:2:1"));
+      fireEvent.press(screen.getByTestId("test_exercise:2:3"));
     });
 
     expect(screen).toMatchSnapshot();
@@ -202,6 +202,21 @@ describe("ShelfForm", () => {
     await act(() => {
       fireEvent.press(screen.getByTestId("shelf-check-button"));
     });
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("renders drop set correctly", () => {
+    render(
+      <ShelfForm
+        title="Test Title"
+        exercise={TEST_EXERCISE}
+        set={{...TEST_SET, setType: SetType.Drop}}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{}}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
 
     expect(screen).toMatchSnapshot();
   });

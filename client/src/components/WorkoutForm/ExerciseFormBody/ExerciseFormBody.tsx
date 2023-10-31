@@ -1,3 +1,4 @@
+import { set } from "date-fns";
 import { DrillSet, Exercise, SetType } from "../../../models/Workout/Core";
 import { WorkoutHistory } from "../../../models/Workout/WorkoutHistory";
 import { ExerciseFormHeader } from "../ExerciseFormHeader/ExerciseFormHeader";
@@ -28,7 +29,7 @@ export function ExerciseFormBody({
         return (
           <ShelfForm
             key={`${set.setType.toString()}:${set.index}`}
-            title={set.setType === SetType.Warmup ? "W" : `${set.index}`}
+            title={getShelfTitle(set)}
             exercise={exercise}
             set={set}
             circuitKey={circuitKey}
@@ -40,4 +41,15 @@ export function ExerciseFormBody({
       })}
     </>
   );
+}
+
+function getShelfTitle(set: DrillSet): string {
+  switch(set.setType) {
+    case SetType.Drop:
+      return "D";
+    case SetType.Warmup:
+      return "W";
+    default:
+      return `${set.index}`;
+  }
 }
