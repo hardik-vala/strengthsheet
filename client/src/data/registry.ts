@@ -1078,7 +1078,7 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         exercise: EXERCISE_REGISTRY["squat_wide_stance_barbell"],
         displayName: "Wide-Stance Squats (Barbell)",
         iconKey: "",
-        note: null,
+        note: "15 reps for warm-up (45, 65, 75 lb), 10 reps @ 115 lb",
         sets: [
           { index: 1, setType: SetType.Warmup },
           { index: 2, setType: SetType.Warmup },
@@ -1094,7 +1094,7 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         circuit: CIRCUIT_REGISTRY["hip_thrust_circuit"],
         displayName: "Hip Thrust Circuit",
         iconKey: "",
-        note: null,
+        note: "20 x 20 x 20 @ 25 lb",
         sets: [
           { index: 1, setType: SetType.Working },
           { index: 2, setType: SetType.Working },

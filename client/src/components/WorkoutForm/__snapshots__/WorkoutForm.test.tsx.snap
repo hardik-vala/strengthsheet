@@ -2576,6 +2576,42 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
         <View
           style={
             {
+              "backgroundColor": "gray",
+              "padding": 5,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "textAlign": "left",
+                },
+                {
+                  "color": "rgba(28, 27, 31, 1)",
+                  "writingDirection": "ltr",
+                },
+                [
+                  {
+                    "fontFamily": "System",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.25,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "color": "black",
+                  },
+                ],
+              ]
+            }
+          >
+            15 reps for warm-up (45, 65, 75 lb), 10 reps @ 115 lb
+          </Text>
+        </View>
+        <View
+          style={
+            {
               "flexDirection": "row",
               "justifyContent": "space-between",
               "paddingVertical": 5,
@@ -7609,6 +7645,42 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
         >
           Hip Thrust Circuit
         </Text>
+        <View
+          style={
+            {
+              "backgroundColor": "gray",
+              "padding": 5,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "textAlign": "left",
+                },
+                {
+                  "color": "rgba(28, 27, 31, 1)",
+                  "writingDirection": "ltr",
+                },
+                [
+                  {
+                    "fontFamily": "System",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.25,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "color": "black",
+                  },
+                ],
+              ]
+            }
+          >
+            20 x 20 x 20 @ 25 lb
+          </Text>
+        </View>
         <View>
           <Text
             style={
