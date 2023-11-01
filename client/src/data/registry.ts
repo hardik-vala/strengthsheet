@@ -123,6 +123,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  dead_lift_barbell: {
+    key: "dead_lift_barbell",
+    displayName: "Dead Lift (Barbell)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   dumbbell_press_close_grip_incline: {
     key: "dumbbell_press_close_grip_incline",
     displayName: "Close-Grip Dumbbell Press (Incline)",
@@ -298,6 +306,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
   pull_mid_chest_cable: {
     key: "pull_mid_chest_cable",
     displayName: "Mid-Chest Pull (Cable)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  pull_over_cable: {
+    key: "pull_over_cable",
+    displayName: "Pull-Over (Cable)",
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
@@ -482,6 +498,19 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
       },
       {
         exercise: EXERCISE_REGISTRY["hip_thrust"],
+        note: null,
+      },
+    ],
+  },
+  pull_over_and_tricep_cable_circuit: {
+    key: "pull_over_and_tricep_cable_circuit",
+    exercises: [
+      {
+        exercise: EXERCISE_REGISTRY["pull_over_cable"],
+        note: null,
+      },
+      {
+        exercise: EXERCISE_REGISTRY["tricep_extension_cable"],
         note: null,
       },
     ],
@@ -1212,6 +1241,52 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
           { index: 1, setType: SetType.Working },
           { index: 2, setType: SetType.Working },
           { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["dead_lift_barbell"],
+        displayName: "Dead Lift (Barbell)",
+        iconKey: "",
+        note: "5 reps every min. on the min. for 20 min., 205 lb",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+          { index: 6, setType: SetType.Working },
+          { index: 7, setType: SetType.Working },
+          { index: 8, setType: SetType.Working },
+          { index: 9, setType: SetType.Working },
+          { index: 10, setType: SetType.Working },
+          { index: 11, setType: SetType.Working },
+          { index: 12, setType: SetType.Working },
+          { index: 13, setType: SetType.Working },
+          { index: 14, setType: SetType.Working },
+          { index: 15, setType: SetType.Working },
+          { index: 16, setType: SetType.Working },
+          { index: 17, setType: SetType.Working },
+          { index: 18, setType: SetType.Working },
+          { index: 19, setType: SetType.Working },
+          { index: 20, setType: SetType.Working },
+        ],
+      },
+      {
+        circuit: CIRCUIT_REGISTRY["pull_over_and_tricep_cable_circuit"],
+        displayName: "Pull-Over and Tricep Circuit",
+        iconKey: "",
+        note: "20 reps @ 30 lb",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+          { index: 6, setType: SetType.Working },
+          { index: 7, setType: SetType.Working },
+          { index: 8, setType: SetType.Working },
+          { index: 9, setType: SetType.Working },
+          { index: 10, setType: SetType.Working },
         ],
       },
     ],

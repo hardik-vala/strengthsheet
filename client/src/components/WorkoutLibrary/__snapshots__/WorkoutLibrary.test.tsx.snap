@@ -1698,7 +1698,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                       ]
                     }
                   >
-                    Dead Bug, Chin Tuck
+                    Dead Bug, Chin Tuck, Dead Lift (Barbell), Pull-Over and Tricep Circuit
                   </Text>
                 </View>
               </View>
@@ -3923,7 +3923,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                       ]
                     }
                   >
-                    Dead Bug, Chin Tuck
+                    Dead Bug, Chin Tuck, Dead Lift (Barbell), Pull-Over and Tricep Circuit
                   </Text>
                 </View>
               </View>
@@ -6183,7 +6183,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                       ]
                     }
                   >
-                    Dead Bug, Chin Tuck
+                    Dead Bug, Chin Tuck, Dead Lift (Barbell), Pull-Over and Tricep Circuit
                   </Text>
                 </View>
               </View>
@@ -9616,7 +9616,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                       ]
                     }
                   >
-                    Dead Bug, Chin Tuck
+                    Dead Bug, Chin Tuck, Dead Lift (Barbell), Pull-Over and Tricep Circuit
                   </Text>
                 </View>
               </View>
