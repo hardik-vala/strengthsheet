@@ -24,10 +24,8 @@ const TEST_EXERCISE = {
 
 const TEST_CIRCUIT = {
   key: "test_circuit",
-  exercises: [
-    { exercise: TEST_EXERCISE, note: null }
-  ]
-}
+  exercises: [{ exercise: TEST_EXERCISE, note: null }],
+};
 
 const TEST_SET = { index: 2, setType: SetType.Working };
 
@@ -78,6 +76,8 @@ const TEST_MEASURE_HISTORY = [
 
 describe("MeasureFormInput", () => {
   it("renders correctly", () => {
+    const onError = jest.fn();
+
     render(
       <MeasureFormInput
         exercise={TEST_EXERCISE}
@@ -86,13 +86,17 @@ describe("MeasureFormInput", () => {
         measureHistory={[]}
         workoutValues={{}}
         onUpdateWorkoutValues={() => {}}
+        onError={onError}
       />
     );
 
+    expect(onError).not.toHaveBeenCalled();
     expect(screen).toMatchSnapshot();
   });
 
   it("renders with history", () => {
+    const onError = jest.fn();
+
     render(
       <MeasureFormInput
         exercise={TEST_EXERCISE}
@@ -101,14 +105,17 @@ describe("MeasureFormInput", () => {
         measureHistory={TEST_MEASURE_HISTORY}
         workoutValues={{}}
         onUpdateWorkoutValues={() => {}}
+        onError={onError}
       />
     );
 
+    expect(onError).not.toHaveBeenCalled();
     expect(screen).toMatchSnapshot();
   });
 
   it("calls onUpdateWorkoutValues when text input changes", () => {
     const onUpdateWorkoutValues = jest.fn();
+    const onError = jest.fn();
 
     render(
       <MeasureFormInput
@@ -118,6 +125,7 @@ describe("MeasureFormInput", () => {
         measureHistory={TEST_MEASURE_HISTORY}
         workoutValues={{}}
         onUpdateWorkoutValues={onUpdateWorkoutValues}
+        onError={onError}
       />
     );
 
@@ -130,9 +138,12 @@ describe("MeasureFormInput", () => {
         "test_exercise:2:3:test_measure": "8",
       })
     );
+    expect(onError).not.toHaveBeenCalled();
   });
 
   it("renders circuit measure inputs correctly", () => {
+    const onError = jest.fn();
+
     render(
       <MeasureFormInput
         exercise={TEST_EXERCISE}
@@ -142,14 +153,18 @@ describe("MeasureFormInput", () => {
         measureHistory={TEST_MEASURE_HISTORY}
         workoutValues={{}}
         onUpdateWorkoutValues={() => {}}
+        onError={onError}
       />
     );
 
+    expect(onError).not.toHaveBeenCalled();
     expect(screen).toMatchSnapshot();
   });
 
   describe("when the text input is invalid", () => {
     it("renders the error indicator", () => {
+      const onError = jest.fn();
+
       render(
         <MeasureFormInput
           exercise={TEST_EXERCISE}
@@ -158,6 +173,7 @@ describe("MeasureFormInput", () => {
           measureHistory={TEST_MEASURE_HISTORY}
           workoutValues={{}}
           onUpdateWorkoutValues={() => {}}
+          onError={onError}
         />
       );
 
@@ -165,11 +181,13 @@ describe("MeasureFormInput", () => {
         fireEvent.changeText(screen.getByPlaceholderText("13"), "Q");
       });
 
+      expect(onError).toHaveBeenCalled();
       expect(screen).toMatchSnapshot();
     });
 
     it("doesn't call onUpdateWorkoutValues", () => {
       const onUpdateWorkoutValues = jest.fn();
+      const onError = jest.fn();
 
       render(
         <MeasureFormInput
@@ -179,6 +197,7 @@ describe("MeasureFormInput", () => {
           measureHistory={TEST_MEASURE_HISTORY}
           workoutValues={{}}
           onUpdateWorkoutValues={onUpdateWorkoutValues}
+          onError={onError}
         />
       );
 
@@ -187,6 +206,7 @@ describe("MeasureFormInput", () => {
       });
 
       expect(onUpdateWorkoutValues).not.toHaveBeenCalled();
+      expect(onError).toHaveBeenCalled();
     });
   });
 });

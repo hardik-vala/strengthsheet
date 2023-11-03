@@ -19,6 +19,7 @@ export interface MeasureFormInputProps {
   measureHistory: ExerciseMeasureHistoryRecord[];
   workoutValues: WorkoutValues;
   onUpdateWorkoutValues: (updatedWorkoutValues: WorkoutValues) => void;
+  onError: () => void;
 }
 
 export function MeasureFormInput({
@@ -29,6 +30,7 @@ export function MeasureFormInput({
   measureHistory,
   workoutValues,
   onUpdateWorkoutValues,
+  onError,
 }: MeasureFormInputProps) {
   const [currWorkoutValue, setCurrWorkoutValue] = useState("");
   const [isError, setIsError] = useState(false);
@@ -68,7 +70,13 @@ export function MeasureFormInput({
         onChangeText={(text) => {
           const isValid = isValidMeasureValue(text, measure.unit);
           setCurrWorkoutValue(text);
-          setIsError(text && !isValid);
+          
+          const nextIsError = text && !isValid;
+          setIsError(nextIsError);
+          if (nextIsError) {
+            onError();
+          }
+
           if (!text || isValid) {
             workoutValues[workoutValueKeyStr] = text;
             onUpdateWorkoutValues(workoutValues);

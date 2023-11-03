@@ -47,6 +47,7 @@ export function ShelfForm({
 }: ShelfFormProps) {
   const [showHistory, setShowHistory] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const recentWorkoutHistoryRecords = workoutHistory
     ? filterRecentWorkoutHistory(
@@ -64,7 +65,8 @@ export function ShelfForm({
 
   let shelfCheckButtonState;
   if (
-    isAllEmptyShelfInputWorkoutValues(workoutValues, exercise, set, circuitKey)
+    isAllEmptyShelfInputWorkoutValues(workoutValues, exercise, set, circuitKey) ||
+    isError
   ) {
     shelfCheckButtonState = ShelfCheckButtonState.Disabled;
   } else {
@@ -144,6 +146,11 @@ export function ShelfForm({
                     setIsChecked(false);
                   }
                   onUpdateWorkoutValues(updatedWorkoutValues);
+                  setIsError(false);
+                }}
+                onError={() => {
+                  setIsChecked(false);
+                  setIsError(true);
                 }}
               />
             );

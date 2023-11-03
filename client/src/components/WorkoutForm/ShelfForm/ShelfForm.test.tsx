@@ -206,6 +206,44 @@ describe("ShelfForm", () => {
     expect(screen).toMatchSnapshot();
   });
 
+  it("disables shelf check button when input value is invalid", async () => {
+    render(
+      <ShelfForm
+        title="Test Title"
+        exercise={TEST_EXERCISE}
+        set={TEST_SET}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{}}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
+
+    await act(() => {
+      fireEvent.changeText(screen.getByPlaceholderText("13"), "Q");
+    });
+
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("clears shelf check button when input value becomes invalid", async () => {
+    render(
+      <ShelfForm
+        title="Test Title"
+        exercise={TEST_EXERCISE}
+        set={TEST_SET}
+        workoutHistory={TEST_HISTORY}
+        workoutValues={{ "test_exercise:2:1:test_measure": "14" }}
+        onUpdateWorkoutValues={() => {}}
+      />
+    );
+
+    await act(() => {
+      fireEvent.changeText(screen.getByPlaceholderText("13"), "Q");
+    });
+
+    expect(screen).toMatchSnapshot();
+  });
+
   it("renders drop set correctly", () => {
     render(
       <ShelfForm
