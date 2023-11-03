@@ -1358,7 +1358,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                       ]
                     }
                   >
-                    Wide-Stance Squats (Barbell), Hip Thrust Circuit, Bulgarian Split Squats (Bodyweight), Hamstring Curls (Machine)
+                    Bird Dog, Wide-Stance Squats (Barbell), Hip Thrust Circuit, Bulgarian Split Squats (Bodyweight), Hamstring Curls (Machine)
                   </Text>
                 </View>
               </View>
@@ -3513,7 +3513,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                       ]
                     }
                   >
-                    Wide-Stance Squats (Barbell), Hip Thrust Circuit, Bulgarian Split Squats (Bodyweight), Hamstring Curls (Machine)
+                    Bird Dog, Wide-Stance Squats (Barbell), Hip Thrust Circuit, Bulgarian Split Squats (Bodyweight), Hamstring Curls (Machine)
                   </Text>
                 </View>
               </View>
@@ -5773,7 +5773,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                       ]
                     }
                   >
-                    Wide-Stance Squats (Barbell), Hip Thrust Circuit, Bulgarian Split Squats (Bodyweight), Hamstring Curls (Machine)
+                    Bird Dog, Wide-Stance Squats (Barbell), Hip Thrust Circuit, Bulgarian Split Squats (Bodyweight), Hamstring Curls (Machine)
                   </Text>
                 </View>
               </View>
@@ -7034,6 +7034,107 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                       }
                     }
                   >
+                    <View
+                      accessibilityState={
+                        {
+                          "busy": undefined,
+                          "checked": undefined,
+                          "disabled": true,
+                          "expanded": undefined,
+                          "selected": undefined,
+                        }
+                      }
+                      accessibilityValue={
+                        {
+                          "max": undefined,
+                          "min": undefined,
+                          "now": undefined,
+                          "text": undefined,
+                        }
+                      }
+                      accessible={true}
+                      collapsable={false}
+                      focusable={true}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        [
+                          false,
+                          [
+                            {
+                              "paddingRight": 24,
+                              "paddingVertical": 8,
+                            },
+                            undefined,
+                          ],
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          {
+                            "flexDirection": "row",
+                            "marginVertical": 6,
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            [
+                              {
+                                "paddingLeft": 16,
+                              },
+                              {
+                                "flex": 1,
+                                "justifyContent": "center",
+                              },
+                            ]
+                          }
+                        >
+                          <Text
+                            numberOfLines={1}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "textAlign": "left",
+                                },
+                                {
+                                  "color": "rgba(28, 27, 31, 1)",
+                                  "fontFamily": "System",
+                                  "fontWeight": "400",
+                                  "letterSpacing": 0,
+                                },
+                                {
+                                  "writingDirection": "ltr",
+                                },
+                                [
+                                  {
+                                    "fontSize": 16,
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                  },
+                                  {
+                                    "fontWeight": "bold",
+                                  },
+                                ],
+                              ]
+                            }
+                          >
+                            3 x Bird Dog
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
                     <View
                       accessibilityState={
                         {
@@ -9206,7 +9307,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                       ]
                     }
                   >
-                    Wide-Stance Squats (Barbell), Hip Thrust Circuit, Bulgarian Split Squats (Bodyweight), Hamstring Curls (Machine)
+                    Bird Dog, Wide-Stance Squats (Barbell), Hip Thrust Circuit, Bulgarian Split Squats (Bodyweight), Hamstring Curls (Machine)
                   </Text>
                 </View>
               </View>

@@ -95,6 +95,11 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  bird_dog: {
+    key: "bird_dog",
+    displayName: "Bird Dog",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
   carioca: {
     key: "carioca",
     displayName: "Carioca",
@@ -1074,6 +1079,17 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
     iconKey: "weight-lifter",
     note: "",
     drills: [
+      {
+        exercise: EXERCISE_REGISTRY["bird_dog"],
+        displayName: "Bird Dog",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
       {
         exercise: EXERCISE_REGISTRY["squat_wide_stance_barbell"],
         displayName: "Wide-Stance Squats (Barbell)",
