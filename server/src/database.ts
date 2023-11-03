@@ -5,6 +5,7 @@ import { format as formatDate, parse as parseDate } from "date-fns";
 export interface WorkoutHistoryTableRow {
   workoutKey: string;
   sheetId: string;
+  sheetHeader: string[];
   records: WorkoutHistoryRecord[];
 }
 
@@ -12,6 +13,15 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
   rowing_machine: {
     workoutKey: "rowing_machine",
     sheetId: "Rowing (Machine)",
+    sheetHeader: [
+      "Date",
+      "Start Time",
+      "Elapsed Time",
+      "rowing_machine:1:2:meters",
+      "rowing_machine:1:2:time",
+      "rowing_machine:1:3:meters",
+      "rowing_machine:1:3:time"
+    ],
     records: [
       {
         startTimestamp: convertToDateObj("08/25/2023 20:04"),
@@ -138,6 +148,11 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
   legs: {
     workoutKey: "legs",
     sheetId: "Legs",
+    sheetHeader: [
+      "date",
+      "start_time",
+      "elapsed_time"
+    ],
     records: [
       {
         startTimestamp: convertToDateObj("09/20/2023 20:00"),
