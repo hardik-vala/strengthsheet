@@ -24,7 +24,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "googleServicesFile": "./google-services.json"
+      "googleServicesFile": "./google-services.json",
+      "package": "com.hardik.Strengthsheet"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -34,7 +35,16 @@
     ],
     "packagerOpts": {
       "config": "metro.config.js",
-      "sourceExts": ["js", "jsx", "css"]
+      "sourceExts": [
+        "js",
+        "jsx",
+        "css"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "12558187-7f7d-484e-80b5-ee48c7e8e281"
+      }
     }
   }
 }

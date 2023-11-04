@@ -1,0 +1,15 @@
+{
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_BACKEND_DOMAIN": "https://strengthsheet-server.onrender.com"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_BACKEND_DOMAIN": "https://strengthsheet-server.onrender.com"
+      }
+    }
+  }
+}

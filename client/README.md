@@ -25,5 +25,11 @@ npx expo start
 
 ### iOS Device
 
+#### Development build
+
 1. Make sure device is connected to the same network.
 2. Run `npx expo run:ios --device` and select the device when prompted.
+
+#### Preview build
+
+See https://docs.expo.dev/build/internal-distribution/.
