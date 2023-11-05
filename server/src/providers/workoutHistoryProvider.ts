@@ -83,9 +83,11 @@ function serializeRecordAsSheetRow(
 
 function getFormattedTime(ms: number) {
   const seconds = Math.floor(ms / 1000) % 60;
-  const minutes = Math.floor(seconds / 60);
+  const minutes = Math.floor(ms / 60000);
 
-  return `${minutes}:${seconds}`;
+  const paddedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+
+  return `${minutes}:${paddedSeconds}`;
 }
 
 function workoutValueKeyToString(key: WorkoutValueKey): string {
