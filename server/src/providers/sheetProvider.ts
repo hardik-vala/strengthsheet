@@ -17,7 +17,7 @@ class SheetProvider {
     sheetId: string,
     row: string[]
   ): Promise<void> {
-    const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${sheetId}!A1:A1:append?valueInputOption=RAW`;
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${sheetId}!A1:A1:append?valueInputOption=USER_ENTERED`;
 
     const headers = {
       Authorization: `Bearer ${accessToken}`,
