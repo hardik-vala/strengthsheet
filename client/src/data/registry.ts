@@ -1148,7 +1148,7 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
   },
   pull_upper_back: {
     key: "pull_upper_back",
-    displayName: "Pull (Upper back)",
+    displayName: "Pull (Upper Back)",
     iconKey: "weight-lifter",
     note: "",
     drills: [
