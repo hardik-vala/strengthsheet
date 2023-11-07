@@ -13,37 +13,61 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
   stretches: {
     workoutKey: "stretches",
     sheetId: "Stretches",
-    sheetHeader: [],
+    sheetHeader: [
+      "Date",
+      "Start Time",
+      "Elapsed Time",
+    ],
     records: []
   },
   push_shoulders: {
     workoutKey: "push_shoulders",
     sheetId: "Push (Shoulders)",
-    sheetHeader: [],
+    sheetHeader: [
+      "Date",
+      "Start Time",
+      "Elapsed Time",
+    ],
     records: []
   },
   push_chest: {
     workoutKey: "push_chest",
     sheetId: "Push (Chest)",
-    sheetHeader: [],
+    sheetHeader: [
+      "Date",
+      "Start Time",
+      "Elapsed Time",
+    ],
     records: []
   },
   ab_ripper_x: {
     workoutKey: "ab_ripper_x",
     sheetId: "Ab Ripper X",
-    sheetHeader: [],
+    sheetHeader: [
+      "Date",
+      "Start Time",
+      "Elapsed Time",
+    ],
     records: []
   },
   it_band_rehab: {
     workoutKey: "it_band_rehab",
     sheetId: "IT Band Rehab",
-    sheetHeader: [],
+    sheetHeader: [
+      "Date",
+      "Start Time",
+      "Elapsed Time",
+    ],
     records: []
   },
   basketball_warmup: {
     workoutKey: "basketball_warmup",
     sheetId: "Basketball Warmup",
-    sheetHeader: [],
+    sheetHeader: [
+      "Date",
+      "Start Time",
+      "Elapsed Time",
+    ],
     records: []
   },
   legs: {
@@ -224,13 +248,21 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
   pull_upper_back: {
     workoutKey: "pull_upper_back",
     sheetId: "Pull (Upper Back)",
-    sheetHeader: [],
+    sheetHeader: [
+      "Date",
+      "Start Time",
+      "Elapsed Time",
+    ],
     records: []
   },
   pull_lower_back: {
     workoutKey: "pull_lower_back",
     sheetId: "Pull (Lower Back)",
-    sheetHeader: [],
+    sheetHeader: [
+      "Date",
+      "Start Time",
+      "Elapsed Time",
+    ],
     records: []
   },
   rowing_machine: {
