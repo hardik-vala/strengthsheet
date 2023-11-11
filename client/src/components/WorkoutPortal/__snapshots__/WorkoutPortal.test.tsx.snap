@@ -1558,7 +1558,7 @@ exports[`WorkoutPortal renders correctly 1`] = `
                               ]
                             }
                           >
-                            Pull (Upper back)
+                            Pull (Upper Back)
                           </Text>
                           <Text
                             ellipsizeMode="tail"

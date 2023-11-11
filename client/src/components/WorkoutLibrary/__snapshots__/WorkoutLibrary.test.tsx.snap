@@ -1493,7 +1493,7 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                       ]
                     }
                   >
-                    Pull (Upper back)
+                    Pull (Upper Back)
                   </Text>
                   <Text
                     ellipsizeMode="tail"
@@ -3683,7 +3683,7 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                       ]
                     }
                   >
-                    Pull (Upper back)
+                    Pull (Upper Back)
                   </Text>
                   <Text
                     ellipsizeMode="tail"
@@ -5943,7 +5943,7 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                       ]
                     }
                   >
-                    Pull (Upper back)
+                    Pull (Upper Back)
                   </Text>
                   <Text
                     ellipsizeMode="tail"
@@ -9477,7 +9477,7 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                       ]
                     }
                   >
-                    Pull (Upper back)
+                    Pull (Upper Back)
                   </Text>
                   <Text
                     ellipsizeMode="tail"
