@@ -214,12 +214,10 @@ function convertWorkoutValuesToRecord(
 
             const value = workoutValues[key.toString()];
 
-            if (value) {
-              exercises.push({
-                key,
-                value,
-              });
-            }
+            exercises.push({
+              key,
+              value,
+            });
           });
         });
       });
