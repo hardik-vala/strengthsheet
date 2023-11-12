@@ -33,14 +33,16 @@ class WorkoutHistoryProvider {
 
     WORKOUT_HISTORY_TABLE[workoutKey].records.push(record);
 
+    const sheetRow = serializeRecordAsSheetRow(
+      WORKOUT_HISTORY_TABLE[workoutKey].sheetHeader,
+      record
+    );
+
     SHEET_PROVIDER.appendRowToGoogleSheet(
       accessToken,
       SPREADSHEET_ID,
       WORKOUT_HISTORY_TABLE[workoutKey].sheetId,
-      serializeRecordAsSheetRow(
-        WORKOUT_HISTORY_TABLE[workoutKey].sheetHeader,
-        record
-      )
+      sheetRow
     );
   }
 
