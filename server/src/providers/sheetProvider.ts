@@ -41,6 +41,64 @@ class SheetProvider {
       );
     }
   }
+
+  async createSheet(
+    accessToken: string,
+    spreadsheetId: string,
+    sheetName: string
+  ): Promise<string> {
+  
+    const sheetsUrl = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}`;
+  
+    const body = {
+      requests: [{
+        addSheet: {
+          properties: {
+            title: sheetName
+          }
+        }
+      }]
+    };
+  
+    const response = await fetch(sheetsUrl, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${accessToken}`
+      },
+      body: JSON.stringify(body)
+    });
+  
+    if (!response.ok) {
+      throw new Error(`Failed to add sheet with name: ${sheetName}`);
+    }
+  
+    const result = await response.json();
+    return result.replies[0].addSheet.properties.sheetId;
+  }
+
+  async sheetExists(
+    accessToken: string,
+    spreadsheetId: string,
+    sheetId: string
+  ): Promise<boolean> {
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}`;
+
+    const response = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to get spreadsheet metadata");
+    }
+
+    const spreadsheet = await response.json();
+
+    return spreadsheet.sheets.some(
+      (sheet: any) => sheet.properties.sheetId === sheetId
+    );
+  }
 }
 
 export const SHEET_PROVIDER = SheetProvider.getInstance();

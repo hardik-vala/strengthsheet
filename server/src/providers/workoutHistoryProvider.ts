@@ -31,6 +31,20 @@ class WorkoutHistoryProvider {
       throw new Error(`No workout history for "${workoutKey}"`);
     }
 
+    if (
+      !SHEET_PROVIDER.sheetExists(
+        accessToken,
+        SPREADSHEET_ID,
+        WORKOUT_HISTORY_TABLE[workoutKey].sheetId
+      )
+    ) {
+      SHEET_PROVIDER.createSheet(
+        accessToken,
+        SPREADSHEET_ID,
+        WORKOUT_HISTORY_TABLE[workoutKey].sheetId
+      );
+    }
+
     WORKOUT_HISTORY_TABLE[workoutKey].records.push(record);
 
     const sheetRow = serializeRecordAsSheetRow(
