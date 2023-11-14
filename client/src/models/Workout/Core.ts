@@ -126,3 +126,18 @@ function isValidTime(time: string): boolean {
     TIME_HOURS_MINUTES_SECONDS_REGEX.test(time)
   );
 }
+
+export function getSetTypeDisplayName(setType: SetType): string {
+  switch(setType) {
+    case SetType.Drop:
+      return "Drop";
+    case SetType.Failure:
+      return "Failure";
+    case SetType.Warmup:
+      return "Warmup";
+    case SetType.Working:
+      return "Working";
+    default:
+      throw new Error(`Unrecognized set type: ${setType}`);
+  }
+}

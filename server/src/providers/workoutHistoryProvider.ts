@@ -1,4 +1,9 @@
-import { WorkoutValueKey } from "@models/Workout/Core";
+import { CIRCUIT_REGISTRY, EXERCISE_REGISTRY } from "@data/registry";
+import {
+  SetType,
+  WorkoutValueKey,
+  getSetTypeDisplayName,
+} from "@models/Workout/Core";
 import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
 import { format as formatDate } from "date-fns";
 import { WORKOUT_HISTORY_TABLE, WorkoutHistoryTableRow } from "../database";
@@ -79,7 +84,21 @@ function buildSheetHeader(record: WorkoutHistoryRecord): string[] {
     SHEET_DATE_COLUMN_TITLE,
     SHEET_START_TIME_COLUMN_TITLE,
     SHEET_ELAPSED_TIME_COLUMN_TITLE,
-  ].concat(record.exercises.map((e) => workoutValueKeyToString(e.key)));
+  ].concat(record.exercises.map((e) => workoutValueKeyToHeaderTitle(e.key)));
+}
+
+function workoutValueKeyToHeaderTitle(key: WorkoutValueKey): string {
+  const exerciseName = EXERCISE_REGISTRY[key.exerciseKey].displayName;
+
+  let s = `${exerciseName} : Set ${key.setIndex} (${getSetTypeDisplayName(
+    key.setType
+  )}) : ${key.measureKey}`;
+
+  if (key.circuitKey) {
+    s = `${key.circuitKey}:${s}`;
+  }
+
+  return s;
 }
 
 function serializeRecordAsSheetRow(
