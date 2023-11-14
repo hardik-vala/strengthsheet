@@ -13,71 +13,43 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
   stretches: {
     workoutKey: "stretches",
     sheetId: "Stretches",
-    sheetHeader: [
-      "Date",
-      "Start Time",
-      "Elapsed Time",
-    ],
-    records: []
+    sheetHeader: [],
+    records: [],
   },
   push_shoulders: {
     workoutKey: "push_shoulders",
     sheetId: "Push (Shoulders)",
-    sheetHeader: [
-      "Date",
-      "Start Time",
-      "Elapsed Time",
-    ],
-    records: []
+    sheetHeader: [],
+    records: [],
   },
   push_chest: {
     workoutKey: "push_chest",
     sheetId: "Push (Chest)",
-    sheetHeader: [
-      "Date",
-      "Start Time",
-      "Elapsed Time",
-    ],
-    records: []
+    sheetHeader: [],
+    records: [],
   },
   ab_ripper_x: {
     workoutKey: "ab_ripper_x",
     sheetId: "Ab Ripper X",
-    sheetHeader: [
-      "Date",
-      "Start Time",
-      "Elapsed Time",
-    ],
-    records: []
+    sheetHeader: [],
+    records: [],
   },
   it_band_rehab: {
     workoutKey: "it_band_rehab",
     sheetId: "IT Band Rehab",
-    sheetHeader: [
-      "Date",
-      "Start Time",
-      "Elapsed Time",
-    ],
-    records: []
+    sheetHeader: [],
+    records: [],
   },
   basketball_warmup: {
     workoutKey: "basketball_warmup",
     sheetId: "Basketball Warmup",
-    sheetHeader: [
-      "Date",
-      "Start Time",
-      "Elapsed Time",
-    ],
-    records: []
+    sheetHeader: [],
+    records: [],
   },
   legs: {
     workoutKey: "legs",
     sheetId: "Legs",
-    sheetHeader: [
-      "date",
-      "start_time",
-      "elapsed_time"
-    ],
+    sheetHeader: ["date", "start_time", "elapsed_time"],
     records: [
       {
         startTimestamp: convertToDateObj("09/20/2023 20:00"),
@@ -248,22 +220,14 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
   pull_upper_back: {
     workoutKey: "pull_upper_back",
     sheetId: "Pull (Upper Back)",
-    sheetHeader: [
-      "Date",
-      "Start Time",
-      "Elapsed Time",
-    ],
-    records: []
+    sheetHeader: [],
+    records: [],
   },
   pull_lower_back: {
     workoutKey: "pull_lower_back",
     sheetId: "Pull (Lower Back)",
-    sheetHeader: [
-      "Date",
-      "Start Time",
-      "Elapsed Time",
-    ],
-    records: []
+    sheetHeader: [],
+    records: [],
   },
   rowing_machine: {
     workoutKey: "rowing_machine",
@@ -275,7 +239,7 @@ export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {
       "rowing_machine:1:2:meters",
       "rowing_machine:1:2:time",
       "rowing_machine:1:3:meters",
-      "rowing_machine:1:3:time"
+      "rowing_machine:1:3:time",
     ],
     records: [
       {

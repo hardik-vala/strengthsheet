@@ -22,27 +22,33 @@ class WorkoutHistoryProvider {
     return WorkoutHistoryProvider.instance;
   }
 
-  appendRecordToWorkoutHistory(
+  async appendRecordToWorkoutHistory(
     accessToken: string,
     workoutKey: string,
     record: WorkoutHistoryRecord
-  ): void {
+  ): Promise<void> {
     if (!WORKOUT_HISTORY_TABLE[workoutKey]) {
       throw new Error(`No workout history for "${workoutKey}"`);
     }
 
-    if (
-      !SHEET_PROVIDER.sheetExists(
-        accessToken,
-        SPREADSHEET_ID,
-        WORKOUT_HISTORY_TABLE[workoutKey].sheetId
-      )
-    ) {
-      SHEET_PROVIDER.createSheet(
+    const sheetRows: string[][] = [];
+
+    const sheetExists = await SHEET_PROVIDER.sheetExists(
+      accessToken,
+      SPREADSHEET_ID,
+      WORKOUT_HISTORY_TABLE[workoutKey].sheetId
+    );
+    if (!sheetExists) {
+      await SHEET_PROVIDER.createSheet(
         accessToken,
         SPREADSHEET_ID,
         WORKOUT_HISTORY_TABLE[workoutKey].sheetId
       );
+
+      const sheetHeader = buildSheetHeader(record);
+      WORKOUT_HISTORY_TABLE[workoutKey].sheetHeader = sheetHeader;
+
+      sheetRows.push(sheetHeader);
     }
 
     WORKOUT_HISTORY_TABLE[workoutKey].records.push(record);
@@ -51,12 +57,13 @@ class WorkoutHistoryProvider {
       WORKOUT_HISTORY_TABLE[workoutKey].sheetHeader,
       record
     );
+    sheetRows.push(sheetRow);
 
-    SHEET_PROVIDER.appendRowToGoogleSheet(
+    SHEET_PROVIDER.appendRowsToGoogleSheet(
       accessToken,
       SPREADSHEET_ID,
       WORKOUT_HISTORY_TABLE[workoutKey].sheetId,
-      sheetRow
+      sheetRows
     );
   }
 
@@ -66,6 +73,14 @@ class WorkoutHistoryProvider {
 }
 
 export const WORKOUT_HISTORY_PROVIDER = WorkoutHistoryProvider.getInstance();
+
+function buildSheetHeader(record: WorkoutHistoryRecord): string[] {
+  return [
+    SHEET_DATE_COLUMN_TITLE,
+    SHEET_START_TIME_COLUMN_TITLE,
+    SHEET_ELAPSED_TIME_COLUMN_TITLE,
+  ].concat(record.exercises.map((e) => workoutValueKeyToString(e.key)));
+}
 
 function serializeRecordAsSheetRow(
   sheetHeader: string[],
