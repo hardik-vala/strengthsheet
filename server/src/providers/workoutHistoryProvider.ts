@@ -1,8 +1,7 @@
-import { CIRCUIT_REGISTRY, EXERCISE_REGISTRY } from "@data/registry";
+import { EXERCISE_REGISTRY } from "@data/registry";
 import {
-  SetType,
   WorkoutValueKey,
-  getSetTypeDisplayName,
+  getSetTypeDisplayName
 } from "@models/Workout/Core";
 import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
 import { format as formatDate } from "date-fns";
