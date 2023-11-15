@@ -453,6 +453,7 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
 export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
   bench_press_incline_circuit: {
     key: "bench_press_incline_circuit",
+    displayName: "Incline Bench Press Circuit",
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["bench_press_incline_barbell"],
@@ -466,6 +467,7 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
   },
   bicep_curl_circuit: {
     key: "bicep_curl_circuit",
+    displayName: "Bicep Curl Circuit",
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["bicep_curl_under_hand_chest_supported_dumbbells"],
@@ -483,6 +485,7 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
   },
   face_pulls_and_triceps_circuit: {
     key: "face_pulls_and_triceps_circuit",
+    displayName: "Face-Pulls & Triceps Circuit",
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["face_pull_cable"],
@@ -496,6 +499,7 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
   },
   hip_thrust_circuit: {
     key: "hip_thrust_circuit",
+    displayName: "Hip Thrust Circuit",
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["hip_thrust_single_leg"],
@@ -509,6 +513,7 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
   },
   pull_over_and_tricep_cable_circuit: {
     key: "pull_over_and_tricep_cable_circuit",
+    displayName: "Pull-Over & Tricep Circuit",
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["pull_over_cable"],
@@ -522,6 +527,7 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
   },
   pull_warmup_circuit: {
     key: "pull_warmup_circuit",
+    displayName: "Pull-Up Warm-Up Circuit",
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["lat_pullup_bodyweight"],
@@ -535,6 +541,7 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
   },
   row_cable_circuit: {
     key: "row_cable_circuit",
+    displayName: "Cable Row Circuit",
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["row_cable"],
@@ -548,6 +555,7 @@ export const CIRCUIT_REGISTRY: { [k: string]: Circuit } = {
   },
   shoulder_press_barbell_alternating_circuit: {
     key: "shoulder_press_barbell_alternating_circuit",
+    displayName: "Alternating Shoulder Press Circuit (Barbell)",
     exercises: [
       {
         exercise: EXERCISE_REGISTRY["shoulder_press_barbell_alternating"],

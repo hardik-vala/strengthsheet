@@ -1,4 +1,4 @@
-import { EXERCISE_REGISTRY } from "@data/registry";
+import { CIRCUIT_REGISTRY, EXERCISE_REGISTRY } from "@data/registry";
 import {
   WorkoutValueKey,
   getSetTypeDisplayName
@@ -94,7 +94,8 @@ function workoutValueKeyToHeaderTitle(key: WorkoutValueKey): string {
   )}) : ${key.measureKey}`;
 
   if (key.circuitKey) {
-    s = `${key.circuitKey}:${s}`;
+    const circuitName = CIRCUIT_REGISTRY[key.circuitKey].displayName;
+    s = `${circuitName} : ${s}`;
   }
 
   return s;

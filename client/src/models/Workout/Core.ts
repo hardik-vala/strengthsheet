@@ -17,6 +17,7 @@ export enum SetType {
 
 export interface Circuit {
   key: string;
+  displayName: string;
   exercises: { exercise: Exercise, note: string | null }[];
 }
 
