@@ -1,8 +1,5 @@
 import { CIRCUIT_REGISTRY, EXERCISE_REGISTRY } from "@data/registry";
-import {
-  WorkoutValueKey,
-  getSetTypeDisplayName
-} from "@models/Workout/Core";
+import { WorkoutValueKey, getSetTypeDisplayName } from "@models/Workout/Core";
 import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
 import { format as formatDate } from "date-fns";
 import { WORKOUT_HISTORY_TABLE, WorkoutHistoryTableRow } from "../database";
@@ -42,6 +39,7 @@ class WorkoutHistoryProvider {
       SPREADSHEET_ID,
       WORKOUT_HISTORY_TABLE[workoutKey].sheetId
     );
+    console.log(sheetExists);
     if (!sheetExists) {
       await SHEET_PROVIDER.createSheet(
         accessToken,
@@ -49,10 +47,9 @@ class WorkoutHistoryProvider {
         WORKOUT_HISTORY_TABLE[workoutKey].sheetId
       );
 
-      const sheetHeader = buildSheetHeader(record);
-      WORKOUT_HISTORY_TABLE[workoutKey].sheetHeader = sheetHeader;
+      WORKOUT_HISTORY_TABLE[workoutKey].sheetHeader = buildSheetHeader(record);
 
-      sheetRows.push(sheetHeader);
+      sheetRows.push(buildSheetHeaderForDisplay(record));
     }
 
     WORKOUT_HISTORY_TABLE[workoutKey].records.push(record);
@@ -79,6 +76,14 @@ class WorkoutHistoryProvider {
 export const WORKOUT_HISTORY_PROVIDER = WorkoutHistoryProvider.getInstance();
 
 function buildSheetHeader(record: WorkoutHistoryRecord): string[] {
+  return [
+    SHEET_DATE_COLUMN_TITLE,
+    SHEET_START_TIME_COLUMN_TITLE,
+    SHEET_ELAPSED_TIME_COLUMN_TITLE,
+  ].concat(record.exercises.map((e) => workoutValueKeyToString(e.key)));
+}
+
+function buildSheetHeaderForDisplay(record: WorkoutHistoryRecord): string[] {
   return [
     SHEET_DATE_COLUMN_TITLE,
     SHEET_START_TIME_COLUMN_TITLE,
