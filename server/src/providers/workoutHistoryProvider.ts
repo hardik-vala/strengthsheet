@@ -39,7 +39,6 @@ class WorkoutHistoryProvider {
       SPREADSHEET_ID,
       WORKOUT_HISTORY_TABLE[workoutKey].sheetId
     );
-    console.log(sheetExists);
     if (!sheetExists) {
       await SHEET_PROVIDER.createSheet(
         accessToken,

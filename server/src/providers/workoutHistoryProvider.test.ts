@@ -3,7 +3,6 @@ import { SetType, WorkoutValueKey } from "@models/Workout/Core";
 const mockAppendRowsToGoogleSheet = jest.fn();
 const mockCreateSheet = jest.fn();
 const mockSheetExists = jest.fn();
-mockSheetExists.mockResolvedValueOnce(false).mockResolvedValueOnce(true);
 
 jest.mock("./sheetProvider", () => {
   return {
@@ -68,6 +67,8 @@ const RECORD: WorkoutHistoryRecord = {
 describe("WORKOUT_HISTORY_PROVIDER", () => {
   describe("appendRecordToWorkoutHistory", () => {
     it("appends the record to a new sheet if the sheet doesn't already exist", async () => {
+      mockSheetExists.mockResolvedValueOnce(false);
+
       await WORKOUT_HISTORY_PROVIDER.appendRecordToWorkoutHistory(
         ACCESS_TOKEN,
         WORKOUT_KEY,
@@ -94,12 +95,14 @@ describe("WORKOUT_HISTORY_PROVIDER", () => {
             "Rowing (Machine) : Set 1 (Working) : meters",
             "Rowing (Machine) : Set 1 (Working) : time",
           ],
-          ["08/27/2023", "17:00", "30:00", "1000", "30:00", "2000", "60:00"],
+          ["08/27/2023", "20:00", "30:00", "1000", "30:00", "2000", "60:00"],
         ]
       );
     });
 
     it("appends the record to an existing sheet", async () => {
+      mockSheetExists.mockResolvedValueOnce(true);
+
       await WORKOUT_HISTORY_PROVIDER.appendRecordToWorkoutHistory(
         ACCESS_TOKEN,
         WORKOUT_KEY,
@@ -112,7 +115,7 @@ describe("WORKOUT_HISTORY_PROVIDER", () => {
         ACCESS_TOKEN,
         SPREADSHEET_ID,
         SHEET_ID,
-        [["08/27/2023", "17:00", "30:00", "1000", "30:00", "2000", "60:00"]]
+        [["08/27/2023", "20:00", "30:00", "1000", "30:00", "2000", "60:00"]]
       );
     });
   });
