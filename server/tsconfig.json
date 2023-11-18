@@ -10,12 +10,14 @@
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"],
+      "@common/*": ["../client/src/common/*"],
       "@data/*": ["../client/src/data/*"],
       "@models/*": ["../client/src/models/*"]
     }
   },
   "include": [
     "src/**/*",
+    "../client/src/common/**/*",
     "../client/src/data/**/*",
     "../client/src/models/**/*"
   ]

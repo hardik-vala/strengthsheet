@@ -5,7 +5,6 @@ import {
   screen,
   waitFor,
 } from "@testing-library/react-native";
-import { parse as parseDate } from "date-fns";
 import React from "react";
 import mockSafeAreaContext from "react-native-safe-area-context/jest/mock";
 import { WORKOUT_TEMPLATE_REGISTRY } from "../../data/registry";
@@ -316,10 +315,6 @@ const MOCK_WORKOUT_HISTORY: { [k: string]: WorkoutHistory } = {
   },
 };
 
-function convertToDateObj(dateStr: string) {
-  return parseDate(dateStr, "MM/dd/yyyy HH:mm", new Date());
-}
-
 jest.mock("../../services/backendService", () => {
   return {
     fetchWorkoutHistory: jest.fn(),
@@ -339,6 +334,7 @@ WORKOUT_HISTORY_PROVIDER.getWorkoutHistory = jest
 
 WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory = jest.fn();
 
+import { convertToDateObj } from "../../common/utils";
 import { WorkoutForm } from "./WorkoutForm";
 
 describe("WorkoutForm", () => {
@@ -418,7 +414,7 @@ describe("WorkoutForm", () => {
     await act(() => {
       fireEvent.press(screen.getByText("Finish"));
     });
- 
+
     expect(
       WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory
     ).toHaveBeenCalledWith("rowing_machine", {

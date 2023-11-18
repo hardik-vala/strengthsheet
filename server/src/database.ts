@@ -1,6 +1,7 @@
+import { convertToDateObj } from "@common/utils";
 import { SetType, WorkoutValueKey } from "@models/Workout/Core";
 import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
-import { format as formatDate, parse as parseDate } from "date-fns";
+import { format as formatDate } from "date-fns";
 
 export interface WorkoutHistoryTableRow {
   workoutKey: string;
@@ -381,8 +382,4 @@ export function deserializeWorkoutHistoryRecord(record: any) {
     ...record,
     startTimestamp: convertToDateObj(record.startTimestamp),
   };
-}
-
-function convertToDateObj(dateStr: string) {
-  return parseDate(dateStr, "MM/dd/yyyy HH:mm", new Date());
 }
