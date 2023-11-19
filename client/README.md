@@ -18,6 +18,10 @@ Click [here](https://reactnative.dev/docs/environment-setup) for more info.
 npx expo start
 ```
 
+### Android Emulator
+
+https://docs.expo.dev/workflow/android-studio-emulator/
+
 ### iOS Simulator
 
 1. Open Xcode, and find the simulator option: Xcode > Open Developer Tool > Simulator.
