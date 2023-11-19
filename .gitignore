@@ -5,6 +5,7 @@ node_modules/
 
 # Expo
 .expo/
+android/
 dist/
 ios/
 web-build/
