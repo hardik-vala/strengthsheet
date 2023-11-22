@@ -6,8 +6,10 @@ node_modules/
 # Expo
 .expo/
 android/
+!client/assets/icons/android
 dist/
 ios/
+!client/assets/icons/ios
 web-build/
 
 # Native
