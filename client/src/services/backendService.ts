@@ -8,6 +8,7 @@ import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 export async function fetchWorkoutHistory(
   workoutTemplate: WorkoutTemplate
 ): Promise<FetchWorkoutHistoryResponse> {
+  const googleUser = await GoogleSignin.getCurrentUser();
   const googleAuthTokens = await GoogleSignin.getTokens();
 
   const searchParams = new URLSearchParams();
@@ -20,6 +21,7 @@ export async function fetchWorkoutHistory(
     method: "GET",
     headers: {
       Authorization: `Bearer ${googleAuthTokens.accessToken}`,
+      'X-Google-Id-Token': googleUser.idToken,
     },
   });
 
@@ -35,6 +37,7 @@ export async function fetchWorkoutHistory(
 export async function storeRecordInWorkoutHistory(
   body: SaveWorkoutHistoryRecordRequestBody
 ): Promise<void> {
+  const googleUser = await GoogleSignin.getCurrentUser();
   const googleAuthTokens = await GoogleSignin.getTokens();
 
   const domain = process.env.EXPO_PUBLIC_BACKEND_DOMAIN;
@@ -44,6 +47,7 @@ export async function storeRecordInWorkoutHistory(
     method: "POST",
     headers: {
       Authorization: `Bearer ${googleAuthTokens.accessToken}`,
+      'X-Google-Id-Token': googleUser.idToken,
       "Content-Type": "application/json",
     },
     body: JSON.stringify(body),
