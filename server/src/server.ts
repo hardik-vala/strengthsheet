@@ -1,6 +1,7 @@
 import { SaveWorkoutHistoryRecordRequestBody } from "@models/Backend";
 import cors from "cors";
 import express from "express";
+import { decodeGoogleIdToken } from "./auth";
 import {
   deserializeWorkoutHistoryRecord,
   serializeWorkoutHistoryTableRow,
@@ -11,12 +12,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/api/v1/workout/history", (req, res) => {
+app.get("/api/v1/workout/history", async (req, res) => {
   const authHeader = req.headers.authorization;
+  const idToken = req.headers['x-google-id-token'] as string;
 
   if (!authHeader) {
     return res.status(401).json({ error: "Authorization header required" });
   }
+
+  if (!idToken) {
+    return res.status(401).json({ error: "Google Id token header required" });
+  }
+
+  const user = await decodeGoogleIdToken(idToken);
 
   const { workoutKey } = req.query;
 
@@ -40,14 +48,20 @@ app.get("/api/v1/workout/history", (req, res) => {
   res.send(payload);
 });
 
-app.post("/api/v1/workout/save", (req, res) => {
+app.post("/api/v1/workout/save", async (req, res) => {
   const authHeader = req.headers.authorization;
+  const idToken = req.headers['x-google-id-token'] as string;
 
   if (!authHeader) {
     return res.status(401).json({ error: "Authorization header required" });
   }
 
+  if (!idToken) {
+    return res.status(401).json({ error: "Google Id token header required" });
+  }
+
   const accessToken = req.headers.authorization.split(" ")[1];
+  const user = await decodeGoogleIdToken(idToken);
 
   const body = req.body as SaveWorkoutHistoryRecordRequestBody;
 
