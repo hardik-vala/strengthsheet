@@ -18,6 +18,12 @@ import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
 import { WORKOUT_HISTORY_PROVIDER } from "./workoutHistoryProvider";
 
 const ACCESS_TOKEN = "foo.accessToken";
+const USER = { 
+  email: "fitleo824@gmail.com",
+  googleId: "112354883135997385001",
+  googleIdToken: ACCESS_TOKEN,
+  name: "Leo Fit",
+};
 const SPREADSHEET_ID = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
 const WORKOUT_KEY = "rowing_machine";
 const SHEET_ID = "Rowing (Machine)";
@@ -71,6 +77,7 @@ describe("WORKOUT_HISTORY_PROVIDER", () => {
 
       await WORKOUT_HISTORY_PROVIDER.appendRecordToWorkoutHistory(
         ACCESS_TOKEN,
+        USER,
         WORKOUT_KEY,
         RECORD
       );
@@ -95,7 +102,7 @@ describe("WORKOUT_HISTORY_PROVIDER", () => {
             "Rowing (Machine) : Set 1 (Working) : meters",
             "Rowing (Machine) : Set 1 (Working) : time",
           ],
-          ["08/27/2023", "20:00", "30:00", "1000", "30:00", "2000", "60:00"],
+          ["08/27/2023", "17:00", "30:00", "1000", "30:00", "2000", "60:00"],
         ]
       );
     });
@@ -105,6 +112,7 @@ describe("WORKOUT_HISTORY_PROVIDER", () => {
 
       await WORKOUT_HISTORY_PROVIDER.appendRecordToWorkoutHistory(
         ACCESS_TOKEN,
+        USER,
         WORKOUT_KEY,
         RECORD
       );
@@ -115,7 +123,7 @@ describe("WORKOUT_HISTORY_PROVIDER", () => {
         ACCESS_TOKEN,
         SPREADSHEET_ID,
         SHEET_ID,
-        [["08/27/2023", "20:00", "30:00", "1000", "30:00", "2000", "60:00"]]
+        [["08/27/2023", "17:00", "30:00", "1000", "30:00", "2000", "60:00"]]
       );
     });
   });
