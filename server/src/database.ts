@@ -15,6 +15,7 @@ export interface WorkoutHistoryTableRow {
 }
 
 export const USER_TABLE: { [k: string]: UserTableRow } = {
+  // For fitleo824@gmail.com.
   "112354883135997385001": {
     spreadsheetId: "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o",
   },
@@ -23,6 +24,16 @@ export const USER_TABLE: { [k: string]: UserTableRow } = {
 export const WORKOUT_HISTORY_TABLE: {
   [k: string]: { [k: string]: WorkoutHistoryTableRow };
 } = {
+  // For hardikvala24@gmail.com.
+  "108369507806083237863": {
+    rowing_machine: {
+      workoutKey: "rowing_machine",
+      sheetId: "Rowing (Machine)",
+      sheetHeader: [],
+      records: [],
+    },
+  },
+  // For fitleo824@gmail.com.
   "112354883135997385001": {
     stretches: {
       workoutKey: "stretches",
