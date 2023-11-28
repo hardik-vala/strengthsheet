@@ -3,11 +3,19 @@ import { SetType, WorkoutValueKey } from "@models/Workout/Core";
 import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
 import { format as formatDate } from "date-fns";
 
+export interface UserTableRow {
+  spreadsheetId: string;
+}
+
 export interface WorkoutHistoryTableRow {
   workoutKey: string;
   sheetId: string;
   sheetHeader: string[];
   records: WorkoutHistoryRecord[];
+}
+
+export const USER_TABLE: { [k: string]: UserTableRow } = {
+  "112354883135997385001": { spreadsheetId: "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o" }
 }
 
 export const WORKOUT_HISTORY_TABLE: { [k: string]: WorkoutHistoryTableRow } = {

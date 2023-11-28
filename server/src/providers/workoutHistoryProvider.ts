@@ -1,11 +1,11 @@
 import { CIRCUIT_REGISTRY, EXERCISE_REGISTRY } from "@data/registry";
+import { User } from "@models/User";
 import { WorkoutValueKey, getSetTypeDisplayName } from "@models/Workout/Core";
 import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
 import { format as formatDate } from "date-fns";
-import { WORKOUT_HISTORY_TABLE, WorkoutHistoryTableRow } from "../database";
+import { USER_TABLE, WORKOUT_HISTORY_TABLE, WorkoutHistoryTableRow } from "../database";
 import { SHEET_PROVIDER } from "./sheetProvider";
 
-const SPREADSHEET_ID = "1-wL-dRJYZkZ-uVpoBSuGeSFEzg_ZWVKFwLTv8RgbX7o";
 const SHEET_DATE_COLUMN_TITLE = "Date";
 const SHEET_START_TIME_COLUMN_TITLE = "Start Time";
 const SHEET_ELAPSED_TIME_COLUMN_TITLE = "Elapsed Time";
@@ -25,6 +25,7 @@ class WorkoutHistoryProvider {
 
   async appendRecordToWorkoutHistory(
     accessToken: string,
+    user: User,
     workoutKey: string,
     record: WorkoutHistoryRecord
   ): Promise<void> {
@@ -32,17 +33,23 @@ class WorkoutHistoryProvider {
       throw new Error(`No workout history for "${workoutKey}"`);
     }
 
+    if (!USER_TABLE[user.googleId]) {
+      throw new Error(`Unrecognized user: ${user.googleId}`);
+    }
+
+    const spreadsheetId = USER_TABLE[user.googleId].spreadsheetId;
+
     const sheetRows: string[][] = [];
 
     const sheetExists = await SHEET_PROVIDER.sheetExists(
       accessToken,
-      SPREADSHEET_ID,
+      spreadsheetId,
       WORKOUT_HISTORY_TABLE[workoutKey].sheetId
     );
     if (!sheetExists) {
       await SHEET_PROVIDER.createSheet(
         accessToken,
-        SPREADSHEET_ID,
+        spreadsheetId,
         WORKOUT_HISTORY_TABLE[workoutKey].sheetId
       );
 
@@ -61,13 +68,13 @@ class WorkoutHistoryProvider {
 
     SHEET_PROVIDER.appendRowsToGoogleSheet(
       accessToken,
-      SPREADSHEET_ID,
+      spreadsheetId,
       WORKOUT_HISTORY_TABLE[workoutKey].sheetId,
       sheetRows
     );
   }
 
-  fetchWorkoutHistory(workoutKey: string): WorkoutHistoryTableRow {
+  fetchWorkoutHistory(user: User, workoutKey: string): WorkoutHistoryTableRow {
     return WORKOUT_HISTORY_TABLE[workoutKey];
   }
 }

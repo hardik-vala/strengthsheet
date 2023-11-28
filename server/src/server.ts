@@ -35,6 +35,7 @@ app.get("/api/v1/workout/history", async (req, res) => {
   }
 
   const workoutHistory = WORKOUT_HISTORY_PROVIDER.fetchWorkoutHistory(
+    user,
     workoutKey.toString()
   );
   if (!workoutHistory) {
@@ -68,6 +69,7 @@ app.post("/api/v1/workout/save", async (req, res) => {
   try {
     WORKOUT_HISTORY_PROVIDER.appendRecordToWorkoutHistory(
       accessToken,
+      user,
       body.workoutKey,
       deserializeWorkoutHistoryRecord(body.workoutRecord)
     );
