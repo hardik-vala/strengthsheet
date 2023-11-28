@@ -29,39 +29,44 @@ class WorkoutHistoryProvider {
     workoutKey: string,
     record: WorkoutHistoryRecord
   ): Promise<void> {
-    if (!WORKOUT_HISTORY_TABLE[workoutKey]) {
-      throw new Error(`No workout history for "${workoutKey}"`);
-    }
-
     if (!USER_TABLE[user.googleId]) {
       throw new Error(`Unrecognized user: ${user.googleId}`);
     }
+    
+    if (!WORKOUT_HISTORY_TABLE[user.googleId]) {
+      throw new Error(`No workout history for user ${user.googleId}`);
+    }
+
+    if (!WORKOUT_HISTORY_TABLE[user.googleId][workoutKey]) {
+      throw new Error(`No workout history for "${workoutKey}"`);
+    }
 
     const spreadsheetId = USER_TABLE[user.googleId].spreadsheetId;
+    const workoutHistoryTableRow = WORKOUT_HISTORY_TABLE[user.googleId][workoutKey];
 
     const sheetRows: string[][] = [];
 
     const sheetExists = await SHEET_PROVIDER.sheetExists(
       accessToken,
       spreadsheetId,
-      WORKOUT_HISTORY_TABLE[workoutKey].sheetId
+      workoutHistoryTableRow.sheetId
     );
     if (!sheetExists) {
       await SHEET_PROVIDER.createSheet(
         accessToken,
         spreadsheetId,
-        WORKOUT_HISTORY_TABLE[workoutKey].sheetId
+        workoutHistoryTableRow.sheetId
       );
 
-      WORKOUT_HISTORY_TABLE[workoutKey].sheetHeader = buildSheetHeader(record);
+      workoutHistoryTableRow.sheetHeader = buildSheetHeader(record);
 
       sheetRows.push(buildSheetHeaderForDisplay(record));
     }
 
-    WORKOUT_HISTORY_TABLE[workoutKey].records.push(record);
+    workoutHistoryTableRow.records.push(record);
 
     const sheetRow = serializeRecordAsSheetRow(
-      WORKOUT_HISTORY_TABLE[workoutKey].sheetHeader,
+      workoutHistoryTableRow.sheetHeader,
       record
     );
     sheetRows.push(sheetRow);
@@ -69,13 +74,17 @@ class WorkoutHistoryProvider {
     SHEET_PROVIDER.appendRowsToGoogleSheet(
       accessToken,
       spreadsheetId,
-      WORKOUT_HISTORY_TABLE[workoutKey].sheetId,
+      workoutHistoryTableRow.sheetId,
       sheetRows
     );
   }
 
   fetchWorkoutHistory(user: User, workoutKey: string): WorkoutHistoryTableRow {
-    return WORKOUT_HISTORY_TABLE[workoutKey];
+    if (!WORKOUT_HISTORY_TABLE[user.googleId]) {
+      return null;
+    }
+
+    return WORKOUT_HISTORY_TABLE[user.googleId][workoutKey];
   }
 }
 
