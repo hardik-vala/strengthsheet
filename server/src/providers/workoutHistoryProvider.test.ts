@@ -18,7 +18,7 @@ import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
 import { WORKOUT_HISTORY_PROVIDER } from "./workoutHistoryProvider";
 
 const ACCESS_TOKEN = "foo.accessToken";
-const USER = { 
+const USER = {
   email: "fitleo824@gmail.com",
   googleId: "112354883135997385001",
   googleIdToken: ACCESS_TOKEN,
@@ -122,6 +122,31 @@ describe("WORKOUT_HISTORY_PROVIDER", () => {
       expect(mockAppendRowsToGoogleSheet).toHaveBeenCalledWith(
         ACCESS_TOKEN,
         SPREADSHEET_ID,
+        SHEET_ID,
+        [["08/27/2023", "17:00", "30:00", "1000", "30:00", "2000", "60:00"]]
+      );
+    });
+
+    it("appends to the spreadsheet of a different user", async () => {
+      mockSheetExists.mockResolvedValueOnce(true);
+
+      await WORKOUT_HISTORY_PROVIDER.appendRecordToWorkoutHistory(
+        ACCESS_TOKEN,
+        {
+          email: "hardikvala24@gmail.com",
+          googleId: "108369507806083237863",
+          googleIdToken: "other.foo.AccessToken",
+          name: "Hardik Vala",
+        },
+        WORKOUT_KEY,
+        RECORD
+      );
+
+      expect(mockSheetExists).toHaveBeenCalled();
+      expect(mockCreateSheet).toHaveBeenCalledTimes(1);
+      expect(mockAppendRowsToGoogleSheet).toHaveBeenCalledWith(
+        ACCESS_TOKEN,
+        "TEMPORARY",
         SHEET_ID,
         [["08/27/2023", "17:00", "30:00", "1000", "30:00", "2000", "60:00"]]
       );
