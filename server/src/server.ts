@@ -12,6 +12,23 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/api/v1/user/register", async (req, res) => {
+  const authHeader = req.headers.authorization;
+  const idToken = req.headers['x-google-id-token'] as string;
+
+  if (!authHeader) {
+    return res.status(401).json({ error: "Authorization header required" });
+  }
+
+  if (!idToken) {
+    return res.status(401).json({ error: "Google Id token header required" });
+  }
+
+  const user = await decodeGoogleIdToken(idToken);
+
+  res.send(user);
+});
+
 app.get("/api/v1/workout/history", async (req, res) => {
   const authHeader = req.headers.authorization;
   const idToken = req.headers['x-google-id-token'] as string;
