@@ -96,7 +96,7 @@ app.post("/api/v1/workout/save", async (req, res) => {
     });
   }
 
-  res.send("POST request received!");
+  res.send({});
 });
 
 const port = 3000;
