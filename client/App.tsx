@@ -23,6 +23,7 @@ export default function App() {
   const _signIn = async () => {
     try {
       const user = await signIn();
+      // TODO: Register user.
       setUser(user);
     } catch (error) {
       Alert.alert(error);
