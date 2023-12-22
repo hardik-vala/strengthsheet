@@ -1,5 +1,7 @@
 export enum ExerciseUnit {
+  integer,
   kilometers,
+  kph,
   lb,
   meters,
   miles,

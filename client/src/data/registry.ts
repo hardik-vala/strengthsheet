@@ -144,6 +144,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  eccentric_knee_flexion_single_leg_slider_dumbbell: {
+    key: "eccentric_knee_flexion_single_leg_slider_dumbbell",
+    displayName: "Eccentric Single Leg Knee Flexion with Slider (Dumbbell)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   face_pull_cable: {
     key: "face_pull_cable",
     displayName: "Face Pull (Cable)",
@@ -296,6 +304,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     displayName: "90-90",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
+  nordic_curl: {
+    key: "nordic_curl",
+    displayName: "Nordic Curl",
+    measures: [
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
   oblique_v_up: {
     key: "oblique_v_up",
     displayName: "Oblique V-Up",
@@ -414,6 +429,24 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     measures: [
       { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
+  },
+  treadmill_interval_ottawa_home: {
+    key: "treadmill_interval_ottawa_home",
+    displayName: "Treadmill - Interval (Ottawa Home)",
+    measures: [
+      { key: "level", displayName: "level", unit: ExerciseUnit.integer },
+      { key: "min_speed", displayName: "min. speed", unit: ExerciseUnit.kph },
+      { key: "time", displayName: "time", unit: ExerciseUnit.time },
+    ],
+  },
+  treadmill_random_ottawa_home: {
+    key: "treadmill_random_ottawa_home",
+    displayName: "Treadmill - Random (Ottawa Home)",
+    measures: [
+      { key: "level", displayName: "level", unit: ExerciseUnit.integer },
+      { key: "min_speed", displayName: "min. speed", unit: ExerciseUnit.kph },
+      { key: "time", displayName: "time", unit: ExerciseUnit.time },
     ],
   },
   tricep_dip_bodyweight: {
@@ -965,6 +998,36 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
       },
     ],
   },
+  hamstring_rehab: {
+    key: "hamstring_rehab",
+    displayName: "Hamstring Rehab",
+    iconKey: "yoga",
+    note: "",
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["eccentric_knee_flexion_single_leg_slider_dumbbell"],
+        displayName: "Eccentric Single Leg Knee Flexion with Slider (Dumbbell)",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["nordic_curl"],
+        displayName: "Nordic Curl",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+        ],
+      },
+    ],
+  },
   basketball_warmup: {
     key: "basketball_warmup",
     displayName: "Basketball Warmup",
@@ -1328,6 +1391,40 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
         note: null,
         sets: [
           { index: 1, setType: SetType.Warmup },
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+    ],
+  },
+  treadmill_interval_ottawa_home: {
+    key: "treadmill_interval_ottawa_home",
+    displayName: "Treadmill - Interval (Ottawa Home)",
+    iconKey: "rowing",
+    note: "",
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["treadmill_interval_ottawa_home"],
+        displayName: "Treadmill - Interval (Ottawa Home)",
+        iconKey: "",
+        note: null,
+        sets: [
+          { index: 1, setType: SetType.Working },
+        ],
+      },
+    ],
+  },
+  treadmill_random_ottawa_home: {
+    key: "treadmill_random_ottawa_home",
+    displayName: "Treadmill - Random (Ottawa Home)",
+    iconKey: "rowing",
+    note: "",
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["treadmill_random_ottawa_home"],
+        displayName: "Treadmill - Random (Ottawa Home)",
+        iconKey: "",
+        note: null,
+        sets: [
           { index: 1, setType: SetType.Working },
         ],
       },
