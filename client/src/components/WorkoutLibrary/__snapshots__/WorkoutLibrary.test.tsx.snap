@@ -473,6 +473,176 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                       ]
                     }
                   >
+                    Muscle-Up Requirement
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    30s rest between sets
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text />
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
                     Push (Shoulders)
                   </Text>
                   <Text
@@ -1019,6 +1189,176 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     }
                   >
                     Deep Squat (Bodyweight), Lateral Step Down, Forward Jump Squats (Bodyweight), Single-Leg RDL (Dumbbell), Hip Abduction (Looped Elastic Band), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts, Ankle Evertor Exercise (Band), 90-90
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text />
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Hamstring Rehab
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Eccentric Single Leg Knee Flexion with Slider (Dumbbell), Nordic Curl
                   </Text>
                 </View>
               </View>
@@ -1869,6 +2209,346 @@ exports[`WorkoutLibrary renders correctly 1`] = `
                     }
                   >
                     Rowing machine for cardio.
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text />
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Interval (Ottawa Home)
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Interval (Ottawa Home)
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text />
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Random (Ottawa Home)
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Random (Ottawa Home)
                   </Text>
                 </View>
               </View>
@@ -2453,6 +3133,211 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                       ]
                     }
                   >
+                    Muscle-Up Requirement
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    30s rest between sets
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󱅝
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
                     Push (Shoulders)
                   </Text>
                   <Text
@@ -3104,6 +3989,211 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     }
                   >
                     Deep Squat (Bodyweight), Lateral Step Down, Forward Jump Squats (Bodyweight), Single-Leg RDL (Dumbbell), Hip Abduction (Looped Elastic Band), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts, Ankle Evertor Exercise (Band), 90-90
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󱅼
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Hamstring Rehab
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Eccentric Single Leg Knee Flexion with Slider (Dumbbell), Nordic Curl
                   </Text>
                 </View>
               </View>
@@ -4129,6 +5219,416 @@ exports[`WorkoutLibrary renders workout form when a workout is started 1`] = `
                     }
                   >
                     Rowing machine for cardio.
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󰘈
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Interval (Ottawa Home)
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Interval (Ottawa Home)
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󰘈
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Random (Ottawa Home)
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Random (Ottawa Home)
                   </Text>
                 </View>
               </View>
@@ -4713,6 +6213,211 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                       ]
                     }
                   >
+                    Muscle-Up Requirement
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    30s rest between sets
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󱅝
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
                     Push (Shoulders)
                   </Text>
                   <Text
@@ -5364,6 +7069,211 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     }
                   >
                     Deep Squat (Bodyweight), Lateral Step Down, Forward Jump Squats (Bodyweight), Single-Leg RDL (Dumbbell), Hip Abduction (Looped Elastic Band), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts, Ankle Evertor Exercise (Band), 90-90
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󱅼
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Hamstring Rehab
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Eccentric Single Leg Knee Flexion with Slider (Dumbbell), Nordic Curl
                   </Text>
                 </View>
               </View>
@@ -6389,6 +8299,416 @@ exports[`WorkoutLibrary renders workout preview when a complex workout is select
                     }
                   >
                     Rowing machine for cardio.
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󰘈
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Interval (Ottawa Home)
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Interval (Ottawa Home)
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󰘈
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Random (Ottawa Home)
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Random (Ottawa Home)
                   </Text>
                 </View>
               </View>
@@ -8247,6 +10567,211 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                       ]
                     }
                   >
+                    Muscle-Up Requirement
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    30s rest between sets
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󱅝
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
                     Push (Shoulders)
                   </Text>
                   <Text
@@ -8898,6 +11423,211 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     }
                   >
                     Deep Squat (Bodyweight), Lateral Step Down, Forward Jump Squats (Bodyweight), Single-Leg RDL (Dumbbell), Hip Abduction (Looped Elastic Band), Bent Knee Fallout (Band), Plank with Alternating Leg Lifts, Ankle Evertor Exercise (Band), 90-90
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󱅼
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Hamstring Rehab
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Eccentric Single Leg Knee Flexion with Slider (Dumbbell), Nordic Curl
                   </Text>
                 </View>
               </View>
@@ -9923,6 +12653,416 @@ exports[`WorkoutLibrary renders workout preview when a workout is selected 1`] =
                     }
                   >
                     Rowing machine for cardio.
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󰘈
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Interval (Ottawa Home)
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Interval (Ottawa Home)
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "rgba(202, 196, 208, 1)",
+                    "height": 0.5,
+                  },
+                  undefined,
+                  false,
+                  false,
+                  {
+                    "height": 2,
+                  },
+                ]
+              }
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  false,
+                  [
+                    {
+                      "paddingRight": 24,
+                      "paddingVertical": 8,
+                    },
+                    {
+                      "backgroundColor": "#333",
+                      "paddingHorizontal": 10,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginVertical": 6,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="box-none"
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityElementsHidden={true}
+                    allowFontScaling={false}
+                    importantForAccessibility="no-hide-descendants"
+                    pointerEvents="none"
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontSize": 24,
+                        },
+                        [
+                          {
+                            "lineHeight": 24,
+                            "transform": [
+                              {
+                                "scaleX": 1,
+                              },
+                            ],
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                        ],
+                        {
+                          "fontFamily": "material-community",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                  >
+                    󰘈
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "paddingLeft": 16,
+                      },
+                      {
+                        "flex": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    numberOfLines={1}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "rgba(28, 27, 31, 1)",
+                          },
+                          {
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Random (Ottawa Home)
+                  </Text>
+                  <Text
+                    ellipsizeMode="tail"
+                    numberOfLines={2}
+                    onTextLayout={[Function]}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "rgba(28, 27, 31, 1)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "letterSpacing": 0,
+                        },
+                        {
+                          "writingDirection": "ltr",
+                        },
+                        [
+                          {
+                            "fontSize": 14,
+                          },
+                          {
+                            "color": "rgba(73, 69, 79, 1)",
+                          },
+                          {
+                            "fontSize": 13,
+                          },
+                        ],
+                      ]
+                    }
+                  >
+                    Treadmill - Random (Ottawa Home)
                   </Text>
                 </View>
               </View>

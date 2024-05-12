@@ -44,12 +44,24 @@ export const WORKOUT_HISTORY_TABLE: {
       ],
       records: [],
     },
+    muscle_up_requirement: {
+      workoutKey: "muscle_up_requirement",
+      sheetId: "Muscle-Up Requirement",
+      sheetHeader: [],
+      records: [],
+    },
   },
   // For fitleo824@gmail.com.
   "112354883135997385001": {
     stretches: {
       workoutKey: "stretches",
       sheetId: "Stretches",
+      sheetHeader: [],
+      records: [],
+    },
+    muscle_up_requirement: {
+      workoutKey: "muscle_up_requirement",
+      sheetId: "Muscle-Up Requirement",
       sheetHeader: [],
       records: [],
     },

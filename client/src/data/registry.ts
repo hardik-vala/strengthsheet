@@ -231,6 +231,13 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  l_sit_hanging_hold: {
+    key: "l_sit_hanging_hold",
+    displayName: "Hanging L-Sit Hold",
+    measures: [
+      { key: "time", displayName: "time", unit: ExerciseUnit.time },
+    ],
+  },
   lat_pullup_bodyweight: {
     key: "lat_pullup_bodyweight",
     displayName: "Lat Pull-up (Bodyweight)",
@@ -271,6 +278,11 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  leg_raise_hanging_bodyweight: {
+    key: "leg_raise_hanging_bodyweight",
+    displayName: "Hanging Leg Raise (Bodyweight)",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
   leg_swing_forward_backward: {
     key: "leg_swing_forward_backward",
     displayName: "Leg Swing (Forward / Backward)",
@@ -299,6 +311,16 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  muscle_up_jumping: {
+    key: "muscle_up_jumping",
+    displayName: "Jumping Muscle-Up (Bodyweight)",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  muscle_up_negative: {
+    key: "muscle_up_negative",
+    displayName: "Negative Muscle-Up (Bodyweight)",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
   ninety_ninety: {
     key: "ninety_ninety",
     displayName: "90-90",
@@ -322,6 +344,14 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
     key: "plank_alternating_leg_lifts",
     displayName: "Plank with Alternating Leg Lifts",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  pull_down_lat_cable: {
+    key: "pull_down_lat_cable",
+    displayName: "Lat Pull-Down (Cable)",
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
   },
   pull_mid_chest_cable: {
     key: "pull_mid_chest_cable",
@@ -431,6 +461,11 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
       { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
     ],
   },
+  toes_to_bar: {
+    key: "toes_to_bar",
+    displayName: "Toes to Bar",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
   treadmill_interval_ottawa_home: {
     key: "treadmill_interval_ottawa_home",
     displayName: "Treadmill - Interval (Ottawa Home)",
@@ -452,6 +487,11 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
   tricep_dip_bodyweight: {
     key: "tricep_dip_bodyweight",
     displayName: "Tricep Dip (Bodyweight)",
+    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+  },
+  tricep_dip_straight_bar_bodyweight: {
+    key: "tricep_dip_straight_bar_bodyweight",
+    displayName: "Straight Bar Dip (Bodyweight)",
     measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
   },
   tricep_extension_cable: {
@@ -609,6 +649,105 @@ export const WORKOUT_TEMPLATE_REGISTRY: WorkoutTemplateRegistry = {
     iconKey: "yoga",
     note: "",
     drills: [],
+  },
+  muscle_up_requirement: {
+    key: "muscle_up_requirement",
+    displayName: "Muscle-Up Requirement",
+    iconKey: "weight-lifter",
+    note: "30s rest between sets",
+    drills: [
+      {
+        exercise: EXERCISE_REGISTRY["lat_pullup_bodyweight"],
+        displayName: "Lat Pull-up (Bodyweight)",
+        iconKey: "",
+        note: ">= 15",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["l_sit_hanging_hold"],
+        displayName: "Hanging L-Sit Hold",
+        iconKey: "",
+        note: ">= 15s",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["tricep_dip_straight_bar_bodyweight"],
+        displayName: "Straight Bar Dip (Bodyweight)",
+        iconKey: "",
+        note: ">= 15",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["toes_to_bar"],
+        displayName: "Toes to Bar",
+        iconKey: "",
+        note: ">= 10",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["leg_raise_hanging_bodyweight"],
+        displayName: "Hanging Leg Raise (Bodyweight)",
+        iconKey: "",
+        note: ">= 15",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["muscle_up_negative"],
+        displayName: "Negative Muscle-Up (Bodyweight)",
+        iconKey: "",
+        note: ">= 5",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+      {
+        exercise: EXERCISE_REGISTRY["muscle_up_jumping"],
+        displayName: "Jumping Muscle-Up (Bodyweight)",
+        iconKey: "",
+        note: ">= 10",
+        sets: [
+          { index: 1, setType: SetType.Working },
+          { index: 2, setType: SetType.Working },
+          { index: 3, setType: SetType.Working },
+          { index: 4, setType: SetType.Working },
+          { index: 5, setType: SetType.Working },
+        ],
+      },
+    ],
   },
   push_shoulders: {
     key: "push_shoulders",
