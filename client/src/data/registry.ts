@@ -420,7 +420,10 @@ export const EXERCISE_REGISTRY: { [k: string]: Exercise } = {
   squat_split_bulgarian_bodyweight: {
     key: "squat_split_bulgarian_bodyweight",
     displayName: "Bulgarian Split Squat (Bodyweight)",
-    measures: [{ key: "reps", displayName: "reps", unit: ExerciseUnit.reps }],
+    measures: [
+      { key: "lb", displayName: "lb", unit: ExerciseUnit.lb },
+      { key: "reps", displayName: "reps", unit: ExerciseUnit.reps },
+    ],
   },
   squat_split_bulgarian_barbell: {
     key: "squat_split_bulgarian_barbell",
