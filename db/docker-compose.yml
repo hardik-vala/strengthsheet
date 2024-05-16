@@ -7,9 +7,11 @@ services:
       - "27017:27017"
     volumes:
       - strengthsheet_db_data:/data/db
+      - ./initdb.js:/docker-entrypoint-initdb.d/initdb.js:ro
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}
 
 volumes:
   strengthsheet_db_data:
