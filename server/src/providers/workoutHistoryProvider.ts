@@ -1,23 +1,47 @@
+import { convertToDateObj } from "@common/utils";
 import { CIRCUIT_REGISTRY, EXERCISE_REGISTRY } from "@data/registry";
 import { User } from "@models/User";
 import { WorkoutValueKey, getSetTypeDisplayName } from "@models/Workout/Core";
 import { WorkoutHistoryRecord } from "@models/Workout/WorkoutHistory";
 import { format as formatDate } from "date-fns";
-import { USER_TABLE, WORKOUT_HISTORY_TABLE, WorkoutHistoryTableRow } from "../database";
+import * as dotenv from "dotenv";
+import { Db, MongoClient } from "mongodb";
 import { SHEET_PROVIDER } from "./sheetProvider";
 
 const SHEET_DATE_COLUMN_TITLE = "Date";
 const SHEET_START_TIME_COLUMN_TITLE = "Start Time";
 const SHEET_ELAPSED_TIME_COLUMN_TITLE = "Elapsed Time";
 
-class WorkoutHistoryProvider {
+dotenv.config();
+
+interface WorkoutHistoryTableRow {
+  workoutKey: string;
+  sheetId: string;
+  sheetHeader: string[];
+  records: WorkoutHistoryRecord[];
+}
+
+export class WorkoutHistoryProvider {
   private static instance: WorkoutHistoryProvider;
+  private client: MongoClient;
+  private db: Db;
 
-  private constructor() {}
+  private constructor(client: MongoClient) {
+    this.client = client;
+    this.db = client.db(process.env.MONGO_DATABASE);
+  }
 
-  static getInstance() {
+  private static async connectToMongoServer(): Promise<MongoClient> {
+    const connString = `mongodb://${process.env.MONGO_ROOT_USERNAME}:${process.env.MONGO_ROOT_PASSWORD}@${process.env.MONGO_SERVER}`;
+    const client = new MongoClient(connString);
+    await client.connect();
+    return client;
+  }
+
+  static async getInstance(): Promise<WorkoutHistoryProvider> {
     if (!WorkoutHistoryProvider.instance) {
-      WorkoutHistoryProvider.instance = new WorkoutHistoryProvider();
+      const client = await WorkoutHistoryProvider.connectToMongoServer();
+      WorkoutHistoryProvider.instance = new WorkoutHistoryProvider(client);
     }
 
     return WorkoutHistoryProvider.instance;
@@ -29,20 +53,22 @@ class WorkoutHistoryProvider {
     workoutKey: string,
     record: WorkoutHistoryRecord
   ): Promise<void> {
-    if (!USER_TABLE[user.googleId]) {
+    const dbUser = await this.fetchUser(user);
+    if (!dbUser) {
       throw new Error(`Unrecognized user: ${user.googleId}`);
     }
-    
-    if (!WORKOUT_HISTORY_TABLE[user.googleId]) {
-      throw new Error(`No workout history for user ${user.googleId}`);
-    }
 
-    if (!WORKOUT_HISTORY_TABLE[user.googleId][workoutKey]) {
-      throw new Error(`No workout history for "${workoutKey}"`);
+    const spreadsheetId = dbUser.spreadsheetId;
+    const workoutHistoryTableRowSer = await this.fetchWorkoutHistory(
+      user,
+      workoutKey
+    );
+    if (!workoutHistoryTableRowSer) {
+      throw new Error("Could not fetch workout history");
     }
-
-    const spreadsheetId = USER_TABLE[user.googleId].spreadsheetId;
-    const workoutHistoryTableRow = WORKOUT_HISTORY_TABLE[user.googleId][workoutKey];
+    const workoutHistoryTableRow = deserializeWorkoutHistoryTableRow(
+      workoutHistoryTableRowSer
+    );
 
     const sheetRows: string[][] = [];
 
@@ -65,6 +91,18 @@ class WorkoutHistoryProvider {
 
     workoutHistoryTableRow.records.push(record);
 
+    const workoutHistoryCollection = this.db.collection("workoutHistory");
+    await workoutHistoryCollection.updateOne(
+      { userId: user.googleId },
+      {
+        $set: {
+          [`history.${workoutKey}`]: serializeWorkoutHistoryTableRow(
+            workoutHistoryTableRow
+          ),
+        },
+      }
+    );
+
     const sheetRow = serializeRecordAsSheetRow(
       workoutHistoryTableRow.sheetHeader,
       record
@@ -79,16 +117,43 @@ class WorkoutHistoryProvider {
     );
   }
 
-  fetchWorkoutHistory(user: User, workoutKey: string): WorkoutHistoryTableRow {
-    if (!WORKOUT_HISTORY_TABLE[user.googleId]) {
-      return null;
+  async fetchWorkoutHistory(
+    user: User,
+    workoutKey: string
+  ): Promise<WorkoutHistoryTableRow> {
+    let workoutHistorySer;
+    try {
+      const workoutHistoryCollection = this.db.collection("workoutHistory");
+      workoutHistorySer = await workoutHistoryCollection.findOne({
+        userId: user.googleId,
+      });
+    } catch (error) {
+      console.error("Error fetching workout history:", error);
+      throw error;
     }
 
-    return WORKOUT_HISTORY_TABLE[user.googleId][workoutKey];
+    if (workoutHistorySer) {
+      return workoutHistorySer.history[workoutKey];
+    }
+
+    return null;
+  }
+
+  private async fetchUser(user: User) {
+    let dbUser;
+    try {
+      const usersCollection = this.db.collection("users");
+      dbUser = await usersCollection.findOne({
+        userId: user.googleId,
+      });
+    } catch (error) {
+      console.error("Error fetching user:", error);
+      throw error;
+    }
+
+    return dbUser;
   }
 }
-
-export const WORKOUT_HISTORY_PROVIDER = WorkoutHistoryProvider.getInstance();
 
 function buildSheetHeader(record: WorkoutHistoryRecord): string[] {
   return [
@@ -170,4 +235,28 @@ function workoutValueKeyToString(key: WorkoutValueKey): string {
   }
 
   return s;
+}
+
+function serializeWorkoutHistoryTableRow(row: WorkoutHistoryTableRow) {
+  return {
+    ...row,
+    records: row.records.map((record) => ({
+      ...record,
+      startTimestamp: formatDate(record.startTimestamp, "MM/dd/yyyy HH:mm"),
+    })),
+  };
+}
+
+function deserializeWorkoutHistoryTableRow(row: any) {
+  return {
+    ...row,
+    records: row.records.map(deserializeWorkoutHistoryRecord),
+  };
+}
+
+export function deserializeWorkoutHistoryRecord(record: any) {
+  return {
+    ...record,
+    startTimestamp: convertToDateObj(record.startTimestamp),
+  };
 }

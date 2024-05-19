@@ -4,9 +4,8 @@ import express from "express";
 import { decodeGoogleIdToken } from "./auth";
 import {
   deserializeWorkoutHistoryRecord,
-  serializeWorkoutHistoryTableRow,
-} from "./database";
-import { WORKOUT_HISTORY_PROVIDER } from "./providers/workoutHistoryProvider";
+  WorkoutHistoryProvider,
+} from "./providers/workoutHistoryProvider";
 
 const app = express();
 app.use(cors());
@@ -14,7 +13,7 @@ app.use(express.json());
 
 app.get("/api/v1/user/register", async (req, res) => {
   const authHeader = req.headers.authorization;
-  const idToken = req.headers['x-google-id-token'] as string;
+  const idToken = req.headers["x-google-id-token"] as string;
 
   if (!authHeader) {
     return res.status(401).json({ error: "Authorization header required" });
@@ -24,14 +23,20 @@ app.get("/api/v1/user/register", async (req, res) => {
     return res.status(401).json({ error: "Google Id token header required" });
   }
 
-  const user = await decodeGoogleIdToken(idToken);
+  let user;
+  try {
+    user = await decodeGoogleIdToken(idToken);
+  } catch (error) {
+    console.error("Error verifying Google Id token: ", error);
+    return res.status(401).json({ error: "Error verifying Google Id token" });
+  }
 
-  res.send(user);
+  return res.send(user);
 });
 
 app.get("/api/v1/workout/history", async (req, res) => {
   const authHeader = req.headers.authorization;
-  const idToken = req.headers['x-google-id-token'] as string;
+  const idToken = req.headers["x-google-id-token"] as string;
 
   if (!authHeader) {
     return res.status(401).json({ error: "Authorization header required" });
@@ -41,7 +46,13 @@ app.get("/api/v1/workout/history", async (req, res) => {
     return res.status(401).json({ error: "Google Id token header required" });
   }
 
-  const user = await decodeGoogleIdToken(idToken);
+  let user;
+  try {
+    user = await decodeGoogleIdToken(idToken);
+  } catch (error) {
+    console.error("Error verifying Google Id token: ", error);
+    return res.status(401).json({ error: "Error verifying Google Id token" });
+  }
 
   const { workoutKey } = req.query;
 
@@ -51,7 +62,9 @@ app.get("/api/v1/workout/history", async (req, res) => {
     });
   }
 
-  const workoutHistory = WORKOUT_HISTORY_PROVIDER.fetchWorkoutHistory(
+  const workoutHistoryProvider = await WorkoutHistoryProvider.getInstance();
+
+  const workoutHistory = await workoutHistoryProvider.fetchWorkoutHistory(
     user,
     workoutKey.toString()
   );
@@ -61,14 +74,12 @@ app.get("/api/v1/workout/history", async (req, res) => {
     });
   }
 
-  const payload = serializeWorkoutHistoryTableRow(workoutHistory);
-
-  res.send(payload);
+  res.send(workoutHistory);
 });
 
 app.post("/api/v1/workout/save", async (req, res) => {
   const authHeader = req.headers.authorization;
-  const idToken = req.headers['x-google-id-token'] as string;
+  const idToken = req.headers["x-google-id-token"] as string;
 
   if (!authHeader) {
     return res.status(401).json({ error: "Authorization header required" });
@@ -79,12 +90,20 @@ app.post("/api/v1/workout/save", async (req, res) => {
   }
 
   const accessToken = req.headers.authorization.split(" ")[1];
-  const user = await decodeGoogleIdToken(idToken);
+  let user;
+  try {
+    user = await decodeGoogleIdToken(idToken);
+  } catch (error) {
+    console.error("Error verifying Google Id token: ", error);
+    return res.status(401).json({ error: "Error verifying Google Id token" });
+  }
 
   const body = req.body as SaveWorkoutHistoryRecordRequestBody;
 
+  const workoutHistoryProvider = await WorkoutHistoryProvider.getInstance();
+
   try {
-    WORKOUT_HISTORY_PROVIDER.appendRecordToWorkoutHistory(
+    workoutHistoryProvider.appendRecordToWorkoutHistory(
       accessToken,
       user,
       body.workoutKey,
