@@ -31,18 +31,24 @@ class WorkoutHistoryProvider {
 
   async addRecordToWorkoutHistory(
     workoutKey: string,
+    workoutDisplayName: string,
     workoutRecord: WorkoutHistoryRecord
   ): Promise<void> {
     const body = {
       workoutKey,
+      workoutDisplayName,
       workoutRecord: serializeWorkoutHistoryRecord(workoutRecord),
     };
     await storeRecordInWorkoutHistory(body);
   }
 
   deserializeWorkoutHistoryResponse(
-    response: FetchWorkoutHistoryResponse
-  ): WorkoutHistory {
+    response: FetchWorkoutHistoryResponse | null
+  ): WorkoutHistory | null {
+    if (!response) {
+      return null;
+    }
+
     return {
       ...response,
       workoutTemplate: WORKOUT_TEMPLATE_REGISTRY[response.workoutKey],

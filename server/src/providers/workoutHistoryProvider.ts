@@ -51,6 +51,7 @@ export class WorkoutHistoryProvider {
     accessToken: string,
     user: User,
     workoutKey: string,
+    workoutDisplayName: string,
     record: WorkoutHistoryRecord
   ): Promise<void> {
     const dbUser = await this.fetchUser(user);
@@ -59,12 +60,17 @@ export class WorkoutHistoryProvider {
     }
 
     const spreadsheetId = dbUser.spreadsheetId;
-    const workoutHistoryTableRowSer = await this.fetchWorkoutHistory(
+    let workoutHistoryTableRowSer = await this.fetchWorkoutHistory(
       user,
       workoutKey
     );
     if (!workoutHistoryTableRowSer) {
-      throw new Error("Could not fetch workout history");
+      workoutHistoryTableRowSer = {
+        workoutKey,
+        sheetId: workoutDisplayName,
+        sheetHeader: [],
+        records: [],
+      }
     }
     const workoutHistoryTableRow = deserializeWorkoutHistoryTableRow(
       workoutHistoryTableRowSer

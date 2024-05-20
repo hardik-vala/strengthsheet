@@ -417,7 +417,7 @@ describe("WorkoutForm", () => {
 
     expect(
       WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory
-    ).toHaveBeenCalledWith("rowing_machine", {
+    ).toHaveBeenCalledWith("rowing_machine", "Rowing (Machine)", {
       startTimestamp: new Date(CURRENT_DATETIME.getTime() + 200),
       elapsedTime: 0,
       exercises: [

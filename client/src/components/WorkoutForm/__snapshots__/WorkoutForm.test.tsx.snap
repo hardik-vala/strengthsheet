@@ -16855,6 +16855,45 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                   ]
                 }
               >
+                lb
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "marginRight": 15,
+                  "textAlign": "center",
+                  "width": 75,
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "textAlign": "left",
+                    },
+                    {
+                      "color": "rgba(28, 27, 31, 1)",
+                      "writingDirection": "ltr",
+                    },
+                    [
+                      {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "400",
+                        "letterSpacing": 0.25,
+                        "lineHeight": 20,
+                      },
+                      {
+                        "color": "gray",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+              >
                 reps
               </Text>
             </View>
@@ -17081,6 +17120,108 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 }
               }
             >
+              <View>
+                <View
+                  style={
+                    {
+                      "marginRight": 15,
+                      "width": 75,
+                    }
+                  }
+                >
+                  <View
+                    pointerEvents="none"
+                    style={
+                      [
+                        {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 6,
+                        },
+                        {
+                          "backgroundColor": "rgba(232, 222, 248, 1)",
+                          "borderColor": "transparent",
+                          "borderRadius": 4,
+                          "borderWidth": 1,
+                        },
+                        {
+                          "borderRadius": 5,
+                        },
+                      ]
+                    }
+                    testID="text-input-outline"
+                  />
+                  <View>
+                    <View
+                      style={
+                        [
+                          {
+                            "paddingBottom": 0,
+                          },
+                          {
+                            "minHeight": 30,
+                            "paddingTop": 8,
+                          },
+                        ]
+                      }
+                    >
+                      <TextInput
+                        cursorColor="rgba(98, 91, 113, 1)"
+                        defaultValue=""
+                        editable={true}
+                        maxFontSizeMultiplier={1.5}
+                        multiline={false}
+                        onBlur={[Function]}
+                        onChangeText={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        placeholderTextColor="darkgray"
+                        selectionColor="rgba(98, 91, 113, 1)"
+                        style={
+                          [
+                            {
+                              "margin": 0,
+                              "zIndex": 1,
+                            },
+                            {
+                              "height": 30,
+                            },
+                            {
+                              "paddingBottom": 7,
+                              "paddingTop": 7,
+                            },
+                            {
+                              "color": "rgba(28, 27, 31, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                              "fontWeight": undefined,
+                              "letterSpacing": 0.15,
+                              "lineHeight": undefined,
+                              "paddingHorizontal": 16,
+                              "textAlign": "center",
+                              "textAlignVertical": "center",
+                            },
+                            false,
+                            [
+                              {},
+                            ],
+                            {
+                              "fontSize": 12,
+                              "fontWeight": "bold",
+                              "textAlign": "center",
+                            },
+                          ]
+                        }
+                        testID="text-input-outlined"
+                        underlineColorAndroid="transparent"
+                        value=""
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
               <View>
                 <View
                   style={
@@ -17656,6 +17797,108 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                   </View>
                 </View>
               </View>
+              <View>
+                <View
+                  style={
+                    {
+                      "marginRight": 15,
+                      "width": 75,
+                    }
+                  }
+                >
+                  <View
+                    pointerEvents="none"
+                    style={
+                      [
+                        {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 6,
+                        },
+                        {
+                          "backgroundColor": "rgba(232, 222, 248, 1)",
+                          "borderColor": "transparent",
+                          "borderRadius": 4,
+                          "borderWidth": 1,
+                        },
+                        {
+                          "borderRadius": 5,
+                        },
+                      ]
+                    }
+                    testID="text-input-outline"
+                  />
+                  <View>
+                    <View
+                      style={
+                        [
+                          {
+                            "paddingBottom": 0,
+                          },
+                          {
+                            "minHeight": 30,
+                            "paddingTop": 8,
+                          },
+                        ]
+                      }
+                    >
+                      <TextInput
+                        cursorColor="rgba(98, 91, 113, 1)"
+                        defaultValue=""
+                        editable={true}
+                        maxFontSizeMultiplier={1.5}
+                        multiline={false}
+                        onBlur={[Function]}
+                        onChangeText={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        placeholderTextColor="darkgray"
+                        selectionColor="rgba(98, 91, 113, 1)"
+                        style={
+                          [
+                            {
+                              "margin": 0,
+                              "zIndex": 1,
+                            },
+                            {
+                              "height": 30,
+                            },
+                            {
+                              "paddingBottom": 7,
+                              "paddingTop": 7,
+                            },
+                            {
+                              "color": "rgba(28, 27, 31, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                              "fontWeight": undefined,
+                              "letterSpacing": 0.15,
+                              "lineHeight": undefined,
+                              "paddingHorizontal": 16,
+                              "textAlign": "center",
+                              "textAlignVertical": "center",
+                            },
+                            false,
+                            [
+                              {},
+                            ],
+                            {
+                              "fontSize": 12,
+                              "fontWeight": "bold",
+                              "textAlign": "center",
+                            },
+                          ]
+                        }
+                        testID="text-input-outlined"
+                        underlineColorAndroid="transparent"
+                        value=""
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
               <View
                 collapsable={false}
                 style={
@@ -18027,6 +18270,108 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 }
               }
             >
+              <View>
+                <View
+                  style={
+                    {
+                      "marginRight": 15,
+                      "width": 75,
+                    }
+                  }
+                >
+                  <View
+                    pointerEvents="none"
+                    style={
+                      [
+                        {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 6,
+                        },
+                        {
+                          "backgroundColor": "rgba(232, 222, 248, 1)",
+                          "borderColor": "transparent",
+                          "borderRadius": 4,
+                          "borderWidth": 1,
+                        },
+                        {
+                          "borderRadius": 5,
+                        },
+                      ]
+                    }
+                    testID="text-input-outline"
+                  />
+                  <View>
+                    <View
+                      style={
+                        [
+                          {
+                            "paddingBottom": 0,
+                          },
+                          {
+                            "minHeight": 30,
+                            "paddingTop": 8,
+                          },
+                        ]
+                      }
+                    >
+                      <TextInput
+                        cursorColor="rgba(98, 91, 113, 1)"
+                        defaultValue=""
+                        editable={true}
+                        maxFontSizeMultiplier={1.5}
+                        multiline={false}
+                        onBlur={[Function]}
+                        onChangeText={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        placeholderTextColor="darkgray"
+                        selectionColor="rgba(98, 91, 113, 1)"
+                        style={
+                          [
+                            {
+                              "margin": 0,
+                              "zIndex": 1,
+                            },
+                            {
+                              "height": 30,
+                            },
+                            {
+                              "paddingBottom": 7,
+                              "paddingTop": 7,
+                            },
+                            {
+                              "color": "rgba(28, 27, 31, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                              "fontWeight": undefined,
+                              "letterSpacing": 0.15,
+                              "lineHeight": undefined,
+                              "paddingHorizontal": 16,
+                              "textAlign": "center",
+                              "textAlignVertical": "center",
+                            },
+                            false,
+                            [
+                              {},
+                            ],
+                            {
+                              "fontSize": 12,
+                              "fontWeight": "bold",
+                              "textAlign": "center",
+                            },
+                          ]
+                        }
+                        testID="text-input-outlined"
+                        underlineColorAndroid="transparent"
+                        value=""
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
               <View>
                 <View
                   style={
@@ -18602,6 +18947,108 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                   </View>
                 </View>
               </View>
+              <View>
+                <View
+                  style={
+                    {
+                      "marginRight": 15,
+                      "width": 75,
+                    }
+                  }
+                >
+                  <View
+                    pointerEvents="none"
+                    style={
+                      [
+                        {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 6,
+                        },
+                        {
+                          "backgroundColor": "rgba(232, 222, 248, 1)",
+                          "borderColor": "transparent",
+                          "borderRadius": 4,
+                          "borderWidth": 1,
+                        },
+                        {
+                          "borderRadius": 5,
+                        },
+                      ]
+                    }
+                    testID="text-input-outline"
+                  />
+                  <View>
+                    <View
+                      style={
+                        [
+                          {
+                            "paddingBottom": 0,
+                          },
+                          {
+                            "minHeight": 30,
+                            "paddingTop": 8,
+                          },
+                        ]
+                      }
+                    >
+                      <TextInput
+                        cursorColor="rgba(98, 91, 113, 1)"
+                        defaultValue=""
+                        editable={true}
+                        maxFontSizeMultiplier={1.5}
+                        multiline={false}
+                        onBlur={[Function]}
+                        onChangeText={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        placeholderTextColor="darkgray"
+                        selectionColor="rgba(98, 91, 113, 1)"
+                        style={
+                          [
+                            {
+                              "margin": 0,
+                              "zIndex": 1,
+                            },
+                            {
+                              "height": 30,
+                            },
+                            {
+                              "paddingBottom": 7,
+                              "paddingTop": 7,
+                            },
+                            {
+                              "color": "rgba(28, 27, 31, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                              "fontWeight": undefined,
+                              "letterSpacing": 0.15,
+                              "lineHeight": undefined,
+                              "paddingHorizontal": 16,
+                              "textAlign": "center",
+                              "textAlignVertical": "center",
+                            },
+                            false,
+                            [
+                              {},
+                            ],
+                            {
+                              "fontSize": 12,
+                              "fontWeight": "bold",
+                              "textAlign": "center",
+                            },
+                          ]
+                        }
+                        testID="text-input-outlined"
+                        underlineColorAndroid="transparent"
+                        value=""
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
               <View
                 collapsable={false}
                 style={
@@ -18973,6 +19420,108 @@ exports[`WorkoutForm renders workouts with circuits correctly 1`] = `
                 }
               }
             >
+              <View>
+                <View
+                  style={
+                    {
+                      "marginRight": 15,
+                      "width": 75,
+                    }
+                  }
+                >
+                  <View
+                    pointerEvents="none"
+                    style={
+                      [
+                        {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 6,
+                        },
+                        {
+                          "backgroundColor": "rgba(232, 222, 248, 1)",
+                          "borderColor": "transparent",
+                          "borderRadius": 4,
+                          "borderWidth": 1,
+                        },
+                        {
+                          "borderRadius": 5,
+                        },
+                      ]
+                    }
+                    testID="text-input-outline"
+                  />
+                  <View>
+                    <View
+                      style={
+                        [
+                          {
+                            "paddingBottom": 0,
+                          },
+                          {
+                            "minHeight": 30,
+                            "paddingTop": 8,
+                          },
+                        ]
+                      }
+                    >
+                      <TextInput
+                        cursorColor="rgba(98, 91, 113, 1)"
+                        defaultValue=""
+                        editable={true}
+                        maxFontSizeMultiplier={1.5}
+                        multiline={false}
+                        onBlur={[Function]}
+                        onChangeText={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        placeholderTextColor="darkgray"
+                        selectionColor="rgba(98, 91, 113, 1)"
+                        style={
+                          [
+                            {
+                              "margin": 0,
+                              "zIndex": 1,
+                            },
+                            {
+                              "height": 30,
+                            },
+                            {
+                              "paddingBottom": 7,
+                              "paddingTop": 7,
+                            },
+                            {
+                              "color": "rgba(28, 27, 31, 1)",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                              "fontWeight": undefined,
+                              "letterSpacing": 0.15,
+                              "lineHeight": undefined,
+                              "paddingHorizontal": 16,
+                              "textAlign": "center",
+                              "textAlignVertical": "center",
+                            },
+                            false,
+                            [
+                              {},
+                            ],
+                            {
+                              "fontSize": 12,
+                              "fontWeight": "bold",
+                              "textAlign": "center",
+                            },
+                          ]
+                        }
+                        testID="text-input-outlined"
+                        underlineColorAndroid="transparent"
+                        value=""
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
               <View>
                 <View
                   style={

@@ -64,13 +64,15 @@ app.get("/api/v1/workout/history", async (req, res) => {
 
   const workoutHistoryProvider = await WorkoutHistoryProvider.getInstance();
 
-  const workoutHistory = await workoutHistoryProvider.fetchWorkoutHistory(
-    user,
-    workoutKey.toString()
-  );
-  if (!workoutHistory) {
+  let workoutHistory;
+  try {
+    workoutHistory = await workoutHistoryProvider.fetchWorkoutHistory(
+      user,
+      workoutKey.toString()
+    );
+  } catch (error) {
     return res.status(400).json({
-      error: `No workout for key "${workoutKey}"`,
+      error: `Error fetching workout history for key "${workoutKey}"`,
     });
   }
 
@@ -107,6 +109,7 @@ app.post("/api/v1/workout/save", async (req, res) => {
       accessToken,
       user,
       body.workoutKey,
+      body.workoutDisplayName,
       deserializeWorkoutHistoryRecord(body.workoutRecord)
     );
   } catch (error) {

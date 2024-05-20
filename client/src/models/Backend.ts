@@ -7,6 +7,7 @@ export interface FetchWorkoutHistoryResponse {
 
 export interface SaveWorkoutHistoryRecordRequestBody {
   workoutKey: string;
+  workoutDisplayName: string;
   workoutRecord: SerializedWorkoutHistoryRecord;
 }
 

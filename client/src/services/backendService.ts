@@ -7,7 +7,7 @@ import { WorkoutTemplate } from "../models/Workout/WorkoutTemplate";
 
 export async function fetchWorkoutHistory(
   workoutTemplate: WorkoutTemplate
-): Promise<FetchWorkoutHistoryResponse> {
+): Promise<FetchWorkoutHistoryResponse | null> {
   const googleUser = await GoogleSignin.getCurrentUser();
   const googleAuthTokens = await GoogleSignin.getTokens();
 
@@ -29,6 +29,10 @@ export async function fetchWorkoutHistory(
     throw new Error(
       `Failed to fetch workout history: ${JSON.stringify(response)}`
     );
+  }
+
+  if (!response.bodyUsed) {
+    return null;
   }
 
   return await response.json();

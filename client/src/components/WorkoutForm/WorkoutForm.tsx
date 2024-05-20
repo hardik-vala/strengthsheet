@@ -48,7 +48,7 @@ export function WorkoutForm({
         setWorkoutHistory(ret);
       } catch (error) {
         console.error(
-          `Failed to get workout history: ${JSON.stringify(error)}`
+          `Failed to get workout history: ${error}`
         );
       }
     }
@@ -66,6 +66,7 @@ export function WorkoutForm({
       );
       await WORKOUT_HISTORY_PROVIDER.addRecordToWorkoutHistory(
         workoutTemplate.key,
+        workoutTemplate.displayName,
         workoutRecord
       );
     } catch (error) {
