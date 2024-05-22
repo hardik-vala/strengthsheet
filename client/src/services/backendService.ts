@@ -31,10 +31,6 @@ export async function fetchWorkoutHistory(
     );
   }
 
-  if (!response.bodyUsed) {
-    return null;
-  }
-
   return await response.json();
 }
 
