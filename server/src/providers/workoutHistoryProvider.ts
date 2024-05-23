@@ -26,7 +26,7 @@ export class WorkoutHistoryProvider {
   private client: MongoClient;
   private db: Db;
 
-  private constructor(client: MongoClient) {
+  constructor(client: MongoClient) {
     this.client = client;
     this.db = client.db(process.env.MONGO_DATABASE);
   }
@@ -70,7 +70,7 @@ export class WorkoutHistoryProvider {
         sheetId: workoutDisplayName,
         sheetHeader: [],
         records: [],
-      }
+      };
     }
     const workoutHistoryTableRow = deserializeWorkoutHistoryTableRow(
       workoutHistoryTableRowSer
