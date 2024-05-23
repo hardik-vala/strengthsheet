@@ -58,3 +58,7 @@ Deploy Mongodb on DigitalOcean:
      docker compose logs -f
      ```
    - You should see the `strengthsheet_db` container logs.
+
+7. Access MongoDB:
+    - You can now access the MongoDB instance running on the Droplet using the Droplet's public IP address and the specified port (27017).
+    - Use a MongoDB client or connect to the MongoDB instance programmatically using the appropriate connection string.
